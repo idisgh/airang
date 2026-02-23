@@ -1,0 +1,153 @@
+<script setup lang="ts">
+import { getToolBySlug, getAlternatives } from '~/data/tools'
+import { categories } from '~/data/categories'
+
+const route = useRoute()
+const slug = route.params.slug as string
+const tool = getToolBySlug(slug)
+
+if (!tool) {
+  throw createError({ statusCode: 404, statusMessage: '도구를 찾을 수 없습니다' })
+}
+
+const alternatives = getAlternatives(slug)
+
+useHead({
+  title: `${tool.name} - 가격, 리뷰, 대안 비교 | AIrang`,
+  meta: [
+    { name: 'description', content: `${tool.name}: ${tool.tagline} 가격, 기능, 한국어 지원 여부, 대안 비교.` },
+  ],
+})
+
+function getCategoryName(slug: string) {
+  return categories.find(c => c.slug === slug)?.name || slug
+}
+
+const pricingLabel = computed(() => {
+  switch (tool.pricingModel) {
+    case 'free': return '무료'
+    case 'freemium': return '프리미엄'
+    case 'paid': return '유료'
+    case 'enterprise': return '엔터프라이즈'
+  }
+})
+
+const koreanLabel = computed(() => {
+  switch (tool.koreanSupport) {
+    case 'full': return '완전 지원'
+    case 'partial': return '부분 지원'
+    case 'none': return '미지원'
+  }
+})
+</script>
+
+<template>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400 mb-6">
+      <NuxtLink to="/" class="hover:text-primary-600">홈</NuxtLink>
+      <span>/</span>
+      <NuxtLink to="/tools" class="hover:text-primary-600">도구</NuxtLink>
+      <span>/</span>
+      <span class="text-neutral-900 dark:text-neutral-100">{{ tool.name }}</span>
+    </nav>
+
+    <!-- Header -->
+    <div class="card p-6 sm:p-8 mb-6">
+      <div class="flex items-start gap-4 mb-6">
+        <div class="w-16 h-16 bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 rounded-2xl flex items-center justify-center text-2xl font-bold text-primary-700 dark:text-primary-300 shrink-0">
+          {{ tool.name[0] }}
+        </div>
+        <div class="flex-1">
+          <h1 class="text-2xl sm:text-3xl font-bold text-neutral-900 dark:text-neutral-100">{{ tool.name }}</h1>
+          <p class="text-lg text-neutral-600 dark:text-neutral-400 mt-1">{{ tool.tagline }}</p>
+        </div>
+      </div>
+
+      <!-- Badges -->
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span v-for="cat in tool.categories" :key="cat"
+          class="text-sm px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 rounded-full">
+          {{ getCategoryName(cat) }}
+        </span>
+        <span :class="['badge text-sm', tool.pricingModel === 'free' ? 'badge-free' : tool.pricingModel === 'freemium' ? 'badge-freemium' : 'badge-paid']">
+          {{ pricingLabel }}
+        </span>
+        <span class="badge badge-korean text-sm">🇰🇷 {{ koreanLabel }}</span>
+      </div>
+
+      <!-- Meta grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+        <div class="text-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-xl">
+          <div class="text-2xl font-bold text-amber-500">{{ tool.rating }}</div>
+          <div class="text-xs text-neutral-500 mt-1">⭐ 평점</div>
+        </div>
+        <div class="text-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-xl">
+          <div class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">{{ tool.reviewCount }}</div>
+          <div class="text-xs text-neutral-500 mt-1">리뷰 수</div>
+        </div>
+        <div class="text-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-xl">
+          <div class="text-lg font-bold text-neutral-900 dark:text-neutral-100">{{ tool.platforms.length }}</div>
+          <div class="text-xs text-neutral-500 mt-1">플랫폼</div>
+        </div>
+        <div class="text-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-xl">
+          <div class="text-lg font-bold text-neutral-900 dark:text-neutral-100">{{ tool.launchedAt.slice(0, 4) }}</div>
+          <div class="text-xs text-neutral-500 mt-1">출시년도</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <a :href="tool.url" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-xl font-medium hover:bg-primary-700 transition-colors">
+        {{ tool.name }} 바로가기
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+      </a>
+    </div>
+
+    <!-- Description -->
+    <div class="card p-6 sm:p-8 mb-6">
+      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">소개</h2>
+      <p class="text-neutral-700 dark:text-neutral-300 leading-relaxed">{{ tool.description }}</p>
+    </div>
+
+    <!-- Features -->
+    <div class="card p-6 sm:p-8 mb-6">
+      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">주요 기능</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div v-for="feature in tool.features" :key="feature" class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <span class="text-neutral-700 dark:text-neutral-300">{{ feature }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="card p-6 sm:p-8 mb-6">
+      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">💰 가격</h2>
+      <p class="text-neutral-700 dark:text-neutral-300">{{ tool.pricingDetail }}</p>
+    </div>
+
+    <!-- Platforms -->
+    <div class="card p-6 sm:p-8 mb-6">
+      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">지원 플랫폼</h2>
+      <div class="flex flex-wrap gap-2">
+        <span v-for="p in tool.platforms" :key="p" class="px-3 py-1.5 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm text-neutral-700 dark:text-neutral-300 capitalize">
+          {{ p }}
+        </span>
+      </div>
+    </div>
+
+    <!-- Alternatives -->
+    <div v-if="alternatives.length > 0" class="mb-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">🔄 {{ tool.name }}의 대안</h2>
+        <NuxtLink :to="`/alternatives/${tool.slug}`" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">
+          전체 대안 보기 →
+        </NuxtLink>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <ToolCard v-for="alt in alternatives" :key="alt.id" :tool="alt" />
+      </div>
+    </div>
+  </div>
+</template>
