@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { categories } from '~/data/categories'
+import { getToolsByCategory } from '~/data/tools'
 useHead({ title: '카테고리 - AIrang' })
 </script>
 
@@ -15,7 +16,7 @@ useHead({ title: '카테고리 - AIrang' })
         <div class="text-4xl mb-3">{{ cat.icon }}</div>
         <h2 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 group-hover:text-primary-600 mb-1">{{ cat.name }}</h2>
         <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">{{ cat.description }}</p>
-        <span class="text-xs text-primary-600 dark:text-primary-400">{{ cat.toolCount }}개 도구 →</span>
+        <span class="text-xs text-primary-600 dark:text-primary-400">{{ getToolsByCategory(cat.slug).length }}개 도구 →</span>
       </NuxtLink>
     </div>
   </div>

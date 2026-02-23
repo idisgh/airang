@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { tools, getFeaturedTools } from '~/data/tools'
+import { tools, getFeaturedTools, getToolsByCategory } from '~/data/tools'
 import { categories } from '~/data/categories'
 
 useHead({ title: 'AIrang - 한국어 AI 도구 검색 & 비교 플랫폼' })
@@ -66,14 +66,14 @@ function onSearch() {
         >
           <div class="text-3xl mb-2">{{ cat.icon }}</div>
           <div class="text-sm font-medium text-neutral-900 dark:text-neutral-100 group-hover:text-primary-600">{{ cat.name }}</div>
-          <div class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">{{ cat.toolCount }}개 도구</div>
+          <div class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">{{ getToolsByCategory(cat.slug).length }}개 도구</div>
         </NuxtLink>
       </div>
     </section>
 
     <!-- Featured tools -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-neutral-50 dark:bg-neutral-900/50 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-7xl mx-auto">
+    <section class="bg-neutral-50 dark:bg-neutral-900/50 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">🔥 인기 도구</h2>
           <NuxtLink to="/tools" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
