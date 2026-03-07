@@ -92,8 +92,8 @@ function priceLabel(v: string) { return v === 'free' ? '무료' : v === 'freemiu
           </tr>
           <tr>
             <td class="p-4 font-medium text-neutral-600 dark:text-neutral-400">주요 기능</td>
-            <td class="p-4 text-neutral-700 dark:text-neutral-300"><ul class="space-y-1"><li v-for="f in toolA.features" :key="f" class="text-sm"><LIcon name="lucide:check" class="w-3.5 h-3.5 text-primary-500 inline shrink-0" /> {{ f }}</li></ul></td>
-            <td class="p-4 text-neutral-700 dark:text-neutral-300"><ul class="space-y-1"><li v-for="f in toolB.features" :key="f" class="text-sm"><LIcon name="lucide:check" class="w-3.5 h-3.5 text-primary-500 inline shrink-0" /> {{ f }}</li></ul></td>
+            <td class="p-4 text-neutral-700 dark:text-neutral-300"><ul class="space-y-1"><li v-for="f in toolA.features" :key="f" class="text-sm flex items-center gap-1"><LIcon name="lucide:check" class="w-3.5 h-3.5 text-primary-500 shrink-0" /> {{ f }}</li></ul></td>
+            <td class="p-4 text-neutral-700 dark:text-neutral-300"><ul class="space-y-1"><li v-for="f in toolB.features" :key="f" class="text-sm flex items-center gap-1"><LIcon name="lucide:check" class="w-3.5 h-3.5 text-primary-500 shrink-0" /> {{ f }}</li></ul></td>
           </tr>
         </tbody>
       </table>
