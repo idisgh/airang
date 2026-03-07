@@ -55,7 +55,7 @@ useHead({
                 {{ tool.koreanSupport === 'full' ? '지원' : tool.koreanSupport === 'partial' ? '일부' : '미지원' }}
               </span>
             </td>
-            <td class="p-4 text-center text-amber-500 font-medium">⭐ {{ tool.rating }}</td>
+            <td class="p-4 text-center text-amber-500 font-medium"><LIcon name="lucide:star" class="w-3 h-3 text-amber-500 inline" /> {{ tool.rating }}</td>
           </tr>
           <tr v-for="alt in (alternatives || [])" :key="alt.id" class="border-b border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
             <td class="p-4">
@@ -67,7 +67,7 @@ useHead({
                 {{ alt.koreanSupport === 'full' ? '지원' : alt.koreanSupport === 'partial' ? '일부' : '미지원' }}
               </span>
             </td>
-            <td class="p-4 text-center text-amber-500 font-medium">⭐ {{ alt.rating }}</td>
+            <td class="p-4 text-center text-amber-500 font-medium"><LIcon name="lucide:star" class="w-3 h-3 text-amber-500 inline" /> {{ alt.rating }}</td>
           </tr>
         </tbody>
       </table>

@@ -20,8 +20,8 @@ const pricingLabel = computed(() => {
 
 const koreanLabel = computed(() => {
   switch (props.tool.koreanSupport) {
-    case 'full': return '🇰🇷 한국어'
-    case 'partial': return '🇰🇷 일부'
+    case 'full': return '한국어'
+    case 'partial': return '일부'
     case 'none': return ''
   }
 })

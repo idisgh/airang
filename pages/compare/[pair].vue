@@ -72,8 +72,8 @@ function priceLabel(v: string) { return v === 'free' ? '무료' : v === 'freemiu
           </tr>
           <tr>
             <td class="p-4 font-medium text-neutral-600 dark:text-neutral-400">평점</td>
-            <td class="p-4 text-center text-amber-500 font-bold">⭐ {{ toolA.rating }}</td>
-            <td class="p-4 text-center text-amber-500 font-bold">⭐ {{ toolB.rating }}</td>
+            <td class="p-4 text-center text-amber-500 font-bold"><LIcon name="lucide:star" class="w-3 h-3 text-amber-500 inline" /> {{ toolA.rating }}</td>
+            <td class="p-4 text-center text-amber-500 font-bold"><LIcon name="lucide:star" class="w-3 h-3 text-amber-500 inline" /> {{ toolB.rating }}</td>
           </tr>
           <tr>
             <td class="p-4 font-medium text-neutral-600 dark:text-neutral-400">리뷰 수</td>

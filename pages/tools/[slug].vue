@@ -103,14 +103,14 @@ const koreanLabel = computed(() => {
         <span :class="['badge text-sm', tool.pricingModel === 'free' ? 'badge-free' : tool.pricingModel === 'freemium' ? 'badge-freemium' : 'badge-paid']">
           {{ pricingLabel }}
         </span>
-        <span class="badge badge-korean text-sm">🇰🇷 {{ koreanLabel }}</span>
+        <span class="badge badge-korean text-sm">{{ koreanLabel }}</span>
       </div>
 
       <!-- Meta grid -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
         <div class="text-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-xl">
-          <div class="text-2xl font-bold text-amber-500">{{ tool.rating }}</div>
-          <div class="text-xs text-neutral-500 mt-1">⭐ 평점</div>
+          <div class="text-2xl font-bold text-amber-500 flex items-center justify-center gap-1"><LIcon name="lucide:star" class="w-5 h-5" /> {{ tool.rating }}</div>
+          <div class="text-xs text-neutral-500 mt-1">평점</div>
         </div>
         <div class="text-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-xl">
           <div class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">{{ tool.reviewCount }}</div>
@@ -153,7 +153,7 @@ const koreanLabel = computed(() => {
 
     <!-- 업데이트 히스토리 -->
     <div v-if="updates && updates.length" class="card p-6 sm:p-8 mb-6">
-      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">🔄 업데이트 히스토리</h2>
+      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4"><LIcon name="lucide:history" class="w-5 h-5 inline" /> 업데이트 히스토리</h2>
       <div class="space-y-4">
         <div v-for="update in visibleUpdates" :key="update.id" class="relative pl-6 border-l-2 border-primary-200 dark:border-primary-800">
           <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary-500 border-2 border-white dark:border-neutral-900"></div>
@@ -190,7 +190,7 @@ const koreanLabel = computed(() => {
 
     <!-- Pricing -->
     <div class="card p-6 sm:p-8 mb-6">
-      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">💰 가격</h2>
+      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4"><LIcon name="lucide:wallet" class="w-5 h-5 inline" /> 가격</h2>
       <p class="text-neutral-700 dark:text-neutral-300">{{ tool.pricingDetail }}</p>
     </div>
 
@@ -207,7 +207,7 @@ const koreanLabel = computed(() => {
     <!-- Alternatives -->
     <div v-if="alternatives && alternatives.length > 0" class="mb-6">
       <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">🔄 {{ tool.name }}의 대안</h2>
+        <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100"><LIcon name="lucide:repeat" class="w-5 h-5 inline" /> {{ tool.name }}의 대안</h2>
         <NuxtLink :to="`/alternatives/${tool.slug}`" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">
           전체 대안 보기 →
         </NuxtLink>

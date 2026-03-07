@@ -48,7 +48,7 @@ const compareRows = computed(() => {
   const a = toolA.value!
   const b = toolB.value!
   return [
-    { label: '평점', a: `⭐ ${a.rating}`, b: `⭐ ${b.rating}`, highlight: a.rating > b.rating ? 'a' : a.rating < b.rating ? 'b' : '' },
+    { label: '평점', a: `${a.rating}`, b: `${b.rating}`, highlight: a.rating > b.rating ? 'a' : a.rating < b.rating ? 'b' : '' },
     { label: '리뷰 수', a: `${a.reviewCount}개`, b: `${b.reviewCount}개`, highlight: a.reviewCount > b.reviewCount ? 'a' : a.reviewCount < b.reviewCount ? 'b' : '' },
     { label: '가격', a: pricingLabel(a.pricingModel), b: pricingLabel(b.pricingModel), highlight: '' },
     { label: '가격 상세', a: a.pricingDetail, b: b.pricingDetail, highlight: '' },
