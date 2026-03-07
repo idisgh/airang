@@ -1,0 +1,65 @@
+{
+  "lastRun": "2026-03-07",
+  "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-03-07",
+      "changes": [
+        "description: GPT-4o, GPT-4.5 → GPT-5.2, GPT-5.4 모델 업데이트",
+        "pricingDetail: Go 플랜 추가",
+        "features: Sora 비디오, Codex 에이전트 추가"
+      ]
+    },
+    {
+      "slug": "claude",
+      "date": "2026-03-07",
+      "changes": [
+        "description: Claude 3.5 Sonnet, Opus → Opus 4, Sonnet 4 업데이트",
+        "pricingDetail: Max $100/월 플랜 추가",
+        "features: Claude Code, Cowork, Research, Extended Thinking 추가"
+      ]
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-03-07",
+      "changes": [
+        "description: Cloud Agents 언급 추가",
+        "pricingDetail: Pro+ $60/월, Ultra $200/월 추가",
+        "features: Cloud Agents, Bug Bot 추가"
+      ]
+    },
+    {
+      "slug": "runway",
+      "date": "2026-03-07",
+      "changes": [
+        "tagline: Gen-3 Alpha → Gen-4.5",
+        "description: Gen-3 Alpha → Gen-4.5 모델, Act-Two, Aleph, Veo 3.1 추가",
+        "pricingDetail: Unlimited $76/월 추가",
+        "features: 최신 모델/기능으로 업데이트"
+      ]
+    },
+    {
+      "slug": "github-copilot",
+      "date": "2026-03-07",
+      "changes": [
+        "pricingDetail: Individual/Business → Pro $10, Pro+ $39 구조 변경",
+        "features: Agents on GitHub, Copilot Spaces, MCP 지원 추가"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "date": "2026-03-07",
+      "changes": [
+        "pricingDetail: Pro $99/월 플랜 추가",
+        "features: ElevenAgents, Music 생성 추가"
+      ]
+    }
+  ],
+  "checked": ["chatgpt", "claude", "gemini", "midjourney", "perplexity", "cursor", "runway", "suno", "deepl", "github-copilot", "elevenlabs"],
+  "skipped": [
+    {"slug": "gemini", "reason": "페이지 로그인 필요 - 데이터 확인 불가"},
+    {"slug": "midjourney", "reason": "403 Cloudflare 차단"},
+    {"slug": "perplexity", "reason": "403 Cloudflare 차단"},
+    {"slug": "suno", "reason": "유효한 가격 정보 확인 불가"}
+  ]
+}
