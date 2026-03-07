@@ -29,7 +29,7 @@ useHead({ title: `${category.value?.name} AI 도구 모음 - AIrang` })
     </nav>
 
     <div class="mb-8">
-      <div class="text-4xl mb-2">{{ category.icon }}</div>
+      <Icon :name="category.icon" class="w-10 h-10 text-primary-600 dark:text-primary-400 mb-2" />
       <h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100">{{ category.name }} AI 도구</h1>
       <p class="text-neutral-600 dark:text-neutral-400 mt-2">{{ category.description }}</p>
       <p class="text-sm text-neutral-500 mt-1">{{ (categoryTools || []).length }}개 도구</p>

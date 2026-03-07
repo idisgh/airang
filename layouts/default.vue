@@ -36,16 +36,20 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown))
 
           <!-- Nav -->
           <nav class="hidden md:flex items-center gap-6">
-            <NuxtLink to="/tools" class="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+            <NuxtLink to="/tools" class="flex items-center gap-1.5 text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+              <Icon name="lucide:compass" class="w-4 h-4" />
               도구 탐색
             </NuxtLink>
-            <NuxtLink to="/categories" class="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+            <NuxtLink to="/categories" class="flex items-center gap-1.5 text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+              <Icon name="lucide:grid-3x3" class="w-4 h-4" />
               카테고리
             </NuxtLink>
-            <NuxtLink to="/blog" class="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+            <NuxtLink to="/blog" class="flex items-center gap-1.5 text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+              <Icon name="lucide:notebook-pen" class="w-4 h-4" />
               블로그
             </NuxtLink>
-            <NuxtLink to="/submit" class="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+            <NuxtLink to="/submit" class="flex items-center gap-1.5 text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+              <Icon name="lucide:plus-circle" class="w-4 h-4" />
               도구 등록
             </NuxtLink>
           </nav>
@@ -56,14 +60,14 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown))
               @click="showSearch = true"
               class="flex items-center gap-2 px-3 py-1.5 text-sm text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-neutral-800 rounded-lg hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
             >
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <Icon name="lucide:search" class="w-4 h-4" />
               <span class="hidden sm:inline">검색</span>
               <kbd class="hidden sm:inline text-xs px-1.5 py-0.5 bg-neutral-200 dark:bg-neutral-700 rounded">⌘K</kbd>
             </button>
 
             <button @click="toggleDark" class="p-2 text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200 transition-colors">
-              <svg v-if="isDark" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-              <svg v-else class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+              <Icon v-if="isDark" name="lucide:sun" class="w-5 h-5" />
+              <Icon v-else name="lucide:moon" class="w-5 h-5" />
             </button>
           </div>
         </div>
