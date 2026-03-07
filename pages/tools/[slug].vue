@@ -23,6 +23,12 @@ const { data: updates } = await useAsyncData(`updates-${slug}`, () => getUpdates
   default: () => [],
 })
 
+const showAllUpdates = ref(false)
+const visibleUpdates = computed(() => {
+  if (!updates.value) return []
+  return showAllUpdates.value ? updates.value : updates.value.slice(0, 3)
+})
+
 function formatDate(date: string) {
   return new Date(date).toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
 }
@@ -134,13 +140,22 @@ const koreanLabel = computed(() => {
       <p class="text-neutral-700 dark:text-neutral-300 leading-relaxed">{{ tool.description }}</p>
     </div>
 
+    <!-- Features -->
+    <div class="card p-6 sm:p-8 mb-6">
+      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">주요 기능</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div v-for="feature in tool.features" :key="feature" class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <span class="text-neutral-700 dark:text-neutral-300">{{ feature }}</span>
+        </div>
+      </div>
+    </div>
+
     <!-- 업데이트 히스토리 -->
-    <div v-if="updates && updates.length" class="card p-6 mb-6">
-      <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
-        <span>🔄</span> 업데이트 히스토리
-      </h2>
+    <div v-if="updates && updates.length" class="card p-6 sm:p-8 mb-6">
+      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">🔄 업데이트 히스토리</h2>
       <div class="space-y-4">
-        <div v-for="update in updates" :key="update.id" class="relative pl-6 border-l-2 border-primary-200 dark:border-primary-800">
+        <div v-for="update in visibleUpdates" :key="update.id" class="relative pl-6 border-l-2 border-primary-200 dark:border-primary-800">
           <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary-500 border-2 border-white dark:border-neutral-900"></div>
           <div class="flex items-center gap-2 mb-1">
             <span v-if="update.version" class="text-xs font-mono bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 px-2 py-0.5 rounded">{{ update.version }}</span>
@@ -155,17 +170,22 @@ const koreanLabel = computed(() => {
           </ul>
         </div>
       </div>
-    </div>
-
-    <!-- Features -->
-    <div class="card p-6 sm:p-8 mb-6">
-      <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">주요 기능</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <div v-for="feature in tool.features" :key="feature" class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-          <span class="text-neutral-700 dark:text-neutral-300">{{ feature }}</span>
-        </div>
-      </div>
+      <button
+        v-if="updates.length > 3 && !showAllUpdates"
+        @click="showAllUpdates = true"
+        class="mt-4 text-sm text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-1"
+      >
+        전체 히스토리 보기 ({{ updates.length }}개)
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <button
+        v-if="showAllUpdates && updates.length > 3"
+        @click="showAllUpdates = false"
+        class="mt-4 text-sm text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-1"
+      >
+        접기
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+      </button>
     </div>
 
     <!-- Pricing -->
