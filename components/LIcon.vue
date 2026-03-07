@@ -55,5 +55,5 @@ const iconComponent = computed(() => iconMap[props.name] || null)
 </script>
 
 <template>
-  <component v-if="iconComponent" :is="iconComponent" v-bind="attrs" :fill="fill || 'none'" :stroke="fill ? 'none' : undefined" />
+  <component v-if="iconComponent" :is="iconComponent" v-bind="attrs" :fill="fill && fill !== 'none' ? fill : 'none'" :stroke="fill && fill !== 'none' ? 'none' : undefined" />
 </template>
