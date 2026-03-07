@@ -1,48 +1,60 @@
 <script setup lang="ts">
-import { getToolBySlug, getAlternatives } from '~/data/tools'
-import { categories } from '~/data/categories'
+import { getToolBySlug as staticGetBySlug, getAlternatives as staticGetAlternatives } from '~/data/tools'
+import { categories as staticCategories } from '~/data/categories'
 
 const route = useRoute()
 const slug = route.params.slug as string
-const tool = getToolBySlug(slug)
 
-if (!tool) {
+const { getToolBySlug, getAlternatives } = useTools()
+const { getCategories } = useCategories()
+
+const { data: tool } = await useAsyncData(`tool-${slug}`, () => getToolBySlug(slug), {
+  default: () => staticGetBySlug(slug),
+})
+const { data: alternatives } = await useAsyncData(`alternatives-${slug}`, () => getAlternatives(slug), {
+  default: () => staticGetAlternatives(slug),
+})
+const { data: allCategories } = await useAsyncData('categories', getCategories, {
+  default: () => staticCategories,
+})
+
+if (!tool.value) {
   throw createError({ statusCode: 404, statusMessage: '도구를 찾을 수 없습니다' })
 }
 
-const alternatives = getAlternatives(slug)
-
 useHead({
-  title: `${tool.name} - 가격, 리뷰, 대안 비교 | AIrang`,
+  title: `${tool.value?.name} - 가격, 리뷰, 대안 비교 | AIrang`,
   meta: [
-    { name: 'description', content: `${tool.name}: ${tool.tagline} 가격, 기능, 한국어 지원 여부, 대안 비교.` },
+    { name: 'description', content: `${tool.value?.name}: ${tool.value?.tagline} 가격, 기능, 한국어 지원 여부, 대안 비교.` },
   ],
 })
 
-function getCategoryName(slug: string) {
-  return categories.find(c => c.slug === slug)?.name || slug
+function getCategoryName(catSlug: string) {
+  return (allCategories.value || staticCategories).find(c => c.slug === catSlug)?.name || catSlug
 }
 
 const pricingLabel = computed(() => {
-  switch (tool.pricingModel) {
+  switch (tool.value?.pricingModel) {
     case 'free': return '무료'
     case 'freemium': return '프리미엄'
     case 'paid': return '유료'
     case 'enterprise': return '엔터프라이즈'
+    default: return ''
   }
 })
 
 const koreanLabel = computed(() => {
-  switch (tool.koreanSupport) {
+  switch (tool.value?.koreanSupport) {
     case 'full': return '완전 지원'
     case 'partial': return '부분 지원'
     case 'none': return '미지원'
+    default: return ''
   }
 })
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div v-if="tool" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Breadcrumb -->
     <nav class="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400 mb-6">
       <NuxtLink to="/" class="hover:text-primary-600">홈</NuxtLink>
@@ -138,7 +150,7 @@ const koreanLabel = computed(() => {
     </div>
 
     <!-- Alternatives -->
-    <div v-if="alternatives.length > 0" class="mb-6">
+    <div v-if="alternatives && alternatives.length > 0" class="mb-6">
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">🔄 {{ tool.name }}의 대안</h2>
         <NuxtLink :to="`/alternatives/${tool.slug}`" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">

@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { tools, searchTools, type Tool } from '~/data/tools'
-import { categories } from '~/data/categories'
+import { tools as staticTools, type Tool } from '~/data/tools'
+import { categories as staticCategories } from '~/data/categories'
 
 useHead({ title: '전체 AI 도구 탐색 - AIrang' })
+
+const { getTools } = useTools()
+const { getCategories } = useCategories()
 
 const route = useRoute()
 const q = ref((route.query.q as string) || '')
@@ -11,8 +14,24 @@ const selectedPricing = ref('')
 const selectedKorean = ref('')
 const sortBy = ref('popular')
 
+const { data: allTools } = await useAsyncData('tools', getTools, { default: () => staticTools })
+const { data: categories } = await useAsyncData('categories', getCategories, { default: () => staticCategories })
+
 const filteredTools = computed(() => {
-  let result: Tool[] = q.value ? searchTools(q.value) : [...tools]
+  const toolList = allTools.value || staticTools
+  let result: Tool[] = q.value
+    ? toolList.filter(t => {
+        const query = q.value.toLowerCase()
+        return (
+          t.name.toLowerCase().includes(query) ||
+          t.tagline.toLowerCase().includes(query) ||
+          t.description.toLowerCase().includes(query) ||
+          t.categories.some(c => c.includes(query)) ||
+          t.features.some(f => f.toLowerCase().includes(query))
+        )
+      })
+    : [...toolList]
+
   if (selectedCategory.value) result = result.filter(t => t.categories.includes(selectedCategory.value))
   if (selectedPricing.value) result = result.filter(t => t.pricingModel === selectedPricing.value)
   if (selectedKorean.value) result = result.filter(t => t.koreanSupport === selectedKorean.value)
@@ -54,7 +73,7 @@ function clearFilters() {
             <label class="text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2 block">카테고리</label>
             <select v-model="selectedCategory" class="w-full px-3 py-2 bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg text-sm">
               <option value="">전체</option>
-              <option v-for="cat in categories" :key="cat.slug" :value="cat.slug">{{ cat.icon }} {{ cat.name }}</option>
+              <option v-for="cat in (categories || staticCategories)" :key="cat.slug" :value="cat.slug">{{ cat.icon }} {{ cat.name }}</option>
             </select>
           </div>
 

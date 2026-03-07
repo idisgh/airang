@@ -1,28 +1,35 @@
 <script setup lang="ts">
-import { getToolBySlug, getAlternatives } from '~/data/tools'
+import { getToolBySlug as staticGetBySlug, getAlternatives as staticGetAlternatives } from '~/data/tools'
 
 const route = useRoute()
 const slug = route.params.slug as string
-const tool = getToolBySlug(slug)
 
-if (!tool) throw createError({ statusCode: 404, statusMessage: '도구를 찾을 수 없습니다' })
+const { getToolBySlug, getAlternatives } = useTools()
 
-const alternatives = getAlternatives(slug)
+const { data: tool } = await useAsyncData(`tool-${slug}`, () => getToolBySlug(slug), {
+  default: () => staticGetBySlug(slug),
+})
+const { data: alternatives } = await useAsyncData(`alternatives-${slug}`, () => getAlternatives(slug), {
+  default: () => staticGetAlternatives(slug),
+})
+
+if (!tool.value) throw createError({ statusCode: 404, statusMessage: '도구를 찾을 수 없습니다' })
+
 useHead({
-  title: `${tool.name} 대안 추천 TOP ${alternatives.length} (2026) - AIrang`,
-  meta: [{ name: 'description', content: `${tool.name}의 대안을 찾고 있나요? 가격, 기능, 한국어 지원을 기준으로 비교한 TOP ${alternatives.length} 대안.` }],
+  title: `${tool.value?.name} 대안 추천 TOP ${(alternatives.value || []).length} (2026) - AIrang`,
+  meta: [{ name: 'description', content: `${tool.value?.name}의 대안을 찾고 있나요? 가격, 기능, 한국어 지원을 기준으로 비교한 TOP ${(alternatives.value || []).length} 대안.` }],
 })
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div v-if="tool" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <nav class="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400 mb-6">
       <NuxtLink to="/" class="hover:text-primary-600">홈</NuxtLink><span>/</span>
       <span class="text-neutral-900 dark:text-neutral-100">{{ tool.name }} 대안</span>
     </nav>
 
     <h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">
-      {{ tool.name }} 대안 추천 TOP {{ alternatives.length }}
+      {{ tool.name }} 대안 추천 TOP {{ (alternatives || []).length }}
     </h1>
     <p class="text-neutral-600 dark:text-neutral-400 mb-8">
       {{ tool.name }}이 맞지 않나요? 가격, 기능, 한국어 지원을 기준으로 비교한 대안을 확인하세요.
@@ -50,7 +57,7 @@ useHead({
             </td>
             <td class="p-4 text-center text-amber-500 font-medium">⭐ {{ tool.rating }}</td>
           </tr>
-          <tr v-for="alt in alternatives" :key="alt.id" class="border-b border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
+          <tr v-for="alt in (alternatives || [])" :key="alt.id" class="border-b border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
             <td class="p-4">
               <NuxtLink :to="`/tools/${alt.slug}`" class="font-medium text-primary-600 dark:text-primary-400 hover:underline">{{ alt.name }}</NuxtLink>
             </td>
@@ -68,7 +75,7 @@ useHead({
 
     <!-- Alternative cards -->
     <div class="space-y-4">
-      <div v-for="(alt, i) in alternatives" :key="alt.id">
+      <div v-for="(alt, i) in (alternatives || [])" :key="alt.id">
         <h2 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">{{ i + 1 }}. {{ alt.name }}</h2>
         <ToolCard :tool="alt" />
       </div>

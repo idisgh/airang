@@ -1,23 +1,36 @@
 <script setup lang="ts">
-import { getToolBySlug } from '~/data/tools'
-import { categories } from '~/data/categories'
+import { getToolBySlug as staticGetBySlug } from '~/data/tools'
+import { categories as staticCategories } from '~/data/categories'
 
 const route = useRoute()
-const pair = (route.params.pair as string).split('-vs-')
-const toolA = getToolBySlug(pair[0])
-const toolB = getToolBySlug(pair[1])
+const slugs = (route.params.pair as string).split('-vs-')
 
-if (!toolA || !toolB) throw createError({ statusCode: 404, statusMessage: '비교할 도구를 찾을 수 없습니다' })
+const { getToolBySlug } = useTools()
+const { getCategories } = useCategories()
 
-useHead({ title: `${toolA.name} vs ${toolB.name} 비교 - AIrang` })
+const { data: toolA } = await useAsyncData(`tool-${slugs[0]}`, () => getToolBySlug(slugs[0]), {
+  default: () => staticGetBySlug(slugs[0]),
+})
+const { data: toolB } = await useAsyncData(`tool-${slugs[1]}`, () => getToolBySlug(slugs[1]), {
+  default: () => staticGetBySlug(slugs[1]),
+})
+const { data: allCategories } = await useAsyncData('categories', getCategories, {
+  default: () => staticCategories,
+})
 
-function getCatName(slug: string) { return categories.find(c => c.slug === slug)?.name || slug }
+if (!toolA.value || !toolB.value) throw createError({ statusCode: 404, statusMessage: '비교할 도구를 찾을 수 없습니다' })
+
+useHead({ title: `${toolA.value?.name} vs ${toolB.value?.name} 비교 - AIrang` })
+
+function getCatName(slug: string) {
+  return (allCategories.value || staticCategories).find(c => c.slug === slug)?.name || slug
+}
 function korLabel(v: string) { return v === 'full' ? '완전 지원' : v === 'partial' ? '부분 지원' : '미지원' }
 function priceLabel(v: string) { return v === 'free' ? '무료' : v === 'freemium' ? '프리미엄' : v === 'paid' ? '유료' : '엔터프라이즈' }
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div v-if="toolA && toolB" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <nav class="flex items-center gap-2 text-sm text-neutral-500 mb-6">
       <NuxtLink to="/" class="hover:text-primary-600">홈</NuxtLink><span>/</span>
       <span class="text-neutral-900 dark:text-neutral-100">{{ toolA.name }} vs {{ toolB.name }}</span>

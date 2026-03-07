@@ -1,12 +1,23 @@
 <script setup lang="ts">
-import { tools, getFeaturedTools, getToolsByCategory } from '~/data/tools'
-import { categories } from '~/data/categories'
+import { tools as staticTools, getToolsByCategory as staticGetByCategory, getFeaturedTools as staticGetFeatured } from '~/data/tools'
+import { categories as staticCategories } from '~/data/categories'
 
 useHead({ title: 'AIrang - 한국어 AI 도구 검색 & 비교 플랫폼' })
 
+const { getTools, getFeaturedTools } = useTools()
+const { getCategories } = useCategories()
+
 const searchQuery = ref('')
-const featured = getFeaturedTools()
-const recent = [...tools].reverse().slice(0, 6)
+
+const { data: allTools } = await useAsyncData('tools', getTools, { default: () => staticTools })
+const { data: featured } = await useAsyncData('featured-tools', getFeaturedTools, { default: () => staticGetFeatured() })
+const { data: allCategories } = await useAsyncData('categories', getCategories, { default: () => staticCategories })
+
+const recent = computed(() => [...(allTools.value || [])].reverse().slice(0, 6))
+
+function getCategoryToolCount(catSlug: string) {
+  return (allTools.value || staticTools).filter(t => t.categories.includes(catSlug)).length
+}
 
 function onSearch() {
   if (searchQuery.value.trim()) {
@@ -25,7 +36,7 @@ function onSearch() {
           <span class="bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">AI 도구</span>
         </h1>
         <p class="mt-4 text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-          {{ tools.length }}개 이상의 AI 도구를 한국어로 검색하고 비교하세요.<br class="hidden sm:block">
+          {{ (allTools || staticTools).length }}개 이상의 AI 도구를 한국어로 검색하고 비교하세요.<br class="hidden sm:block">
           가격, 기능, 한국어 지원 여부를 한눈에.
         </p>
 
@@ -44,8 +55,8 @@ function onSearch() {
 
         <!-- Stats -->
         <div class="mt-6 flex items-center justify-center gap-6 text-sm text-neutral-500 dark:text-neutral-400">
-          <span>📦 {{ tools.length }}+ 도구</span>
-          <span>📂 {{ categories.length }}개 카테고리</span>
+          <span>📦 {{ (allTools || staticTools).length }}+ 도구</span>
+          <span>📂 {{ (allCategories || staticCategories).length }}개 카테고리</span>
           <span>🇰🇷 한국어 리뷰</span>
         </div>
       </div>
@@ -59,14 +70,14 @@ function onSearch() {
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         <NuxtLink
-          v-for="cat in categories"
+          v-for="cat in (allCategories || staticCategories)"
           :key="cat.id"
           :to="`/categories/${cat.slug}`"
           class="card p-4 text-center hover:shadow-md hover:border-primary-300 dark:hover:border-primary-700 transition-all group"
         >
           <div class="text-3xl mb-2">{{ cat.icon }}</div>
           <div class="text-sm font-medium text-neutral-900 dark:text-neutral-100 group-hover:text-primary-600">{{ cat.name }}</div>
-          <div class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">{{ getToolsByCategory(cat.slug).length }}개 도구</div>
+          <div class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">{{ getCategoryToolCount(cat.slug) }}개 도구</div>
         </NuxtLink>
       </div>
     </section>
@@ -79,7 +90,7 @@ function onSearch() {
           <NuxtLink to="/tools" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <ToolCard v-for="tool in featured" :key="tool.id" :tool="tool" />
+          <ToolCard v-for="tool in (featured || [])" :key="tool.id" :tool="tool" />
         </div>
       </div>
     </section>

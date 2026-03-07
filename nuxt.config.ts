@@ -6,7 +6,12 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/content',
+    '@nuxtjs/supabase',
   ],
+
+  supabase: {
+    redirect: false,
+  },
 
   app: {
     head: {
@@ -45,7 +50,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/sitemap.xml'],
+      failOnError: false,
     },
   },
 
