@@ -163,7 +163,7 @@ function onSearch() {
               </div>
               <div class="flex-1 min-w-0">
                 <div class="text-sm font-medium text-neutral-900 dark:text-neutral-100 group-hover:text-primary-600 truncate">{{ tool.name }}</div>
-                <div class="text-xs text-neutral-500"><LIcon name="lucide:star" class="w-3 h-3 text-amber-500 inline" /> {{ tool.rating }}</div>
+                <div class="text-xs text-neutral-500"><LIcon name="lucide:star" fill="currentColor" class="w-3 h-3 text-amber-500 inline" /> {{ tool.rating }}</div>
               </div>
             </NuxtLink>
           </div>
@@ -197,7 +197,7 @@ function onSearch() {
                 </div>
                 <div class="min-w-0">
                   <div class="font-semibold text-neutral-900 dark:text-neutral-100 truncate">{{ pair.a.name }}</div>
-                  <div class="text-xs text-neutral-500"><LIcon name="lucide:star" class="w-3 h-3 text-amber-500 inline" /> {{ pair.a.rating }}</div>
+                  <div class="text-xs text-neutral-500"><LIcon name="lucide:star" fill="currentColor" class="w-3 h-3 text-amber-500 inline" /> {{ pair.a.rating }}</div>
                 </div>
               </div>
 
@@ -208,7 +208,7 @@ function onSearch() {
               <div class="flex items-center gap-3 flex-1 min-w-0 justify-end">
                 <div class="min-w-0 text-right">
                   <div class="font-semibold text-neutral-900 dark:text-neutral-100 truncate">{{ pair.b.name }}</div>
-                  <div class="text-xs text-neutral-500"><LIcon name="lucide:star" class="w-3 h-3 text-amber-500 inline" /> {{ pair.b.rating }}</div>
+                  <div class="text-xs text-neutral-500"><LIcon name="lucide:star" fill="currentColor" class="w-3 h-3 text-amber-500 inline" /> {{ pair.b.rating }}</div>
                 </div>
                 <div v-if="pair.b.logoUrl" class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0">
                   <img :src="pair.b.logoUrl" :alt="pair.b.name" class="w-8 h-8 object-contain">

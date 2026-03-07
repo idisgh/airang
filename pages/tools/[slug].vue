@@ -109,7 +109,7 @@ const koreanLabel = computed(() => {
       <!-- Meta grid -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
         <div class="text-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-xl">
-          <div class="text-2xl font-bold text-amber-500 flex items-center justify-center gap-1"><LIcon name="lucide:star" class="w-5 h-5" /> {{ tool.rating }}</div>
+          <div class="text-2xl font-bold text-amber-500 flex items-center justify-center gap-1"><LIcon name="lucide:star" fill="currentColor" class="w-5 h-5" /> {{ tool.rating }}</div>
           <div class="text-xs text-neutral-500 mt-1">평점</div>
         </div>
         <div class="text-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-xl">

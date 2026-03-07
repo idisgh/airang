@@ -10,6 +10,7 @@ import type { Component } from 'vue'
 
 const props = defineProps<{
   name: string
+  fill?: string
 }>()
 
 const attrs = useAttrs()
@@ -51,5 +52,5 @@ const iconComponent = computed(() => iconMap[props.name] || null)
 </script>
 
 <template>
-  <component v-if="iconComponent" :is="iconComponent" v-bind="attrs" />
+  <component v-if="iconComponent" :is="iconComponent" v-bind="attrs" :fill="fill || 'none'" :stroke="fill ? 'none' : undefined" />
 </template>
