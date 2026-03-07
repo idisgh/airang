@@ -184,7 +184,7 @@ function onSearch() {
           <NuxtLink
             v-for="pair in comparePairs"
             :key="`${pair.a.slug}-${pair.b.slug}`"
-            :to="`/tools/${pair.a.slug}`"
+            :to="`/compare/${pair.a.slug}-vs-${pair.b.slug}`"
             class="card p-5 hover:shadow-lg hover:border-primary-300 dark:hover:border-primary-700 transition-all"
           >
             <div class="flex items-center justify-between">
