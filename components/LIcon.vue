@@ -8,6 +8,8 @@ import {
 } from 'lucide-vue-next'
 import type { Component } from 'vue'
 
+defineOptions({ inheritAttrs: false })
+
 const props = defineProps<{
   name: string
   fill?: string
