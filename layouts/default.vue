@@ -29,7 +29,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown))
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center gap-2">
             <img src="/logo.png" alt="AIrang" class="w-6 h-6 object-contain" />
-            <span class="text-xl font-bold bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">
+            <span class="text-xl font-bold bg-gradient-to-r from-accent-600 to-primary-500 bg-clip-text text-transparent">
               AIrang
             </span>
           </NuxtLink>
