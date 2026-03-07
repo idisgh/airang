@@ -145,7 +145,7 @@ const koreanLabel = computed(() => {
       <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">주요 기능</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div v-for="feature in tool.features" :key="feature" class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <LIcon name="lucide:check" class="w-5 h-5 text-primary-500 shrink-0" />
           <span class="text-neutral-700 dark:text-neutral-300">{{ feature }}</span>
         </div>
       </div>

@@ -127,7 +127,7 @@ const compareRows = computed(() => {
         <h3 class="font-semibold text-neutral-900 dark:text-neutral-100 mb-3">{{ toolA.name }} 주요 기능</h3>
         <ul class="space-y-1.5">
           <li v-for="f in toolA.features" :key="f" class="text-sm text-neutral-700 dark:text-neutral-300 flex items-start gap-1.5">
-            <span class="text-primary-500 mt-0.5">✓</span>
+            <LIcon name="lucide:check" class="w-4 h-4 text-primary-500 shrink-0 mt-0.5" />
             <span>{{ f }}</span>
           </li>
         </ul>
@@ -136,7 +136,7 @@ const compareRows = computed(() => {
         <h3 class="font-semibold text-neutral-900 dark:text-neutral-100 mb-3">{{ toolB.name }} 주요 기능</h3>
         <ul class="space-y-1.5">
           <li v-for="f in toolB.features" :key="f" class="text-sm text-neutral-700 dark:text-neutral-300 flex items-start gap-1.5">
-            <span class="text-primary-500 mt-0.5">✓</span>
+            <LIcon name="lucide:check" class="w-4 h-4 text-primary-500 shrink-0 mt-0.5" />
             <span>{{ f }}</span>
           </li>
         </ul>
