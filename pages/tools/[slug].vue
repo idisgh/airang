@@ -8,6 +8,7 @@ const detailLogoError = ref(false)
 
 const { getToolBySlug, getAlternatives } = useTools()
 const { getCategories } = useCategories()
+const { getUpdatesBySlug } = useToolUpdates()
 
 const { data: tool } = await useAsyncData(`tool-${slug}`, () => getToolBySlug(slug), {
   default: () => staticGetBySlug(slug),
@@ -18,6 +19,13 @@ const { data: alternatives } = await useAsyncData(`alternatives-${slug}`, () => 
 const { data: allCategories } = await useAsyncData('categories', getCategories, {
   default: () => staticCategories,
 })
+const { data: updates } = await useAsyncData(`updates-${slug}`, () => getUpdatesBySlug(slug), {
+  default: () => [],
+})
+
+function formatDate(date: string) {
+  return new Date(date).toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
+}
 
 if (!tool.value) {
   throw createError({ statusCode: 404, statusMessage: '도구를 찾을 수 없습니다' })
@@ -124,6 +132,29 @@ const koreanLabel = computed(() => {
     <div class="card p-6 sm:p-8 mb-6">
       <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">소개</h2>
       <p class="text-neutral-700 dark:text-neutral-300 leading-relaxed">{{ tool.description }}</p>
+    </div>
+
+    <!-- 업데이트 히스토리 -->
+    <div v-if="updates && updates.length" class="card p-6 mb-6">
+      <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
+        <span>🔄</span> 업데이트 히스토리
+      </h2>
+      <div class="space-y-4">
+        <div v-for="update in updates" :key="update.id" class="relative pl-6 border-l-2 border-primary-200 dark:border-primary-800">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary-500 border-2 border-white dark:border-neutral-900"></div>
+          <div class="flex items-center gap-2 mb-1">
+            <span v-if="update.version" class="text-xs font-mono bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 px-2 py-0.5 rounded">{{ update.version }}</span>
+            <time class="text-xs text-neutral-500">{{ formatDate(update.updated_at) }}</time>
+          </div>
+          <h3 class="text-sm font-medium text-neutral-900 dark:text-neutral-100">{{ update.title }}</h3>
+          <ul class="mt-1 space-y-0.5">
+            <li v-for="change in update.changes" :key="change" class="text-sm text-neutral-600 dark:text-neutral-400 flex items-start gap-1.5">
+              <span class="text-primary-500 mt-0.5">•</span>
+              <span>{{ change }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <!-- Features -->
