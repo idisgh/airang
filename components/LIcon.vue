@@ -3,7 +3,7 @@ import {
   Search, Sun, Moon, Compass, Grid3x3, NotebookPen, PlusCircle,
   MessageCircle, ImagePlus, PenLine, Code2, Video, Music,
   TrendingUp, Zap, Palette, BarChart3, Languages, Mic,
-  Package, FolderOpen, Globe, Scale,
+  Package, FolderOpen, Globe, Scale, Flame, Sparkles,
 } from 'lucide-vue-next'
 import type { Component } from 'vue'
 
@@ -37,6 +37,8 @@ const iconMap: Record<string, Component> = {
   'lucide:folder-open': FolderOpen,
   'lucide:globe': Globe,
   'lucide:scale': Scale,
+  'lucide:flame': Flame,
+  'lucide:sparkles': Sparkles,
 }
 
 const iconComponent = computed(() => iconMap[props.name] || null)
