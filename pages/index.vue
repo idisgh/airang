@@ -55,9 +55,9 @@ function onSearch() {
 
         <!-- Stats -->
         <div class="mt-6 flex items-center justify-center gap-6 text-sm text-neutral-500 dark:text-neutral-400">
-          <span>📦 {{ (allTools || staticTools).length }}+ 도구</span>
-          <span>📂 {{ (allCategories || staticCategories).length }}개 카테고리</span>
-          <span>🇰🇷 한국어 리뷰</span>
+          <span class="flex items-center gap-1.5"><LIcon name="lucide:package" class="w-4 h-4" /> {{ (allTools || staticTools).length }}+ 도구</span>
+          <span class="flex items-center gap-1.5"><LIcon name="lucide:folder-open" class="w-4 h-4" /> {{ (allCategories || staticCategories).length }}개 카테고리</span>
+          <span class="flex items-center gap-1.5"><LIcon name="lucide:globe" class="w-4 h-4" /> 한국어 리뷰</span>
         </div>
       </div>
     </section>
@@ -65,7 +65,7 @@ function onSearch() {
     <!-- Categories -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="flex items-center justify-between mb-8">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">📂 카테고리</h2>
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2"><LIcon name="lucide:folder-open" class="w-6 h-6" /> 카테고리</h2>
         <NuxtLink to="/categories" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
