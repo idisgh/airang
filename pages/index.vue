@@ -15,6 +15,34 @@ const { data: allCategories } = await useAsyncData('categories', getCategories, 
 
 const recent = computed(() => [...(allTools.value || [])].reverse().slice(0, 6))
 
+// 카테고리별 인기 도구 (트렌드)
+const trendCategories = ['chatbot', 'image-generation', 'coding', 'video']
+const trends = computed(() => {
+  const tools = allTools.value || staticTools
+  const cats = allCategories.value || staticCategories
+  return trendCategories.map(slug => {
+    const cat = cats.find(c => c.slug === slug)
+    const catTools = tools.filter(t => t.categories.includes(slug)).sort((a, b) => b.rating - a.rating).slice(0, 3)
+    return { category: cat, tools: catTools }
+  }).filter(t => t.category && t.tools.length > 0)
+})
+
+// 비교 추천 쌍
+const comparePairs = computed(() => {
+  const tools = allTools.value || staticTools
+  const pairs = [
+    ['chatgpt', 'claude'],
+    ['midjourney', 'dall-e'],
+    ['cursor', 'github-copilot'],
+    ['runway', 'pika'],
+  ]
+  return pairs.map(([a, b]) => {
+    const toolA = tools.find(t => t.slug === a)
+    const toolB = tools.find(t => t.slug === b)
+    return toolA && toolB ? { a: toolA, b: toolB } : null
+  }).filter(Boolean) as { a: typeof tools[0], b: typeof tools[0] }[]
+})
+
 function getCategoryToolCount(catSlug: string) {
   return (allTools.value || staticTools).filter(t => t.categories.includes(catSlug)).length
 }
@@ -106,21 +134,92 @@ function onSearch() {
       </div>
     </section>
 
-    <!-- Newsletter -->
+    <!-- 카테고리별 트렌드 -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="card p-8 sm:p-12 text-center bg-gradient-to-r from-primary-50 to-accent-50 dark:from-primary-950/30 dark:to-accent-950/30 border-primary-200 dark:border-primary-800">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">📧 주간 AI 도구 뉴스레터</h2>
-        <p class="text-neutral-600 dark:text-neutral-400 mb-6">매주 새로운 AI 도구, 업데이트, 활용 팁을 받아보세요.</p>
-        <form @submit.prevent class="flex gap-2 max-w-md mx-auto">
-          <input
-            type="email"
-            placeholder="이메일 주소"
-            class="flex-1 px-4 py-3 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500"
-          />
-          <button type="submit" class="px-6 py-3 bg-primary-600 text-white rounded-xl font-medium hover:bg-primary-700 transition-colors shrink-0">
-            구독하기
-          </button>
-        </form>
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
+          <LIcon name="lucide:trending-up" class="w-6 h-6" /> 카테고리별 트렌드
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div v-for="trend in trends" :key="trend.category!.slug" class="card p-5">
+          <div class="flex items-center gap-2 mb-4">
+            <LIcon :name="trend.category!.icon" class="w-5 h-5 text-primary-600 dark:text-primary-400" />
+            <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">{{ trend.category!.name }}</h3>
+          </div>
+          <div class="space-y-3">
+            <NuxtLink
+              v-for="(tool, i) in trend.tools"
+              :key="tool.id"
+              :to="`/tools/${tool.slug}`"
+              class="flex items-center gap-3 group"
+            >
+              <span class="text-xs font-bold text-neutral-400 w-4">{{ i + 1 }}</span>
+              <div v-if="tool.logoUrl" class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0">
+                <img :src="tool.logoUrl" :alt="tool.name" class="w-6 h-6 object-contain">
+              </div>
+              <div v-else class="w-8 h-8 bg-neutral-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center text-xs font-bold text-primary-600 shrink-0">
+                {{ tool.name[0] }}
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="text-sm font-medium text-neutral-900 dark:text-neutral-100 group-hover:text-primary-600 truncate">{{ tool.name }}</div>
+                <div class="text-xs text-neutral-500">⭐ {{ tool.rating }}</div>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI 도구 비교 -->
+    <section class="bg-neutral-50 dark:bg-neutral-900/50 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center justify-center gap-2">
+            <LIcon name="lucide:scale" class="w-6 h-6" /> AI 도구 비교
+          </h2>
+          <p class="text-neutral-600 dark:text-neutral-400 mt-2">어떤 도구가 나에게 맞을까? 인기 도구를 비교해보세요.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <NuxtLink
+            v-for="pair in comparePairs"
+            :key="`${pair.a.slug}-${pair.b.slug}`"
+            :to="`/tools/${pair.a.slug}`"
+            class="card p-5 hover:shadow-lg hover:border-primary-300 dark:hover:border-primary-700 transition-all"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3 flex-1 min-w-0">
+                <div v-if="pair.a.logoUrl" class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0">
+                  <img :src="pair.a.logoUrl" :alt="pair.a.name" class="w-8 h-8 object-contain">
+                </div>
+                <div v-else class="w-10 h-10 bg-neutral-100 dark:bg-neutral-800 rounded-xl flex items-center justify-center font-bold text-primary-600 shrink-0">
+                  {{ pair.a.name[0] }}
+                </div>
+                <div class="min-w-0">
+                  <div class="font-semibold text-neutral-900 dark:text-neutral-100 truncate">{{ pair.a.name }}</div>
+                  <div class="text-xs text-neutral-500">⭐ {{ pair.a.rating }}</div>
+                </div>
+              </div>
+
+              <div class="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-xs font-bold shrink-0 mx-3">
+                VS
+              </div>
+
+              <div class="flex items-center gap-3 flex-1 min-w-0 justify-end">
+                <div class="min-w-0 text-right">
+                  <div class="font-semibold text-neutral-900 dark:text-neutral-100 truncate">{{ pair.b.name }}</div>
+                  <div class="text-xs text-neutral-500">⭐ {{ pair.b.rating }}</div>
+                </div>
+                <div v-if="pair.b.logoUrl" class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0">
+                  <img :src="pair.b.logoUrl" :alt="pair.b.name" class="w-8 h-8 object-contain">
+                </div>
+                <div v-else class="w-10 h-10 bg-neutral-100 dark:bg-neutral-800 rounded-xl flex items-center justify-center font-bold text-primary-600 shrink-0">
+                  {{ pair.b.name[0] }}
+                </div>
+              </div>
+            </div>
+          </NuxtLink>
+        </div>
       </div>
     </section>
   </div>
