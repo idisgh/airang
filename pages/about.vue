@@ -14,13 +14,13 @@ useHead({ title: '소개 - AIrang' })
       </p>
 
       <div class="card p-6 mt-8 space-y-4">
-        <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">🎯 우리가 하는 일</h2>
+        <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100"><LIcon name="lucide:compass" class="w-5 h-5 inline" /> 우리가 하는 일</h2>
         <ul class="space-y-2 text-neutral-700 dark:text-neutral-300">
-          <li>✅ AI 도구를 한국어로 소개하고 설명합니다</li>
-          <li>✅ 가격, 기능, 한국어 지원 여부를 기준으로 비교합니다</li>
-          <li>✅ 용도에 맞는 최적의 도구를 추천합니다</li>
-          <li>✅ 대안 도구를 제안하여 선택지를 넓혀줍니다</li>
-          <li>✅ 주간 뉴스레터로 새로운 도구와 트렌드를 전달합니다</li>
+          <li><LIcon name="lucide:check" class="w-4 h-4 text-primary-500 inline" /> AI 도구를 한국어로 소개하고 설명합니다</li>
+          <li><LIcon name="lucide:check" class="w-4 h-4 text-primary-500 inline" /> 가격, 기능, 한국어 지원 여부를 기준으로 비교합니다</li>
+          <li><LIcon name="lucide:check" class="w-4 h-4 text-primary-500 inline" /> 용도에 맞는 최적의 도구를 추천합니다</li>
+          <li><LIcon name="lucide:check" class="w-4 h-4 text-primary-500 inline" /> 대안 도구를 제안하여 선택지를 넓혀줍니다</li>
+          <li><LIcon name="lucide:check" class="w-4 h-4 text-primary-500 inline" /> 주간 뉴스레터로 새로운 도구와 트렌드를 전달합니다</li>
         </ul>
       </div>
 

@@ -17,7 +17,7 @@ function getToolCountByCategory(catSlug: string) {
 
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-8">📂 카테고리</h1>
+    <h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-8"><LIcon name="lucide:folder-open" class="w-7 h-7 inline" /> 카테고리</h1>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <NuxtLink
         v-for="cat in (allCategories || staticCategories)" :key="cat.id"
