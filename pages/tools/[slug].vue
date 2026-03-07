@@ -68,9 +68,11 @@ const koreanLabel = computed(() => {
     <!-- Header -->
     <div class="card p-6 sm:p-8 mb-6">
       <div class="flex items-start gap-4 mb-6">
-        <div class="w-16 h-16 bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 rounded-2xl flex items-center justify-center text-2xl font-bold text-primary-700 dark:text-primary-300 shrink-0 overflow-hidden">
-          <img v-if="tool.logoUrl && !detailLogoError" :src="tool.logoUrl" :alt="tool.name" class="w-10 h-10 object-contain" @error="detailLogoError = true">
-          <span v-else>{{ tool.name[0] }}</span>
+        <div v-if="tool.logoUrl && !detailLogoError" class="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0">
+          <img :src="tool.logoUrl" :alt="tool.name" class="w-12 h-12 object-contain" @error="detailLogoError = true">
+        </div>
+        <div v-else class="w-16 h-16 bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 rounded-2xl flex items-center justify-center text-2xl font-bold text-primary-700 dark:text-primary-300 shrink-0">
+          {{ tool.name[0] }}
         </div>
         <div class="flex-1">
           <h1 class="text-2xl sm:text-3xl font-bold text-neutral-900 dark:text-neutral-100">{{ tool.name }}</h1>

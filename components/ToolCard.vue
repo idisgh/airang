@@ -31,9 +31,11 @@ const koreanLabel = computed(() => {
   <NuxtLink :to="`/tools/${tool.slug}`" class="card group p-5 hover:shadow-lg hover:border-primary-300 dark:hover:border-primary-700 transition-all duration-200">
     <!-- Header -->
     <div class="flex items-start gap-3 mb-3">
-      <div class="w-12 h-12 bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 rounded-xl flex items-center justify-center text-lg font-bold text-primary-700 dark:text-primary-300 shrink-0 overflow-hidden">
-        <img v-if="tool.logoUrl && !logoError" :src="tool.logoUrl" :alt="tool.name" class="w-8 h-8 object-contain" @error="logoError = true">
-        <span v-else>{{ tool.name[0] }}</span>
+      <div v-if="tool.logoUrl && !logoError" class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0">
+        <img :src="tool.logoUrl" :alt="tool.name" class="w-10 h-10 object-contain" @error="logoError = true">
+      </div>
+      <div v-else class="w-12 h-12 bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 rounded-xl flex items-center justify-center text-lg font-bold text-primary-700 dark:text-primary-300 shrink-0">
+        {{ tool.name[0] }}
       </div>
       <div class="min-w-0 flex-1">
         <h3 class="font-semibold text-neutral-900 dark:text-neutral-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate">
