@@ -25,7 +25,7 @@ function selectTool(slug: string) {
       <div class="relative w-full max-w-xl mx-4 bg-white dark:bg-neutral-900 rounded-2xl shadow-2xl border border-neutral-200 dark:border-neutral-700 overflow-hidden">
         <!-- Input -->
         <div class="flex items-center gap-3 px-4 border-b border-neutral-200 dark:border-neutral-700">
-          <svg class="w-5 h-5 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <LIcon name="lucide:search" class="w-5 h-5 text-neutral-400" />
           <input
             ref="inputRef"
             v-model="query"

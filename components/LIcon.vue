@@ -4,7 +4,7 @@ import {
   MessageCircle, ImagePlus, PenLine, Code2, Video, Music,
   TrendingUp, Zap, Palette, BarChart3, Languages, Mic,
   Package, FolderOpen, Globe, Scale, Flame, Sparkles, Check, Star,
-  History, Wallet, Repeat,
+  History, Wallet, Repeat, ExternalLink, ChevronDown, ChevronUp,
 } from 'lucide-vue-next'
 import type { Component } from 'vue'
 
@@ -46,6 +46,9 @@ const iconMap: Record<string, Component> = {
   'lucide:history': History,
   'lucide:wallet': Wallet,
   'lucide:repeat': Repeat,
+  'lucide:external-link': ExternalLink,
+  'lucide:chevron-down': ChevronDown,
+  'lucide:chevron-up': ChevronUp,
 }
 
 const iconComponent = computed(() => iconMap[props.name] || null)

@@ -130,7 +130,7 @@ const koreanLabel = computed(() => {
       <a :href="tool.url" target="_blank" rel="noopener noreferrer"
         class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-xl font-medium hover:bg-primary-700 transition-colors">
         {{ tool.name }} 바로가기
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        <LIcon name="lucide:external-link" class="w-4 h-4" />
       </a>
     </div>
 
@@ -176,7 +176,7 @@ const koreanLabel = computed(() => {
         class="mt-4 text-sm text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-1"
       >
         전체 히스토리 보기 ({{ updates.length }}개)
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        <LIcon name="lucide:chevron-down" class="w-4 h-4" />
       </button>
       <button
         v-if="showAllUpdates && updates.length > 3"
@@ -184,7 +184,7 @@ const koreanLabel = computed(() => {
         class="mt-4 text-sm text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-1"
       >
         접기
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+        <LIcon name="lucide:chevron-up" class="w-4 h-4" />
       </button>
     </div>
 
