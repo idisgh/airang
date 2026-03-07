@@ -28,10 +28,10 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown))
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center gap-2">
-            <span class="text-2xl font-bold bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">
+            <img src="/logo.svg" alt="AIrang" class="w-8 h-8" />
+            <span class="text-xl font-bold bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">
               AIrang
             </span>
-            <span class="text-xs text-neutral-500 dark:text-neutral-400 hidden sm:block">아이랑</span>
           </NuxtLink>
 
           <!-- Nav -->
