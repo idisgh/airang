@@ -53,13 +53,42 @@
         "pricingDetail: Pro $99/월 플랜 추가",
         "features: ElevenAgents, Music 생성 추가"
       ]
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-03-07",
+      "changes": [
+        "description: Gemini 3.1 Pro(2026년 2월), 에이전틱 기능, 100만 토큰 컨텍스트 언급 추가",
+        "pricingDetail: Advanced → AI Pro $20/월로 리브랜딩 반영",
+        "features: Gemini Live, Agent mode 추가"
+      ]
+    },
+    {
+      "slug": "midjourney",
+      "date": "2026-03-07",
+      "changes": [
+        "description: V7 모델(2025년 4월), Character Reference, Style Reference 언급 추가",
+        "pricingDetail: Mega $120/월 플랜 추가",
+        "features: V7 모델, Character Reference, Style Reference, Vary/Region, Niji 7 추가"
+      ]
+    },
+    {
+      "slug": "perplexity",
+      "date": "2026-03-07",
+      "changes": [
+        "description: GPT-5/Claude 4/Grok 4/Gemini 3 멀티모델 지원, Perplexity Assistant·Shopping Hub 언급 추가",
+        "features: Perplexity Assistant, Perplexity Pages, Shopping Hub, Deep Research 추가"
+      ]
+    },
+    {
+      "slug": "suno",
+      "date": "2026-03-07",
+      "changes": [
+        "description: v5 모델(2025년 9월), Suno Studio 출시 언급 추가",
+        "features: v5 모델, Suno Studio 추가, 커버 생성 제거"
+      ]
     }
   ],
   "checked": ["chatgpt", "claude", "gemini", "midjourney", "perplexity", "cursor", "runway", "suno", "deepl", "github-copilot", "elevenlabs"],
-  "skipped": [
-    {"slug": "gemini", "reason": "페이지 로그인 필요 - 데이터 확인 불가"},
-    {"slug": "midjourney", "reason": "403 Cloudflare 차단"},
-    {"slug": "perplexity", "reason": "403 Cloudflare 차단"},
-    {"slug": "suno", "reason": "유효한 가격 정보 확인 불가"}
-  ]
+  "skipped": []
 }
