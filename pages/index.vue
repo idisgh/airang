@@ -75,7 +75,7 @@ function onSearch() {
           :to="`/categories/${cat.slug}`"
           class="card p-4 text-center hover:shadow-md hover:border-primary-300 dark:hover:border-primary-700 transition-all group"
         >
-          <Icon :name="cat.icon" class="w-8 h-8 text-primary-600 dark:text-primary-400 mb-2" />
+          <LIcon :name="cat.icon" class="w-8 h-8 text-primary-600 dark:text-primary-400 mb-2" />
           <div class="text-sm font-medium text-neutral-900 dark:text-neutral-100 group-hover:text-primary-600">{{ cat.name }}</div>
           <div class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">{{ getCategoryToolCount(cat.slug) }}개 도구</div>
         </NuxtLink>

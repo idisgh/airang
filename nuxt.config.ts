@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/content',
     '@nuxtjs/supabase',
-    'nuxt-icon',
   ],
 
   supabase: {

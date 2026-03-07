@@ -24,7 +24,7 @@ function getToolCountByCategory(catSlug: string) {
         :to="`/categories/${cat.slug}`"
         class="card p-6 hover:shadow-lg hover:border-primary-300 dark:hover:border-primary-700 transition-all group"
       >
-        <Icon :name="cat.icon" class="w-10 h-10 text-primary-600 dark:text-primary-400 mb-3" />
+        <LIcon :name="cat.icon" class="w-10 h-10 text-primary-600 dark:text-primary-400 mb-3" />
         <h2 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 group-hover:text-primary-600 mb-1">{{ cat.name }}</h2>
         <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">{{ cat.description }}</p>
         <span class="text-xs text-primary-600 dark:text-primary-400">{{ getToolCountByCategory(cat.slug) }}개 도구 →</span>
