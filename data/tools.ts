@@ -37,7 +37,7 @@ export const tools: Tool[] = [
     description: 'Claude는 Anthropic이 개발한 AI 어시스턴트입니다. 200K 토큰의 긴 컨텍스트 윈도우로 장문서 분석에 탁월하며, 코딩과 논리적 추론에서 높은 성능을 보입니다. Claude Opus 4, Sonnet 4 등 최신 모델을 제공하며, Claude Code와 Cowork 기능으로 개발 및 에이전트 작업을 지원합니다.',
     url: 'https://claude.ai', logoUrl: '/logos/claude.png',
     categories: ['chatbot', 'writing', 'coding'],
-    pricingModel: 'freemium', pricingDetail: '무료 / Pro $20/월 / Max $100/월 / Team $25/월',
+    pricingModel: 'freemium', pricingDetail: '무료 / Pro $20/월 / Max $100/월 / Max $200/월 / Team $25/월',
     koreanSupport: 'partial', features: ['200K 컨텍스트', 'Extended Thinking', 'Artifacts', 'Projects', 'Claude Code', 'Cowork', 'Research', 'MCP 연동'],
     platforms: ['web', 'ios', 'android', 'api'], rating: 4.7, reviewCount: 890,
     alternatives: ['chatgpt', 'gemini', 'perplexity'], isFeatured: true, launchedAt: '2023-03-14',
