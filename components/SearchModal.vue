@@ -44,8 +44,9 @@ function selectTool(slug: string) {
             @click="selectTool(tool.slug)"
             class="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-left"
           >
-            <div class="w-8 h-8 bg-neutral-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center text-sm font-bold text-primary-600">
-              {{ tool.name[0] }}
+            <div class="w-8 h-8 bg-neutral-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center text-sm font-bold text-primary-600 overflow-hidden">
+              <img v-if="tool.logoUrl" :src="tool.logoUrl" :alt="tool.name" class="w-6 h-6 object-contain" @error="($event.target as HTMLImageElement).style.display='none'">
+              <span :class="{ 'hidden': tool.logoUrl }" class="text-sm">{{ tool.name[0] }}</span>
             </div>
             <div class="flex-1 min-w-0">
               <div class="text-sm font-medium text-neutral-900 dark:text-neutral-100">{{ tool.name }}</div>
