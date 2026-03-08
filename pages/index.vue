@@ -148,8 +148,10 @@ const trendTextColor = computed(() => {
 let _rafId: number | null = null
 let _scrollHandler: (() => void) | null = null
 
-// 초반 FADE_ZONE(20%) 동안 배경 페이드인, 이후 가로 슬라이드
-const FADE_ZONE = 0.2
+// 구간 구성: [앞 여백(fade)] [슬라이드] [뒤 여백(pause)]
+// wrapper height = (n + 3) * 100vh → 앞 1패널 fade + n패널 슬라이드 + 뒤 2패널 pause
+const TREND_FRONT = 1  // 앞 정지 패널 수
+const TREND_BACK  = 2  // 뒤 정지 패널 수
 
 function updateHScroll() {
   _rafId = null
@@ -162,12 +164,16 @@ function updateHScroll() {
   if (scrollable <= 0) return
   const rawProgress = Math.max(0, Math.min(1, -top / scrollable))
 
-  // 배경 투명도: 0 ~ FADE_ZONE 구간에서 0 → 1
-  trendBgOpacity.value = Math.min(1, rawProgress / FADE_ZONE)
-
-  // 가로 슬라이드: FADE_ZONE 이후 구간만 사용
-  const slideProgress = Math.max(0, (rawProgress - FADE_ZONE) / (1 - FADE_ZONE))
   const n = trends.value.length
+  const total = n + TREND_FRONT + TREND_BACK
+  const FADE_END  = TREND_FRONT / total            // 페이드 끝
+  const SLIDE_END = (TREND_FRONT + n) / total      // 슬라이드 끝
+
+  // 배경: 0 → FADE_END 구간에서 페이드인
+  trendBgOpacity.value = Math.min(1, rawProgress / FADE_END)
+
+  // 슬라이드: FADE_END → SLIDE_END 구간에서만
+  const slideProgress = Math.max(0, Math.min(1, (rawProgress - FADE_END) / (SLIDE_END - FADE_END)))
   horizontalTranslate.value = -(slideProgress * (n - 1) * 100)
   currentTrendIndex.value = Math.round(slideProgress * (n - 1))
 }
@@ -381,7 +387,7 @@ onUnmounted(() => {
     <div
       ref="trendWrapperRef"
       class="relative hidden md:block"
-      :style="{ height: `calc(${trends.length + 1} * 100vh)` }"
+      :style="{ height: `calc(${trends.length + TREND_FRONT + TREND_BACK} * 100vh)` }"
     >
       <div
         class="sticky top-0 h-screen overflow-hidden"
