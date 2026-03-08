@@ -265,7 +265,7 @@ onUnmounted(() => {
     <!-- =========================================================
          Hero
          ========================================================= -->
-    <section ref="heroRef" class="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white dark:from-neutral-900 dark:to-neutral-950 py-20 sm:py-28">
+    <section ref="heroRef" class="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white dark:from-neutral-900 dark:to-neutral-950 py-28 sm:py-36">
 
       <!-- 1. 플로팅 로고 레이어 (z-0) -->
       <div class="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
