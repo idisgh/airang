@@ -70,26 +70,39 @@ function onSearch() {
 // 1. Hero 배경 로고 플로팅
 // ============================================================
 const floatingSlugs = [
-  'chatgpt', 'claude', 'midjourney', 'cursor', 'runway', 'suno', 'figma', 'notion-ai',
-  'gemini', 'flux', 'heygen', 'kling', 'pika', 'elevenlabs', 'stable-diffusion',
-  'canva-ai', 'deepl', 'perplexity', 'luma-ai', 'deepseek',
+  'chatgpt', 'claude', 'midjourney', 'cursor', 'runway',
+  'gemini', 'flux', 'kling', 'elevenlabs', 'stable-diffusion',
+  'canva-ai', 'deepseek',
 ]
 
-// SSR 안전한 결정론적 랜덤
+// 화면을 4×3 그리드로 나눠 균등 배치 + 셀 내 오프셋으로 자연스럽게
 function seededRand(seed: number): number {
-  const x = Math.sin(seed + 1) * 10000
-  return x - Math.floor(x)
+  let s = seed * 2654435761
+  s = ((s ^ (s >>> 16)) * 0x45d9f3b) & 0xffffffff
+  s = ((s ^ (s >>> 16)) * 0x45d9f3b) & 0xffffffff
+  return ((s ^ (s >>> 16)) >>> 0) / 0xffffffff
 }
 
-const logoPositions = floatingSlugs.map((slug, i) => ({
-  slug,
-  left: `${(seededRand(i * 3) * 86 + 5).toFixed(1)}%`,
-  top: `${(seededRand(i * 3 + 1) * 74 + 6).toFixed(1)}%`,
-  size: Math.floor(seededRand(i * 3 + 2) * 32 + 56),
-  duration: `${(seededRand(i * 5) * 4 + 4).toFixed(1)}s`,
-  delay: `${(seededRand(i * 7) * 4).toFixed(1)}s`,
-  opacity: (seededRand(i * 11) * 0.06 + 0.07).toFixed(2),
-}))
+const COLS = 4
+const ROWS = 3
+const logoPositions = floatingSlugs.map((slug, i) => {
+  const col = i % COLS
+  const row = Math.floor(i / COLS)
+  const cellW = 100 / COLS
+  const cellH = 100 / ROWS
+  // 셀 중심 기준 ±30% 오프셋
+  const offsetX = (seededRand(i * 17 + 1) - 0.5) * cellW * 0.6
+  const offsetY = (seededRand(i * 17 + 2) - 0.5) * cellH * 0.6
+  return {
+    slug,
+    left: `${Math.max(3, Math.min(90, col * cellW + cellW / 2 + offsetX)).toFixed(1)}%`,
+    top: `${Math.max(4, Math.min(88, row * cellH + cellH / 2 + offsetY)).toFixed(1)}%`,
+    size: Math.floor(seededRand(i * 17 + 3) * 24 + 52),
+    duration: `${(seededRand(i * 17 + 4) * 4 + 5).toFixed(1)}s`,
+    delay: `${(seededRand(i * 17 + 5) * 4).toFixed(1)}s`,
+    opacity: (seededRand(i * 17 + 6) * 0.05 + 0.06).toFixed(2),
+  }
+})
 
 // ============================================================
 // 2. 통계 카운터 애니메이션
