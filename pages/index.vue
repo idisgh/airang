@@ -13,7 +13,12 @@ const { data: allTools } = await useAsyncData('tools', getTools, { default: () =
 const { data: featured } = await useAsyncData('featured-tools', getFeaturedTools, { default: () => staticGetFeatured() })
 const { data: allCategories } = await useAsyncData('categories', getCategories, { default: () => staticCategories })
 
-const recent = computed(() => [...(allTools.value || [])].reverse().slice(0, 6))
+const recent = computed(() => {
+  const tools = allTools.value || staticTools
+  return [...tools]
+    .sort((a, b) => new Date(b.launchedAt || 0).getTime() - new Date(a.launchedAt || 0).getTime())
+    .slice(0, 6)
+})
 
 // 카테고리별 인기 도구 (트렌드)
 const trendCategories = ['chatbot', 'image-generation', 'coding', 'video']
