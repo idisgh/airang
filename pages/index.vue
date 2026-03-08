@@ -352,7 +352,7 @@ onUnmounted(() => {
     <!-- =========================================================
          3. 카테고리 (호버 프리뷰 포함)
          ========================================================= -->
-    <section ref="catSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section ref="catSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 dark:bg-neutral-950">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
           <LIcon name="lucide:folder-open" class="w-6 h-6" /> 카테고리
@@ -422,7 +422,7 @@ onUnmounted(() => {
     </section>
 
     <!-- Featured tools -->
-    <section ref="featuredSectionRef" class="bg-neutral-50 dark:bg-neutral-900/50 py-16">
+    <section ref="featuredSectionRef" class="bg-neutral-50 dark:bg-neutral-900 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2"><LIcon name="lucide:flame" class="w-6 h-6 text-orange-500" /> 인기 도구</h2>
@@ -441,7 +441,7 @@ onUnmounted(() => {
     </section>
 
     <!-- Recent tools -->
-    <section ref="recentSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section ref="recentSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 dark:bg-neutral-950">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2"><LIcon name="lucide:sparkles" class="w-6 h-6 text-amber-500" /> 최근 등록</h2>
         <NuxtLink to="/tools" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
@@ -622,7 +622,7 @@ onUnmounted(() => {
     <!-- =========================================================
          AI 도구 비교
          ========================================================= -->
-    <section ref="compareSectionRef" class="bg-neutral-50 dark:bg-neutral-900/50 py-16">
+    <section ref="compareSectionRef" class="bg-neutral-50 dark:bg-neutral-900 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10">
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center justify-center gap-2">
