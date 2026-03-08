@@ -1109,6 +1109,28 @@ export const tools: Tool[] = [
     platforms: ['api'], rating: 0, reviewCount: 0,
     alternatives: ['hugging-face', 'supervision'], isFeatured: false, launchedAt: '2018-10-01',
   },
+  {
+    id: '100', name: 'OpusClip', slug: 'opusclip',
+    tagline: 'AI가 긴 영상을 바이럴 숏클립으로 자동 변환',
+    description: 'OpusClip은 긴 영상을 AI가 자동으로 분석해 바이럴 숏클립으로 편집해주는 도구입니다. ClipAnything 기술로 팟캐스트뿐 아니라 브이로그, 게임, 스포츠 등 모든 장르의 영상을 지원하며, ReframeAnything으로 화면 비율도 자동 조정합니다. 1,200만 명 이상의 크리에이터와 기업이 사용하며, API를 통한 워크플로우 통합도 가능합니다.',
+    url: 'https://opus.pro', logoUrl: '/logos/opusclip.png',
+    categories: ['video'],
+    pricingModel: 'freemium', pricingDetail: '무료 체험 가능 / Pro $19/월부터',
+    koreanSupport: 'none', features: ['ClipAnything AI 클립', 'ReframeAnything 화면 비율 자동 조정', 'AI 브랜드 템플릿', '팀 워크스페이스', 'API 연동', '자동 자막'],
+    platforms: ['web'], rating: 0, reviewCount: 0,
+    alternatives: [], isFeatured: false, launchedAt: '2023-05-01',
+  },
+  {
+    id: '101', name: 'Descript', slug: 'descript',
+    tagline: '텍스트 편집하듯 영상을 편집하는 AI 도구',
+    description: 'Descript는 텍스트 편집 방식으로 영상을 편집하는 혁신적인 AI 비디오·팟캐스트 편집 도구입니다. 스크립트를 수정하면 영상이 함께 편집되며, Regenerate 기능으로 AI 음성 복제를 통해 대사 수정도 가능합니다. 자동 자막·번역, 배경 제거, 눈 맞춤 AI, 필러워드 제거, AI 아바타 등 강력한 AI 기능을 탑재하고 있습니다.',
+    url: 'https://descript.com', logoUrl: '/logos/descript.png',
+    categories: ['video'],
+    pricingModel: 'freemium', pricingDetail: '무료(1시간 녹취) / Hobbyist $12/월 / Creator $24/월 / Business $40/월',
+    koreanSupport: 'none', features: ['텍스트 기반 영상 편집', 'AI 음성 복제(Regenerate)', '자동 자막 및 번역', '배경 제거(Green Screen)', '눈 맞춤 AI', '필러워드 제거', 'AI 아바타', '팟캐스트 편집'],
+    platforms: ['web', 'desktop'], rating: 0, reviewCount: 0,
+    alternatives: [], isFeatured: false, launchedAt: '2020-01-01',
+  },
 ]
 
 // Helper functions
