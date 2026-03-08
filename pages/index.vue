@@ -138,8 +138,12 @@ const isTouchDevice = ref(false)
 const trendWrapperRef = ref<HTMLElement | null>(null)
 const horizontalTranslate = ref(0)
 const currentTrendIndex = ref(0)
+const trendBgOpacity = ref(0) // 0 = 투명, 1 = 완전 검정
 let _rafId: number | null = null
 let _scrollHandler: (() => void) | null = null
+
+// 초반 FADE_ZONE(20%) 동안 배경 페이드인, 이후 가로 슬라이드
+const FADE_ZONE = 0.2
 
 function updateHScroll() {
   _rafId = null
@@ -150,10 +154,16 @@ function updateHScroll() {
   const vh = window.innerHeight
   const scrollable = wh - vh
   if (scrollable <= 0) return
-  const progress = Math.max(0, Math.min(1, -top / scrollable))
+  const rawProgress = Math.max(0, Math.min(1, -top / scrollable))
+
+  // 배경 투명도: 0 ~ FADE_ZONE 구간에서 0 → 1
+  trendBgOpacity.value = Math.min(1, rawProgress / FADE_ZONE)
+
+  // 가로 슬라이드: FADE_ZONE 이후 구간만 사용
+  const slideProgress = Math.max(0, (rawProgress - FADE_ZONE) / (1 - FADE_ZONE))
   const n = trends.value.length
-  horizontalTranslate.value = -(progress * (n - 1) * 100)
-  currentTrendIndex.value = Math.round(progress * (n - 1))
+  horizontalTranslate.value = -(slideProgress * (n - 1) * 100)
+  currentTrendIndex.value = Math.round(slideProgress * (n - 1))
 }
 
 onMounted(() => {
@@ -367,10 +377,16 @@ onUnmounted(() => {
       class="relative hidden md:block"
       :style="{ height: `calc(${trends.length + 1} * 100vh)` }"
     >
-      <div class="sticky top-0 h-screen overflow-hidden bg-neutral-950 dark:bg-neutral-950">
+      <div
+        class="sticky top-0 h-screen overflow-hidden"
+        :style="{ backgroundColor: `rgba(9, 9, 11, ${trendBgOpacity})` }"
+      >
 
         <!-- 섹션 헤더 (고정) -->
-        <div class="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 lg:px-16 pt-6">
+        <div
+          class="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 lg:px-16 pt-6 transition-opacity duration-300"
+          :style="{ opacity: trendBgOpacity }"
+        >
           <div class="flex items-center gap-3">
             <LIcon name="lucide:trending-up" class="w-5 h-5 text-primary-400" />
             <span class="text-sm font-semibold text-neutral-400 tracking-wider uppercase">카테고리별 트렌드</span>
