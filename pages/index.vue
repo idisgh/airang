@@ -171,7 +171,7 @@ let _scrollHandler: (() => void) | null = null
 // 구간 구성: [앞 여백(fade)] [슬라이드] [뒤 여백(pause)]
 // wrapper height = (n + 3) * 100vh → 앞 1패널 fade + n패널 슬라이드 + 뒤 2패널 pause
 const TREND_FRONT = 1  // 앞 정지 패널 수
-const TREND_BACK  = 2  // 뒤 정지 패널 수
+const TREND_BACK  = 1  // 뒤 정지 패널 수
 
 function updateHScroll() {
   _rafId = null
