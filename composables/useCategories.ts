@@ -28,19 +28,8 @@ export function useCategories() {
    * 전체 카테고리 목록 조회
    */
   async function getCategories(): Promise<StaticCategory[]> {
-    try {
-      const { data, error } = await supabase
-        .from('categories')
-        .select('*')
-        .order('name')
-
-      if (error || !data || data.length === 0) {
-        return staticCategories
-      }
-      return data.map(rowToCategory)
-    } catch {
-      return staticCategories
-    }
+    // 카테고리 순서는 data/categories.ts에서 관리 (Supabase는 사용하지 않음)
+    return staticCategories
   }
 
   /**
