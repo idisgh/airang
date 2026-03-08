@@ -140,10 +140,10 @@ const horizontalTranslate = ref(0)
 const currentTrendIndex = ref(0)
 const trendBgOpacity = ref(0) // 0 = 투명, 1 = 완전 검정
 
-// 배경이 밝을 땐 텍스트 어둡게, 검어질수록 밝게 (0→검정, 255→흰색)
-const trendTextColor = computed(() => {
-  const v = Math.round(255 * trendBgOpacity.value)
-  return `rgb(${v}, ${v}, ${v})`
+// 배경이 60% 이상 어두워진 후부터 컨텐츠 fade in
+const trendContentOpacity = computed(() => {
+  const SHOW_START = 0.6
+  return Math.max(0, Math.min(1, (trendBgOpacity.value - SHOW_START) / (1 - SHOW_START)))
 })
 let _rafId: number | null = null
 let _scrollHandler: (() => void) | null = null
@@ -385,13 +385,13 @@ onUnmounted(() => {
     >
       <div
         class="sticky top-0 h-screen overflow-hidden"
-        :style="{ backgroundColor: `rgba(9, 9, 11, ${trendBgOpacity})`, color: trendTextColor }"
+        :style="{ backgroundColor: `rgba(9, 9, 11, ${trendBgOpacity})` }"
       >
 
         <!-- 섹션 헤더 (고정) -->
         <div
           class="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 lg:px-16 pt-6 transition-opacity duration-300"
-          :style="{ opacity: trendBgOpacity }"
+          :style="{ opacity: trendContentOpacity }"
         >
           <div class="flex items-center gap-3">
             <LIcon name="lucide:trending-up" class="w-5 h-5 text-primary-400" />
@@ -406,7 +406,7 @@ onUnmounted(() => {
         </div>
 
         <!-- 진행 인디케이터 (하단 중앙) -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2" :style="{ opacity: trendContentOpacity }">
           <button
             v-for="(trend, i) in trends"
             :key="trend.category!.slug"
@@ -435,6 +435,7 @@ onUnmounted(() => {
           :style="{
             width: `${trends.length * 100}vw`,
             transform: `translateX(${horizontalTranslate}vw)`,
+            opacity: trendContentOpacity,
           }"
         >
           <div
