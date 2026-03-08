@@ -1,48 +1,79 @@
 # AIrang (아이랑) 🇰🇷
 
-한국어 AI 도구 검색 & 비교 플랫폼
+한국어로 찾는 AI 도구 검색 & 비교 플랫폼
 
-## 현재 상태: v0.1 (뼈대)
+🔗 **[airang-nine.vercel.app](https://airang-nine.vercel.app/)**
 
-### 완성된 것
-- Nuxt 3 + Tailwind CSS + Vue 3.5
-- 11개 페이지: 홈, 도구 목록/상세, 카테고리 목록/상세, 대안, 비교, 블로그, 등록, 소개, 개인정보
-- 30개 AI 도구 한국어 데이터 (정적)
-- 12개 카테고리
-- Cmd+K 검색 모달, 다크모드
-- SSR + SEO 메타태그
-- Programmatic SEO 구조: `/alternatives/[slug]`, `/compare/[a]-vs-[b]`
+---
 
-### 한계 (v0.1)
-- 정적 데이터 30개 — DB 없음
-- 로고 이미지 없음 (첫 글자 아바타)
-- 사용자 리뷰/평점 시스템 없음
-- 뉴스레터/등록 폼 백엔드 없음
-- 비교 페이지 콘텐츠 얕음
+## 소개
 
-### 다음 단계 (v0.2)
-1. Supabase 연동 (DB화)
-2. 데이터 수집 파이프라인 (500개 도구)
-3. 로고 크롤링
-4. AI 추천 퀴즈 (킬러 피처)
-5. 비교 페이지 콘텐츠 강화
-6. Vercel 배포
+국내 서비스에 맞는 한국어 AI 도구 디렉토리입니다.  
+단순 나열이 아닌 카테고리별 분류, 업데이트 히스토리, 자율 큐레이션 시스템을 갖추고 있습니다.
 
-## 실행
+---
+
+## 주요 기능
+
+- 🔍 **AI 도구 검색 & 탐색** — 130개 이상의 도구, 12개 카테고리
+- 📋 **도구 상세 페이지** — 설명, 태그, 업데이트 히스토리 타임라인
+- 🤖 **자율 큐레이션 에이전트** — 매일 자동으로 신규 도구 발굴 및 정보 업데이트
+- 🕐 **업데이트 히스토리** — 도구별 변경 이력 추적 (tool_updates 테이블)
+- 🏷️ **카테고리 필터링** — 12개 카테고리로 목적에 맞는 도구 탐색
+- 🌙 **다크모드 지원**
+
+---
+
+## 기술 스택
+
+| 구분 | 기술 |
+|------|------|
+| Frontend | Nuxt 3.21, Vue 3.5, TypeScript |
+| Styling | Tailwind CSS, nuxt-icon (Iconify / Lucide) |
+| Database | Supabase (tools, categories, tool_updates) |
+| Deployment | Vercel (GitHub push → 자동 배포) |
+
+---
+
+## 에이전트 시스템
+
+`.agents/` 디렉토리에 역할별 에이전트가 정의되어 있습니다.
+
+| 에이전트 | 역할 |
+|----------|------|
+| researcher | 신규 AI 도구 발굴 |
+| writer | 도구 설명 한국어 작성 |
+| publisher | Supabase DB 등록 |
+| analyst | 트렌드 분석 |
+| social | 소셜 공유 |
+| updater | 기존 도구 정보 업데이트 |
+
+**크론 스케줄**
+- 도구 발굴: 매일 오전 9시
+- 정보 업데이트: 매주 월·목 오전 10시
+
+---
+
+## 데이터 구조
+
+```
+Supabase
+├── tools          — AI 도구 목록 (130개+)
+├── categories     — 카테고리 (12개)
+└── tool_updates   — 업데이트 히스토리
+```
+
+---
+
+## 로컬 실행
 
 ```bash
 pnpm install
-pnpm dev --port 3002
-# → http://localhost:3002
+pnpm dev   # http://localhost:3002
 ```
 
-## 기술 스택
-- **Framework:** Nuxt 3.21
-- **Styling:** Tailwind CSS 3.4
-- **Language:** TypeScript + Vue 3.5
-- **Target DB:** Supabase (미연동)
-- **Target Deploy:** Vercel
+---
 
-## 참고 문서
-- 프로젝트 플랜: `~/Desktop/workspace/directory-project-plan.md`
-- 리서치: `~/.openclaw/workspace/ai-revenue-website-research.md`
+## GitHub
+
+[github.com/idisgh/airang](https://github.com/idisgh/airang) — Push → Vercel 자동 배포
