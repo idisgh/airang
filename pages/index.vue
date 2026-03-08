@@ -235,11 +235,9 @@ onMounted(() => {
 
   // Hero 텍스트 스크롤 페이드아웃
   const updateHeroScroll = () => {
-    if (!heroRef.value) return
-    const rect = heroRef.value.getBoundingClientRect()
     const vh = window.innerHeight
-    // top이 0(뷰포트 상단)에서 -vh*0.4까지 내려갈 때 0→1로 증가
-    const progress = Math.max(0, Math.min(1, -rect.top / (vh * 0.25)))
+    // 스크롤 시작하자마자 반응, 30vh 스크롤하면 완료
+    const progress = Math.max(0, Math.min(1, window.scrollY / (vh * 0.3)))
     heroScrollProgress.value = progress
   }
   window.addEventListener('scroll', updateHeroScroll, { passive: true })
