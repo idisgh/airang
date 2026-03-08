@@ -237,7 +237,9 @@ onMounted(() => {
   const updateHeroScroll = () => {
     if (!heroRef.value) return
     const rect = heroRef.value.getBoundingClientRect()
-    const progress = Math.max(0, Math.min(1, -rect.bottom / (rect.height * 0.4) + 1))
+    const vh = window.innerHeight
+    // top이 0(뷰포트 상단)에서 -vh*0.4까지 내려갈 때 0→1로 증가
+    const progress = Math.max(0, Math.min(1, -rect.top / (vh * 0.4)))
     heroScrollProgress.value = progress
   }
   window.addEventListener('scroll', updateHeroScroll, { passive: true })
