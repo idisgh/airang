@@ -37,7 +37,11 @@ async function onSubmit() {
     <div v-if="submitted" class="card p-8 text-center">
       <div class="mb-4 flex justify-center"><LIcon name="lucide:check-circle-2" class="w-14 h-14 text-emerald-500" /></div>
       <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">등록 신청이 완료되었습니다!</h2>
-      <p class="text-neutral-600 dark:text-neutral-400">검토 후 등록해드리겠습니다. 감사합니다.</p>
+      <p class="text-neutral-600 dark:text-neutral-400 mb-6">검토 후 등록해드리겠습니다. 감사합니다.</p>
+      <NuxtLink to="/" class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-600 text-white rounded-xl font-medium hover:bg-primary-700 transition-colors">
+        <LIcon name="lucide:home" class="w-4 h-4" />
+        메인으로
+      </NuxtLink>
     </div>
 
     <form v-else @submit.prevent="onSubmit" class="card p-6 sm:p-8 space-y-5">
