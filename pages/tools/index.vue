@@ -55,7 +55,10 @@ function clearFilters() {
 
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-8">AI 도구 탐색</h1>
+    <h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-8 flex items-center gap-2">
+      <LIcon name="lucide:compass" class="w-8 h-8 text-primary-600 dark:text-primary-400" />
+      AI 도구 탐색
+    </h1>
 
     <div class="flex flex-col lg:flex-row gap-8">
       <!-- Sidebar Filters -->

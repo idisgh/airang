@@ -11,7 +11,10 @@ const posts = [
 
 <template>
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">📰 블로그</h1>
+    <h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-2 flex items-center gap-2">
+      <LIcon name="lucide:notebook-pen" class="w-8 h-8 text-primary-600 dark:text-primary-400" />
+      블로그
+    </h1>
     <p class="text-neutral-600 dark:text-neutral-400 mb-8">AI 도구 비교, 가이드, 트렌드 소식</p>
 
     <div class="space-y-6">

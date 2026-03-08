@@ -10,11 +10,14 @@ function onSubmit() {
 
 <template>
   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">🚀 AI 도구 등록 신청</h1>
+    <h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-2 flex items-center gap-2">
+      <LIcon name="lucide:plus-circle" class="w-8 h-8 text-primary-600 dark:text-primary-400" />
+      AI 도구 등록 신청
+    </h1>
     <p class="text-neutral-600 dark:text-neutral-400 mb-8">AIrang에 AI 도구를 등록하고 더 많은 한국 사용자에게 알리세요.</p>
 
     <div v-if="submitted" class="card p-8 text-center">
-      <div class="text-4xl mb-4">🎉</div>
+      <div class="mb-4 flex justify-center"><LIcon name="lucide:check-circle-2" class="w-14 h-14 text-emerald-500" /></div>
       <h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">등록 신청이 완료되었습니다!</h2>
       <p class="text-neutral-600 dark:text-neutral-400">검토 후 등록해드리겠습니다. 감사합니다.</p>
     </div>
