@@ -221,7 +221,7 @@ onUnmounted(() => {
           <span class="bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">AI 도구</span>
         </h1>
         <p class="mt-4 text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-          {{ (allTools || staticTools).length }}개 이상의 AI 도구를 한국어로 검색하고 비교하세요.<br class="hidden sm:block">
+          AI 도구를 한국어로 검색하고 비교하세요.<br class="hidden sm:block">
           가격, 기능, 한국어 지원 여부를 한눈에.
         </p>
 
@@ -241,17 +241,23 @@ onUnmounted(() => {
         <!-- 2. Stats (카운터 애니메이션) -->
         <div
           ref="statsRef"
-          class="mt-6 flex items-center justify-center gap-6 text-sm text-neutral-500 dark:text-neutral-400"
+          class="mt-6 flex items-center justify-center gap-8 text-base text-neutral-500 dark:text-neutral-400"
         >
-          <span class="flex items-center gap-1.5">
-            <LIcon name="lucide:package" class="w-4 h-4" />
-            <span class="tabular-nums">{{ statsAnimated ? animatedTools : (allTools || staticTools).length }}</span>+ 도구
+          <span class="flex items-center gap-2">
+            <LIcon name="lucide:package" class="w-5 h-5 text-primary-500" />
+            <span class="tabular-nums font-bold text-lg text-primary-600 dark:text-primary-400">{{ statsAnimated ? animatedTools : (allTools || staticTools).length }}</span>
+            <span>개 도구</span>
           </span>
-          <span class="flex items-center gap-1.5">
-            <LIcon name="lucide:folder-open" class="w-4 h-4" />
-            <span class="tabular-nums">{{ statsAnimated ? animatedCats : (allCategories || staticCategories).length }}</span>개 카테고리
+          <span class="flex items-center gap-2">
+            <LIcon name="lucide:folder-open" class="w-5 h-5 text-primary-500" />
+            <span class="tabular-nums font-bold text-lg text-primary-600 dark:text-primary-400">{{ statsAnimated ? animatedCats : (allCategories || staticCategories).length }}</span>
+            <span>개 카테고리</span>
           </span>
-          <span class="flex items-center gap-1.5"><LIcon name="lucide:globe" class="w-4 h-4" /> 한국어 리뷰</span>
+          <span class="flex items-center gap-2">
+            <LIcon name="lucide:globe" class="w-5 h-5 text-primary-500" />
+            <span class="font-bold text-lg text-primary-600 dark:text-primary-400">한국어</span>
+            <span>리뷰</span>
+          </span>
         </div>
       </div>
     </section>
