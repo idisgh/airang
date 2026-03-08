@@ -85,10 +85,10 @@ const logoPositions = floatingSlugs.map((slug, i) => ({
   slug,
   left: `${(seededRand(i * 3) * 86 + 5).toFixed(1)}%`,
   top: `${(seededRand(i * 3 + 1) * 74 + 6).toFixed(1)}%`,
-  size: Math.floor(seededRand(i * 3 + 2) * 24 + 36),
+  size: Math.floor(seededRand(i * 3 + 2) * 32 + 56),
   duration: `${(seededRand(i * 5) * 4 + 4).toFixed(1)}s`,
   delay: `${(seededRand(i * 7) * 4).toFixed(1)}s`,
-  opacity: (seededRand(i * 11) * 0.1 + 0.15).toFixed(2),
+  opacity: (seededRand(i * 11) * 0.06 + 0.07).toFixed(2),
 }))
 
 // ============================================================
