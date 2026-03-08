@@ -352,7 +352,8 @@ onUnmounted(() => {
     <!-- =========================================================
          3. 카테고리 (호버 프리뷰 포함)
          ========================================================= -->
-    <section ref="catSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section ref="catSectionRef" class="dark:bg-neutral-950 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
           <LIcon name="lucide:folder-open" class="w-6 h-6" /> 카테고리
@@ -419,6 +420,7 @@ onUnmounted(() => {
           </Transition>
         </div>
       </div>
+      </div>
     </section>
 
     <!-- Featured tools -->
@@ -441,19 +443,21 @@ onUnmounted(() => {
     </section>
 
     <!-- Recent tools -->
-    <section ref="recentSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="flex items-center justify-between mb-8">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2"><LIcon name="lucide:sparkles" class="w-6 h-6 text-amber-500" /> 최근 등록</h2>
-        <NuxtLink to="/tools" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <ToolCard
-          v-for="(tool, i) in recent"
-          :key="tool.id"
-          :tool="tool"
-          class="scroll-reveal"
-          :style="{ transitionDelay: `${i * 80}ms`, opacity: recentVisible ? 1 : 0, transform: recentVisible ? 'translateY(0)' : 'translateY(30px)' }"
-        />
+    <section ref="recentSectionRef" class="dark:bg-neutral-950 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2"><LIcon name="lucide:sparkles" class="w-6 h-6 text-amber-500" /> 최근 등록</h2>
+          <NuxtLink to="/tools" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <ToolCard
+            v-for="(tool, i) in recent"
+            :key="tool.id"
+            :tool="tool"
+            class="scroll-reveal"
+            :style="{ transitionDelay: `${i * 80}ms`, opacity: recentVisible ? 1 : 0, transform: recentVisible ? 'translateY(0)' : 'translateY(30px)' }"
+          />
+        </div>
       </div>
     </section>
 
