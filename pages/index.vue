@@ -162,14 +162,16 @@ function updateHScroll() {
   const vh = window.innerHeight
   const scrollable = wh - vh
   if (scrollable <= 0) return
-  const rawProgress = Math.max(0, Math.min(1, -top / scrollable))
+  // 섹션이 화면 아래에서 올라오기 시작할 때(top = vh)부터 페이드 시작
+  const PRELOAD = vh * 0.8 // 뷰포트 80%만큼 일찍 배경 전환 시작
+  const rawProgress = Math.max(0, Math.min(1, (-top + PRELOAD) / (scrollable + PRELOAD)))
 
   const n = trends.value.length
   const total = n + TREND_FRONT + TREND_BACK
-  const FADE_END  = TREND_FRONT / total            // 페이드 끝
-  const SLIDE_END = (TREND_FRONT + n) / total      // 슬라이드 끝
+  const FADE_END  = TREND_FRONT / total
+  const SLIDE_END = (TREND_FRONT + n) / total
 
-  // 배경: 0 → FADE_END 구간에서 페이드인
+  // 배경: 섹션 진입 전부터 서서히
   trendBgOpacity.value = Math.min(1, rawProgress / FADE_END)
 
   // 슬라이드: FADE_END → SLIDE_END 구간에서만
@@ -396,8 +398,7 @@ onUnmounted(() => {
 
         <!-- 섹션 헤더 (고정) -->
         <div
-          class="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 lg:px-16 pt-6 transition-opacity duration-300"
-          :style="{ opacity: trendBgOpacity }"
+          class="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 lg:px-16 pt-6"
         >
           <div class="flex items-center gap-3">
             <LIcon name="lucide:trending-up" class="w-5 h-5" />
