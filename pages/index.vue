@@ -239,7 +239,7 @@ onMounted(() => {
     const rect = heroRef.value.getBoundingClientRect()
     const vh = window.innerHeight
     // top이 0(뷰포트 상단)에서 -vh*0.4까지 내려갈 때 0→1로 증가
-    const progress = Math.max(0, Math.min(1, -rect.top / (vh * 0.4)))
+    const progress = Math.max(0, Math.min(1, -rect.top / (vh * 0.25)))
     heroScrollProgress.value = progress
   }
   window.addEventListener('scroll', updateHeroScroll, { passive: true })
@@ -295,12 +295,12 @@ onUnmounted(() => {
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight">
           <span
             class="inline-block will-change-transform"
-            :style="{ opacity: 1 - heroScrollProgress * 2, transform: `translateY(${-heroScrollProgress * 30}px)` }"
+            :style="{ opacity: 1 - heroScrollProgress, transform: `translateX(${-heroScrollProgress * 80}px)` }"
           >한국어로 찾는</span>
           <br>
           <span
             class="bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent inline-block will-change-transform"
-            :style="{ opacity: 1 - heroScrollProgress * 2, transform: `translateY(${-heroScrollProgress * 50}px) scale(${1 + heroScrollProgress * 0.05})` }"
+            :style="{ opacity: 1 - heroScrollProgress, transform: `translateX(${heroScrollProgress * 80}px)` }"
           >AI 도구</span>
         </h1>
         <p class="mt-4 text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
