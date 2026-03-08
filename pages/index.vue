@@ -352,7 +352,7 @@ onUnmounted(() => {
     <!-- =========================================================
          3. 카테고리 (호버 프리뷰 포함)
          ========================================================= -->
-    <section ref="catSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 dark:bg-neutral-950">
+    <section ref="catSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
           <LIcon name="lucide:folder-open" class="w-6 h-6" /> 카테고리
@@ -441,7 +441,7 @@ onUnmounted(() => {
     </section>
 
     <!-- Recent tools -->
-    <section ref="recentSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 dark:bg-neutral-950">
+    <section ref="recentSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2"><LIcon name="lucide:sparkles" class="w-6 h-6 text-amber-500" /> 최근 등록</h2>
         <NuxtLink to="/tools" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
