@@ -18,6 +18,14 @@ const pricingLabel = computed(() => {
   }
 })
 
+const pricingClass = computed(() => {
+  switch (props.tool.pricingModel) {
+    case 'free': return 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/70 dark:text-emerald-300'
+    case 'freemium': return 'bg-blue-100 text-blue-800 dark:bg-blue-900/70 dark:text-blue-300'
+    default: return 'bg-amber-100 text-amber-800 dark:bg-amber-900/70 dark:text-amber-300'
+  }
+})
+
 const koreanLabel = computed(() => {
   switch (props.tool.koreanSupport) {
     case 'full': return '한국어'
@@ -28,7 +36,10 @@ const koreanLabel = computed(() => {
 </script>
 
 <template>
-  <NuxtLink :to="`/tools/${tool.slug}`" class="card group p-5 hover:shadow-lg hover:border-primary-300 dark:hover:border-primary-700 transition-all duration-200">
+  <NuxtLink
+    :to="`/tools/${tool.slug}`"
+    class="group p-5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl hover:shadow-lg hover:border-primary-300 dark:hover:border-primary-700 transition-all duration-200 block"
+  >
     <!-- Header -->
     <div class="flex items-start gap-3 mb-3">
       <div v-if="tool.logoUrl && !logoError" class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0">
@@ -47,8 +58,11 @@ const koreanLabel = computed(() => {
 
     <!-- Categories -->
     <div class="flex flex-wrap gap-1.5 mb-3">
-      <span v-for="cat in tool.categories.slice(0, 3)" :key="cat"
-        class="text-xs px-2 py-0.5 bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 rounded-full">
+      <span
+        v-for="cat in tool.categories.slice(0, 3)"
+        :key="cat"
+        class="text-xs px-2 py-0.5 bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 rounded-full"
+      >
         {{ getCategoryName(cat) }}
       </span>
     </div>
@@ -56,14 +70,12 @@ const koreanLabel = computed(() => {
     <!-- Footer -->
     <div class="flex items-center justify-between text-xs">
       <div class="flex items-center gap-2">
-        <span :class="[
-          'badge',
-          tool.pricingModel === 'free' ? 'badge-free' :
-          tool.pricingModel === 'freemium' ? 'badge-freemium' : 'badge-paid'
-        ]">
+        <span :class="['inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium', pricingClass]">
           {{ pricingLabel }}
         </span>
-        <span v-if="koreanLabel" class="badge badge-korean">{{ koreanLabel }}</span>
+        <span v-if="koreanLabel" class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-900/70 dark:text-purple-300">
+          {{ koreanLabel }}
+        </span>
       </div>
       <div class="flex items-center gap-1 text-amber-500">
         <LIcon name="lucide:star" fill="currentColor" class="w-3.5 h-3.5" />
