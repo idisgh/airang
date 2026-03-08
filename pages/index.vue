@@ -260,17 +260,17 @@ onUnmounted(() => {
           class="mt-6 flex items-center justify-center gap-8 text-base text-neutral-500 dark:text-neutral-400"
         >
           <span class="flex items-center gap-2">
-            <LIcon name="lucide:package" class="w-5 h-5 text-accent-500" />
-            <span class="tabular-nums text-lg text-primary-600 dark:text-primary-400">{{ statsAnimated ? animatedTools : (allTools || staticTools).length }}</span>
+            <LIcon name="lucide:package" class="w-5 h-5" />
+            <span class="tabular-nums text-lg text-primary-600 dark:text-primary-400 inline-block min-w-[3ch] text-right">{{ statsAnimated ? animatedTools : (allTools || staticTools).length }}</span>
             <span>개 도구</span>
           </span>
           <span class="flex items-center gap-2">
-            <LIcon name="lucide:folder-open" class="w-5 h-5 text-accent-500" />
-            <span class="tabular-nums text-lg text-primary-600 dark:text-primary-400">{{ statsAnimated ? animatedCats : (allCategories || staticCategories).length }}</span>
+            <LIcon name="lucide:folder-open" class="w-5 h-5" />
+            <span class="tabular-nums text-lg text-primary-600 dark:text-primary-400 inline-block min-w-[2ch] text-right">{{ statsAnimated ? animatedCats : (allCategories || staticCategories).length }}</span>
             <span>개 카테고리</span>
           </span>
           <span class="flex items-center gap-2">
-            <LIcon name="lucide:globe" class="w-5 h-5 text-accent-500" />
+            <LIcon name="lucide:globe" class="w-5 h-5" />
             <span class="text-lg text-primary-600 dark:text-primary-400">한국어</span>
             <span>리뷰</span>
           </span>
