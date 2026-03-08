@@ -133,6 +133,26 @@ const hoveredCatSlug = ref<string | null>(null)
 const isTouchDevice = ref(false)
 
 // ============================================================
+// 5. 스크롤 진입 애니메이션 (카테고리 / 인기도구 / 최근등록 / 비교)
+// ============================================================
+const catSectionRef = ref<HTMLElement | null>(null)
+const featuredSectionRef = ref<HTMLElement | null>(null)
+const recentSectionRef = ref<HTMLElement | null>(null)
+const compareSectionRef = ref<HTMLElement | null>(null)
+
+const catVisible = ref(false)
+const featuredVisible = ref(false)
+const recentVisible = ref(false)
+const compareVisible = ref(false)
+
+// Hero 텍스트 스크롤 페이드아웃
+const heroRef = ref<HTMLElement | null>(null)
+const heroScrollProgress = ref(0)
+
+let _heroObserver: IntersectionObserver | null = null
+let _sectionObservers: IntersectionObserver[] = []
+
+// ============================================================
 // 4. 카테고리별 트렌드 - Sticky Horizontal Scroll
 // ============================================================
 const trendWrapperRef = ref<HTMLElement | null>(null)
@@ -194,6 +214,35 @@ onMounted(() => {
   }, { threshold: 0.3 })
   if (statsRef.value) io.observe(statsRef.value)
 
+  // 섹션 진입 애니메이션 observers
+  const makeObserver = (setter: (v: boolean) => void) =>
+    new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setter(true)
+      }
+    }, { threshold: 0.1 })
+
+  const catObs = makeObserver(v => { catVisible.value = v })
+  const featObs = makeObserver(v => { featuredVisible.value = v })
+  const recObs  = makeObserver(v => { recentVisible.value = v })
+  const cmpObs  = makeObserver(v => { compareVisible.value = v })
+
+  if (catSectionRef.value)      catObs.observe(catSectionRef.value)
+  if (featuredSectionRef.value) featObs.observe(featuredSectionRef.value)
+  if (recentSectionRef.value)   recObs.observe(recentSectionRef.value)
+  if (compareSectionRef.value)  cmpObs.observe(compareSectionRef.value)
+  _sectionObservers = [catObs, featObs, recObs, cmpObs]
+
+  // Hero 텍스트 스크롤 페이드아웃
+  const updateHeroScroll = () => {
+    if (!heroRef.value) return
+    const rect = heroRef.value.getBoundingClientRect()
+    const progress = Math.max(0, Math.min(1, -rect.bottom / (rect.height * 0.4) + 1))
+    heroScrollProgress.value = progress
+  }
+  window.addEventListener('scroll', updateHeroScroll, { passive: true })
+  _sectionObservers.push({ disconnect: () => window.removeEventListener('scroll', updateHeroScroll) } as unknown as IntersectionObserver)
+
   // Sticky horizontal scroll
   _scrollHandler = () => {
     if (_rafId === null) {
@@ -207,6 +256,7 @@ onMounted(() => {
 onUnmounted(() => {
   if (_scrollHandler) window.removeEventListener('scroll', _scrollHandler)
   if (_rafId !== null) cancelAnimationFrame(_rafId)
+  _sectionObservers.forEach(o => o.disconnect())
 })
 </script>
 
@@ -215,7 +265,7 @@ onUnmounted(() => {
     <!-- =========================================================
          Hero
          ========================================================= -->
-    <section class="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white dark:from-neutral-900 dark:to-neutral-950 py-20 sm:py-28">
+    <section ref="heroRef" class="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white dark:from-neutral-900 dark:to-neutral-950 py-20 sm:py-28">
 
       <!-- 1. 플로팅 로고 레이어 (z-0) -->
       <div class="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
@@ -241,8 +291,15 @@ onUnmounted(() => {
       <!-- Hero 콘텐츠 (z-10) -->
       <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight">
-          한국어로 찾는
-          <span class="bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">AI 도구</span>
+          <span
+            class="inline-block will-change-transform"
+            :style="{ opacity: 1 - heroScrollProgress * 2, transform: `translateY(${-heroScrollProgress * 30}px)` }"
+          >한국어로 찾는</span>
+          <br>
+          <span
+            class="bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent inline-block will-change-transform"
+            :style="{ opacity: 1 - heroScrollProgress * 2, transform: `translateY(${-heroScrollProgress * 50}px) scale(${1 + heroScrollProgress * 0.05})` }"
+          >AI 도구</span>
         </h1>
         <p class="mt-4 text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
           AI 도구를 한국어로 검색하고 비교하세요.<br class="hidden sm:block">
@@ -289,7 +346,7 @@ onUnmounted(() => {
     <!-- =========================================================
          3. 카테고리 (호버 프리뷰 포함)
          ========================================================= -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section ref="catSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
           <LIcon name="lucide:folder-open" class="w-6 h-6" /> 카테고리
@@ -298,9 +355,10 @@ onUnmounted(() => {
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         <div
-          v-for="cat in (allCategories || staticCategories)"
+          v-for="(cat, catIdx) in (allCategories || staticCategories)"
           :key="cat.id"
-          class="relative"
+          class="relative scroll-reveal"
+          :style="{ transitionDelay: `${catIdx * 50}ms`, opacity: catVisible ? 1 : 0, transform: catVisible ? 'translateY(0)' : 'translateY(40px)' }"
           @mouseenter="!isTouchDevice && (hoveredCatSlug = cat.slug)"
           @mouseleave="hoveredCatSlug = null"
         >
@@ -358,26 +416,40 @@ onUnmounted(() => {
     </section>
 
     <!-- Featured tools -->
-    <section class="bg-neutral-50 dark:bg-neutral-900/50 py-16">
+    <section ref="featuredSectionRef" class="bg-neutral-50 dark:bg-neutral-900/50 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2"><LIcon name="lucide:flame" class="w-6 h-6 text-orange-500" /> 인기 도구</h2>
           <NuxtLink to="/tools" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <ToolCard v-for="tool in (featured || [])" :key="tool.id" :tool="tool" />
+          <div
+            v-for="(tool, i) in (featured || [])"
+            :key="tool.id"
+            class="scroll-reveal"
+            :style="{ transitionDelay: `${i * 80}ms`, opacity: featuredVisible ? 1 : 0, transform: featuredVisible ? 'translateY(0)' : 'translateY(30px)' }"
+          >
+            <ToolCard :tool="tool" />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Recent tools -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section ref="recentSectionRef" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center gap-2"><LIcon name="lucide:sparkles" class="w-6 h-6 text-amber-500" /> 최근 등록</h2>
         <NuxtLink to="/tools" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <ToolCard v-for="tool in recent" :key="tool.id" :tool="tool" />
+        <div
+          v-for="(tool, i) in recent"
+          :key="tool.id"
+          class="scroll-reveal"
+          :style="{ transitionDelay: `${i * 80}ms`, opacity: recentVisible ? 1 : 0, transform: recentVisible ? 'translateY(0)' : 'translateY(30px)' }"
+        >
+          <ToolCard :tool="tool" />
+        </div>
       </div>
     </section>
 
@@ -546,7 +618,7 @@ onUnmounted(() => {
     <!-- =========================================================
          AI 도구 비교
          ========================================================= -->
-    <section class="bg-neutral-50 dark:bg-neutral-900/50 py-16">
+    <section ref="compareSectionRef" class="bg-neutral-50 dark:bg-neutral-900/50 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10">
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 flex items-center justify-center gap-2">
@@ -556,13 +628,18 @@ onUnmounted(() => {
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <NuxtLink
-            v-for="pair in comparePairs"
+            v-for="(pair, pairIdx) in comparePairs"
             :key="`${pair.a.slug}-${pair.b.slug}`"
             :to="`/compare/${pair.a.slug}-vs-${pair.b.slug}`"
-            class="card p-5 hover:shadow-lg hover:border-primary-300 dark:hover:border-primary-700 transition-all"
+            class="card p-5 hover:shadow-lg hover:border-primary-300 dark:hover:border-primary-700 transition-all overflow-hidden"
+            :style="{ transitionDelay: `${pairIdx * 100}ms` }"
           >
             <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3 flex-1 min-w-0">
+              <!-- 왼쪽 툴: 왼쪽에서 슬라이드 인 -->
+              <div
+                class="flex items-center gap-3 flex-1 min-w-0 scroll-reveal"
+                :style="{ transitionDelay: `${pairIdx * 100}ms`, opacity: compareVisible ? 1 : 0, transform: compareVisible ? 'translateX(0)' : 'translateX(-30px)' }"
+              >
                 <div class="w-10 h-10 rounded-xl bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center shrink-0 overflow-hidden">
                   <img v-if="pair.a.logoUrl" :src="pair.a.logoUrl" :alt="pair.a.name" class="w-8 h-8 object-contain" @error="($event.target as HTMLImageElement).style.display = 'none'" />
                   <span v-else class="font-bold text-primary-600">{{ pair.a.name[0] }}</span>
@@ -573,11 +650,19 @@ onUnmounted(() => {
                 </div>
               </div>
 
-              <div class="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-xs font-bold shrink-0 mx-3">
+              <!-- VS 배지: scale 팝인 -->
+              <div
+                class="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-xs font-bold shrink-0 mx-3 scroll-reveal"
+                :style="{ transitionDelay: `${pairIdx * 100 + 200}ms`, opacity: compareVisible ? 1 : 0, transform: compareVisible ? 'scale(1)' : 'scale(0)' }"
+              >
                 VS
               </div>
 
-              <div class="flex items-center gap-3 flex-1 min-w-0 justify-end">
+              <!-- 오른쪽 툴: 오른쪽에서 슬라이드 인 -->
+              <div
+                class="flex items-center gap-3 flex-1 min-w-0 justify-end scroll-reveal"
+                :style="{ transitionDelay: `${pairIdx * 100}ms`, opacity: compareVisible ? 1 : 0, transform: compareVisible ? 'translateX(0)' : 'translateX(30px)' }"
+              >
                 <div class="min-w-0 text-right">
                   <div class="font-semibold text-neutral-900 dark:text-neutral-100 truncate">{{ pair.b.name }}</div>
                   <div class="text-xs text-neutral-500"><LIcon name="lucide:star" fill="currentColor" class="w-3 h-3 text-amber-500 inline" /> {{ pair.b.rating }}</div>
@@ -596,6 +681,12 @@ onUnmounted(() => {
 </template>
 
 <style>
+/* 스크롤 진입 애니메이션 */
+.scroll-reveal {
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
 /* 1. 로고 플로팅 애니메이션 */
 @keyframes logo-float {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
