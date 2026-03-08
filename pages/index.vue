@@ -139,6 +139,12 @@ const trendWrapperRef = ref<HTMLElement | null>(null)
 const horizontalTranslate = ref(0)
 const currentTrendIndex = ref(0)
 const trendBgOpacity = ref(0) // 0 = 투명, 1 = 완전 검정
+
+// 배경이 밝을 땐 텍스트 어둡게, 검어질수록 밝게 (0→검정, 255→흰색)
+const trendTextColor = computed(() => {
+  const v = Math.round(255 * trendBgOpacity.value)
+  return `rgb(${v}, ${v}, ${v})`
+})
 let _rafId: number | null = null
 let _scrollHandler: (() => void) | null = null
 
@@ -379,7 +385,7 @@ onUnmounted(() => {
     >
       <div
         class="sticky top-0 h-screen overflow-hidden"
-        :style="{ backgroundColor: `rgba(9, 9, 11, ${trendBgOpacity})` }"
+        :style="{ backgroundColor: `rgba(9, 9, 11, ${trendBgOpacity})`, color: trendTextColor }"
       >
 
         <!-- 섹션 헤더 (고정) -->
