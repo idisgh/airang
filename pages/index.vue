@@ -423,14 +423,13 @@ onUnmounted(() => {
           <NuxtLink to="/tools" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div
+          <ToolCard
             v-for="(tool, i) in (featured || [])"
             :key="tool.id"
+            :tool="tool"
             class="scroll-reveal"
             :style="{ transitionDelay: `${i * 80}ms`, opacity: featuredVisible ? 1 : 0, transform: featuredVisible ? 'translateY(0)' : 'translateY(30px)' }"
-          >
-            <ToolCard :tool="tool" />
-          </div>
+          />
         </div>
       </div>
     </section>
@@ -442,14 +441,13 @@ onUnmounted(() => {
         <NuxtLink to="/tools" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">전체보기 →</NuxtLink>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div
+        <ToolCard
           v-for="(tool, i) in recent"
           :key="tool.id"
+          :tool="tool"
           class="scroll-reveal"
           :style="{ transitionDelay: `${i * 80}ms`, opacity: recentVisible ? 1 : 0, transform: recentVisible ? 'translateY(0)' : 'translateY(30px)' }"
-        >
-          <ToolCard :tool="tool" />
-        </div>
+        />
       </div>
     </section>
 
@@ -684,7 +682,6 @@ onUnmounted(() => {
 /* 스크롤 진입 애니메이션 */
 .scroll-reveal {
   transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
 }
 
 /* 1. 로고 플로팅 애니메이션 */
