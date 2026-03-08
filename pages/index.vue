@@ -141,9 +141,9 @@ const currentTrendIndex = ref(0)
 const trendBgOpacity = ref(0) // 0 = 투명, 1 = 완전 검정
 
 // 배경이 60% 이상 어두워진 후부터 컨텐츠 fade in
-const trendContentOpacity = computed(() => {
-  const SHOW_START = 0.6
-  return Math.max(0, Math.min(1, (trendBgOpacity.value - SHOW_START) / (1 - SHOW_START)))
+const trendTextColor = computed(() => {
+  const v = Math.round(255 * trendBgOpacity.value)
+  return `rgb(${v}, ${v}, ${v})`
 })
 let _rafId: number | null = null
 let _scrollHandler: (() => void) | null = null
@@ -385,13 +385,13 @@ onUnmounted(() => {
     >
       <div
         class="sticky top-0 h-screen overflow-hidden"
-        :style="{ backgroundColor: `rgba(9, 9, 11, ${trendBgOpacity})` }"
+        :style="{ backgroundColor: `rgba(9, 9, 11, ${trendBgOpacity})`, color: trendTextColor }"
       >
 
         <!-- 섹션 헤더 (고정) -->
         <div
           class="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 lg:px-16 pt-6 transition-opacity duration-300"
-          :style="{ opacity: trendContentOpacity }"
+          :style="{ opacity: trendBgOpacity }"
         >
           <div class="flex items-center gap-3">
             <LIcon name="lucide:trending-up" class="w-5 h-5 text-primary-400" />
@@ -406,7 +406,7 @@ onUnmounted(() => {
         </div>
 
         <!-- 진행 인디케이터 (하단 중앙) -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2" :style="{ opacity: trendContentOpacity }">
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2" :style="{ opacity: trendBgOpacity }">
           <button
             v-for="(trend, i) in trends"
             :key="trend.category!.slug"
@@ -435,7 +435,6 @@ onUnmounted(() => {
           :style="{
             width: `${trends.length * 100}vw`,
             transform: `translateX(${horizontalTranslate}vw)`,
-            opacity: trendContentOpacity,
           }"
         >
           <div
@@ -452,7 +451,7 @@ onUnmounted(() => {
                 </div>
                 <div>
                   <div class="text-xs text-neutral-500 uppercase tracking-widest mb-1">{{ panelIdx + 1 }}번째 카테고리</div>
-                  <h2 class="text-3xl lg:text-4xl font-bold text-white">{{ trend.category!.name }}</h2>
+                  <h2 class="text-3xl lg:text-4xl font-bold">{{ trend.category!.name }}</h2>
                 </div>
                 <NuxtLink
                   :to="`/categories/${trend.category!.slug}`"
@@ -487,7 +486,7 @@ onUnmounted(() => {
                   </div>
                   <!-- 정보 -->
                   <div class="flex-1 min-w-0">
-                    <div class="font-semibold text-white group-hover:text-primary-300 truncate text-sm transition-colors">{{ tool.name }}</div>
+                    <div class="font-semibold group-hover:text-primary-300 truncate text-sm transition-colors">{{ tool.name }}</div>
                     <div class="flex items-center gap-1 mt-0.5">
                       <LIcon name="lucide:star" fill="currentColor" class="w-3 h-3 text-amber-400" />
                       <span class="text-xs text-neutral-400">{{ tool.rating }}</span>
