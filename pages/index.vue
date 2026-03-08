@@ -161,7 +161,13 @@ const currentTrendIndex = ref(0)
 const trendBgOpacity = ref(0) // 0 = 투명, 1 = 완전 검정
 
 // 배경이 60% 이상 어두워진 후부터 컨텐츠 fade in
+const colorMode = useColorMode()
 const trendTextColor = computed(() => {
+  if (colorMode.value === 'dark') {
+    // 다크모드: 배경이 이미 어두우므로 항상 흰색
+    return 'rgb(255, 255, 255)'
+  }
+  // 라이트모드: 배경 밝을 때 검정 → 어두워지면 흰색
   const v = Math.round(255 * trendBgOpacity.value)
   return `rgb(${v}, ${v}, ${v})`
 })
