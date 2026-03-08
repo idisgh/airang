@@ -394,12 +394,12 @@ onUnmounted(() => {
           :style="{ opacity: trendBgOpacity }"
         >
           <div class="flex items-center gap-3">
-            <LIcon name="lucide:trending-up" class="w-5 h-5 text-primary-400" />
-            <span class="text-sm font-semibold text-neutral-400 tracking-wider uppercase">카테고리별 트렌드</span>
+            <LIcon name="lucide:trending-up" class="w-5 h-5" />
+            <span class="text-sm font-semibold tracking-wider uppercase">카테고리별 트렌드</span>
           </div>
           <!-- 현재 인덱스 표시 -->
-          <div class="text-sm text-neutral-500">
-            <span class="text-white font-bold text-lg tabular-nums">{{ String(currentTrendIndex + 1).padStart(2, '0') }}</span>
+          <div class="text-sm">
+            <span class="font-bold text-lg tabular-nums">{{ String(currentTrendIndex + 1).padStart(2, '0') }}</span>
             <span class="mx-1">/</span>
             <span>{{ String(trends.length).padStart(2, '0') }}</span>
           </div>
