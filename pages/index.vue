@@ -316,7 +316,7 @@ onUnmounted(() => {
               v-model="searchQuery"
               type="text"
               placeholder="어떤 AI 도구를 찾고 계세요?"
-              class="w-full pl-12 pr-4 py-4 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-2xl text-neutral-900 dark:text-neutral-100 placeholder-neutral-400 shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-lg"
+              class="w-full pl-12 pr-4 py-4 bg-white dark:bg-neutral-800 border-2 border-primary-400 dark:border-primary-500 rounded-2xl text-neutral-900 dark:text-neutral-100 placeholder-neutral-400 shadow-lg focus:outline-none focus:ring-4 focus:ring-primary-400/30 dark:focus:ring-primary-500/30 focus:border-primary-500 dark:focus:border-primary-400 text-lg transition-all"
             />
           </div>
         </form>
