@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev --port 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@iconify/vue": "^5.0.0",
@@ -30,14 +32,19 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@storybook/addon-docs": "^8",
-    "@storybook/addon-essentials": "^8",
+    "@storybook/addon-essentials": "^8.6.18",
+    "@storybook/addon-styling-webpack": "^3.0.0",
+    "@storybook/vue3": "^8.6.18",
     "@storybook/vue3-vite": "^8",
     "@supabase/supabase-js": "^2.98.0",
-    "autoprefixer": "^10.4.20",
+    "@vitejs/plugin-vue": "^6.0.5",
+    "autoprefixer": "^10.4.24",
     "postcss": "^8.5.1",
     "sharp": "^0.34.5",
     "storybook": "^8",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "unplugin-auto-import": "^21.0.0",
+    "unplugin-vue-components": "^31.0.0"
   }
 }
