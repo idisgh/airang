@@ -23,7 +23,14 @@ const config: StorybookConfig = {
       ...(config.plugins || []),
       vue(),
       AutoImport({
-        imports: ['vue', 'vue-router'],
+        imports: [
+          'vue',
+          'vue-router',
+          {
+            from: path.resolve(__dirname, './nuxt-stubs'),
+            imports: ['navigateTo', 'useRouter', 'useRoute', 'useFetch', 'useAsyncData', 'useHead', 'useSeoMeta', 'useSupabaseClient'],
+          },
+        ],
         dts: false,
       }),
     ]
