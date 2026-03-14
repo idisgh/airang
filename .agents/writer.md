@@ -17,22 +17,44 @@ tools.ts에 추가할 초안을 생성한 뒤 텔레그램으로 알린다.
 - 이미 등록된 도구(name 기준)는 처리 대상에서 제외
 
 ### 3. 카테고리 매핑
-- `/Users/hkjeong/Desktop/workspace/airang/data/categories.ts` 읽기
-- discovered.csv의 category → airang category slug 매핑:
-  - 글쓰기/전반 → chatbot, writing
-  - 이미지 생성 → image-generation
-  - 이미지 편집 → image-generation, design
-  - 동영상 생성/편집 → video
-  - AI 아바타 → video
-  - 3D 생성 → design
-  - 연구/리서치 → productivity
-  - AI 모델 → coding (API 플랫폼)
-  - AI 만화/스토리보드 → image-generation, design
-  - 자동화 → productivity, marketing
-  - 코드 → coding
-  - 노코드 개발 → coding
-  - PPT/디자인 → design
-  - 기타 → productivity
+
+> ⚠️ **카테고리는 도구의 핵심 기능 기준**으로 결정할 것. 이름이나 설명에 "이미지"가 언급돼도 실제 기능이 다르면 다른 카테고리 사용.
+
+**사용 가능한 카테고리 slug 전체 목록:**
+| slug | 한국어명 | 해당 도구 유형 |
+|------|---------|-------------|
+| `chatbot` | 챗봇 | AI 대화, 질의응답, 어시스턴트 |
+| `image-generation` | 이미지 생성 | 이미지/그림 직접 생성·편집하는 도구 (Midjourney, DALL-E 등) |
+| `coding` | 코딩 | 코드 생성, 개발 보조, AI 개발 플랫폼, 로컬 AI 실행 도구 |
+| `design` | 디자인 | UI/UX, 3D, 프레젠테이션, 디자인 자동화 |
+| `video` | 영상 | 영상 생성·편집, AI 아바타 |
+| `productivity` | 생산성 | 자동화, 노트, 리서치, 워크플로우 |
+| `writing` | 글쓰기 | 카피라이팅, 블로그, 문서 작성 |
+| `marketing` | 마케팅 | 광고, SEO, 소셜미디어 자동화 |
+| `music` | 음악 | 음악 생성, 오디오 처리 |
+| `data-analysis` | 데이터 분석 | 데이터 시각화, BI, 분석 |
+| `voice` | 음성 | TTS, STT, 음성 인식 |
+| `translation` | 번역 | 다국어 번역 |
+
+**카테고리 선택 규칙 (헷갈리는 케이스):**
+- `image-generation`: **직접 이미지를 만들어주는 도구만** → Midjourney, DALL-E, Stable Diffusion
+- `coding`: AI 개발 플랫폼, API, 로컬 AI 실행 확인 도구, AI 모델 관련 유틸리티 → **CanIRun.ai처럼 "AI 모델 관련" 도구는 coding**
+- `design`: 이미지 편집(배경제거 등), UI/UX 도구 → Canva AI, Remove.bg
+- `productivity`: 연구/리서치 도구, 자동화, 노트, 스케줄러
+- 애매하면 더 구체적인 카테고리 우선, `productivity`는 최후 선택
+
+**discovered.csv category → slug 빠른 참고:**
+- 글쓰기/전반 → `chatbot`, `writing`
+- 이미지 생성 → `image-generation`
+- 이미지 편집/디자인 → `design` (직접 생성 아니면 `image-generation` 금지)
+- 동영상/AI 아바타 → `video`
+- 3D 생성 → `design`
+- 연구/리서치 → `productivity`
+- AI 모델/API/로컬 실행 → `coding`
+- 자동화 → `productivity`, `marketing`
+- 코드/노코드 → `coding`
+- PPT → `design`
+- 기타 → `productivity`
 
 ### 4. 각 도구별 정보 수집 (web_fetch)
 발굴된 각 도구의 URL을 fetch해서:
