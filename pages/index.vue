@@ -16,7 +16,12 @@ const { data: allCategories } = await useAsyncData('categories', getCategories, 
 const recent = computed(() => {
   const tools = allTools.value || staticTools
   return [...tools]
-    .sort((a, b) => new Date(b.launchedAt || 0).getTime() - new Date(a.launchedAt || 0).getTime())
+    .sort((a, b) => {
+      // DB 등록일(createdAt) 우선, 없으면 출시일(launchedAt)
+      const aDate = (a as any).createdAt || a.launchedAt || '0'
+      const bDate = (b as any).createdAt || b.launchedAt || '0'
+      return new Date(bDate).getTime() - new Date(aDate).getTime()
+    })
     .slice(0, 6)
 })
 

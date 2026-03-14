@@ -1,0 +1,28 @@
+[
+  {
+    "id": "102",
+    "name": "CanIRun.ai",
+    "slug": "canirun-ai",
+    "tagline": "내 컴퓨터에서 실행 가능한 AI 모델 확인",
+    "description": "CanIRun.ai는 브라우저만으로 내 컴퓨터에서 어떤 로컬 AI 모델을 실행할 수 있는지 확인해주는 웹 도구입니다. WebGPU API로 하드웨어 성능을 분석해 Llama, Qwen, Mistral, DeepSeek 등 주요 오픈소스 모델의 실행 가능성을 S~F 등급으로 표시합니다. 별도 설치 없이 즉시 사용 가능하며, 로컬 AI 모델 배포를 고려하는 개발자와 연구자에게 유용합니다.",
+    "url": "https://www.canirun.ai",
+    "logoUrl": "/logos/canirun-ai.svg",
+    "categories": ["coding"],
+    "pricingModel": "free",
+    "pricingDetail": "완전 무료",
+    "koreanSupport": "none",
+    "features": [
+      "WebGPU 기반 하드웨어 성능 자동 분석",
+      "모델별 실행 가능성 S~F 등급 표시",
+      "Llama/Qwen/Mistral/DeepSeek 등 주요 오픈소스 모델 지원",
+      "메모리 사용량·컨텍스트 길이·토큰 속도 정보 제공",
+      "설치 없이 브라우저에서 즉시 사용 가능"
+    ],
+    "platforms": ["web"],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-03-14"
+  }
+]

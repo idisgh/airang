@@ -17,6 +17,7 @@ export interface Tool {
   alternatives: string[]  // tool slugs
   isFeatured: boolean
   launchedAt: string
+  createdAt?: string  // DB 등록일 (최근 등록 정렬 기준)
 }
 
 export const tools: Tool[] = [

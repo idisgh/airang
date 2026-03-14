@@ -33,6 +33,8 @@ function rowToTool(row: Record<string, unknown>): StaticTool {
     alternatives: (row.alternatives as string[]) || [],
     isFeatured: Boolean(row.is_featured),
     launchedAt: (row.launched_at as string) || '',
+    // DB 등록일 (최근 등록 정렬 기준)
+    createdAt: (row.created_at as string) || '',
   }
 }
 

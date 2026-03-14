@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07",
+  "lastUpdated": "2026-03-14",
   "tools": [
     { "name": "ChatGPT", "category": "글쓰기/전반", "url": "https://chat.openai.com" },
     { "name": "Claude", "category": "글쓰기/전반", "url": "https://claude.ai" },
@@ -60,7 +60,12 @@
     { "name": "Wireframable", "category": "PPT/디자인", "url": "https://wireframable.com" },
     { "name": "Janus", "category": "AI 아바타", "url": "https://janus.cam" },
     { "name": "Muapi", "category": "AI 모델", "url": "https://muapi.ai" },
-    { "name": "Jude", "category": "자동화", "url": "https://tomorrowatetoday.com/jude" }
-  ],
-  "lastUpdated": "2026-03-07"
+    { "name": "Jude", "category": "자동화", "url": "https://tomorrowatetoday.com/jude" },
+    { "name": "Suno", "category": "기타", "url": "https://suno.com" },
+    { "name": "Udio", "category": "기타", "url": "https://udio.com" },
+    { "name": "ElevenLabs", "category": "기타", "url": "https://elevenlabs.io" },
+    { "name": "OpusClip", "category": "동영상 편집", "url": "https://opus.pro" },
+    { "name": "Descript", "category": "동영상 편집", "url": "https://descript.com" },
+    { "name": "CanIRun.ai", "category": "AI 모델", "url": "https://www.canirun.ai" }
+  ]
 }
