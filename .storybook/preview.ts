@@ -13,17 +13,17 @@ setup((app) => {
     },
   }))
 
-  // LIcon (nuxt-icon) stub → span으로 대체
+  // LIcon (nuxt-icon) stub → @iconify/vue로 실제 아이콘 렌더
   app.component('LIcon', defineComponent({
     props: {
       name: { type: String, default: '' },
       class: { type: String, default: '' },
     },
     setup(props) {
-      return () => h('span', {
+      const { Icon } = require('@iconify/vue')
+      return () => h(Icon, {
+        icon: props.name,
         class: props.class,
-        title: props.name,
-        style: 'display:inline-block;width:1em;height:1em;background:#ccc;border-radius:2px;vertical-align:middle',
       })
     },
   }))
