@@ -22,13 +22,10 @@ function rowToCategory(row: Record<string, unknown>): StaticCategory {
 }
 
 export function useCategories() {
-  const supabase = useSupabaseClient()
-
   /**
-   * 전체 카테고리 목록 조회
+   * 전체 카테고리 목록 조회 (순서는 data/categories.ts에서 관리)
    */
   async function getCategories(): Promise<StaticCategory[]> {
-    // 카테고리 순서는 data/categories.ts에서 관리 (Supabase는 사용하지 않음)
     return staticCategories
   }
 
@@ -36,6 +33,7 @@ export function useCategories() {
    * slug로 단일 카테고리 조회
    */
   async function getCategoryBySlug(slug: string): Promise<StaticCategory | undefined> {
+    const supabase = useSupabaseClient()
     try {
       const { data, error } = await supabase
         .from('categories')
