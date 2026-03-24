@@ -117,8 +117,50 @@
         "description: $330M 시리즈 B, Workspace Knowledge, Claude Opus 4.6, 데이터 분석 기능 추가",
         "features: Workspace Knowledge, 데이터 분석, 비즈니스 문서 생성 추가"
       ]
+    },
+    {
+      "slug": "copy-ai",
+      "date": "2026-03-24",
+      "changes": [
+        "description: Content Agent Studio, GPT-4.1/o3 모델 추가",
+        "features: Content Agent Studio, Google Docs·OneDrive 연동 추가"
+      ]
+    },
+    {
+      "slug": "pika",
+      "date": "2026-03-24",
+      "changes": [
+        "description: Pikaformance 모델 언급 추가",
+        "features: Pikaformance 모델 추가"
+      ]
+    },
+    {
+      "slug": "windsurf",
+      "date": "2026-03-24",
+      "changes": [
+        "url: codeium.com/windsurf → windsurf.com",
+        "description: SWE-1.5, 멀티 에이전트, Git Worktree, Cascade 전용 터미널 추가",
+        "features: SWE-1.5 모델, 멀티 에이전트 병렬 세션, Git Worktree 추가"
+      ]
+    },
+    {
+      "slug": "v0-dev",
+      "date": "2026-03-24",
+      "changes": [
+        "pricingDetail: Team $30/Business $100 구조로 변경",
+        "description: Design Mode, GitHub 동기화 추가",
+        "features: Design Mode, GitHub 동기화, 팀 협업 추가"
+      ]
+    },
+    {
+      "slug": "udio",
+      "date": "2026-03-24",
+      "changes": [
+        "description: Warner Music Group·Universal Music Group 파트너십, Voices·Styles·Sessions 추가",
+        "features: Voices, Styles, Sessions 협업 추가"
+      ]
     }
   ],
-  "checked": ["chatgpt", "claude", "gemini", "midjourney", "perplexity", "cursor", "runway", "suno", "deepl", "github-copilot", "elevenlabs", "notion-ai", "jasper", "stable-diffusion", "canva-ai", "lovable"],
-  "skipped": ["canva-ai"]
+  "checked": ["chatgpt", "claude", "gemini", "midjourney", "perplexity", "cursor", "runway", "suno", "deepl", "github-copilot", "elevenlabs", "notion-ai", "jasper", "stable-diffusion", "canva-ai", "lovable", "dall-e", "bolt-new", "gamma", "copy-ai", "pika", "leonardo-ai", "windsurf", "v0-dev", "kling", "udio"],
+  "skipped": ["canva-ai", "dall-e", "bolt-new", "gamma", "leonardo-ai", "kling"]
 }
