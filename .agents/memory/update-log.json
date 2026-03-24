@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-03-07",
+  "lastRun": "2026-03-24",
   "updated": [
     {
       "slug": "chatgpt",
@@ -87,8 +87,38 @@
         "description: v5 모델(2025년 9월), Suno Studio 출시 언급 추가",
         "features: v5 모델, Suno Studio 추가, 커버 생성 제거"
       ]
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-03-24",
+      "changes": [
+        "features: Research Mode 추가"
+      ]
+    },
+    {
+      "slug": "jasper",
+      "date": "2026-03-24",
+      "changes": [
+        "features: Jasper Grid, No-code AI App Builder 추가"
+      ]
+    },
+    {
+      "slug": "stable-diffusion",
+      "date": "2026-03-24",
+      "changes": [
+        "description: Universal Music Group 파트너십, Amazon Bedrock 지원 추가",
+        "features: Amazon Bedrock 지원 추가"
+      ]
+    },
+    {
+      "slug": "lovable",
+      "date": "2026-03-24",
+      "changes": [
+        "description: $330M 시리즈 B, Workspace Knowledge, Claude Opus 4.6, 데이터 분석 기능 추가",
+        "features: Workspace Knowledge, 데이터 분석, 비즈니스 문서 생성 추가"
+      ]
     }
   ],
-  "checked": ["chatgpt", "claude", "gemini", "midjourney", "perplexity", "cursor", "runway", "suno", "deepl", "github-copilot", "elevenlabs"],
-  "skipped": []
+  "checked": ["chatgpt", "claude", "gemini", "midjourney", "perplexity", "cursor", "runway", "suno", "deepl", "github-copilot", "elevenlabs", "notion-ai", "jasper", "stable-diffusion", "canva-ai", "lovable"],
+  "skipped": ["canva-ai"]
 }
