@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-03-24",
+  "lastRun": "2026-03-26",
   "updated": [
     {
       "slug": "chatgpt",
@@ -159,8 +159,104 @@
         "description: Warner Music Group·Universal Music Group 파트너십, Voices·Styles·Sessions 추가",
         "features: Voices, Styles, Sessions 협업 추가"
       ]
+    },
+    {
+      "slug": "writesonic",
+      "date": "2026-03-26",
+      "changes": [
+        "tagline: SEO 최적화 AI 글쓰기 → AI 검색 노출 추적·최적화 플랫폼 (GEO 전문)",
+        "description: GEO/AI Search Visibility 플랫폼으로 피벗 반영",
+        "features: GEO 최적화 기능으로 전면 교체"
+      ]
+    },
+    {
+      "slug": "flux",
+      "date": "2026-03-26",
+      "changes": [
+        "url: blackforestlabs.ai → bfl.ai",
+        "description: Kontext Komposer 추가",
+        "features: Kontext Komposer, Playground 추가"
+      ]
+    },
+    {
+      "slug": "recraft",
+      "date": "2026-03-26",
+      "changes": [
+        "description: Recraft V4 모델 출시, 목업 생성·업스케일링·사진 편집 추가",
+        "features: V4 모델, 목업 생성 추가"
+      ]
+    },
+    {
+      "slug": "krea",
+      "date": "2026-03-26",
+      "changes": [
+        "description: 3D 생성 기능, LoRA 파인튜닝, 영상 스타일 트랜스퍼 추가",
+        "features: 텍스트/이미지→3D, LoRA 파인튜닝, 영상 스타일 트랜스퍼 추가"
+      ]
+    },
+    {
+      "slug": "playground-ai",
+      "date": "2026-03-26",
+      "changes": [
+        "tagline: 디자인 도구(로고, T셔츠, SNS)로 포지셔닝 변경",
+        "description: 크리에이터·소상공인 타겟 실용 디자인 도구로 피벗 반영"
+      ]
+    },
+    {
+      "slug": "luma-ai",
+      "date": "2026-03-26",
+      "changes": [
+        "tagline: Dream Machine → AI 에이전트 플랫폼으로 포지셔닝 전환",
+        "description: AI Agents for Creative Work 방향성 반영"
+      ]
+    },
+    {
+      "slug": "notta",
+      "date": "2026-03-26",
+      "changes": [
+        "description: Notta Brain (인포그래픽·슬라이드 변환) 추가, 언어 수 정정 (58개)",
+        "features: Notta Brain, 이중언어 전사 추가"
+      ]
+    },
+    {
+      "slug": "heygen",
+      "date": "2026-03-26",
+      "changes": [
+        "description: 175+ 언어, 4K 비디오, Product Ads, UGC 기능 추가",
+        "features: 175+ 언어, 4K 영상, Product Ads, UGC 리액션 영상 추가"
+      ]
+    },
+    {
+      "slug": "hugging-face",
+      "date": "2026-03-26",
+      "changes": [
+        "description: Inference Providers (45,000+ 모델), smolagents 추가",
+        "features: Inference Providers, smolagents 추가"
+      ]
+    },
+    {
+      "slug": "wrtn",
+      "date": "2026-03-26",
+      "changes": [
+        "tagline: GPT-4 → GPT-5로 업데이트",
+        "description: GPT-5 지원 반영, 사주 운세 기능 추가",
+        "features: 무료 GPT-5, 사주 운세 추가"
+      ]
     }
   ],
-  "checked": ["chatgpt", "claude", "gemini", "midjourney", "perplexity", "cursor", "runway", "suno", "deepl", "github-copilot", "elevenlabs", "notion-ai", "jasper", "stable-diffusion", "canva-ai", "lovable", "dall-e", "bolt-new", "gamma", "copy-ai", "pika", "leonardo-ai", "windsurf", "v0-dev", "kling", "udio"],
-  "skipped": ["canva-ai", "dall-e", "bolt-new", "gamma", "leonardo-ai", "kling"]
+  "checked": [
+    "chatgpt", "claude", "gemini", "midjourney", "perplexity", "cursor", "runway", "suno",
+    "deepl", "github-copilot", "elevenlabs", "notion-ai", "jasper", "stable-diffusion",
+    "canva-ai", "lovable", "dall-e", "bolt-new", "gamma", "copy-ai", "pika", "leonardo-ai",
+    "windsurf", "v0-dev", "kling", "udio",
+    "writesonic", "copilot", "surfer-seo", "papago", "grok", "le-chat", "poe", "flux",
+    "ideogram", "imagefx", "recraft", "adobe-firefly", "magnific", "krea", "playground-ai",
+    "clova-note", "notta", "luma-ai", "sora", "capcut", "vrew", "heygen", "notebooklm",
+    "hugging-face", "wrtn"
+  ],
+  "skipped": [
+    "canva-ai", "dall-e", "bolt-new", "gamma", "leonardo-ai", "kling",
+    "copilot", "surfer-seo", "papago", "grok", "le-chat", "poe", "ideogram",
+    "imagefx", "adobe-firefly", "magnific", "clova-note", "sora", "capcut", "notebooklm"
+  ]
 }
