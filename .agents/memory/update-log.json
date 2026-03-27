@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-03-26",
+  "lastRun": "2026-03-27",
   "updated": [
     {
       "slug": "chatgpt",
@@ -242,6 +242,92 @@
         "description: GPT-5 지원 반영, 사주 운세 기능 추가",
         "features: 무료 GPT-5, 사주 운세 추가"
       ]
+    },
+    {
+      "slug": "deepl",
+      "date": "2026-03-27",
+      "changes": [
+        "description: Voice 번역 및 Agentic Workflow 추가",
+        "features: Voice 번역, Agentic Workflow 추가"
+      ]
+    },
+    {
+      "slug": "vidu",
+      "date": "2026-03-27",
+      "changes": [
+        "url: vidu.studio → vidu.com",
+        "description: All-in-one 이미지·영상 플랫폼, 오프피크 무제한 생성 추가"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "date": "2026-03-27",
+      "changes": [
+        "description: Voice Agents 플랫폼, ElevenCreative/Agents/API 서비스 라인 추가",
+        "features: 언어 수 29 → 70+, ElevenCreative, Speech to Text 추가"
+      ]
+    },
+    {
+      "slug": "capcut",
+      "date": "2026-03-27",
+      "changes": [
+        "description: AI 동영상/이미지 생성기, 동영상 스튜디오, TTS 추가",
+        "features: AI 동영상 생성기, AI 이미지 생성기, 동영상 스튜디오, TTS 추가"
+      ]
+    },
+    {
+      "slug": "vrew",
+      "date": "2026-03-27",
+      "changes": [
+        "pricingDetail: 무료 90분→120분, 플랜 구조 변경",
+        "description: AI 이미지/영상 생성 추가",
+        "features: AI 이미지 생성, AI 영상 생성 추가"
+      ]
+    },
+    {
+      "slug": "invideo-ai",
+      "date": "2026-03-27",
+      "changes": [
+        "description: invideo v4 에이전트, 30분 영상, 200+ AI 모델 지원 추가",
+        "features: v4 에이전트, 최신 모델 지원 추가"
+      ]
+    },
+    {
+      "slug": "figma",
+      "date": "2026-03-27",
+      "changes": [
+        "description: Figma Make, Figma Buzz 추가",
+        "features: Figma Make, Figma Buzz, Dev Mode 추가"
+      ]
+    },
+    {
+      "slug": "napkin-ai",
+      "date": "2026-03-27",
+      "changes": [
+        "description: 비즈니스 스토리텔링 포커스 및 내보내기 포맷 추가"
+      ]
+    },
+    {
+      "slug": "opusclip",
+      "date": "2026-03-27",
+      "changes": [
+        "description: 사용자 수 1200만 → 1600만, AI 오브젝트 트래킹 언급 추가"
+      ]
+    },
+    {
+      "slug": "dify",
+      "date": "2026-03-27",
+      "changes": [
+        "description: 네이티브 MCP 통합 추가",
+        "features: 네이티브 MCP 통합 추가"
+      ]
+    },
+    {
+      "slug": "replicate",
+      "date": "2026-03-27",
+      "changes": [
+        "description: Cloudflare 합류, FLUX 2 Pro·Seedream 4 최신 모델 언급 추가"
+      ]
     }
   ],
   "checked": [
@@ -252,11 +338,17 @@
     "writesonic", "copilot", "surfer-seo", "papago", "grok", "le-chat", "poe", "flux",
     "ideogram", "imagefx", "recraft", "adobe-firefly", "magnific", "krea", "playground-ai",
     "clova-note", "notta", "luma-ai", "sora", "capcut", "vrew", "heygen", "notebooklm",
-    "hugging-face", "wrtn"
+    "hugging-face", "wrtn",
+    "vidu", "synthesia", "replicate", "fal-ai", "veed", "invideo-ai", "tripo", "meshy",
+    "dify", "make", "replit", "groq", "together-ai", "consensus", "arc", "magnific",
+    "napkin-ai", "character-ai", "figma", "opusclip", "descript", "hailuo-ai"
   ],
   "skipped": [
     "canva-ai", "dall-e", "bolt-new", "gamma", "leonardo-ai", "kling",
     "copilot", "surfer-seo", "papago", "grok", "le-chat", "poe", "ideogram",
-    "imagefx", "adobe-firefly", "magnific", "clova-note", "sora", "capcut", "notebooklm"
+    "imagefx", "adobe-firefly", "magnific", "clova-note", "sora", "capcut", "notebooklm",
+    "synthesia", "fal-ai", "veed", "tripo", "meshy",
+    "make", "replit", "groq", "together-ai", "consensus", "arc",
+    "character-ai", "descript", "hailuo-ai"
   ]
 }
