@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <title>TimelessHome.ai | AI Interior Design & Virtual Home Staging</title>
+
+    <base href="/" />
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="AI-powered interior design and virtual home staging. Redesign any room or stage an entire home with photorealistic visualizations and shoppable product recommendations. Perfect for homeowners, real estate agents, and house flippers." />
+    <meta name="keywords" content="AI interior design, virtual staging, virtual home staging, room redesign, AI room makeover, interior design generator, home decoration ideas, furniture shopping, room planner, AI home design, room transformation, interior design app, virtual room designer, real estate staging, house flipping, property staging" />
+    <meta name="author" content="TimelessHome.ai" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://timelesshome.ai/" />
+
+    <!-- Viewport & Mobile -->
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#f4efe7" />
+    <meta name="msapplication-navbutton-color" content="#f4efe7" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://timelesshome.ai/" />
+    <meta property="og:site_name" content="TimelessHome.ai" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="TimelessHome.ai | AI Interior Design & Virtual Home Staging" />
+    <meta property="og:description" content="AI-powered interior design and virtual home staging. Redesign any room or stage an entire home with photorealistic visualizations and shoppable product recommendations." />
+    <meta property="og:image" content="https://timelesshome.ai/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="TimelessHome.ai - AI-powered interior design showing a room before and after transformation" />
+
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://timelesshome.ai/" />
+    <meta name="twitter:title" content="TimelessHome.ai | AI Interior Design & Virtual Staging" />
+    <meta name="twitter:description" content="AI-powered interior design and virtual home staging. Redesign rooms or stage entire homes with photorealistic visualizations and shoppable products." />
+    <meta name="twitter:image" content="https://timelesshome.ai/og-image.png" />
+    <meta name="twitter:image:alt" content="TimelessHome.ai - AI interior design room transformation" />
+
+    <meta property="fb:app_id" content="4391602217829733"/>
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="64x64" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- iOS PWA -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="TimelessHome" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Preload hero images so they display before React hydrates -->
+    <link rel="preload" href="/dining-room2.gif" as="image" type="image/gif" />
+    <link rel="preload" href="/bedroom3.gif" as="image" type="image/gif" />
+    <link rel="preload" href="/web-background.jpg" as="image" />
+    <link rel="preload" href="/web-background-narrow.jpg" as="image" />
+
+    <!-- DNS Prefetch & Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
+    <link rel="dns-prefetch" href="https://cdn.logr-in.com" />
+    <link rel="dns-prefetch" href="https://cdn.jotfor.ms" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5Z5B7CLL');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Structured Data: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "TimelessHome.ai",
+      "url": "https://timelesshome.ai",
+      "description": "AI-powered interior design and virtual home staging platform. Upload room photos for AI-generated design concepts, or stage an entire home with photorealistic visualizations and shoppable product recommendations.",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free AI interior design with optional premium features"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "TimelessSpaces.AI",
+        "url": "https://timelessspaces.ai"
+      },
+      "featureList": [
+        "AI room redesign from photos",
+        "Virtual home staging for entire properties",
+        "Your own unique design styles per room",
+        "Curated shoppable product recommendations",
+        "Photorealistic room visualizations",
+        "Room treatment suggestions (paint, flooring, wallpaper)",
+        "Before and after comparisons",
+        "Automated and interactive design paths",
+        "Perfect for homeowners, real estate agents, and house flippers"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TimelessHome.ai",
+      "url": "https://timelesshome.ai",
+      "logo": "https://timelesshome.ai/logo-color.png",
+      "description": "AI-powered interior design and virtual home staging platform by TimelessSpaces.AI",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "TimelessSpaces.AI",
+        "url": "https://timelessspaces.ai"
+      },
+      "sameAs": []
+    }
+    </script>
+
+    <!-- Structured Data: FAQPage for rich snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does TimelessHome.ai work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Upload a photo of your room, answer a few style questions, and our AI generates unique design concepts that includes a photorealistic visualization, curated shopping list with real products, and room treatment suggestions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is TimelessHome.ai free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TimelessHome.ai offers free AI interior design with optional premium features for users who want more control and customization over their designs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Timeless Method?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Timeless Method is our automated AI design pipeline that handles everything from analyzing your room to selecting products. You upload a photo, answer questions, and receive design concepts with shoppable product lists — all generated by AI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I buy the products shown in my design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every product in your design is a real, purchasable item sourced from top retailers including eBay, Wayfair, Amazon, and more. Each item includes a direct shopping link."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is virtual home staging?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Virtual home staging lets you furnish and design every room in a property using AI-generated photorealistic images. Just provide a listing address and receive professionally staged visualizations for every room — perfect for real estate listings, house flipping, or planning a full home makeover."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+    <!-- Analytics (deferred) -->
+    <script src="https://cdn.logr-in.com/LogRocket.min.js" crossorigin="anonymous"></script>
+    <script>window.LogRocket && window.LogRocket.init('hrynbd/timelesshomeai');</script>
+    <!-- Reddit Pixel -->
+    <script>
+      !function(w, d) {
+        if (!w.rdt) {
+          var p = w.rdt = function() {
+            p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments);
+          };
+          p.callQueue = [];
+          var t = d.createElement("script");
+          t.src = "https://www.redditstatic.com/ads/pixel.js";
+          t.async = true;
+          var s = d.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(t, s);
+        }
+      }(window, document);
+
+      rdt('init', 'a2_ijp8u4divw53');
+      rdt('track', 'PageView');
+    </script>
+    <script type="module" crossorigin src="/assets/index-6Y6RV6cT.js?v=mnbzz6x2"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BjigyIep.css?v=mnbzz6x2">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z5B7CLL"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <!-- Static hero shell: fixed overlay visible instantly while JS loads -->
+    <!-- Removed by React on mount via useEffect in App.tsx -->
+    <div id="hero-shell" style="position:fixed;inset:0;z-index:9999;background:#2f2e2d;font-family:'Times New Roman',serif;letter-spacing:0.01em;line-height:1.6;overflow-y:auto;">
+      <!-- Background images -->
+      <div style="position:fixed;inset:0;z-index:0;pointer-events:none;">
+        <img src="/web-background.jpg" alt="" class="hero-bg-wide" style="width:100%;height:100%;object-fit:cover;" />
+        <img src="/web-background-narrow.jpg" alt="" class="hero-bg-narrow" style="width:100%;height:100%;object-fit:cover;display:none;" />
+      </div>
+      <!-- Nav placeholder -->
+      <div style="position:relative;z-index:10;height:4rem;display:flex;align-items:center;padding:0 1rem;">
+        <img src="/logo.svg" alt="TimelessHome.AI" style="height:2rem;width:auto;" />
+      </div>
+      <!-- Hero content -->
+      <div style="position:relative;z-index:10;padding:5rem 1.5rem 5rem;text-align:center;">
+        <div style="max-width:56rem;margin:0 auto;">
+          <h1 style="font-size:3rem;margin:0 0 1.5rem;color:#f4efe7;font-weight:400;line-height:1.1;font-family:Georgia,'Times New Roman',serif;letter-spacing:0.03em;">AI Interior Design & Virtual Home Staging</h1>
+          <p style="font-size:1.25rem;margin:0 auto 2rem;max-width:42rem;color:rgba(244,239,231,0.7);line-height:1.625;">
+            Redesign any room or stage your entire home with AI-powered photorealistic visualizations and real products you can actually buy
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:2rem;">
+            <a href="/redesign" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 2rem;border-radius:9999px;background:#a8b79a;color:#2f2e2d;text-decoration:none;font-weight:500;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);">
+              Start Your Free Design
+            </a>
+            <a href="/gallery" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 2rem;border-radius:9999px;border:1px solid rgba(244,239,231,0.3);color:#f4efe7;text-decoration:none;font-weight:500;">
+              Explore Gallery
+            </a>
+          </div>
+          <div class="hero-gif-grid" style="display:grid;gap:1rem;padding-top:2.5rem;max-width:56rem;margin:0 auto;">
+            <img src="/dining-room2.gif" alt="AI dining room redesign before and after" style="width:100%;border-radius:0.5rem;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);" />
+            <img src="/bedroom3.gif" alt="AI bedroom redesign before and after" style="width:100%;border-radius:0.5rem;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="root"></div>
+
+    <!-- Static SEO Content: visible to crawlers before JS loads -->
+    <div id="seo-content" style="max-width: 64rem; margin: 0 auto; padding: 2rem 1.5rem; font-family: Georgia, 'Times New Roman', serif; color: #3d3529; line-height: 1.6;">
+      <noscript>
+        <h1 style="font-size: 2rem; margin-bottom: 1rem;">TimelessHome.ai &mdash; AI Interior Design & Virtual Home Staging</h1>
+        <p style="font-size: 1.125rem; margin-bottom: 1.5rem;">Transform any room or stage an entire home with AI-powered design. Upload photos and receive professionally designed concepts with real, shoppable products.</p>
+        <p>Please enable JavaScript to use the TimelessHome.ai application.</p>
+      </noscript>
+
+      <article itemscope itemtype="https://schema.org/WebPage" style="display: block;">
+        <header>
+          <h1 itemprop="name" style="font-size: 1.75rem; margin-bottom: 0.5rem;">AI Interior Design & Virtual Home Staging</h1>
+          <p itemprop="description" style="font-size: 1.125rem; color: #6b5f52; margin-bottom: 1.5rem;">Redesign any room or virtually stage your entire home with AI. Get unique design concepts with curated shopping lists of real products, photorealistic visualizations, and room treatments &mdash; perfect for homeowners, real estate agents, and house flippers.</p>
+        </header>
+
+        <section>
+          <h2 style="font-size: 1.25rem; margin: 1.5rem 0 0.75rem;">How It Works</h2>
+          <ol style="padding-left: 1.25rem;">
+            <li><strong>Upload a Photo</strong> &mdash; Take a photo of any room you want to redesign</li>
+            <li><strong>Answer Style Questions</strong> &mdash; Tell us your preferences, budget, and vision</li>
+            <li><strong>View Designs</strong> &mdash; View unique AI-generated design concepts</li>
+            <li><strong>Shop the Look</strong> &mdash; Every item is real and shoppable from top retailers</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 style="font-size: 1.25rem; margin: 1.5rem 0 0.75rem;">Three Ways to Design</h2>
+          <ul style="padding-left: 1.25rem; list-style: disc;">
+            <li><strong>The Timeless Method</strong> &mdash; Fully automated AI pipeline. Upload, answer questions, and receive complete designs with shopping lists.</li>
+            <li><strong>Interactive Design</strong> &mdash; Hands-on creative control. Choose what stays, customize styles, and shop item-by-item with AI assistance.</li>
+            <li><strong>Virtual Home Staging</strong> &mdash; Stage every room in a property at once. Just provide a listing address and our AI furnishes and designs each room with photorealistic results. Ideal for real estate agents, house flippers, and property managers.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 style="font-size: 1.25rem; margin: 1.5rem 0 0.75rem;">Every Design Includes</h2>
+          <ul style="padding-left: 1.25rem; list-style: disc;">
+            <li>Photorealistic room visualization showing your space transformed</li>
+            <li>Curated shopping list with products from eBay, Wayfair, Amazon, and more</li>
+            <li>Room treatment recommendations (paint colors, flooring, wallpaper)</li>
+            <li>Before-and-after comparisons</li>
+            <li>Downloadable design images</li>
+          </ul>
+        </section>
+      </article>
+      <a href="https://theresanaiforthat.com/ai/timelesshome-ai/?ref=featured&v=9775385" target="_blank" rel="nofollow"><img width="300" src="https://media.theresanaiforthat.com/featured-on-taaft.png?width=600"></a>
+    </div>
+
+    <!-- Static Footer -->
+    <style>
+      @media (max-width: 767px) { #site-footer { display: none !important; } }
+      .social-icon { opacity: 0.7; transition: opacity 0.2s; }
+      .social-icon:hover { opacity: 1; }
+      /* Hero shell: responsive background + gif grid */
+      .hero-gif-grid { grid-template-columns: 1fr; }
+      @media (min-width: 768px) {
+        .hero-gif-grid { grid-template-columns: 1fr 1fr; }
+        .hero-bg-narrow { display: none !important; }
+      }
+      @media (max-width: 767px) {
+        .hero-bg-wide { display: none !important; }
+        .hero-bg-narrow { display: block !important; }
+      }
+    </style>
+    <footer id="site-footer" style="position: relative; z-index: 10; padding: 1.5rem; text-align: center; font-size: 0.875rem; color: #8c8478; background-color: #1a1714; border-top: 1px solid rgba(140,132,120,0.2);">
+      <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <a href="https://www.facebook.com/TimelessHomeAI" target="_blank" rel="noopener noreferrer" title="Facebook" class="social-icon"><img src="/icons/social/facebook.svg" alt="Facebook" width="20" height="20" /></a>
+        <a href="https://x.com/TimelessHomeAI" target="_blank" rel="noopener noreferrer" title="X" class="social-icon"><img src="/icons/social/x.svg" alt="X" width="20" height="20" /></a>
+        <a href="https://www.youtube.com/@TimelessHomeAI" target="_blank" rel="noopener noreferrer" title="YouTube" class="social-icon"><img src="/icons/social/youtube.svg" alt="YouTube" width="20" height="20" /></a>
+        <a href="https://www.pinterest.com/TimelessHomeAI" target="_blank" rel="noopener noreferrer" title="Pinterest" class="social-icon"><img src="/icons/social/pinterest.svg" alt="Pinterest" width="20" height="20" /></a>
+        <a href="https://www.instagram.com/TimelessHomeAI" target="_blank" rel="noopener noreferrer" title="Instagram" class="social-icon"><img src="/icons/social/instagram.svg" alt="Instagram" width="20" height="20" /></a>
+        <a href="https://www.tiktok.com/@TimelessHomeAI" target="_blank" rel="noopener noreferrer" title="TikTok" class="social-icon"><img src="/icons/social/tiktok.svg" alt="TikTok" width="20" height="20" /></a>
+        <a href="https://www.reddit.com/user/TimelessHomeAI" target="_blank" rel="noopener noreferrer" title="Reddit" class="social-icon"><img src="/icons/social/reddit.svg" alt="Reddit" width="20" height="20" /></a>
+        <a href="https://www.linkedin.com/company/timelessspacesai" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon"><img src="/icons/social/linkedin.svg" alt="LinkedIn" width="20" height="20" /></a>
+        <a href="https://www.threads.net/@TimelessHomeAI" target="_blank" rel="noopener noreferrer" title="Threads" class="social-icon"><img src="/icons/social/threads.svg" alt="Threads" width="20" height="20" /></a>
+      </div>
+      <nav style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; max-width: 36rem; margin: 0 auto;" aria-label="Footer navigation">
+        <a href="https://timelessspaces.ai/about" target="_blank" rel="noopener noreferrer" style="color: #8c8478; text-decoration: none;">About Us</a>
+        <a href="https://timelessspaces.ai/contact" target="_blank" rel="noopener noreferrer" style="color: #8c8478; text-decoration: none;">Contact Us</a>
+        <a href="https://timelessspaces.ai/privacy" target="_blank" rel="noopener noreferrer" style="color: #8c8478; text-decoration: none;">Privacy Policy</a>
+        <a href="https://timelessspaces.ai/terms" target="_blank" rel="noopener noreferrer" style="color: #8c8478; text-decoration: none;">Terms of Use</a>
+      </nav>
+      <div style="margin-top: 0.5rem;">
+        &copy; 2026 <a href="https://timelesshome.ai" style="color: #8c8478; text-decoration: none;">TimelessHome.ai</a> &mdash; A <a href="https://TimelessSpaces.AI" target="_blank" rel="noopener noreferrer" style="color: #8c8478; text-decoration: none;">TimelessSpaces.AI</a> Brand
+      </div>
+    </footer>
+
+    <!-- Hide static SEO content once React hydrates -->
+    <script>document.getElementById('seo-content').style.display='none';</script>
+    <script>
+      // Detect stale asset filenames after deployment (new content hashes).
+      // When the browser holds a cached index.html pointing to old hashed JS/CSS,
+      // the server 404s those files and returns the SPA HTML — causing a MIME
+      // type mismatch error. Reload the page to pick up the updated index.html.
+      window.addEventListener('error', function(e) {
+        var t = e.target;
+        if (t && (t.tagName === 'SCRIPT' || t.tagName === 'LINK')) {
+          var src = t.src || t.href || '';
+          if (src.indexOf(window.location.origin) === 0 || (src.indexOf('/') === 0 && src.indexOf('//') !== 0)) {
+            window.location.reload();
+          }
+        }
+      }, true);
+      // Also handle Vite's dynamic import() failures (lazy-loaded chunks).
+      window.addEventListener('vite:preloadError', function() {
+        window.location.reload();
+      });
+    </script>
+    <script src="https://cdn.jotfor.ms/agent/embedjs/019b8883034a721ca3d94caa4fea39c32104/embed.js" async></script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2016135018964709');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=2016135018964709&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <script type="text/javascript">
+      var vglnk = {key: '875b05afff0af950b263498e22592848'};
+      (function(d, t) {
+        var s = d.createElement(t);
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//cdn.viglink.com/api/vglnk.js';
+        var r = d.getElementsByTagName(t)[0];
+        r.parentNode.insertBefore(s, r);
+      }(document, 'script'));
+    </script>
+  </body>
+</html>
