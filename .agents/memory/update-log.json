@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-03-28",
+  "lastRun": "2026-03-29",
   "updated": [
     {
       "slug": "chatgpt",
@@ -382,6 +382,45 @@
         "description: Quick Design, AI 영상 생성 추가",
         "features: Quick Design, AI 영상 생성 추가"
       ]
+    },
+    {
+      "slug": "runway",
+      "date": "2026-03-29",
+      "changes": [
+        "description: GWM-1 General World Model, Runway Characters API 추가",
+        "features: GWM-1, Runway Characters API 추가"
+      ]
+    },
+    {
+      "slug": "luma-ai",
+      "date": "2026-03-29",
+      "changes": [
+        "description: UNI-1 통합 모델, 추론 영상 모델, HDR 모델 추가",
+        "features: UNI-1, 추론 영상 모델, HDR 모델 추가"
+      ]
+    },
+    {
+      "slug": "copy-ai",
+      "date": "2026-03-29",
+      "changes": [
+        "description: GTM AI 플랫폼으로 포지셔닝 강화, 2000+ 통합 반영",
+        "features: GTM AI 플랫폼, Prospecting Cockpit, LLM Agnostic 추가"
+      ]
+    },
+    {
+      "slug": "dify",
+      "date": "2026-03-29",
+      "changes": [
+        "description: Universal MCP Server 배포 기능 추가",
+        "features: Universal MCP Server 배포 추가"
+      ]
+    },
+    {
+      "slug": "krea",
+      "date": "2026-03-29",
+      "changes": [
+        "features: Video LoRA 파인튜닝, LoRA 공유 추가"
+      ]
     }
   ],
   "checked": [
@@ -479,7 +518,14 @@
     "codev",
     "reweb",
     "aippt",
-    "musicfx"
+    "musicfx",
+    "wireframable",
+    "janus",
+    "muapi",
+    "tost-ai",
+    "ugic",
+    "creatie",
+    "canirun-ai"
   ],
   "skipped": [
     "canva-ai",
@@ -536,6 +582,10 @@
     "codev",
     "reweb",
     "aippt",
-    "musicfx"
+    "musicfx",
+    "ugic",
+    "creatie",
+    "midjourney",
+    "perplexity"
   ]
 }
