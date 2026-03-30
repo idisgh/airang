@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-03-29",
+  "lastRun": "2026-03-30",
   "updated": [
     {
       "slug": "chatgpt",
@@ -420,6 +420,94 @@
       "date": "2026-03-29",
       "changes": [
         "features: Video LoRA 파인튜닝, LoRA 공유 추가"
+      ]
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-03-30",
+      "changes": [
+        "description: GPT-5.3 Instant 모델, ChatGPT for Excel, Codex Plugins Directory 추가",
+        "features: GPT-5.3 Instant, Codex Plugins Directory, ChatGPT for Excel 추가"
+      ]
+    },
+    {
+      "slug": "claude",
+      "date": "2026-03-30",
+      "changes": [
+        "description: Opus 4.6(2026년 2월), 1M 토큰 컨텍스트, Computer Use, Voice Mode, /loop 추가",
+        "features: 1M 토큰 컨텍스트, Computer Use, /loop, Voice Mode 추가"
+      ]
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-03-30",
+      "changes": [
+        "description: Gemini 3.1 Flash Live, Personal Intelligence, Lyria 3 Pro, AI 히스토리 이전 추가",
+        "features: Personal Intelligence, Lyria 3 Pro 추가"
+      ]
+    },
+    {
+      "slug": "midjourney",
+      "date": "2026-03-30",
+      "changes": [
+        "description: V8 Alpha(2026년 3월 17일) — 5배 빠른 속도, 네이티브 2K HD(--hd)",
+        "features: V8 Alpha, 2K HD, Raw 모드로 교체"
+      ]
+    },
+    {
+      "slug": "perplexity",
+      "date": "2026-03-30",
+      "changes": [
+        "description: Comet AI 브라우저(iOS 지원), Enterprise Memory·Governance 추가",
+        "features: Comet AI 브라우저, Enterprise Memory 추가"
+      ]
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-03-30",
+      "changes": [
+        "description: Composer 2, JetBrains ACP, Automations, 30+ 플러그인, Self-hosted Cloud Agents 추가",
+        "features: Composer 2, JetBrains ACP, Automations, Self-hosted Cloud Agents 추가"
+      ]
+    },
+    {
+      "slug": "suno",
+      "date": "2026-03-30",
+      "changes": [
+        "description: v5.5(2026년 3월 26일) — Voices, Custom Models, My Taste 추가",
+        "features: v5.5, Voices, Custom Models, My Taste 추가"
+      ]
+    },
+    {
+      "slug": "windsurf",
+      "date": "2026-03-30",
+      "changes": [
+        "description: SWE-1.5 Free 무료 제공, Multi-Cascade 탭·페인, Context Window 인디케이터 추가",
+        "features: SWE-1.5 Free, Multi-Cascade, Context Window 인디케이터, Cascade Hooks 추가"
+      ]
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-03-30",
+      "changes": [
+        "description: Notion 3.4 — AI 이미지·차트·슬라이드, Presentation Mode, Tabs 블록 추가",
+        "features: AI 이미지·차트·슬라이드 생성, Presentation Mode, Tabs 블록, Markdown Content API 추가"
+      ]
+    },
+    {
+      "slug": "figma",
+      "date": "2026-03-30",
+      "changes": [
+        "description: Design with Agents(MCP, beta) — AI 에이전트가 Figma 파일 직접 수정",
+        "features: Design with Agents(MCP, beta) 추가"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "date": "2026-03-30",
+      "changes": [
+        "description: IBM watsonx Orchestrate 파트너십, Full/Basic Seat 구조 추가",
+        "features: IBM watsonx 연동, Full/Basic Seat 추가"
       ]
     }
   ],
