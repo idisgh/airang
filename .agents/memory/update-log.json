@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-03-30",
+  "lastRun": "2026-03-31",
   "updated": [
     {
       "slug": "chatgpt",
@@ -509,6 +509,50 @@
         "description: IBM watsonx Orchestrate 파트너십, Full/Basic Seat 구조 추가",
         "features: IBM watsonx 연동, Full/Basic Seat 추가"
       ]
+    },
+    {
+      "slug": "together-ai",
+      "date": "2026-03-31",
+      "changes": [
+        "tagline: AI Native Cloud 풀스택 플랫폼으로 재포지셔닝",
+        "description: FlexSandbox, FlashAttention-4, 배치 처리 추가",
+        "features: 최신 기능으로 업데이트"
+      ]
+    },
+    {
+      "slug": "scenario",
+      "date": "2026-03-31",
+      "changes": [
+        "tagline: 크리에이티브 AI 인프라로 포지셔닝 강화",
+        "pricingDetail: Starter $10/Pro $30/Max $50 구조로 변경",
+        "features: 앱 빌더, Unity 플러그인, SOC 2 추가"
+      ]
+    },
+    {
+      "slug": "mapify",
+      "date": "2026-03-31",
+      "changes": [
+        "tagline: 오디오·이미지 변환 추가",
+        "description: 팟캐스트·녹음, 이미지→마인드맵, Chat with File 추가",
+        "features: 오디오·이미지 변환 추가"
+      ]
+    },
+    {
+      "slug": "galileo",
+      "date": "2026-03-31",
+      "changes": [
+        "name: Galileo AI → Google Stitch (Google 인수)",
+        "url: usegalileo.ai → stitch.withgoogle.com",
+        "tagline/description: Google Stitch로 업데이트"
+      ]
+    },
+    {
+      "slug": "anifusion",
+      "date": "2026-03-31",
+      "changes": [
+        "description: FLUX.1 Schnell/Dev 모델 지원, 코믹스 타입 명시",
+        "features: FLUX.1 모델, 캔버스 에디터 추가"
+      ]
     }
   ],
   "checked": [
@@ -674,6 +718,7 @@
     "ugic",
     "creatie",
     "midjourney",
-    "perplexity"
+    "perplexity",
+    "pika"
   ]
 }
