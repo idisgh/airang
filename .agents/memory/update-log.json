@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-03-31",
+  "lastRun": "2026-04-02",
   "updated": [
     {
       "slug": "chatgpt",
@@ -553,6 +553,31 @@
         "description: FLUX.1 Schnell/Dev 모델 지원, 코믹스 타입 명시",
         "features: FLUX.1 모델, 캔버스 에디터 추가"
       ]
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-04-02",
+      "changes": [
+        "description: GPT-5.1 Codex 모델, File Library, Location Sharing, ACP 기반 쇼핑 개선 추가",
+        "features: GPT-5.1 Codex, File Library, Location Sharing 추가"
+      ]
+    },
+    {
+      "slug": "figma",
+      "date": "2026-04-02",
+      "changes": [
+        "description: FigJam + Microsoft 365 Copilot 연동, AI Image Tools Slides·Buzz 확장 추가",
+        "features: FigJam + Microsoft 365 Copilot, AI Image Tools (Slides·Buzz) 추가"
+      ]
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-04-02",
+      "changes": [
+        "description: Custom Agents(팀 자동화), Archive 페이지 기능 추가",
+        "pricingDetail: Business·Enterprise 플랜 포함으로 변경",
+        "features: Custom Agents, Archive 페이지 추가"
+      ]
     }
   ],
   "checked": [
@@ -657,7 +682,8 @@
     "tost-ai",
     "ugic",
     "creatie",
-    "canirun-ai"
+    "canirun-ai",
+    "jude"
   ],
   "skipped": [
     "canva-ai",
@@ -719,6 +745,25 @@
     "creatie",
     "midjourney",
     "perplexity",
-    "pika"
+    "pika",
+    "tost-ai",
+    "jude",
+    "claude",
+    "gemini",
+    "cursor",
+    "runway",
+    "suno",
+    "deepl",
+    "github-copilot",
+    "elevenlabs",
+    "jasper",
+    "stable-diffusion",
+    "lovable",
+    "windsurf",
+    "v0-dev",
+    "udio",
+    "writesonic",
+    "copy-ai",
+    "luma-ai"
   ]
 }
