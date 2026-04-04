@@ -1,15 +1,20 @@
 {
-  "lastRun": "2026-04-03",
+  "lastRun": "2026-04-04",
   "updated": [
     {
       "slug": "musicfx",
       "date": "2026-04-03",
-      "changes": ["url: aitestkitchen.withgoogle.com/tools/music-fx → labs.google/fx/tools/music-fx"]
+      "changes": [
+        "url: aitestkitchen.withgoogle.com/tools/music-fx → labs.google/fx/tools/music-fx"
+      ]
     },
     {
       "slug": "bolt-new",
       "date": "2026-04-03",
-      "changes": ["description: 디자인 시스템 연동(Porsche·Material UI·Washington Post) 추가", "features: 디자인 시스템 연동 추가"]
+      "changes": [
+        "description: 디자인 시스템 연동(Porsche·Material UI·Washington Post) 추가",
+        "features: 디자인 시스템 연동 추가"
+      ]
     },
     {
       "slug": "chatgpt",
@@ -588,6 +593,63 @@
         "pricingDetail: Business·Enterprise 플랜 포함으로 변경",
         "features: Custom Agents, Archive 페이지 추가"
       ]
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-04-04",
+      "changes": [
+        "description: Apple CarPlay 지원(iOS 26.4+) 추가",
+        "features: CarPlay 지원 추가"
+      ]
+    },
+    {
+      "slug": "claude",
+      "date": "2026-04-04",
+      "changes": [
+        "description: Opus 4.6 Terminal-Bench 2.0·HLE 1위 언급, Agent Teams, Claude in PowerPoint, Adaptive Thinking 추가",
+        "features: Agent Teams, Adaptive Thinking, Claude in Excel·PowerPoint 추가"
+      ]
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-04-04",
+      "changes": [
+        "description: Gemini 3 모델(2025.11), Gemini Agent, Generative Interfaces(Visual Layout·Dynamic View) 추가",
+        "pricingDetail: AI Ultra .99/월 플랜 추가",
+        "features: Gemini Agent, Generative Interfaces, Canvas 추가"
+      ]
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-04-04",
+      "changes": [
+        "description: Cursor 3 Agents Window, Design Mode 추가",
+        "features: Cursor 3 (Agents Window), Design Mode 추가"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "date": "2026-04-04",
+      "changes": [
+        "description: M 시리즈 D (B 기업가치), Eleven v3 GA(2026년 3월), Deloitte 파트너십 추가",
+        "features: Eleven v3 모델 (GA), Deloitte 파트너십 추가"
+      ]
+    },
+    {
+      "slug": "figma",
+      "date": "2026-04-04",
+      "changes": [
+        "description: Make Kits, Make Attachments, Buzz 승인 워크플로우 추가",
+        "features: Make Kits, Make Attachments, Buzz 승인 워크플로우 추가"
+      ]
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-04-04",
+      "changes": [
+        "description: 일본·한국 데이터 레지던시(2026년 5월~) 추가",
+        "features: 일본·한국 데이터 레지던시 추가"
+      ]
     }
   ],
   "checked": [
@@ -733,7 +795,21 @@
     "comfyui",
     "aippt",
     "musicfx",
-    "wrtn"
+    "wrtn",
+    "chatgpt",
+    "claude",
+    "gemini",
+    "cursor",
+    "elevenlabs",
+    "figma",
+    "notion-ai",
+    "midjourney",
+    "perplexity",
+    "suno",
+    "windsurf",
+    "runway",
+    "github-copilot",
+    "deepl"
   ],
   "skipped": [
     "canva-ai",
@@ -852,6 +928,13 @@
     "veed",
     "comfyui",
     "aippt",
-    "wrtn"
+    "wrtn",
+    "midjourney",
+    "perplexity",
+    "suno",
+    "windsurf",
+    "runway",
+    "github-copilot",
+    "deepl"
   ]
 }
