@@ -1,6 +1,46 @@
 {
-  "lastRun": "2026-04-04",
+  "lastRun": "2026-04-09",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-04-09",
+      "changes": [
+        "description: GPT-5.4 Thinking·GPT-5.4 Pro, upfront plan, 심화 웹 리서치 반영",
+        "features: GPT-5.4 Thinking·Pro, upfront plan, 심화 웹 리서치 추가"
+      ]
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-04-09",
+      "changes": [
+        "description: Google Slides brand-matched editable slides 기능 반영",
+        "features: Google Slides brand-matched editable slides 추가"
+      ]
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-04-09",
+      "changes": [
+        "description: async subagents, sandbox network access controls 반영",
+        "features: Marketplace Plugins, Async subagents, Sandbox network access controls 추가"
+      ]
+    },
+    {
+      "slug": "figma",
+      "date": "2026-04-09",
+      "changes": [
+        "description: Figma canvas 직접 편집 가능한 Design with Agents, use_figma, skills 반영",
+        "features: use_figma tool, Skills 추가"
+      ]
+    },
+    {
+      "slug": "claude",
+      "date": "2026-04-09",
+      "changes": [
+        "description: Claude Managed Agents(퍼블릭 베타) 추가",
+        "features: Managed Agents (퍼블릭 베타) 추가"
+      ]
+    },
     {
       "slug": "musicfx",
       "date": "2026-04-03",
