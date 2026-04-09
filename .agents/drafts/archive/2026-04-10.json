@@ -1,0 +1,65 @@
+[
+  {
+    "id": "103",
+    "name": "apfel",
+    "slug": "apfel",
+    "tagline": "맥 내장 LLM을 여는 로컬 AI CLI",
+    "description": "apfel은 macOS Tahoe의 Apple Intelligence에 포함된 온디바이스 LLM을 터미널과 OpenAI 호환 서버로 노출해주는 오픈소스 도구다. 별도 모델 다운로드나 API key 없이 Homebrew 설치만으로 바로 사용할 수 있고, CLI·interactive chat·localhost API server를 모두 지원한다. MCP 서버 연결, JSON 출력, shell script 파이프라인 연동까지 제공해 로컬 AI 자동화와 개발 워크플로우에 적합하다.",
+    "url": "https://apfel.franzai.com",
+    "logoUrl": "/logos/apfel.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스 (MIT)",
+    "koreanSupport": "partial",
+    "features": [
+      "온디바이스 LLM CLI",
+      "OpenAI 호환 로컬 서버",
+      "MCP 서버 연동",
+      "JSON 출력 및 파이프라인 처리",
+      "Interactive chat",
+      "추가 모델 다운로드 불필요"
+    ],
+    "platforms": [
+      "desktop",
+      "api"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-10"
+  },
+  {
+    "id": "104",
+    "name": "Whispree",
+    "slug": "whispree",
+    "tagline": "말하면 AI 프롬프트로 정리되는 macOS STT",
+    "description": "Whispree는 macOS 메뉴바에서 단축키로 음성을 받아 텍스트로 변환하고, LLM 후처리로 더 자연스럽게 다듬어 커서 위치에 바로 붙여넣는 음성 입력 도구다. 한국어와 영어 tech term 혼용에 강하고, filler removal·structured mode·스크린샷 문맥 첨부 기능까지 지원해 AI prompt 작성과 voice coding에 특히 잘 맞는다. Groq STT, local model, OpenAI 계열 correction을 함께 선택할 수 있는 무료 오픈소스 앱이다.",
+    "url": "https://github.com/Arsture/whispree",
+    "logoUrl": "/logos/whispree.svg",
+    "categories": [
+      "voice"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스 (MIT)",
+    "koreanSupport": "full",
+    "features": [
+      "단축키 음성 입력",
+      "LLM 기반 문장 보정",
+      "한국어+영어 tech term 보정",
+      "Structured mode 프롬프트 정리",
+      "스크린샷 문맥 첨부",
+      "로컬/클라우드 STT 선택"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-10"
+  }
+]
