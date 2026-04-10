@@ -1,0 +1,66 @@
+[
+  {
+    "id": "103",
+    "name": "Strix",
+    "slug": "strix",
+    "tagline": "AI 보안 테스트 에이전트",
+    "description": "Strix는 자율 AI 에이전트가 코드, 웹앱, API를 실제 공격자처럼 실행하며 취약점을 찾고 PoC까지 검증해주는 보안 테스트 플랫폼이다. 정적 분석의 false positive를 줄이고, GitHub PR·CI/CD에 연결해 개발 단계에서 바로 보안 이슈를 잡는 흐름에 맞춰 설계됐다. 클라우드 앱과 오픈소스 CLI를 함께 제공해 로컬 코드베이스, GitHub 저장소, 배포된 서비스까지 폭넓게 점검할 수 있다.",
+    "url": "https://strix.ai",
+    "logoUrl": "/logos/strix.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "freemium",
+    "pricingDetail": "무료 시작 / Pro $29/seat/월 + $49/domain / Enterprise 문의",
+    "koreanSupport": "none",
+    "features": [
+      "AI 침투 테스트",
+      "실제 PoC 검증",
+      "CLI 제공",
+      "GitHub·CI/CD 연동",
+      "자동 fix PR",
+      "코드·API·클라우드 점검"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-11"
+  },
+  {
+    "id": "104",
+    "name": "GBrain",
+    "slug": "gbrain",
+    "tagline": "에이전트용 지식베이스 레이어",
+    "description": "GBrain은 대규모 markdown 지식 저장소를 Postgres·pgvector 기반 하이브리드 검색으로 다룰 수 있게 해주는 오픈소스 개인 지식베이스 도구다. OpenClaw·Hermes Agent 같은 AI 에이전트가 사람, 회사, 회의, 아이디어 정보를 장기 메모리처럼 읽고 쓰도록 돕는다. CLI와 MCP 레이어를 제공해 에이전트 워크플로우에 바로 연결하기 좋다.",
+    "url": "https://github.com/garrytan/gbrain",
+    "logoUrl": "/logos/gbrain.svg",
+    "categories": [
+      "productivity",
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료 / Supabase·OpenAI·Anthropic 사용 비용은 별도",
+    "koreanSupport": "none",
+    "features": [
+      "하이브리드 검색",
+      "markdown 지식 저장소",
+      "CLI",
+      "MCP 연동",
+      "Postgres·pgvector 기반",
+      "에이전트 장기 메모리 구축"
+    ],
+    "platforms": [
+      "desktop",
+      "api"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-11"
+  }
+]

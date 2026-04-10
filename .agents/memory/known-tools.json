@@ -1,71 +1,955 @@
 {
-  "lastUpdated": "2026-03-14",
+  "lastUpdated": "2026-04-11",
   "tools": [
-    { "name": "ChatGPT", "category": "글쓰기/전반", "url": "https://chat.openai.com" },
-    { "name": "Claude", "category": "글쓰기/전반", "url": "https://claude.ai" },
-    { "name": "Gemini", "category": "글쓰기/전반", "url": "https://gemini.google.com" },
-    { "name": "Grok", "category": "글쓰기/전반", "url": "https://grok.x.ai" },
-    { "name": "Le Chat", "category": "글쓰기/전반", "url": "https://chat.mistral.ai" },
-    { "name": "Microsoft Copilot", "category": "글쓰기/전반", "url": "https://copilot.microsoft.com" },
-    { "name": "Poe", "category": "글쓰기/전반", "url": "https://poe.com" },
-    { "name": "FLUX", "category": "이미지 생성", "url": "https://blackforestlabs.ai" },
-    { "name": "Ideogram", "category": "이미지 생성", "url": "https://ideogram.ai" },
-    { "name": "ImageFX", "category": "이미지 생성", "url": "https://aitestkitchen.withgoogle.com/tools/image-fx" },
-    { "name": "Midjourney", "category": "이미지 생성", "url": "https://midjourney.com" },
-    { "name": "Recraft", "category": "이미지 생성", "url": "https://recraft.ai" },
-    { "name": "Adobe Firefly", "category": "이미지 편집", "url": "https://firefly.adobe.com" },
-    { "name": "Leonardo AI", "category": "이미지 편집", "url": "https://leonardo.ai" },
-    { "name": "Magnific", "category": "이미지 편집", "url": "https://magnific.ai" },
-    { "name": "Adobe Photoshop", "category": "이미지 편집", "url": "https://adobe.com/photoshop" },
-    { "name": "Microsoft Designer", "category": "이미지 편집", "url": "https://designer.microsoft.com" },
-    { "name": "Krea", "category": "이미지 편집", "url": "https://krea.ai" },
-    { "name": "Playground AI", "category": "이미지 편집", "url": "https://playground.com" },
-    { "name": "Scenario", "category": "이미지 편집", "url": "https://scenario.com" },
-    { "name": "클로바노트", "category": "회의/기록", "url": "https://clovanote.naver.com" },
-    { "name": "Notion AI", "category": "회의/기록", "url": "https://notion.so" },
-    { "name": "Notta", "category": "회의/기록", "url": "https://notta.ai" },
-    { "name": "Runway", "category": "동영상 생성", "url": "https://runwayml.com" },
-    { "name": "Kling", "category": "동영상 생성", "url": "https://klingai.com" },
-    { "name": "Hailuo", "category": "동영상 생성", "url": "https://hailuoai.com" },
-    { "name": "Luma AI", "category": "동영상 생성", "url": "https://lumalabs.ai" },
-    { "name": "Pika", "category": "동영상 생성", "url": "https://pika.art" },
-    { "name": "Sora", "category": "동영상 생성", "url": "https://sora.com" },
-    { "name": "Vidu", "category": "동영상 생성", "url": "https://vidu.studio" },
-    { "name": "CapCut", "category": "동영상 편집", "url": "https://capcut.com" },
-    { "name": "Vrew", "category": "동영상 편집", "url": "https://vrew.ai" },
-    { "name": "Veed", "category": "동영상 편집", "url": "https://veed.io" },
-    { "name": "Invideo AI", "category": "동영상 편집", "url": "https://invideo.io" },
-    { "name": "HeyGen", "category": "AI 아바타", "url": "https://heygen.com" },
-    { "name": "Synthesia", "category": "AI 아바타", "url": "https://synthesia.io" },
-    { "name": "Tripo", "category": "3D 생성", "url": "https://tripo3d.ai" },
-    { "name": "Meshy", "category": "3D 생성", "url": "https://meshy.ai" },
-    { "name": "NotebookLM", "category": "연구/리서치", "url": "https://notebooklm.google.com" },
-    { "name": "Consensus", "category": "연구/리서치", "url": "https://consensus.app" },
-    { "name": "Hugging Face", "category": "AI 모델", "url": "https://huggingface.co" },
-    { "name": "Replicate", "category": "AI 모델", "url": "https://replicate.com" },
-    { "name": "Fal.AI", "category": "AI 모델", "url": "https://fal.ai" },
-    { "name": "Tost.AI", "category": "AI 모델", "url": "https://tost.ai" },
-    { "name": "Anifusion", "category": "AI 만화/스토리보드", "url": "https://anifusion.ai" },
-    { "name": "StoryTribe", "category": "AI 만화/스토리보드", "url": "https://storytribe.ai" },
-    { "name": "Dify", "category": "자동화", "url": "https://dify.ai" },
-    { "name": "Make", "category": "자동화", "url": "https://make.com" },
-    { "name": "Cursor", "category": "코드", "url": "https://cursor.com" },
-    { "name": "Windsurf", "category": "코드", "url": "https://codeium.com/windsurf" },
-    { "name": "Replit", "category": "노코드 개발", "url": "https://replit.com" },
-    { "name": "Bolt.new", "category": "노코드 개발", "url": "https://bolt.new" },
-    { "name": "v0", "category": "노코드 개발", "url": "https://v0.dev" },
-    { "name": "Canva", "category": "PPT/디자인", "url": "https://canva.com" },
-    { "name": "Gamma", "category": "PPT/디자인", "url": "https://gamma.app" },
-    { "name": "AiPPT", "category": "PPT/디자인", "url": "https://aippt.com" },
-    { "name": "Wireframable", "category": "PPT/디자인", "url": "https://wireframable.com" },
-    { "name": "Janus", "category": "AI 아바타", "url": "https://janus.cam" },
-    { "name": "Muapi", "category": "AI 모델", "url": "https://muapi.ai" },
-    { "name": "Jude", "category": "자동화", "url": "https://tomorrowatetoday.com/jude" },
-    { "name": "Suno", "category": "기타", "url": "https://suno.com" },
-    { "name": "Udio", "category": "기타", "url": "https://udio.com" },
-    { "name": "ElevenLabs", "category": "기타", "url": "https://elevenlabs.io" },
-    { "name": "OpusClip", "category": "동영상 편집", "url": "https://opus.pro" },
-    { "name": "Descript", "category": "동영상 편집", "url": "https://descript.com" },
-    { "name": "CanIRun.ai", "category": "AI 모델", "url": "https://www.canirun.ai" }
+    {
+      "name": "ElevenLabs",
+      "category": "voice",
+      "url": "https://elevenlabs.io"
+    },
+    {
+      "name": "Canva AI",
+      "category": "design/image-generation/marketing",
+      "url": "https://canva.com"
+    },
+    {
+      "name": "Lovable",
+      "category": "coding",
+      "url": "https://lovable.dev"
+    },
+    {
+      "name": "Bolt.new",
+      "category": "coding",
+      "url": "https://bolt.new"
+    },
+    {
+      "name": "Suno",
+      "category": "music",
+      "url": "https://suno.com"
+    },
+    {
+      "name": "DeepL",
+      "category": "translation/writing",
+      "url": "https://deepl.com"
+    },
+    {
+      "name": "Gamma",
+      "category": "productivity/design",
+      "url": "https://gamma.app"
+    },
+    {
+      "name": "Copy.ai",
+      "category": "writing/marketing",
+      "url": "https://copy.ai"
+    },
+    {
+      "name": "Runway",
+      "category": "video/image-generation",
+      "url": "https://runwayml.com"
+    },
+    {
+      "name": "Leonardo AI",
+      "category": "image-generation/design",
+      "url": "https://leonardo.ai"
+    },
+    {
+      "name": "Windsurf",
+      "category": "coding",
+      "url": "https://codeium.com/windsurf"
+    },
+    {
+      "name": "v0",
+      "category": "coding/design",
+      "url": "https://v0.dev"
+    },
+    {
+      "name": "Kling AI",
+      "category": "video",
+      "url": "https://klingai.com"
+    },
+    {
+      "name": "Udio",
+      "category": "music",
+      "url": "https://udio.com"
+    },
+    {
+      "name": "Writesonic",
+      "category": "writing/marketing",
+      "url": "https://writesonic.com"
+    },
+    {
+      "name": "Microsoft Copilot",
+      "category": "chatbot/productivity",
+      "url": "https://copilot.microsoft.com"
+    },
+    {
+      "name": "Surfer SEO",
+      "category": "marketing/writing",
+      "url": "https://surferseo.com"
+    },
+    {
+      "name": "Papago",
+      "category": "translation",
+      "url": "https://papago.naver.com"
+    },
+    {
+      "name": "Janus",
+      "category": "video",
+      "url": "https://janus.cam"
+    },
+    {
+      "name": "Muapi",
+      "category": "coding",
+      "url": "https://muapi.ai"
+    },
+    {
+      "name": "Jude",
+      "category": "productivity",
+      "url": "https://tomorrowatetoday.com/jude"
+    },
+    {
+      "name": "Grok",
+      "category": "chatbot",
+      "url": "https://grok.x.ai"
+    },
+    {
+      "name": "Le Chat",
+      "category": "chatbot",
+      "url": "https://chat.mistral.ai"
+    },
+    {
+      "name": "Poe",
+      "category": "chatbot",
+      "url": "https://poe.com"
+    },
+    {
+      "name": "FLUX",
+      "category": "image-generation",
+      "url": "https://blackforestlabs.ai"
+    },
+    {
+      "name": "Cursor",
+      "category": "coding",
+      "url": "https://cursor.com"
+    },
+    {
+      "name": "Ideogram",
+      "category": "image-generation",
+      "url": "https://ideogram.ai"
+    },
+    {
+      "name": "Recraft",
+      "category": "image-generation",
+      "url": "https://recraft.ai"
+    },
+    {
+      "name": "Adobe Firefly",
+      "category": "image-generation/design",
+      "url": "https://firefly.adobe.com"
+    },
+    {
+      "name": "Magnific",
+      "category": "image-generation/design",
+      "url": "https://magnific.ai"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "category": "image-generation/design",
+      "url": "https://photoshop.adobe.com"
+    },
+    {
+      "name": "Microsoft Designer",
+      "category": "design",
+      "url": "https://designer.microsoft.com"
+    },
+    {
+      "name": "Krea",
+      "category": "image-generation/design",
+      "url": "https://krea.ai"
+    },
+    {
+      "name": "Playground AI",
+      "category": "image-generation",
+      "url": "https://playground.com"
+    },
+    {
+      "name": "Scenario",
+      "category": "image-generation/design",
+      "url": "https://scenario.com"
+    },
+    {
+      "name": "클로바노트",
+      "category": "productivity",
+      "url": "https://clovanote.naver.com"
+    },
+    {
+      "name": "Perplexity",
+      "category": "chatbot/productivity",
+      "url": "https://perplexity.ai"
+    },
+    {
+      "name": "Claude",
+      "category": "chatbot/writing/coding",
+      "url": "https://claude.ai"
+    },
+    {
+      "name": "ChatGPT",
+      "category": "chatbot/writing/coding",
+      "url": "https://chat.openai.com"
+    },
+    {
+      "name": "Stable Diffusion",
+      "category": "image-generation/design",
+      "url": "https://stability.ai"
+    },
+    {
+      "name": "Pika",
+      "category": "video",
+      "url": "https://pika.art"
+    },
+    {
+      "name": "Wireframable",
+      "category": "design",
+      "url": "https://wireframable.com"
+    },
+    {
+      "name": "ImageFX",
+      "category": "image-generation",
+      "url": "https://aitestkitchen.withgoogle.com/tools/image-fx"
+    },
+    {
+      "name": "Notta",
+      "category": "productivity",
+      "url": "https://notta.ai"
+    },
+    {
+      "name": "DALL-E 3",
+      "category": "image-generation",
+      "url": "https://openai.com/dall-e-3"
+    },
+    {
+      "name": "GitHub Copilot",
+      "category": "coding",
+      "url": "https://github.com/features/copilot"
+    },
+    {
+      "name": "Gemini",
+      "category": "chatbot/writing/image-generation",
+      "url": "https://gemini.google.com"
+    },
+    {
+      "name": "Notion AI",
+      "category": "writing/productivity",
+      "url": "https://notion.so/product/ai"
+    },
+    {
+      "name": "Midjourney",
+      "category": "image-generation/design",
+      "url": "https://midjourney.com"
+    },
+    {
+      "name": "Jasper",
+      "category": "writing/marketing",
+      "url": "https://jasper.ai"
+    },
+    {
+      "name": "Ugic",
+      "category": "design",
+      "url": "https://ugic.me"
+    },
+    {
+      "name": "Hailuo AI",
+      "category": "video",
+      "url": "https://hailuoai.com"
+    },
+    {
+      "name": "Luma AI",
+      "category": "video",
+      "url": "https://lumalabs.ai"
+    },
+    {
+      "name": "Sora",
+      "category": "video",
+      "url": "https://sora.com"
+    },
+    {
+      "name": "Vidu",
+      "category": "video",
+      "url": "https://vidu.studio"
+    },
+    {
+      "name": "CapCut",
+      "category": "video",
+      "url": "https://capcut.com"
+    },
+    {
+      "name": "Vrew",
+      "category": "video",
+      "url": "https://vrew.ai"
+    },
+    {
+      "name": "VEED",
+      "category": "video",
+      "url": "https://veed.io"
+    },
+    {
+      "name": "Invideo AI",
+      "category": "video",
+      "url": "https://invideo.io"
+    },
+    {
+      "name": "HeyGen",
+      "category": "video",
+      "url": "https://heygen.com"
+    },
+    {
+      "name": "Tripo",
+      "category": "design",
+      "url": "https://tripo3d.ai"
+    },
+    {
+      "name": "Meshy",
+      "category": "design",
+      "url": "https://meshy.ai"
+    },
+    {
+      "name": "NotebookLM",
+      "category": "productivity",
+      "url": "https://notebooklm.google.com"
+    },
+    {
+      "name": "Consensus",
+      "category": "productivity",
+      "url": "https://consensus.app"
+    },
+    {
+      "name": "Hugging Face",
+      "category": "coding",
+      "url": "https://huggingface.co"
+    },
+    {
+      "name": "Replicate",
+      "category": "coding",
+      "url": "https://replicate.com"
+    },
+    {
+      "name": "Tost.AI",
+      "category": "coding",
+      "url": "https://tost.ai"
+    },
+    {
+      "name": "Anifusion",
+      "category": "image-generation/design",
+      "url": "https://anifusion.ai"
+    },
+    {
+      "name": "Fal.AI",
+      "category": "image-generation/coding",
+      "url": "https://fal.ai"
+    },
+    {
+      "name": "Dify",
+      "category": "productivity/coding",
+      "url": "https://dify.ai"
+    },
+    {
+      "name": "Make",
+      "category": "productivity/marketing",
+      "url": "https://make.com"
+    },
+    {
+      "name": "Replit",
+      "category": "coding",
+      "url": "https://replit.com"
+    },
+    {
+      "name": "Codev",
+      "category": "coding",
+      "url": "https://codev.com"
+    },
+    {
+      "name": "Reweb",
+      "category": "coding",
+      "url": "https://reweb.so"
+    },
+    {
+      "name": "AiPPT",
+      "category": "design",
+      "url": "https://aippt.com"
+    },
+    {
+      "name": "Genspark",
+      "category": "productivity",
+      "url": "https://genspark.ai"
+    },
+    {
+      "name": "Felo",
+      "category": "productivity",
+      "url": "https://felo.ai"
+    },
+    {
+      "name": "Arc",
+      "category": "productivity",
+      "url": "https://arc.net"
+    },
+    {
+      "name": "MusicFX",
+      "category": "music",
+      "url": "https://aitestkitchen.withgoogle.com/tools/music-fx"
+    },
+    {
+      "name": "ComfyUI",
+      "category": "coding",
+      "url": "https://comfyui.com"
+    },
+    {
+      "name": "NapkinAI",
+      "category": "design",
+      "url": "https://napkin.ai"
+    },
+    {
+      "name": "Mapify",
+      "category": "productivity",
+      "url": "https://mapify.so"
+    },
+    {
+      "name": "Figma",
+      "category": "design",
+      "url": "https://figma.com"
+    },
+    {
+      "name": "Creatie",
+      "category": "design",
+      "url": "https://creatie.ai"
+    },
+    {
+      "name": "Tldraw",
+      "category": "design/productivity",
+      "url": "https://tldraw.com"
+    },
+    {
+      "name": "Character.AI",
+      "category": "chatbot",
+      "url": "https://character.ai"
+    },
+    {
+      "name": "뤼튼",
+      "category": "chatbot/writing",
+      "url": "https://wrtn.ai"
+    },
+    {
+      "name": "Together AI",
+      "category": "coding",
+      "url": "https://together.ai"
+    },
+    {
+      "name": "Wegic",
+      "category": "coding",
+      "url": "https://wegic.ai"
+    },
+    {
+      "name": "Framer",
+      "category": "design/coding",
+      "url": "https://framer.com"
+    },
+    {
+      "name": "Dora",
+      "category": "design/coding",
+      "url": "https://dora.run"
+    },
+    {
+      "name": "Uizard",
+      "category": "design",
+      "url": "https://uizard.io"
+    },
+    {
+      "name": "Galileo",
+      "category": "design",
+      "url": "https://usegalileo.ai"
+    },
+    {
+      "name": "SuperVision",
+      "category": "coding",
+      "url": "https://github.com/roboflow/supervision"
+    },
+    {
+      "name": "Transformers",
+      "category": "coding",
+      "url": "https://github.com/huggingface/transformers"
+    },
+    {
+      "name": "Synthesia",
+      "category": "video",
+      "url": "https://synthesia.io"
+    },
+    {
+      "name": "StoryTribe",
+      "category": "image-generation/design",
+      "url": "https://storytribe.ai"
+    },
+    {
+      "name": "Pinokio",
+      "category": "coding",
+      "url": "https://pinokio.computer"
+    },
+    {
+      "name": "Groq",
+      "category": "coding",
+      "url": "https://groq.com"
+    },
+    {
+      "name": "Mistral",
+      "category": "chatbot",
+      "url": "https://mistral.ai"
+    },
+    {
+      "name": "Meta AI",
+      "category": "chatbot",
+      "url": "https://www.meta.ai"
+    },
+    {
+      "name": "Google Veo",
+      "category": "video",
+      "url": "https://deepmind.google/models/veo/"
+    },
+    {
+      "name": "Pixverse",
+      "category": "video",
+      "url": "https://pixverse.ai"
+    },
+    {
+      "name": "Haiper",
+      "category": "video",
+      "url": "https://haiper.ai"
+    },
+    {
+      "name": "Qwen",
+      "category": "chatbot/image-generation",
+      "url": "https://chat.qwen.ai"
+    },
+    {
+      "name": "DeepSeek",
+      "category": "chatbot/coding",
+      "url": "https://chat.deepseek.com"
+    },
+    {
+      "name": "Otter.ai",
+      "category": "productivity",
+      "url": "https://otter.ai"
+    },
+    {
+      "name": "Tabnine",
+      "category": "coding",
+      "url": "https://www.tabnine.com"
+    },
+    {
+      "name": "Spline",
+      "category": "design",
+      "url": "https://spline.design"
+    },
+    {
+      "name": "Play.ht",
+      "category": "voice",
+      "url": "https://play.ht"
+    },
+    {
+      "name": "Mubert",
+      "category": "music",
+      "url": "https://mubert.com"
+    },
+    {
+      "name": "Fish Audio",
+      "category": "voice",
+      "url": "https://fishaudio.net"
+    },
+    {
+      "name": "Clipdrop",
+      "category": "image-generation",
+      "url": "https://clipdrop.co"
+    },
+    {
+      "name": "NightCafe",
+      "category": "image-generation",
+      "url": "https://nightcafe.studio"
+    },
+    {
+      "name": "Artbreeder",
+      "category": "image-generation",
+      "url": "https://www.artbreeder.com"
+    },
+    {
+      "name": "SeaArt",
+      "category": "image-generation",
+      "url": "https://www.seaart.ai"
+    },
+    {
+      "name": "Dzine",
+      "category": "image-generation/video-generation",
+      "url": "https://www.dzine.ai"
+    },
+    {
+      "name": "Mage",
+      "category": "image-generation",
+      "url": "https://www.mage.space"
+    },
+    {
+      "name": "Bing Image Creator",
+      "category": "image-generation",
+      "url": "https://www.bing.com/images/create"
+    },
+    {
+      "name": "Civitai",
+      "category": "image-generation",
+      "url": "https://civitai.com"
+    },
+    {
+      "name": "Hunyuan",
+      "category": "image-generation/video",
+      "url": "https://hunyuan.tencent.com"
+    },
+    {
+      "name": "Seedream",
+      "category": "image-generation",
+      "url": "https://dreamina.capcut.com"
+    },
+    {
+      "name": "Kolors",
+      "category": "image-generation",
+      "url": "https://kolors.kuaishou.com"
+    },
+    {
+      "name": "Akkio",
+      "category": "data-analysis",
+      "url": "https://www.akkio.com"
+    },
+    {
+      "name": "Power BI",
+      "category": "data-analysis",
+      "url": "https://powerbi.microsoft.com"
+    },
+    {
+      "name": "Tableau",
+      "category": "data-analysis",
+      "url": "https://www.tableau.com"
+    },
+    {
+      "name": "Looker Studio",
+      "category": "data-analysis",
+      "url": "https://lookerstudio.google.com"
+    },
+    {
+      "name": "Metabase",
+      "category": "data-analysis",
+      "url": "https://www.metabase.com"
+    },
+    {
+      "name": "Polymer",
+      "category": "data-analysis",
+      "url": "https://www.polymersearch.com"
+    },
+    {
+      "name": "ThoughtSpot",
+      "category": "data-analysis",
+      "url": "https://www.thoughtspot.com"
+    },
+    {
+      "name": "Hex",
+      "category": "data-analysis",
+      "url": "https://hex.tech"
+    },
+    {
+      "name": "Rows",
+      "category": "data-analysis/productivity",
+      "url": "https://rows.com"
+    },
+    {
+      "name": "Databricks",
+      "category": "data-analysis",
+      "url": "https://www.databricks.com"
+    },
+    {
+      "name": "Google Antigravity",
+      "category": "coding",
+      "url": "https://antigravity.google/"
+    },
+    {
+      "name": "CanIRun.ai",
+      "category": "coding",
+      "url": "https://www.canirun.ai"
+    },
+    {
+      "name": "Hitem3D",
+      "category": "design",
+      "url": "https://www.hitem3d.ai"
+    },
+    {
+      "name": "MascotVibe",
+      "category": "design",
+      "url": "https://www.mascotvibe.com"
+    },
+    {
+      "name": "Veemo AI",
+      "category": "video",
+      "url": "https://veemo.ai"
+    },
+    {
+      "name": "VidFlux",
+      "category": "video",
+      "url": "https://vidflux.ai"
+    },
+    {
+      "name": "CodeSpeak",
+      "category": "coding",
+      "url": "https://codespeak.dev"
+    },
+    {
+      "name": "OpusClip",
+      "category": "video",
+      "url": "https://opus.pro"
+    },
+    {
+      "name": "Descript",
+      "category": "video",
+      "url": "https://descript.com"
+    },
+    {
+      "name": "RoomGPT",
+      "category": "design",
+      "url": "https://roomgpt.io"
+    },
+    {
+      "name": "Creatify",
+      "category": "marketing/video",
+      "url": "https://creatify.ai"
+    },
+    {
+      "name": "Devin",
+      "category": "coding",
+      "url": "https://devin.ai"
+    },
+    {
+      "name": "BeMusic",
+      "category": "music",
+      "url": "https://bemusic.ai"
+    },
+    {
+      "name": "Google Stitch",
+      "category": "design",
+      "url": "https://stitch.withgoogle.com"
+    },
+    {
+      "name": "Tosea.ai",
+      "category": "design/productivity",
+      "url": "https://tosea.ai"
+    },
+    {
+      "name": "Verdent",
+      "category": "coding",
+      "url": "https://verdent.ai"
+    },
+    {
+      "name": "Humanize.io",
+      "category": "writing",
+      "url": "https://humanize.io"
+    },
+    {
+      "name": "Plot Party",
+      "category": "AI 만화/스토리보드",
+      "url": "https://www.plotparty.ai"
+    },
+    {
+      "name": "Canvora",
+      "category": "PPT/디자인",
+      "url": "https://canvora.ai"
+    },
+    {
+      "name": "ComicInk",
+      "category": "AI 만화/스토리보드",
+      "url": "https://www.comicink.ai"
+    },
+    {
+      "name": "PixelLab",
+      "category": "이미지 생성",
+      "url": "https://www.pixellab.ai"
+    },
+    {
+      "name": "SurfMind",
+      "category": "productivity",
+      "url": "https://surfmind.ai"
+    },
+    {
+      "name": "AirMusic",
+      "category": "video",
+      "url": "https://airmusic.ai"
+    },
+    {
+      "name": "remio",
+      "category": "productivity",
+      "url": "https://www.remio.ai"
+    },
+    {
+      "name": "BeatMusic",
+      "category": "music",
+      "url": "https://beatmusic.ai"
+    },
+    {
+      "name": "Popularo",
+      "category": "marketing",
+      "url": "https://popularoai.com"
+    },
+    {
+      "name": "Base44",
+      "category": "coding",
+      "url": "https://base44.com"
+    },
+    {
+      "name": "Tunee",
+      "category": "music",
+      "url": "https://www.tunee.ai"
+    },
+    {
+      "name": "Upsearch",
+      "category": "marketing",
+      "url": "https://upsearch.ai"
+    },
+    {
+      "name": "understudy",
+      "category": "productivity",
+      "url": "https://github.com/understudy-ai/understudy"
+    },
+    {
+      "name": "AnySpeech",
+      "category": "voice",
+      "url": "https://anyspeech.io"
+    },
+    {
+      "name": "APIXO",
+      "category": "coding",
+      "url": "https://apixo.ai"
+    },
+    {
+      "name": "MeetAssist",
+      "category": "productivity",
+      "url": "https://meetassist.io"
+    },
+    {
+      "name": "Dageno AI",
+      "category": "marketing",
+      "url": "https://dageno.ai"
+    },
+    {
+      "name": "Collate",
+      "category": "productivity",
+      "url": "https://collate.one"
+    },
+    {
+      "name": "AdsCreator",
+      "category": "marketing",
+      "url": "https://www.adscreator.com"
+    },
+    {
+      "name": "TimelessHome",
+      "category": "design",
+      "url": "https://timelesshome.ai"
+    },
+    {
+      "name": "ImgEditor AI",
+      "category": "image-generation",
+      "url": "https://imgeditor.ai"
+    },
+    {
+      "name": "Murlyn",
+      "category": "productivity",
+      "url": "https://murlyn.ai"
+    },
+    {
+      "name": "Sharix",
+      "category": "productivity",
+      "url": "https://sharix.ai"
+    },
+    {
+      "name": "AI Image Extender",
+      "category": "design",
+      "url": "https://www.aiimageextender.io"
+    },
+    {
+      "name": "Keploy",
+      "category": "coding",
+      "url": "https://keploy.io"
+    },
+    {
+      "name": "HeadShots.fun",
+      "category": "image-generation",
+      "url": "https://headshots.fun"
+    },
+    {
+      "name": "Remove Text From Video",
+      "category": "video",
+      "url": "https://removetextfromvideo.net"
+    },
+    {
+      "name": "Notion MCP",
+      "category": "productivity/coding",
+      "url": "https://www.notion.so/product/mcp"
+    },
+    {
+      "name": "Goals",
+      "category": "productivity",
+      "url": "https://goals.app"
+    },
+    {
+      "name": "Invoke",
+      "category": "coding",
+      "url": "https://invoke.studio"
+    },
+    {
+      "name": "Bluor AI",
+      "category": "writing/marketing",
+      "url": "https://bluor.ai"
+    },
+    {
+      "name": "Latchkey",
+      "category": "coding",
+      "url": "https://latchkey.ai"
+    },
+    {
+      "name": "Hermes Agent",
+      "category": "productivity/coding",
+      "url": "https://hermes-agent.nousresearch.com"
+    },
+    {
+      "name": "PopTask",
+      "category": "productivity",
+      "url": "https://poptask.bar"
+    },
+    {
+      "name": "Ollang DX",
+      "category": "translation",
+      "url": "https://ollang.com"
+    },
+    {
+      "name": "Dynin-Omni",
+      "category": "AI 모델",
+      "url": "https://dynin.ai/omni/"
+    },
+    {
+      "name": "apfel",
+      "category": "coding",
+      "url": "https://apfel.franzai.com"
+    },
+    {
+      "name": "Whispree",
+      "category": "voice",
+      "url": "https://github.com/Arsture/whispree"
+    },
+    {
+      "name": "Strix",
+      "category": "코드",
+      "url": "https://strix.ai"
+    },
+    {
+      "name": "GBrain",
+      "category": "연구/리서치",
+      "url": "https://github.com/garrytan/gbrain"
+    }
   ]
 }
