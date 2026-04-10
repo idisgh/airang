@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-04-09",
+  "lastRun": "2026-04-10",
   "updated": [
     {
       "slug": "chatgpt",
@@ -690,6 +690,62 @@
         "description: 일본·한국 데이터 레지던시(2026년 5월~) 추가",
         "features: 일본·한국 데이터 레지던시 추가"
       ]
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-04-10",
+      "changes": [
+        "url: chat.openai.com → chatgpt.com"
+      ]
+    },
+    {
+      "slug": "dall-e",
+      "date": "2026-04-10",
+      "changes": [
+        "url: openai.com/dall-e-3 → openai.com/index/dall-e-3/"
+      ]
+    },
+    {
+      "slug": "framer",
+      "date": "2026-04-10",
+      "changes": [
+        "description: AI 레이아웃·고급 컴포넌트, 통합 CMS·analytics·localization·SEO 반영",
+        "features: AI 레이아웃·고급 컴포넌트 생성, Analytics, Localization, SEO 추가"
+      ]
+    },
+    {
+      "slug": "groq",
+      "date": "2026-04-10",
+      "changes": [
+        "description: GroqCloud, 글로벌 데이터센터, OpenAI 호환 API 반영",
+        "features: GroqCloud, OpenAI 호환 API, 글로벌 데이터센터 추가"
+      ]
+    },
+    {
+      "slug": "muapi",
+      "date": "2026-04-10",
+      "changes": [
+        "description: Sora 2 Pro, Veo 3.1 반영",
+        "pricingDetail: 영상 $0.15~/생성 → $2.5~$3/생성",
+        "features: Midjourney V7, Sora 2 Pro, Veo 3.1 추가"
+      ]
+    },
+    {
+      "slug": "reweb",
+      "date": "2026-04-10",
+      "changes": [
+        "tagline: AI 웹사이트 생성 → AI UI 생성·편집 및 code/Figma export",
+        "description: UI 디자인 도구 포지셔닝 반영",
+        "features: code 내보내기, Figma 내보내기 추가"
+      ]
+    },
+    {
+      "slug": "supervision",
+      "date": "2026-04-10",
+      "changes": [
+        "description: Ultralytics·Transformers·MMDetection·Roboflow Inference 연동 및 dataset 작업 반영",
+        "features: 분류·세그멘테이션 지원, 다양한 모델 연동, dataset load/split/merge/export 추가"
+      ]
     }
   ],
   "checked": [
@@ -849,7 +905,57 @@
     "windsurf",
     "runway",
     "github-copilot",
-    "deepl"
+    "deepl",
+    "deepl",
+    "runway",
+    "midjourney",
+    "perplexity",
+    "suno",
+    "chatgpt",
+    "claude",
+    "cursor",
+    "gemini",
+    "adobe-firefly",
+    "adobe-photoshop",
+    "aippt",
+    "arc",
+    "canirun-ai",
+    "canva-ai",
+    "character-ai",
+    "clova-note",
+    "codev",
+    "comfyui",
+    "consensus",
+    "copilot",
+    "creatie",
+    "dall-e",
+    "dora",
+    "felo",
+    "framer",
+    "gamma",
+    "genspark",
+    "grok",
+    "groq",
+    "hailuo-ai",
+    "ideogram",
+    "janus",
+    "jude",
+    "le-chat",
+    "leonardo-ai",
+    "magnific",
+    "make",
+    "meshy",
+    "microsoft-designer",
+    "muapi",
+    "notebooklm",
+    "papago",
+    "poe",
+    "reweb",
+    "sora",
+    "storytribe",
+    "supervision",
+    "synthesia",
+    "tldraw"
   ],
   "skipped": [
     "canva-ai",
@@ -975,6 +1081,49 @@
     "windsurf",
     "runway",
     "github-copilot",
-    "deepl"
+    "deepl",
+    "deepl",
+    "runway",
+    "midjourney",
+    "perplexity",
+    "suno",
+    "claude",
+    "cursor",
+    "gemini",
+    "adobe-firefly",
+    "adobe-photoshop",
+    "aippt",
+    "arc",
+    "canirun-ai",
+    "canva-ai",
+    "character-ai",
+    "clova-note",
+    "codev",
+    "comfyui",
+    "consensus",
+    "copilot",
+    "creatie",
+    "dora",
+    "felo",
+    "gamma",
+    "genspark",
+    "grok",
+    "hailuo-ai",
+    "ideogram",
+    "janus",
+    "jude",
+    "le-chat",
+    "leonardo-ai",
+    "magnific",
+    "make",
+    "meshy",
+    "microsoft-designer",
+    "notebooklm",
+    "papago",
+    "poe",
+    "sora",
+    "storytribe",
+    "synthesia",
+    "tldraw"
   ]
 }
