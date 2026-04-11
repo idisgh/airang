@@ -5,6 +5,7 @@ const props = defineProps<{
 }>()
 
 const searchQuery = ref('')
+const quickSearches = ['ChatGPT', '코딩', '영상 생성', '한국어 지원', '무료', '업데이트 많은 도구']
 
 function onSearch() {
   if (searchQuery.value.trim()) {
@@ -12,11 +13,15 @@ function onSearch() {
   }
 }
 
+function applyQuickSearch(keyword: string) {
+  searchQuery.value = keyword
+  navigateTo({ path: '/tools', query: { q: keyword } })
+}
+
 // 플로팅 로고
 const floatingSlugs = [
-  'chatgpt', 'claude', 'midjourney', 'cursor', 'runway',
-  'gemini', 'flux', 'kling', 'elevenlabs', 'stable-diffusion',
-  'canva-ai', 'deepseek',
+  'chatgpt', 'claude', 'cursor', 'runway',
+  'gemini', 'elevenlabs', 'midjourney', 'perplexity',
 ]
 
 function seededRand(seed: number): number {
@@ -42,7 +47,7 @@ const logoPositions = floatingSlugs.map((slug, i) => {
     size: Math.floor(seededRand(i * 17 + 3) * 24 + 52),
     duration: `${(seededRand(i * 17 + 4) * 4 + 5).toFixed(1)}s`,
     delay: `${(seededRand(i * 17 + 5) * 4).toFixed(1)}s`,
-    opacity: (seededRand(i * 17 + 6) * 0.05 + 0.06).toFixed(2),
+    opacity: (seededRand(i * 17 + 6) * 0.03 + 0.035).toFixed(2),
   }
 })
 
@@ -135,8 +140,8 @@ onUnmounted(() => {
         >AI 도구</span>
       </h1>
       <p class="mt-4 text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-        AI 도구를 한국어로 검색하고 비교하세요.<br class="hidden sm:block">
-        가격, 기능, 한국어 지원 여부를 한눈에.
+        한국어로 AI 도구를 빠르게 찾고 비교하세요.<br class="hidden sm:block">
+        가격, 기능, 한국어 지원, 업데이트 히스토리까지 한눈에.
       </p>
 
       <!-- 검색창 -->
@@ -152,29 +157,41 @@ onUnmounted(() => {
         </div>
       </form>
 
+      <div class="mt-5 flex flex-wrap items-center justify-center gap-2">
+        <button
+          v-for="keyword in quickSearches"
+          :key="keyword"
+          type="button"
+          class="inline-flex items-center rounded-full border border-neutral-200/80 bg-white/90 px-3 py-1.5 text-sm text-neutral-700 shadow-sm transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-neutral-700 dark:bg-neutral-900/80 dark:text-neutral-300 dark:hover:border-primary-700 dark:hover:text-primary-300"
+          @click="applyQuickSearch(keyword)"
+        >
+          {{ keyword }}
+        </button>
+      </div>
+
       <!-- 통계 -->
       <div
         ref="statsRef"
-        class="mt-6 flex items-center justify-center gap-8 text-base text-neutral-500 dark:text-neutral-400"
+        class="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-neutral-500 dark:text-neutral-400"
       >
-        <span class="flex items-center gap-2">
-          <LIcon name="lucide:package" class="w-5 h-5" />
-          <span class="tabular-nums text-lg text-primary-600 dark:text-primary-400 inline-block min-w-[3ch] text-right">
-            {{ statsAnimated ? animatedTools : toolCount }}
+        <span class="flex items-center gap-2 rounded-full border border-neutral-200/80 bg-white/90 px-3 py-1.5 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/80">
+          <LIcon name="lucide:package" class="w-4 h-4" />
+          <span class="tabular-nums font-semibold text-primary-600 dark:text-primary-400 inline-block min-w-[3ch] text-right">
+            {{ statsAnimated ? animatedTools : toolCount }}+
           </span>
-          <span>개 도구</span>
+          <span>도구</span>
         </span>
-        <span class="flex items-center gap-2">
-          <LIcon name="lucide:folder-open" class="w-5 h-5" />
-          <span class="tabular-nums text-lg text-primary-600 dark:text-primary-400 inline-block min-w-[2ch] text-right">
+        <span class="flex items-center gap-2 rounded-full border border-neutral-200/80 bg-white/90 px-3 py-1.5 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/80">
+          <LIcon name="lucide:folder-open" class="w-4 h-4" />
+          <span class="tabular-nums font-semibold text-primary-600 dark:text-primary-400 inline-block min-w-[2ch] text-right">
             {{ statsAnimated ? animatedCats : categoryCount }}
           </span>
           <span>개 카테고리</span>
         </span>
-        <span class="flex items-center gap-2">
-          <LIcon name="lucide:globe" class="w-5 h-5" />
-          <span class="text-lg text-primary-600 dark:text-primary-400">한국어</span>
-          <span>리뷰</span>
+        <span class="flex items-center gap-2 rounded-full border border-neutral-200/80 bg-white/90 px-3 py-1.5 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/80">
+          <LIcon name="lucide:history" class="w-4 h-4" />
+          <span class="font-semibold text-primary-600 dark:text-primary-400">업데이트 히스토리</span>
+          <span>제공</span>
         </span>
       </div>
     </div>
