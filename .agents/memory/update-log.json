@@ -1,61 +1,6 @@
 {
-  "lastRun": "2026-04-10",
+  "lastRun": "2026-04-12T11:40:00+09:00",
   "updated": [
-    {
-      "slug": "chatgpt",
-      "date": "2026-04-09",
-      "changes": [
-        "description: GPT-5.4 Thinking·GPT-5.4 Pro, upfront plan, 심화 웹 리서치 반영",
-        "features: GPT-5.4 Thinking·Pro, upfront plan, 심화 웹 리서치 추가"
-      ]
-    },
-    {
-      "slug": "gemini",
-      "date": "2026-04-09",
-      "changes": [
-        "description: Google Slides brand-matched editable slides 기능 반영",
-        "features: Google Slides brand-matched editable slides 추가"
-      ]
-    },
-    {
-      "slug": "cursor",
-      "date": "2026-04-09",
-      "changes": [
-        "description: async subagents, sandbox network access controls 반영",
-        "features: Marketplace Plugins, Async subagents, Sandbox network access controls 추가"
-      ]
-    },
-    {
-      "slug": "figma",
-      "date": "2026-04-09",
-      "changes": [
-        "description: Figma canvas 직접 편집 가능한 Design with Agents, use_figma, skills 반영",
-        "features: use_figma tool, Skills 추가"
-      ]
-    },
-    {
-      "slug": "claude",
-      "date": "2026-04-09",
-      "changes": [
-        "description: Claude Managed Agents(퍼블릭 베타) 추가",
-        "features: Managed Agents (퍼블릭 베타) 추가"
-      ]
-    },
-    {
-      "slug": "musicfx",
-      "date": "2026-04-03",
-      "changes": [
-        "url: aitestkitchen.withgoogle.com/tools/music-fx → labs.google/fx/tools/music-fx"
-      ]
-    },
-    {
-      "slug": "bolt-new",
-      "date": "2026-04-03",
-      "changes": [
-        "description: 디자인 시스템 연동(Porsche·Material UI·Washington Post) 추가",
-        "features: 디자인 시스템 연동 추가"
-      ]
-    },
     {
       "slug": "chatgpt",
       "date": "2026-03-07",
@@ -84,24 +29,6 @@
       ]
     },
     {
-      "slug": "runway",
-      "date": "2026-03-07",
-      "changes": [
-        "tagline: Gen-3 Alpha → Gen-4.5",
-        "description: Gen-3 Alpha → Gen-4.5 모델, Act-Two, Aleph, Veo 3.1 추가",
-        "pricingDetail: Unlimited $76/월 추가",
-        "features: 최신 모델/기능으로 업데이트"
-      ]
-    },
-    {
-      "slug": "github-copilot",
-      "date": "2026-03-07",
-      "changes": [
-        "pricingDetail: Individual/Business → Pro $10, Pro+ $39 구조 변경",
-        "features: Agents on GitHub, Copilot Spaces, MCP 지원 추가"
-      ]
-    },
-    {
       "slug": "elevenlabs",
       "date": "2026-03-07",
       "changes": [
@@ -116,6 +43,14 @@
         "description: Gemini 3.1 Pro(2026년 2월), 에이전틱 기능, 100만 토큰 컨텍스트 언급 추가",
         "pricingDetail: Advanced → AI Pro $20/월로 리브랜딩 반영",
         "features: Gemini Live, Agent mode 추가"
+      ]
+    },
+    {
+      "slug": "github-copilot",
+      "date": "2026-03-07",
+      "changes": [
+        "pricingDetail: Individual/Business → Pro $10, Pro+ $39 구조 변경",
+        "features: Agents on GitHub, Copilot Spaces, MCP 지원 추가"
       ]
     },
     {
@@ -136,41 +71,21 @@
       ]
     },
     {
+      "slug": "runway",
+      "date": "2026-03-07",
+      "changes": [
+        "tagline: Gen-3 Alpha → Gen-4.5",
+        "description: Gen-3 Alpha → Gen-4.5 모델, Act-Two, Aleph, Veo 3.1 추가",
+        "pricingDetail: Unlimited $76/월 추가",
+        "features: 최신 모델/기능으로 업데이트"
+      ]
+    },
+    {
       "slug": "suno",
       "date": "2026-03-07",
       "changes": [
         "description: v5 모델(2025년 9월), Suno Studio 출시 언급 추가",
         "features: v5 모델, Suno Studio 추가, 커버 생성 제거"
-      ]
-    },
-    {
-      "slug": "notion-ai",
-      "date": "2026-03-24",
-      "changes": [
-        "features: Research Mode 추가"
-      ]
-    },
-    {
-      "slug": "jasper",
-      "date": "2026-03-24",
-      "changes": [
-        "features: Jasper Grid, No-code AI App Builder 추가"
-      ]
-    },
-    {
-      "slug": "stable-diffusion",
-      "date": "2026-03-24",
-      "changes": [
-        "description: Universal Music Group 파트너십, Amazon Bedrock 지원 추가",
-        "features: Amazon Bedrock 지원 추가"
-      ]
-    },
-    {
-      "slug": "lovable",
-      "date": "2026-03-24",
-      "changes": [
-        "description: $330M 시리즈 B, Workspace Knowledge, Claude Opus 4.6, 데이터 분석 기능 추가",
-        "features: Workspace Knowledge, 데이터 분석, 비즈니스 문서 생성 추가"
       ]
     },
     {
@@ -182,6 +97,28 @@
       ]
     },
     {
+      "slug": "jasper",
+      "date": "2026-03-24",
+      "changes": [
+        "features: Jasper Grid, No-code AI App Builder 추가"
+      ]
+    },
+    {
+      "slug": "lovable",
+      "date": "2026-03-24",
+      "changes": [
+        "description: $330M 시리즈 B, Workspace Knowledge, Claude Opus 4.6, 데이터 분석 기능 추가",
+        "features: Workspace Knowledge, 데이터 분석, 비즈니스 문서 생성 추가"
+      ]
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-03-24",
+      "changes": [
+        "features: Research Mode 추가"
+      ]
+    },
+    {
       "slug": "pika",
       "date": "2026-03-24",
       "changes": [
@@ -190,12 +127,19 @@
       ]
     },
     {
-      "slug": "windsurf",
+      "slug": "stable-diffusion",
       "date": "2026-03-24",
       "changes": [
-        "url: codeium.com/windsurf → windsurf.com",
-        "description: SWE-1.5, 멀티 에이전트, Git Worktree, Cascade 전용 터미널 추가",
-        "features: SWE-1.5 모델, 멀티 에이전트 병렬 세션, Git Worktree 추가"
+        "description: Universal Music Group 파트너십, Amazon Bedrock 지원 추가",
+        "features: Amazon Bedrock 지원 추가"
+      ]
+    },
+    {
+      "slug": "udio",
+      "date": "2026-03-24",
+      "changes": [
+        "description: Warner Music Group·Universal Music Group 파트너십, Voices·Styles·Sessions 추가",
+        "features: Voices, Styles, Sessions 협업 추가"
       ]
     },
     {
@@ -208,20 +152,12 @@
       ]
     },
     {
-      "slug": "udio",
+      "slug": "windsurf",
       "date": "2026-03-24",
       "changes": [
-        "description: Warner Music Group·Universal Music Group 파트너십, Voices·Styles·Sessions 추가",
-        "features: Voices, Styles, Sessions 협업 추가"
-      ]
-    },
-    {
-      "slug": "writesonic",
-      "date": "2026-03-26",
-      "changes": [
-        "tagline: SEO 최적화 AI 글쓰기 → AI 검색 노출 추적·최적화 플랫폼 (GEO 전문)",
-        "description: GEO/AI Search Visibility 플랫폼으로 피벗 반영",
-        "features: GEO 최적화 기능으로 전면 교체"
+        "url: codeium.com/windsurf → windsurf.com",
+        "description: SWE-1.5, 멀티 에이전트, Git Worktree, Cascade 전용 터미널 추가",
+        "features: SWE-1.5 모델, 멀티 에이전트 병렬 세션, Git Worktree 추가"
       ]
     },
     {
@@ -231,46 +167,6 @@
         "url: blackforestlabs.ai → bfl.ai",
         "description: Kontext Komposer 추가",
         "features: Kontext Komposer, Playground 추가"
-      ]
-    },
-    {
-      "slug": "recraft",
-      "date": "2026-03-26",
-      "changes": [
-        "description: Recraft V4 모델 출시, 목업 생성·업스케일링·사진 편집 추가",
-        "features: V4 모델, 목업 생성 추가"
-      ]
-    },
-    {
-      "slug": "krea",
-      "date": "2026-03-26",
-      "changes": [
-        "description: 3D 생성 기능, LoRA 파인튜닝, 영상 스타일 트랜스퍼 추가",
-        "features: 텍스트/이미지→3D, LoRA 파인튜닝, 영상 스타일 트랜스퍼 추가"
-      ]
-    },
-    {
-      "slug": "playground-ai",
-      "date": "2026-03-26",
-      "changes": [
-        "tagline: 디자인 도구(로고, T셔츠, SNS)로 포지셔닝 변경",
-        "description: 크리에이터·소상공인 타겟 실용 디자인 도구로 피벗 반영"
-      ]
-    },
-    {
-      "slug": "luma-ai",
-      "date": "2026-03-26",
-      "changes": [
-        "tagline: Dream Machine → AI 에이전트 플랫폼으로 포지셔닝 전환",
-        "description: AI Agents for Creative Work 방향성 반영"
-      ]
-    },
-    {
-      "slug": "notta",
-      "date": "2026-03-26",
-      "changes": [
-        "description: Notta Brain (인포그래픽·슬라이드 변환) 추가, 언어 수 정정 (58개)",
-        "features: Notta Brain, 이중언어 전사 추가"
       ]
     },
     {
@@ -290,36 +186,61 @@
       ]
     },
     {
+      "slug": "krea",
+      "date": "2026-03-26",
+      "changes": [
+        "description: 3D 생성 기능, LoRA 파인튜닝, 영상 스타일 트랜스퍼 추가",
+        "features: 텍스트/이미지→3D, LoRA 파인튜닝, 영상 스타일 트랜스퍼 추가"
+      ]
+    },
+    {
+      "slug": "luma-ai",
+      "date": "2026-03-26",
+      "changes": [
+        "tagline: Dream Machine → AI 에이전트 플랫폼으로 포지셔닝 전환",
+        "description: AI Agents for Creative Work 방향성 반영"
+      ]
+    },
+    {
+      "slug": "notta",
+      "date": "2026-03-26",
+      "changes": [
+        "description: Notta Brain (인포그래픽·슬라이드 변환) 추가, 언어 수 정정 (58개)",
+        "features: Notta Brain, 이중언어 전사 추가"
+      ]
+    },
+    {
+      "slug": "playground-ai",
+      "date": "2026-03-26",
+      "changes": [
+        "tagline: 디자인 도구(로고, T셔츠, SNS)로 포지셔닝 변경",
+        "description: 크리에이터·소상공인 타겟 실용 디자인 도구로 피벗 반영"
+      ]
+    },
+    {
+      "slug": "recraft",
+      "date": "2026-03-26",
+      "changes": [
+        "description: Recraft V4 모델 출시, 목업 생성·업스케일링·사진 편집 추가",
+        "features: V4 모델, 목업 생성 추가"
+      ]
+    },
+    {
+      "slug": "writesonic",
+      "date": "2026-03-26",
+      "changes": [
+        "tagline: SEO 최적화 AI 글쓰기 → AI 검색 노출 추적·최적화 플랫폼 (GEO 전문)",
+        "description: GEO/AI Search Visibility 플랫폼으로 피벗 반영",
+        "features: GEO 최적화 기능으로 전면 교체"
+      ]
+    },
+    {
       "slug": "wrtn",
       "date": "2026-03-26",
       "changes": [
         "tagline: GPT-4 → GPT-5로 업데이트",
         "description: GPT-5 지원 반영, 사주 운세 기능 추가",
         "features: 무료 GPT-5, 사주 운세 추가"
-      ]
-    },
-    {
-      "slug": "deepl",
-      "date": "2026-03-27",
-      "changes": [
-        "description: Voice 번역 및 Agentic Workflow 추가",
-        "features: Voice 번역, Agentic Workflow 추가"
-      ]
-    },
-    {
-      "slug": "vidu",
-      "date": "2026-03-27",
-      "changes": [
-        "url: vidu.studio → vidu.com",
-        "description: All-in-one 이미지·영상 플랫폼, 오프피크 무제한 생성 추가"
-      ]
-    },
-    {
-      "slug": "elevenlabs",
-      "date": "2026-03-27",
-      "changes": [
-        "description: Voice Agents 플랫폼, ElevenCreative/Agents/API 서비스 라인 추가",
-        "features: 언어 수 29 → 70+, ElevenCreative, Speech to Text 추가"
       ]
     },
     {
@@ -331,20 +252,27 @@
       ]
     },
     {
-      "slug": "vrew",
+      "slug": "deepl",
       "date": "2026-03-27",
       "changes": [
-        "pricingDetail: 무료 90분→120분, 플랜 구조 변경",
-        "description: AI 이미지/영상 생성 추가",
-        "features: AI 이미지 생성, AI 영상 생성 추가"
+        "description: Voice 번역 및 Agentic Workflow 추가",
+        "features: Voice 번역, Agentic Workflow 추가"
       ]
     },
     {
-      "slug": "invideo-ai",
+      "slug": "dify",
       "date": "2026-03-27",
       "changes": [
-        "description: invideo v4 에이전트, 30분 영상, 200+ AI 모델 지원 추가",
-        "features: v4 에이전트, 최신 모델 지원 추가"
+        "description: 네이티브 MCP 통합 추가",
+        "features: 네이티브 MCP 통합 추가"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "date": "2026-03-27",
+      "changes": [
+        "description: Voice Agents 플랫폼, ElevenCreative/Agents/API 서비스 라인 추가",
+        "features: 언어 수 29 → 70+, ElevenCreative, Speech to Text 추가"
       ]
     },
     {
@@ -353,6 +281,14 @@
       "changes": [
         "description: Figma Make, Figma Buzz 추가",
         "features: Figma Make, Figma Buzz, Dev Mode 추가"
+      ]
+    },
+    {
+      "slug": "invideo-ai",
+      "date": "2026-03-27",
+      "changes": [
+        "description: invideo v4 에이전트, 30분 영상, 200+ AI 모델 지원 추가",
+        "features: v4 에이전트, 최신 모델 지원 추가"
       ]
     },
     {
@@ -370,18 +306,50 @@
       ]
     },
     {
-      "slug": "dify",
-      "date": "2026-03-27",
-      "changes": [
-        "description: 네이티브 MCP 통합 추가",
-        "features: 네이티브 MCP 통합 추가"
-      ]
-    },
-    {
       "slug": "replicate",
       "date": "2026-03-27",
       "changes": [
         "description: Cloudflare 합류, FLUX 2 Pro·Seedream 4 최신 모델 언급 추가"
+      ]
+    },
+    {
+      "slug": "vidu",
+      "date": "2026-03-27",
+      "changes": [
+        "url: vidu.studio → vidu.com",
+        "description: All-in-one 이미지·영상 플랫폼, 오프피크 무제한 생성 추가"
+      ]
+    },
+    {
+      "slug": "vrew",
+      "date": "2026-03-27",
+      "changes": [
+        "pricingDetail: 무료 90분→120분, 플랜 구조 변경",
+        "description: AI 이미지/영상 생성 추가",
+        "features: AI 이미지 생성, AI 영상 생성 추가"
+      ]
+    },
+    {
+      "slug": "descript",
+      "date": "2026-03-28",
+      "changes": [
+        "description: Quick Design, AI 영상 생성 추가",
+        "features: Quick Design, AI 영상 생성 추가"
+      ]
+    },
+    {
+      "slug": "fal-ai",
+      "date": "2026-03-28",
+      "changes": [
+        "description: 1,000+ 모델, 3D 지원, SOC 2 추가",
+        "features: 1,000+ 모델, 3D, SOC 2, Reserved 용량 추가"
+      ]
+    },
+    {
+      "slug": "imagefx",
+      "date": "2026-03-28",
+      "changes": [
+        "url: aitestkitchen.withgoogle.com/tools/image-fx → labs.google/fx/tools/image-fx"
       ]
     },
     {
@@ -400,29 +368,6 @@
       ]
     },
     {
-      "slug": "imagefx",
-      "date": "2026-03-28",
-      "changes": [
-        "url: aitestkitchen.withgoogle.com/tools/image-fx → labs.google/fx/tools/image-fx"
-      ]
-    },
-    {
-      "slug": "surfer-seo",
-      "date": "2026-03-28",
-      "changes": [
-        "description: AI 검색 최적화/GEO 기능 추가",
-        "features: AI Content Detector, AI Content Humanizer, GEO 추가"
-      ]
-    },
-    {
-      "slug": "fal-ai",
-      "date": "2026-03-28",
-      "changes": [
-        "description: 1,000+ 모델, 3D 지원, SOC 2 추가",
-        "features: 1,000+ 모델, 3D, SOC 2, Reserved 용량 추가"
-      ]
-    },
-    {
       "slug": "replit",
       "date": "2026-03-28",
       "changes": [
@@ -431,27 +376,11 @@
       ]
     },
     {
-      "slug": "descript",
+      "slug": "surfer-seo",
       "date": "2026-03-28",
       "changes": [
-        "description: Quick Design, AI 영상 생성 추가",
-        "features: Quick Design, AI 영상 생성 추가"
-      ]
-    },
-    {
-      "slug": "runway",
-      "date": "2026-03-29",
-      "changes": [
-        "description: GWM-1 General World Model, Runway Characters API 추가",
-        "features: GWM-1, Runway Characters API 추가"
-      ]
-    },
-    {
-      "slug": "luma-ai",
-      "date": "2026-03-29",
-      "changes": [
-        "description: UNI-1 통합 모델, 추론 영상 모델, HDR 모델 추가",
-        "features: UNI-1, 추론 영상 모델, HDR 모델 추가"
+        "description: AI 검색 최적화/GEO 기능 추가",
+        "features: AI Content Detector, AI Content Humanizer, GEO 추가"
       ]
     },
     {
@@ -478,6 +407,22 @@
       ]
     },
     {
+      "slug": "luma-ai",
+      "date": "2026-03-29",
+      "changes": [
+        "description: UNI-1 통합 모델, 추론 영상 모델, HDR 모델 추가",
+        "features: UNI-1, 추론 영상 모델, HDR 모델 추가"
+      ]
+    },
+    {
+      "slug": "runway",
+      "date": "2026-03-29",
+      "changes": [
+        "description: GWM-1 General World Model, Runway Characters API 추가",
+        "features: GWM-1, Runway Characters API 추가"
+      ]
+    },
+    {
       "slug": "chatgpt",
       "date": "2026-03-30",
       "changes": [
@@ -491,6 +436,30 @@
       "changes": [
         "description: Opus 4.6(2026년 2월), 1M 토큰 컨텍스트, Computer Use, Voice Mode, /loop 추가",
         "features: 1M 토큰 컨텍스트, Computer Use, /loop, Voice Mode 추가"
+      ]
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-03-30",
+      "changes": [
+        "description: Composer 2, JetBrains ACP, Automations, 30+ 플러그인, Self-hosted Cloud Agents 추가",
+        "features: Composer 2, JetBrains ACP, Automations, Self-hosted Cloud Agents 추가"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "date": "2026-03-30",
+      "changes": [
+        "description: IBM watsonx Orchestrate 파트너십, Full/Basic Seat 구조 추가",
+        "features: IBM watsonx 연동, Full/Basic Seat 추가"
+      ]
+    },
+    {
+      "slug": "figma",
+      "date": "2026-03-30",
+      "changes": [
+        "description: Design with Agents(MCP, beta) — AI 에이전트가 Figma 파일 직접 수정",
+        "features: Design with Agents(MCP, beta) 추가"
       ]
     },
     {
@@ -510,19 +479,19 @@
       ]
     },
     {
+      "slug": "notion-ai",
+      "date": "2026-03-30",
+      "changes": [
+        "description: Notion 3.4 — AI 이미지·차트·슬라이드, Presentation Mode, Tabs 블록 추가",
+        "features: AI 이미지·차트·슬라이드 생성, Presentation Mode, Tabs 블록, Markdown Content API 추가"
+      ]
+    },
+    {
       "slug": "perplexity",
       "date": "2026-03-30",
       "changes": [
         "description: Comet AI 브라우저(iOS 지원), Enterprise Memory·Governance 추가",
         "features: Comet AI 브라우저, Enterprise Memory 추가"
-      ]
-    },
-    {
-      "slug": "cursor",
-      "date": "2026-03-30",
-      "changes": [
-        "description: Composer 2, JetBrains ACP, Automations, 30+ 플러그인, Self-hosted Cloud Agents 추가",
-        "features: Composer 2, JetBrains ACP, Automations, Self-hosted Cloud Agents 추가"
       ]
     },
     {
@@ -542,54 +511,11 @@
       ]
     },
     {
-      "slug": "notion-ai",
-      "date": "2026-03-30",
-      "changes": [
-        "description: Notion 3.4 — AI 이미지·차트·슬라이드, Presentation Mode, Tabs 블록 추가",
-        "features: AI 이미지·차트·슬라이드 생성, Presentation Mode, Tabs 블록, Markdown Content API 추가"
-      ]
-    },
-    {
-      "slug": "figma",
-      "date": "2026-03-30",
-      "changes": [
-        "description: Design with Agents(MCP, beta) — AI 에이전트가 Figma 파일 직접 수정",
-        "features: Design with Agents(MCP, beta) 추가"
-      ]
-    },
-    {
-      "slug": "elevenlabs",
-      "date": "2026-03-30",
-      "changes": [
-        "description: IBM watsonx Orchestrate 파트너십, Full/Basic Seat 구조 추가",
-        "features: IBM watsonx 연동, Full/Basic Seat 추가"
-      ]
-    },
-    {
-      "slug": "together-ai",
+      "slug": "anifusion",
       "date": "2026-03-31",
       "changes": [
-        "tagline: AI Native Cloud 풀스택 플랫폼으로 재포지셔닝",
-        "description: FlexSandbox, FlashAttention-4, 배치 처리 추가",
-        "features: 최신 기능으로 업데이트"
-      ]
-    },
-    {
-      "slug": "scenario",
-      "date": "2026-03-31",
-      "changes": [
-        "tagline: 크리에이티브 AI 인프라로 포지셔닝 강화",
-        "pricingDetail: Starter $10/Pro $30/Max $50 구조로 변경",
-        "features: 앱 빌더, Unity 플러그인, SOC 2 추가"
-      ]
-    },
-    {
-      "slug": "mapify",
-      "date": "2026-03-31",
-      "changes": [
-        "tagline: 오디오·이미지 변환 추가",
-        "description: 팟캐스트·녹음, 이미지→마인드맵, Chat with File 추가",
-        "features: 오디오·이미지 변환 추가"
+        "description: FLUX.1 Schnell/Dev 모델 지원, 코믹스 타입 명시",
+        "features: FLUX.1 모델, 캔버스 에디터 추가"
       ]
     },
     {
@@ -602,11 +528,30 @@
       ]
     },
     {
-      "slug": "anifusion",
+      "slug": "mapify",
       "date": "2026-03-31",
       "changes": [
-        "description: FLUX.1 Schnell/Dev 모델 지원, 코믹스 타입 명시",
-        "features: FLUX.1 모델, 캔버스 에디터 추가"
+        "tagline: 오디오·이미지 변환 추가",
+        "description: 팟캐스트·녹음, 이미지→마인드맵, Chat with File 추가",
+        "features: 오디오·이미지 변환 추가"
+      ]
+    },
+    {
+      "slug": "scenario",
+      "date": "2026-03-31",
+      "changes": [
+        "tagline: 크리에이티브 AI 인프라로 포지셔닝 강화",
+        "pricingDetail: Starter $10/Pro $30/Max $50 구조로 변경",
+        "features: 앱 빌더, Unity 플러그인, SOC 2 추가"
+      ]
+    },
+    {
+      "slug": "together-ai",
+      "date": "2026-03-31",
+      "changes": [
+        "tagline: AI Native Cloud 풀스택 플랫폼으로 재포지셔닝",
+        "description: FlexSandbox, FlashAttention-4, 배치 처리 추가",
+        "features: 최신 기능으로 업데이트"
       ]
     },
     {
@@ -635,6 +580,21 @@
       ]
     },
     {
+      "slug": "bolt-new",
+      "date": "2026-04-03",
+      "changes": [
+        "description: 디자인 시스템 연동(Porsche·Material UI·Washington Post) 추가",
+        "features: 디자인 시스템 연동 추가"
+      ]
+    },
+    {
+      "slug": "musicfx",
+      "date": "2026-04-03",
+      "changes": [
+        "url: aitestkitchen.withgoogle.com/tools/music-fx → labs.google/fx/tools/music-fx"
+      ]
+    },
+    {
       "slug": "chatgpt",
       "date": "2026-04-04",
       "changes": [
@@ -648,15 +608,6 @@
       "changes": [
         "description: Opus 4.6 Terminal-Bench 2.0·HLE 1위 언급, Agent Teams, Claude in PowerPoint, Adaptive Thinking 추가",
         "features: Agent Teams, Adaptive Thinking, Claude in Excel·PowerPoint 추가"
-      ]
-    },
-    {
-      "slug": "gemini",
-      "date": "2026-04-04",
-      "changes": [
-        "description: Gemini 3 모델(2025.11), Gemini Agent, Generative Interfaces(Visual Layout·Dynamic View) 추가",
-        "pricingDetail: AI Ultra .99/월 플랜 추가",
-        "features: Gemini Agent, Generative Interfaces, Canvas 추가"
       ]
     },
     {
@@ -684,11 +635,60 @@
       ]
     },
     {
+      "slug": "gemini",
+      "date": "2026-04-04",
+      "changes": [
+        "description: Gemini 3 모델(2025.11), Gemini Agent, Generative Interfaces(Visual Layout·Dynamic View) 추가",
+        "pricingDetail: AI Ultra .99/월 플랜 추가",
+        "features: Gemini Agent, Generative Interfaces, Canvas 추가"
+      ]
+    },
+    {
       "slug": "notion-ai",
       "date": "2026-04-04",
       "changes": [
         "description: 일본·한국 데이터 레지던시(2026년 5월~) 추가",
         "features: 일본·한국 데이터 레지던시 추가"
+      ]
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-04-09",
+      "changes": [
+        "description: GPT-5.4 Thinking·GPT-5.4 Pro, upfront plan, 심화 웹 리서치 반영",
+        "features: GPT-5.4 Thinking·Pro, upfront plan, 심화 웹 리서치 추가"
+      ]
+    },
+    {
+      "slug": "claude",
+      "date": "2026-04-09",
+      "changes": [
+        "description: Claude Managed Agents(퍼블릭 베타) 추가",
+        "features: Managed Agents (퍼블릭 베타) 추가"
+      ]
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-04-09",
+      "changes": [
+        "description: async subagents, sandbox network access controls 반영",
+        "features: Marketplace Plugins, Async subagents, Sandbox network access controls 추가"
+      ]
+    },
+    {
+      "slug": "figma",
+      "date": "2026-04-09",
+      "changes": [
+        "description: Figma canvas 직접 편집 가능한 Design with Agents, use_figma, skills 반영",
+        "features: use_figma tool, Skills 추가"
+      ]
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-04-09",
+      "changes": [
+        "description: Google Slides brand-matched editable slides 기능 반영",
+        "features: Google Slides brand-matched editable slides 추가"
       ]
     },
     {
@@ -746,342 +746,104 @@
         "description: Ultralytics·Transformers·MMDetection·Roboflow Inference 연동 및 dataset 작업 반영",
         "features: 분류·세그멘테이션 지원, 다양한 모델 연동, dataset load/split/merge/export 추가"
       ]
+    },
+    {
+      "slug": "codev",
+      "date": "2026-04-11",
+      "changes": [
+        "name: Codev → CoDev",
+        "description: AI 코드 생성 도구 → 글로벌 개발·운영·마케팅 팀 서비스",
+        "pricingDetail: 무료/구독 → 문의 기반 견적",
+        "features: AI 코드 생성 중심 → 팀/Managed Service 중심"
+      ]
+    },
+    {
+      "slug": "magnific",
+      "date": "2026-04-11",
+      "changes": [
+        "tagline: 업스케일링 중심 → 업스케일·변환·생성 포지셔닝 반영",
+        "description: transform/generate 및 Creativity 제어 반영",
+        "features: 이미지 변환·생성, Creativity 제어 추가"
+      ]
+    },
+    {
+      "slug": "synthesia",
+      "date": "2026-04-11",
+      "changes": [
+        "tagline: 교육·기업 영상 제작 → 기업용 AI 아바타 영상 제작 플랫폼",
+        "description: business video platform·로컬라이제이션 워크플로우 반영",
+        "features: 170+ 언어 → 160+ 언어, 번역·로컬라이제이션 추가"
+      ]
+    },
+    {
+      "slug": "tost-ai",
+      "date": "2026-04-11",
+      "changes": [
+        "url: https://tost.ai → https://ui.tost.ai"
+      ]
+    },
+    {
+      "slug": "jasper",
+      "date": "2026-04-12",
+      "changes": [
+        "description: Canvas, API & MCP 연동 반영",
+        "features: Canvas, API & MCP 추가"
+      ]
     }
   ],
   "checked": [
-    "chatgpt",
-    "claude",
-    "gemini",
+    "deepl",
+    "runway",
     "midjourney",
     "perplexity",
-    "cursor",
-    "runway",
     "suno",
-    "deepl",
-    "github-copilot",
-    "elevenlabs",
-    "notion-ai",
-    "jasper",
-    "stable-diffusion",
-    "canva-ai",
-    "lovable",
-    "dall-e",
-    "bolt-new",
-    "gamma",
-    "copy-ai",
-    "pika",
-    "leonardo-ai",
-    "windsurf",
-    "v0-dev",
-    "kling",
-    "udio",
-    "writesonic",
-    "copilot",
-    "surfer-seo",
-    "papago",
-    "grok",
-    "le-chat",
-    "poe",
-    "flux",
-    "ideogram",
-    "imagefx",
-    "recraft",
+    "claude",
+    "cursor",
+    "gemini",
+    "chatgpt",
     "adobe-firefly",
-    "magnific",
-    "krea",
-    "playground-ai",
-    "clova-note",
-    "notta",
-    "luma-ai",
-    "sora",
-    "capcut",
-    "vrew",
-    "heygen",
-    "notebooklm",
-    "hugging-face",
-    "wrtn",
-    "vidu",
-    "synthesia",
-    "replicate",
-    "fal-ai",
-    "veed",
-    "invideo-ai",
-    "tripo",
-    "meshy",
-    "dify",
-    "make",
-    "replit",
-    "groq",
-    "together-ai",
-    "consensus",
-    "arc",
-    "magnific",
-    "napkin-ai",
-    "character-ai",
-    "figma",
-    "opusclip",
-    "descript",
-    "hailuo-ai",
-    "pinokio",
-    "framer",
-    "tldraw",
     "adobe-photoshop",
-    "microsoft-designer",
-    "genspark",
-    "felo",
-    "mapify",
-    "scenario",
-    "anifusion",
-    "storytribe",
+    "aippt",
+    "arc",
+    "canirun-ai",
+    "canva-ai",
+    "character-ai",
+    "clova-note",
     "comfyui",
-    "wegic",
+    "consensus",
+    "copilot",
+    "creatie",
     "dora",
-    "uizard",
-    "galileo",
-    "supervision",
+    "felo",
+    "gamma",
+    "genspark",
+    "grok",
+    "hailuo-ai",
+    "ideogram",
+    "janus",
+    "jude",
+    "le-chat",
+    "leonardo-ai",
+    "make",
+    "meshy",
+    "microsoft-designer",
+    "notebooklm",
+    "papago",
+    "poe",
+    "sora",
+    "storytribe",
+    "tldraw",
     "transformers",
-    "codev",
-    "reweb",
-    "aippt",
-    "musicfx",
-    "wireframable",
-    "janus",
-    "muapi",
-    "tost-ai",
-    "ugic",
-    "creatie",
-    "canirun-ai",
-    "jude",
-    "canva-ai",
-    "dall-e",
-    "bolt-new",
-    "gamma",
-    "leonardo-ai",
-    "copilot",
-    "grok",
-    "le-chat",
-    "poe",
-    "ideogram",
-    "adobe-firefly",
-    "magnific",
-    "adobe-photoshop",
-    "microsoft-designer",
-    "clova-note",
-    "sora",
-    "synthesia",
-    "notebooklm",
-    "consensus",
-    "groq",
-    "arc",
-    "character-ai",
-    "hailuo-ai",
-    "framer",
-    "tldraw",
-    "genspark",
-    "felo",
-    "wegic",
-    "dora",
-    "uizard",
-    "supervision",
-    "papago",
     "tripo",
-    "meshy",
-    "make",
+    "ugic",
+    "uizard",
     "veed",
-    "comfyui",
-    "aippt",
-    "musicfx",
-    "wrtn",
-    "chatgpt",
-    "claude",
-    "gemini",
-    "cursor",
-    "elevenlabs",
-    "figma",
-    "notion-ai",
-    "midjourney",
-    "perplexity",
-    "suno",
-    "windsurf",
-    "runway",
+    "wegic",
+    "wireframable",
     "github-copilot",
-    "deepl",
-    "deepl",
-    "runway",
-    "midjourney",
-    "perplexity",
-    "suno",
-    "chatgpt",
-    "claude",
-    "cursor",
-    "gemini",
-    "adobe-firefly",
-    "adobe-photoshop",
-    "aippt",
-    "arc",
-    "canirun-ai",
-    "canva-ai",
-    "character-ai",
-    "clova-note",
-    "codev",
-    "comfyui",
-    "consensus",
-    "copilot",
-    "creatie",
-    "dall-e",
-    "dora",
-    "felo",
-    "framer",
-    "gamma",
-    "genspark",
-    "grok",
-    "groq",
-    "hailuo-ai",
-    "ideogram",
-    "janus",
-    "jude",
-    "le-chat",
-    "leonardo-ai",
-    "magnific",
-    "make",
-    "meshy",
-    "microsoft-designer",
-    "muapi",
-    "notebooklm",
-    "papago",
-    "poe",
-    "reweb",
-    "sora",
-    "storytribe",
-    "supervision",
-    "synthesia",
-    "tldraw"
+    "jasper"
   ],
   "skipped": [
-    "canva-ai",
-    "dall-e",
-    "bolt-new",
-    "gamma",
-    "leonardo-ai",
-    "kling",
-    "copilot",
-    "surfer-seo",
-    "papago",
-    "grok",
-    "le-chat",
-    "poe",
-    "ideogram",
-    "imagefx",
-    "adobe-firefly",
-    "magnific",
-    "clova-note",
-    "sora",
-    "capcut",
-    "notebooklm",
-    "synthesia",
-    "fal-ai",
-    "veed",
-    "tripo",
-    "meshy",
-    "make",
-    "replit",
-    "groq",
-    "together-ai",
-    "consensus",
-    "arc",
-    "character-ai",
-    "descript",
-    "hailuo-ai",
-    "framer",
-    "tldraw",
-    "adobe-photoshop",
-    "microsoft-designer",
-    "genspark",
-    "felo",
-    "mapify",
-    "scenario",
-    "anifusion",
-    "storytribe",
-    "comfyui",
-    "wegic",
-    "dora",
-    "uizard",
-    "galileo",
-    "supervision",
-    "transformers",
-    "codev",
-    "reweb",
-    "aippt",
-    "musicfx",
-    "ugic",
-    "creatie",
-    "midjourney",
-    "perplexity",
-    "pika",
-    "tost-ai",
-    "jude",
-    "claude",
-    "gemini",
-    "cursor",
-    "runway",
-    "suno",
-    "deepl",
-    "github-copilot",
-    "elevenlabs",
-    "jasper",
-    "stable-diffusion",
-    "lovable",
-    "windsurf",
-    "v0-dev",
-    "udio",
-    "writesonic",
-    "copy-ai",
-    "luma-ai",
-    "canva-ai",
-    "dall-e",
-    "gamma",
-    "leonardo-ai",
-    "copilot",
-    "grok",
-    "le-chat",
-    "poe",
-    "ideogram",
-    "adobe-firefly",
-    "magnific",
-    "adobe-photoshop",
-    "microsoft-designer",
-    "clova-note",
-    "sora",
-    "synthesia",
-    "notebooklm",
-    "consensus",
-    "groq",
-    "arc",
-    "character-ai",
-    "hailuo-ai",
-    "framer",
-    "tldraw",
-    "genspark",
-    "felo",
-    "wegic",
-    "dora",
-    "uizard",
-    "supervision",
-    "papago",
-    "tripo",
-    "meshy",
-    "make",
-    "veed",
-    "comfyui",
-    "aippt",
-    "wrtn",
-    "midjourney",
-    "perplexity",
-    "suno",
-    "windsurf",
-    "runway",
-    "github-copilot",
-    "deepl",
     "deepl",
     "runway",
     "midjourney",
@@ -1090,6 +852,7 @@
     "claude",
     "cursor",
     "gemini",
+    "chatgpt",
     "adobe-firefly",
     "adobe-photoshop",
     "aippt",
@@ -1098,7 +861,6 @@
     "canva-ai",
     "character-ai",
     "clova-note",
-    "codev",
     "comfyui",
     "consensus",
     "copilot",
@@ -1114,7 +876,6 @@
     "jude",
     "le-chat",
     "leonardo-ai",
-    "magnific",
     "make",
     "meshy",
     "microsoft-designer",
@@ -1123,7 +884,14 @@
     "poe",
     "sora",
     "storytribe",
-    "synthesia",
-    "tldraw"
+    "tldraw",
+    "transformers",
+    "tripo",
+    "ugic",
+    "uizard",
+    "veed",
+    "wegic",
+    "wireframable",
+    "github-copilot"
   ]
 }
