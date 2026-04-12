@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-11",
+  "lastUpdated": "2026-04-13",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -950,6 +950,16 @@
       "name": "GBrain",
       "category": "연구/리서치",
       "url": "https://github.com/garrytan/gbrain"
+    },
+    {
+      "name": "Instant",
+      "category": "코드",
+      "url": "https://www.instantdb.com"
+    },
+    {
+      "name": "Rallypi",
+      "category": "연구/리서치",
+      "url": "https://rallypi.com"
     }
   ]
 }
