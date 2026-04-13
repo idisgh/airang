@@ -1,0 +1,34 @@
+[
+  {
+    "id": "103",
+    "name": "Octopal",
+    "slug": "octopal",
+    "tagline": "로컬 폴더 기반 AI 에이전트 협업 앱",
+    "description": "Octopal은 프로젝트 폴더마다 AI 에이전트 팀을 구성하고 그룹 채팅처럼 협업시키는 local-first 데스크톱 앱이다. .octo 파일로 에이전트의 역할·성격·기억을 정의하고, 필요할 때 에이전트끼리 서로 멘션하며 작업을 넘길 수 있다. 서버나 계정 없이 내 컴퓨터와 폴더 구조 위에서 동작해 프라이버시와 휴대성이 강점이다.",
+    "url": "https://octopal.app",
+    "logoUrl": "/logos/octopal.svg",
+    "categories": [
+      "productivity",
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스",
+    "koreanSupport": "none",
+    "features": [
+      "폴더별 AI 에이전트 팀 구성",
+      "그룹 채팅형 협업",
+      ".octo 파일 기반 에이전트 정의",
+      "에이전트 간 멘션·handoff",
+      "local-first 실행",
+      "macOS·Windows 지원"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-14"
+  }
+]

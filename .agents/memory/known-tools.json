@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-13",
+  "lastUpdated": "2026-04-14",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -960,6 +960,11 @@
       "name": "Rallypi",
       "category": "연구/리서치",
       "url": "https://rallypi.com"
+    },
+    {
+      "name": "Octopal",
+      "category": "productivity/coding",
+      "url": "https://octopal.app"
     }
   ]
 }
