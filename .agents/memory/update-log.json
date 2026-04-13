@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-04-12T11:40:00+09:00",
+  "lastRun": "2026-04-13T11:40:00+09:00",
   "updated": [
     {
       "slug": "chatgpt",
@@ -789,6 +789,30 @@
         "description: Canvas, API & MCP 연동 반영",
         "features: Canvas, API & MCP 추가"
       ]
+    },
+    {
+      "slug": "meshy",
+      "date": "2026-04-13",
+      "changes": [
+        "description: production-ready 후처리, Blender·Unity·Maya·Unreal 플러그인, Enterprise 보안 제어 반영",
+        "features: production-ready 후처리, 플러그인, 멀티 팀 워크스페이스, SSO, SOC 2 Type II·ISO 27001·GDPR 추가"
+      ]
+    },
+    {
+      "slug": "aippt",
+      "date": "2026-04-13",
+      "changes": [
+        "description: 로컬 파일·웹페이지 입력, AI outline 생성, 20만+ 템플릿 반영",
+        "features: 파일·웹페이지→슬라이드, AI outline 생성, 20만+ 템플릿 추가"
+      ]
+    },
+    {
+      "slug": "wegic",
+      "date": "2026-04-13",
+      "changes": [
+        "description: AI designer·developer·manager 팀, 커스텀 URL, 자동 업데이트 관리 반영",
+        "features: AI team 역할, 커스텀 URL, 자동 업데이트 관리 추가"
+      ]
     }
   ],
   "checked": [
@@ -841,7 +865,8 @@
     "wegic",
     "wireframable",
     "github-copilot",
-    "jasper"
+    "jasper",
+    "stable-diffusion"
   ],
   "skipped": [
     "deepl",
@@ -892,6 +917,7 @@
     "veed",
     "wegic",
     "wireframable",
-    "github-copilot"
+    "github-copilot",
+    "stable-diffusion"
   ]
 }
