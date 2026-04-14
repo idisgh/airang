@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-04-13T11:40:00+09:00",
+  "lastRun": "2026-04-14",
   "updated": [
     {
       "slug": "chatgpt",
@@ -813,6 +813,61 @@
         "description: AI designer·developer·manager 팀, 커스텀 URL, 자동 업데이트 관리 반영",
         "features: AI team 역할, 커스텀 URL, 자동 업데이트 관리 추가"
       ]
+    },
+    {
+      "slug": "surfer-seo",
+      "date": "2026-04-14",
+      "changes": [
+        "description: GEO 기능 설명에 AI Tracker·AI Search Guidelines·Mention Gap·Sentiment Analysis 반영",
+        "features: AI Tracker·AI Search Guidelines·Mention Gap·Sentiment Analysis 추가"
+      ]
+    },
+    {
+      "slug": "descript",
+      "date": "2026-04-14",
+      "changes": [
+        "pricingDetail: Hobbyist $12/월 → $16/월, 무료/Business 표기 갱신"
+      ]
+    },
+    {
+      "slug": "writesonic",
+      "date": "2026-04-14",
+      "changes": [
+        "description: AI Visibility Tracking/Actions, sentiment·citation 모니터링 반영",
+        "features: visibility score·sentiment·citation 분석, AI Visibility Actions 반영"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "date": "2026-04-14",
+      "changes": [
+        "description: 영상·음악·사운드 이펙트 생성 플랫폼 확장 반영",
+        "features: Sound Effects 생성, 이미지·영상 생성, 10,000+ AI 음성 반영"
+      ]
+    },
+    {
+      "slug": "krea",
+      "date": "2026-04-14",
+      "changes": [
+        "description: Motion Transfer·Asset Manager·단일 구독 모델 활용 반영",
+        "features: Motion Transfer, Krea Asset Manager 추가"
+      ]
+    },
+    {
+      "slug": "v0-dev",
+      "date": "2026-04-14",
+      "changes": [
+        "description: 앱·웹사이트 빌더, DB·API 연결, 원클릭 배포 흐름 반영",
+        "features: DB·API 연동, 에이전트 기반 앱 생성 반영"
+      ]
+    },
+    {
+      "slug": "windsurf",
+      "date": "2026-04-14",
+      "changes": [
+        "description: Memories·Rules·MCP Support·Turbo Mode 반영",
+        "features: Memories, Rules, MCP Support, Continue My Work, Turbo Mode 반영"
+      ]
     }
   ],
   "checked": [
@@ -866,7 +921,57 @@
     "wireframable",
     "github-copilot",
     "jasper",
-    "stable-diffusion"
+    "stable-diffusion",
+    "framer",
+    "hugging-face",
+    "replit",
+    "figma",
+    "surfer-seo",
+    "synthesia",
+    "vrew",
+    "invideo-ai",
+    "replicate",
+    "notta",
+    "heygen",
+    "descript",
+    "capcut",
+    "copy-ai",
+    "writesonic",
+    "elevenlabs",
+    "playground-ai",
+    "scenario",
+    "wrtn",
+    "recraft",
+    "krea",
+    "fal-ai",
+    "anifusion",
+    "pinokio",
+    "together-ai",
+    "supervision",
+    "notion-ai",
+    "dify",
+    "opusclip",
+    "pika",
+    "galileo",
+    "v0-dev",
+    "dall-e",
+    "magnific",
+    "lovable",
+    "tost-ai",
+    "codev",
+    "reweb",
+    "musicfx",
+    "napkin-ai",
+    "mapify",
+    "imagefx",
+    "groq",
+    "udio",
+    "vidu",
+    "kling",
+    "luma-ai",
+    "flux",
+    "bolt-new",
+    "windsurf"
   ],
   "skipped": [
     "deepl",
