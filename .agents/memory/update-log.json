@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-04-14",
+  "lastRun": "2026-04-15",
   "updated": [
     {
       "slug": "chatgpt",
@@ -868,6 +868,23 @@
         "description: Memories·Rules·MCP Support·Turbo Mode 반영",
         "features: Memories, Rules, MCP Support, Continue My Work, Turbo Mode 반영"
       ]
+    },
+    {
+      "slug": "jude",
+      "date": "2026-04-15",
+      "changes": [
+        "tagline: AI 운영 어시스턴트 → AI CRM",
+        "description: 운영 자동화 중심 → small business용 AI CRM 포지셔닝 반영",
+        "features: 고객 관리, 비즈니스 성장 관리 반영"
+      ]
+    },
+    {
+      "slug": "transformers",
+      "date": "2026-04-15",
+      "changes": [
+        "description: 텍스트 중심 설명 → text·vision·audio·video·multimodal 추론/학습 프레임워크 반영",
+        "features: 멀티모달 지원, 추론·학습, 100만+ 허브 체크포인트 추가"
+      ]
     }
   ],
   "checked": [
@@ -882,7 +899,6 @@
     "chatgpt",
     "adobe-firefly",
     "adobe-photoshop",
-    "aippt",
     "arc",
     "canirun-ai",
     "canva-ai",
@@ -904,7 +920,6 @@
     "le-chat",
     "leonardo-ai",
     "make",
-    "meshy",
     "microsoft-designer",
     "notebooklm",
     "papago",
@@ -917,61 +932,12 @@
     "ugic",
     "uizard",
     "veed",
-    "wegic",
     "wireframable",
     "github-copilot",
-    "jasper",
-    "stable-diffusion",
-    "framer",
-    "hugging-face",
-    "replit",
-    "figma",
-    "surfer-seo",
-    "synthesia",
-    "vrew",
-    "invideo-ai",
-    "replicate",
-    "notta",
-    "heygen",
-    "descript",
-    "capcut",
-    "copy-ai",
-    "writesonic",
-    "elevenlabs",
-    "playground-ai",
-    "scenario",
-    "wrtn",
-    "recraft",
-    "krea",
-    "fal-ai",
-    "anifusion",
-    "pinokio",
-    "together-ai",
-    "supervision",
-    "notion-ai",
-    "dify",
-    "opusclip",
-    "pika",
-    "galileo",
-    "v0-dev",
-    "dall-e",
-    "magnific",
     "lovable",
-    "tost-ai",
-    "codev",
-    "reweb",
-    "musicfx",
-    "napkin-ai",
-    "mapify",
-    "imagefx",
-    "groq",
-    "udio",
-    "vidu",
-    "kling",
-    "luma-ai",
-    "flux",
-    "bolt-new",
-    "windsurf"
+    "pika",
+    "stable-diffusion",
+    "udio"
   ],
   "skipped": [
     "deepl",
@@ -985,7 +951,6 @@
     "chatgpt",
     "adobe-firefly",
     "adobe-photoshop",
-    "aippt",
     "arc",
     "canirun-ai",
     "canva-ai",
@@ -1003,11 +968,9 @@
     "hailuo-ai",
     "ideogram",
     "janus",
-    "jude",
     "le-chat",
     "leonardo-ai",
     "make",
-    "meshy",
     "microsoft-designer",
     "notebooklm",
     "papago",
@@ -1015,14 +978,15 @@
     "sora",
     "storytribe",
     "tldraw",
-    "transformers",
     "tripo",
     "ugic",
     "uizard",
     "veed",
-    "wegic",
     "wireframable",
     "github-copilot",
-    "stable-diffusion"
+    "lovable",
+    "pika",
+    "stable-diffusion",
+    "udio"
   ]
 }
