@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-04-15",
+  "lastRun": "2026-04-16",
   "updated": [
+    {
+      "slug": "heygen",
+      "date": "2026-04-16",
+      "changes": [
+        "description: 텍스트·이미지·프레젠테이션·PDF 입력 및 AI Models(Sora·Veo·Kling·Flux·ElevenLabs) 반영",
+        "features: 텍스트·이미지·프레젠테이션·PDF→영상, AI Models 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-03-07",
@@ -885,6 +893,38 @@
         "description: 텍스트 중심 설명 → text·vision·audio·video·multimodal 추론/학습 프레임워크 반영",
         "features: 멀티모달 지원, 추론·학습, 100만+ 허브 체크포인트 추가"
       ]
+    },
+    {
+      "slug": "replit",
+      "date": "2026-04-15",
+      "changes": [
+        "description: Infinite Canvas, Parallel Agents, Multiple Artifacts 중심으로 최신 포지셔닝 반영",
+        "features: Infinite Canvas, Parallel Agents, Multiple Artifacts 반영"
+      ]
+    },
+    {
+      "slug": "mapify",
+      "date": "2026-04-15",
+      "changes": [
+        "description: 회의 녹음, 웹 검색 기반 확장, 슬라이드 변환 반영",
+        "features: 회의 녹음 변환, 웹 검색 기반 확장, 슬라이드 변환 추가"
+      ]
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-04-15",
+      "changes": [
+        "url: notion.so/product/ai → notion.com/product/ai"
+      ]
+    },
+    {
+      "slug": "v0-dev",
+      "date": "2026-04-15",
+      "changes": [
+        "url: v0.dev → v0.app",
+        "description: 디자인 시스템 활용 반영",
+        "features: 디자인 시스템 추가"
+      ]
     }
   ],
   "checked": [
@@ -937,7 +977,57 @@
     "lovable",
     "pika",
     "stable-diffusion",
-    "udio"
+    "udio",
+    "flux",
+    "heygen",
+    "hugging-face",
+    "notta",
+    "playground-ai",
+    "recraft",
+    "wrtn",
+    "capcut",
+    "invideo-ai",
+    "napkin-ai",
+    "opusclip",
+    "replicate",
+    "vidu",
+    "vrew",
+    "fal-ai",
+    "imagefx",
+    "kling",
+    "pinokio",
+    "replit",
+    "copy-ai",
+    "dify",
+    "luma-ai",
+    "anifusion",
+    "galileo",
+    "mapify",
+    "scenario",
+    "together-ai",
+    "bolt-new",
+    "musicfx",
+    "notion-ai",
+    "figma",
+    "dall-e",
+    "framer",
+    "groq",
+    "muapi",
+    "reweb",
+    "supervision",
+    "codev",
+    "magnific",
+    "synthesia",
+    "tost-ai",
+    "jasper",
+    "aippt",
+    "meshy",
+    "wegic",
+    "descript",
+    "elevenlabs",
+    "krea",
+    "surfer-seo",
+    "v0-dev"
   ],
   "skipped": [
     "deepl",
@@ -987,6 +1077,52 @@
     "lovable",
     "pika",
     "stable-diffusion",
-    "udio"
+    "udio",
+    "flux",
+    "heygen",
+    "hugging-face",
+    "notta",
+    "playground-ai",
+    "recraft",
+    "wrtn",
+    "capcut",
+    "invideo-ai",
+    "napkin-ai",
+    "opusclip",
+    "replicate",
+    "vidu",
+    "vrew",
+    "fal-ai",
+    "imagefx",
+    "kling",
+    "pinokio",
+    "copy-ai",
+    "dify",
+    "luma-ai",
+    "anifusion",
+    "galileo",
+    "scenario",
+    "together-ai",
+    "bolt-new",
+    "musicfx",
+    "figma",
+    "dall-e",
+    "framer",
+    "groq",
+    "muapi",
+    "reweb",
+    "supervision",
+    "codev",
+    "magnific",
+    "synthesia",
+    "tost-ai",
+    "jasper",
+    "aippt",
+    "meshy",
+    "wegic",
+    "descript",
+    "elevenlabs",
+    "krea",
+    "surfer-seo"
   ]
 }
