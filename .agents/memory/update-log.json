@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-04-16",
+  "lastRun": "2026-04-17",
   "updated": [
     {
       "slug": "heygen",
@@ -924,6 +924,23 @@
         "url: v0.dev → v0.app",
         "description: 디자인 시스템 활용 반영",
         "features: 디자인 시스템 추가"
+      ]
+    },
+    {
+      "slug": "github-copilot",
+      "date": "2026-04-17",
+      "changes": [
+        "tagline: AI 페어 프로그래머 → AI 코딩 플랫폼으로 포지셔닝 갱신",
+        "description: agent mode, GitHub·CLI·프로젝트 도구·채팅 앱·커스텀 MCP 서버 반영",
+        "features: 커스텀·서드파티 에이전트, 프로젝트 도구·채팅 앱 연동, MCP 서버 allow list 추가"
+      ]
+    },
+    {
+      "slug": "deepl",
+      "date": "2026-04-17",
+      "changes": [
+        "tagline: 번역 중심 → AI 번역·음성·API 언어 플랫폼으로 갱신",
+        "description: Voice·API·톤 제어·엔터프라이즈 보안 중심으로 정리"
       ]
     }
   ],
