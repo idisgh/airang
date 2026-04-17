@@ -942,6 +942,22 @@
         "tagline: 번역 중심 → AI 번역·음성·API 언어 플랫폼으로 갱신",
         "description: Voice·API·톤 제어·엔터프라이즈 보안 중심으로 정리"
       ]
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-04-17",
+      "changes": [
+        "description: Bugbot Learned Rules·Bugbot MCP Support 반영",
+        "features: Bugbot Learned Rules, Bugbot MCP Support 추가"
+      ]
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-04-17",
+      "changes": [
+        "description: Custom Agents의 Notion Credits 기반 usage pricing 전환 일정 반영",
+        "pricingDetail: 2026-05-03 무료 베타 / 2026-05-04부터 Notion Credits add-on 과금 반영"
+      ]
     }
   ],
   "checked": [
