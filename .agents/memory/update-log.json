@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-04-17",
+  "lastRun": "2026-04-18",
   "updated": [
     {
       "slug": "heygen",
@@ -957,6 +957,31 @@
       "changes": [
         "description: Custom Agents의 Notion Credits 기반 usage pricing 전환 일정 반영",
         "pricingDetail: 2026-05-03 무료 베타 / 2026-05-04부터 Notion Credits add-on 과금 반영"
+      ]
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-04-18",
+      "changes": [
+        "description: Codex background computer use, in-app browser, gpt-image-1.5, 90+ plugins, scheduling automations, memory preview 반영",
+        "features: background computer use, in-app browser, gpt-image-1.5, 90+ plugins, scheduling automations, memory preview 추가"
+      ]
+    },
+    {
+      "slug": "claude",
+      "date": "2026-04-18",
+      "changes": [
+        "description: Claude Opus 4.7 및 Claude Design 연구 프리뷰 반영",
+        "features: Claude Opus 4.7, Claude Design, 디자인 시스템 적용, export, Claude Code handoff 추가"
+      ]
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-04-18",
+      "changes": [
+        "description: Gemini app for Mac (macOS 15+, Option+Space, window sharing) 반영",
+        "features: Gemini app for Mac, Option+Space 글로벌 단축키, window sharing 추가",
+        "platforms: desktop 추가"
       ]
     }
   ],
