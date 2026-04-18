@@ -1,0 +1,92 @@
+[
+  {
+    "id": "103",
+    "name": "Is Your Site Agent-Ready?",
+    "slug": "is-your-site-agent-ready",
+    "tagline": "사이트의 AI 대응도를 진단하는 검사기",
+    "description": "Is Your Site Agent-Ready?는 웹사이트가 AI 에이전트에 얼마나 준비돼 있는지 점수와 체크리스트로 보여주는 진단 도구다. robots.txt, sitemap, markdown negotiation, MCP, Agent Skills, OAuth, x402 같은 신흥 표준을 한 번에 검사해 에이전트 친화성을 빠르게 점검할 수 있다. 사이트 유형별로 체크 항목을 조절할 수 있어 content site와 API/application 모두에 활용 가능하다.",
+    "url": "https://isitagentready.com/",
+    "logoUrl": "/logos/is-your-site-agent-ready.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 웹 스캔 도구",
+    "koreanSupport": "none",
+    "features": [
+      "사이트 agent readiness 스캔",
+      "robots.txt·sitemap 검사",
+      "MCP·Agent Skills·OAuth 점검",
+      "markdown negotiation 확인",
+      "commerce 프로토콜(x402·UCP·ACP) 검사"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-19"
+  },
+  {
+    "id": "104",
+    "name": "Gemma Gem",
+    "slug": "gemma-gem",
+    "tagline": "Gemma 4를 브라우저에서 돌리는 로컬 에이전트",
+    "description": "Gemma Gem은 Google Gemma 4 모델을 WebGPU로 브라우저 안에서 직접 실행하는 Chrome 확장이다. API 키나 클라우드 없이 페이지 내용을 읽고 질문에 답하며, 버튼 클릭·폼 입력·스크롤·스크린샷 같은 액션도 수행할 수 있다. 개인 데이터가 외부로 나가지 않는 온디바이스 에이전트 실험용 도구로 적합하다.",
+    "url": "https://github.com/kessler/gemma-gem",
+    "logoUrl": "/logos/gemma-gem.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스 Chrome 확장",
+    "koreanSupport": "none",
+    "features": [
+      "온디바이스 Gemma 4 실행",
+      "페이지 읽기와 질의응답",
+      "버튼 클릭·폼 입력·스크롤",
+      "스크린샷 캡처",
+      "WebGPU 기반 로컬 추론"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-19"
+  },
+  {
+    "id": "105",
+    "name": "Zerobox",
+    "slug": "zerobox",
+    "tagline": "명령어를 안전하게 격리하는 경량 샌드박스",
+    "description": "Zerobox는 OpenAI Codex 런타임을 바탕으로 만든 경량 프로세스 샌드박싱 도구다. 특정 경로 쓰기, 외부 네트워크, 자격증명 전달을 세밀하게 허용·차단할 수 있어 AI agent나 자동화 스크립트를 좀 더 안전하게 실행할 수 있다. Docker나 VM 없이 단일 바이너리와 npm 패키지로 사용할 수 있는 점도 강점이다.",
+    "url": "https://github.com/afshinm/zerobox",
+    "logoUrl": "/logos/zerobox.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스 CLI / npm 패키지",
+    "koreanSupport": "none",
+    "features": [
+      "파일·네트워크 접근 제어",
+      "자격증명 host 제한 주입",
+      "Rust·TypeScript SDK",
+      "스냅샷 복구",
+      "macOS·Linux 지원"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-19"
+  }
+]

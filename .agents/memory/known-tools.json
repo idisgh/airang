@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14",
+  "lastUpdated": "2026-04-19",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -965,6 +965,51 @@
       "name": "Octopal",
       "category": "productivity/coding",
       "url": "https://octopal.app"
+    },
+    {
+      "name": "Happy",
+      "category": "코드",
+      "url": "https://happy.engineering"
+    },
+    {
+      "name": "Multica",
+      "category": "코드",
+      "url": "https://multica.ai"
+    },
+    {
+      "name": "Open Agents",
+      "category": "코드",
+      "url": "https://open-agents.dev"
+    },
+    {
+      "name": "pi-autoresearch",
+      "category": "연구/리서치",
+      "url": "https://github.com/davebcn87/pi-autoresearch"
+    },
+    {
+      "name": "OpenHarness",
+      "category": "코드",
+      "url": "https://github.com/HKUDS/OpenHarness"
+    },
+    {
+      "name": "lazyagent",
+      "category": "코드",
+      "url": "https://github.com/chojs23/lazyagent"
+    },
+    {
+      "name": "Is Your Site Agent-Ready?",
+      "category": "코드",
+      "url": "https://isitagentready.com/"
+    },
+    {
+      "name": "Gemma Gem",
+      "category": "코드",
+      "url": "https://github.com/kessler/gemma-gem"
+    },
+    {
+      "name": "Zerobox",
+      "category": "코드",
+      "url": "https://github.com/afshinm/zerobox"
     }
   ]
 }
