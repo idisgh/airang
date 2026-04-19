@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-04-18",
+  "lastRun": "2026-04-19",
   "updated": [
     {
       "slug": "heygen",
@@ -1085,7 +1085,8 @@
     "elevenlabs",
     "krea",
     "surfer-seo",
-    "v0-dev"
+    "v0-dev",
+    "qwen"
   ],
   "skipped": [
     "deepl",
@@ -1181,6 +1182,10 @@
     "descript",
     "elevenlabs",
     "krea",
-    "surfer-seo"
+    "surfer-seo",
+    {
+      "slug": "qwen",
+      "reason": "registered tool 아님 (official release signal for Qwen3.6-35B-A3B verified, no existing entry in data/tools.ts)"
+    }
   ]
 }
