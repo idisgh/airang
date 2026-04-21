@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-04-20",
+  "lastRun": "2026-04-21",
   "updated": [
     {
       "slug": "heygen",
@@ -1185,11 +1185,7 @@
     "surfer-seo",
     {
       "slug": "qwen",
-      "reason": "registered tool 아님 (official release signal for Qwen3.6-35B-A3B verified, no existing entry in data/tools.ts)"
-    },
-    {
-      "slug": "qwen",
-      "date": "2026-04-20",
+      "date": "2026-04-21",
       "reason": "registered tool 아님 (official release signal for Qwen3.6-35B-A3B verified, no existing entry in data/tools.ts)"
     }
   ]
