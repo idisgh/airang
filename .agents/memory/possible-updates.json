@@ -1,16 +1,16 @@
 {
-  "lastRun": "2026-04-19",
+  "lastRun": "2026-04-22",
   "candidates": [
     {
       "slug": "qwen",
       "name": "Qwen",
       "source": "https://news.hada.io/topic?id=28609",
-      "signal": "Qwen3.6-35B-A3B 공개 — 오픈 agentic coding 특화 모델 릴리즈 신호",
+      "signal": "Qwen3.6-35B-A3B 공개, 오픈 멀티모달 agentic coding 모델 업데이트 신호",
       "importance": "high",
       "notes": [
         "GeekNews source",
-        "2026-04-18 게시",
-        "official qwen.ai blog 링크를 가리키지만 본문 추출은 불안정해서 신호 단계까지만 기록",
+        "직전 러닝에서 이어지는 미반영 후보",
+        "agentic coding 성능 향상, 멀티모달 지원, Anthropic API 프로토콜 호환 언급",
         "최근 tool_updates에 동일 반영 내역 없음"
       ]
     }
@@ -25,21 +25,6 @@
       "slug": null,
       "source": "https://www.producthunt.com/topics/artificial-intelligence",
       "reason": "403 / bot protection"
-    },
-    {
-      "slug": "chatgpt",
-      "source": "https://openai.com/index/codex-for-almost-everything/",
-      "reason": "최근 tool_updates(2026-04-18)에 동일 성격 업데이트 반영됨"
-    },
-    {
-      "slug": "claude",
-      "source": "https://www.anthropic.com/news/claude-opus-4-7",
-      "reason": "최근 tool_updates(2026-04-18)에 Claude Opus 4.7 / Claude Design 반영됨"
-    },
-    {
-      "slug": "gemini",
-      "source": "https://gemini.google/mac/",
-      "reason": "최근 tool_updates(2026-04-18)에 Gemini app for Mac 반영됨"
     }
   ]
 }

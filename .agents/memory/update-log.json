@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-04-21",
+  "lastRun": "2026-04-22",
   "updated": [
+    {
+      "slug": "gemini",
+      "date": "2026-04-22",
+      "changes": [
+        "description: Gemini in Chrome 한국 출시, Chrome 사이드 패널 기반 웹 요약·질문·멀티탭 비교 및 Gmail·Calendar·Maps·YouTube 연동 반영",
+        "features: Gemini in Chrome, Chrome 사이드 패널 요약·질문, 멀티탭 비교·요약, Gmail·Calendar·Maps·YouTube 연동, Nano Banana 2 웹 이미지 변환 추가"
+      ]
+    },
     {
       "slug": "heygen",
       "date": "2026-04-16",
@@ -1187,6 +1195,11 @@
       "slug": "qwen",
       "date": "2026-04-21",
       "reason": "registered tool 아님 (official release signal for Qwen3.6-35B-A3B verified, no existing entry in data/tools.ts)"
+    },
+    {
+      "slug": "qwen",
+      "date": "2026-04-22",
+      "reason": "registered tool 아님 (Qwen3.6-35B-A3B 공식 출시 신호 확인, data/tools.ts 등록 없음)"
     }
   ]
 }
