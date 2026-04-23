@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-04-22",
+  "lastRun": "2026-04-23",
   "updated": [
+    {
+      "slug": "gemini",
+      "date": "2026-04-23",
+      "changes": [
+        "description: Skills in Chrome, ready-made Skills library, slash(/)·+ 버튼 기반 one-click workflow 재실행 반영",
+        "features: Skills in Chrome, ready-made Skills library 추가"
+      ]
+    },
     {
       "slug": "gemini",
       "date": "2026-04-22",
@@ -1200,6 +1208,11 @@
       "slug": "qwen",
       "date": "2026-04-22",
       "reason": "registered tool 아님 (Qwen3.6-35B-A3B 공식 출시 신호 확인, data/tools.ts 등록 없음)"
+    },
+    {
+      "slug": "qwen",
+      "date": "2026-04-23",
+      "reason": "registered tool 아님 (Qwen3.6-35B-A3B 업데이트 신호 유지, data/tools.ts 등록 없음)"
     }
   ]
 }
