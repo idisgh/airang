@@ -24,11 +24,11 @@ export const tools: Tool[] = [
   {
     id: '1', name: 'ChatGPT', slug: 'chatgpt',
     tagline: 'OpenAI의 대화형 AI. 글쓰기, 코딩, 분석을 하나로.',
-    description: 'ChatGPT는 OpenAI가 개발한 대규모 언어 모델 기반 AI 챗봇입니다. 자연어로 대화하며 글쓰기, 코딩, 번역, 요약, 분석 등 다양한 작업을 수행합니다. GPT-5.3 Instant와 GPT-5.4 Thinking·GPT-5.4 Pro 등 최신 모델을 지원하며 이미지 생성(DALL-E 3), 웹 브라우징, 코드 실행 기능도 제공합니다. GPT-5.4 Thinking은 응답 중간에 upfront plan을 보여주고 더 깊은 웹 리서치를 지원합니다. Codex는 background computer use, in-app browser, gpt-image-1.5 이미지 생성, 다중 터미널·SSH, 90개+ plugins, 스케줄링 automations, memory preview까지 확장됐습니다. Sora 비디오 생성, ChatGPT for Excel(beta), 모바일 위치 기반 답변, File Library, 쇼핑 개선(ACP 기반), Apple CarPlay 지원(iOS 26.4+) 기능도 포함됩니다.',
+    description: 'ChatGPT는 OpenAI가 개발한 대규모 언어 모델 기반 AI 챗봇입니다. 자연어로 대화하며 글쓰기, 코딩, 번역, 요약, 분석 등 다양한 작업을 수행합니다. GPT-5.5와 GPT-5.5 Thinking, GPT-5.5 Pro가 ChatGPT와 Codex에 순차 롤아웃되며, agentic coding, computer use, 온라인 리서치, 데이터 분석 같은 복합 작업에서 GPT-5.4 대비 더 높은 성능과 더 적은 토큰 사용량을 제공합니다. 이미지 생성(DALL-E 3), 웹 브라우징, 코드 실행 기능도 지원합니다. GPT-5.5 Thinking은 더 어려운 문제를 빠르고 간결하게 풀도록 돕고, Codex는 background computer use, in-app browser, gpt-image-1.5 이미지 생성, 다중 터미널·SSH, 90개+ plugins, 스케줄링 automations, memory preview까지 확장됐습니다. Sora 비디오 생성, ChatGPT for Excel(beta), 모바일 위치 기반 답변, File Library, 쇼핑 개선(ACP 기반), Apple CarPlay 지원(iOS 26.4+) 기능도 포함됩니다.',
     url: 'https://chatgpt.com', logoUrl: '/logos/chatgpt.png',
     categories: ['chatbot', 'writing', 'coding'],
     pricingModel: 'freemium', pricingDetail: '무료 / Go / Plus $20/월 / Pro $200/월',
-    koreanSupport: 'full', features: ['대화형 AI', '이미지 생성', '코드 실행', '웹 브라우징', 'GPT-5.3 Instant', 'GPT-5.4 Thinking·Pro', 'upfront plan', '심화 웹 리서치', 'Sora 비디오', 'Codex 에이전트 (GPT-5.1 Codex)', 'background computer use', 'in-app browser', 'gpt-image-1.5', '90+ plugins', '스케줄링 automations', 'memory preview', 'Codex Plugins Directory', 'ChatGPT for Excel', 'File Library', 'Location Sharing', 'CarPlay 지원', 'GPT Store'],
+    koreanSupport: 'full', features: ['대화형 AI', '이미지 생성', '코드 실행', '웹 브라우징', 'GPT-5.3 Instant', 'GPT-5.5', 'GPT-5.5 Thinking·Pro', '심화 웹 리서치', 'Sora 비디오', 'Codex 에이전트 (GPT-5.1 Codex)', 'background computer use', 'in-app browser', 'gpt-image-1.5', '90+ plugins', '스케줄링 automations', 'memory preview', 'Codex Plugins Directory', 'ChatGPT for Excel', 'File Library', 'Location Sharing', 'CarPlay 지원', 'GPT Store'],
     platforms: ['web', 'ios', 'android', 'desktop', 'api'], rating: 4.8, reviewCount: 1250,
     alternatives: ['claude', 'gemini', 'perplexity', 'copilot'], isFeatured: true, launchedAt: '2022-11-30',
   }, // updated 2026-04-02
