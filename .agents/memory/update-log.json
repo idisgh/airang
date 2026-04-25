@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-04-24",
+  "lastRun": "2026-04-25",
   "updated": [
     {
       "slug": "chatgpt",
@@ -1110,7 +1110,8 @@
     "krea",
     "surfer-seo",
     "v0-dev",
-    "qwen"
+    "qwen",
+    "deepseek"
   ],
   "skipped": [
     "deepl",
@@ -1226,6 +1227,16 @@
       "slug": "qwen",
       "date": "2026-04-24",
       "reason": "registered tool 아님 (Qwen3.6-35B-A3B 공식 GitHub release signal 확인, data/tools.ts 등록 없음)"
+    },
+    {
+      "slug": "qwen",
+      "date": "2026-04-25",
+      "reason": "registered tool 아님 (Qwen3.6-27B official GitHub repo/GeekNews release signal verified, data/tools.ts 등록 없음)"
+    },
+    {
+      "slug": "deepseek",
+      "date": "2026-04-25",
+      "reason": "registered tool 아님 (DeepSeek-V4-Pro preview on official Hugging Face model card verified, data/tools.ts 등록 없음)"
     }
   ]
 }
