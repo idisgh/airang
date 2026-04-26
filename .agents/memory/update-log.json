@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-04-25",
+  "lastRun": "2026-04-26",
   "updated": [
     {
       "slug": "chatgpt",
@@ -1236,6 +1236,16 @@
     {
       "slug": "deepseek",
       "date": "2026-04-25",
+      "reason": "registered tool 아님 (DeepSeek-V4-Pro preview on official Hugging Face model card verified, data/tools.ts 등록 없음)"
+    },
+    {
+      "slug": "qwen",
+      "date": "2026-04-26",
+      "reason": "registered tool 아님 (Qwen3.6-27B official release signal verified via Alibaba Cloud post/GitHub repo, data/tools.ts 등록 없음)"
+    },
+    {
+      "slug": "deepseek",
+      "date": "2026-04-26",
       "reason": "registered tool 아님 (DeepSeek-V4-Pro preview on official Hugging Face model card verified, data/tools.ts 등록 없음)"
     }
   ]
