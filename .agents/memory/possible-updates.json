@@ -1,16 +1,28 @@
 {
-  "lastRun": "2026-04-22",
+  "lastRun": "2026-04-27",
   "candidates": [
     {
       "slug": "qwen",
       "name": "Qwen",
-      "source": "https://news.hada.io/topic?id=28609",
-      "signal": "Qwen3.6-35B-A3B 공개, 오픈 멀티모달 agentic coding 모델 업데이트 신호",
+      "source": "https://news.hada.io/topic?id=28797",
+      "signal": "Qwen3.6-27B 공개, dense 27B에서 플래그십급 코딩 성능과 긴 컨텍스트 효율 강화 신호",
       "importance": "high",
       "notes": [
         "GeekNews source",
-        "직전 러닝에서 이어지는 미반영 후보",
-        "agentic coding 성능 향상, 멀티모달 지원, Anthropic API 프로토콜 호환 언급",
+        "2026-04-23 포스트",
+        "최근 tool_updates에는 Qwen 3.6 계열 반영 내역 없음",
+        "공식 qwen.ai 블로그는 JS-heavy라 본문 확인이 어려워 GeekNews 요약을 우선 후보로 유지"
+      ]
+    },
+    {
+      "slug": "deepseek",
+      "name": "DeepSeek",
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "signal": "DeepSeek-V4-Pro/Flash preview 공개, 1M context와 agentic coding 성능 강화",
+      "importance": "high",
+      "notes": [
+        "Hugging Face model card source",
+        "1M token context와 Think High/Max reasoning mode 언급",
         "최근 tool_updates에 동일 반영 내역 없음"
       ]
     }
@@ -25,6 +37,16 @@
       "slug": null,
       "source": "https://www.producthunt.com/topics/artificial-intelligence",
       "reason": "403 / bot protection"
+    },
+    {
+      "slug": "chatgpt",
+      "source": "https://developers.openai.com/api/docs/changelog",
+      "reason": "2026-04-24 tool_updates에 GPT-5.5 반영 내역 이미 존재"
+    },
+    {
+      "slug": "codex",
+      "source": "https://x.com/jameszmsun/status/2047522852854026378",
+      "reason": "등록된 도구 slug 아님, x.com 본문 검증 제한"
     }
   ]
 }

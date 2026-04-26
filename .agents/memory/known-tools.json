@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19",
+  "lastUpdated": "2026-04-27",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1010,6 +1010,46 @@
       "name": "Zerobox",
       "category": "코드",
       "url": "https://github.com/afshinm/zerobox"
+    },
+    {
+      "name": "Tenet",
+      "category": "코드",
+      "url": "https://github.com/JeiKeiLim/tenet"
+    },
+    {
+      "name": "Google Agents CLI",
+      "category": "코드",
+      "url": "https://github.com/google/agents-cli"
+    },
+    {
+      "name": "GStack",
+      "category": "coding",
+      "url": "https://github.com/garrytan/gstack"
+    },
+    {
+      "name": "claude-ss",
+      "category": "coding",
+      "url": "https://github.com/jidohyun/claude-ss"
+    },
+    {
+      "name": "firma",
+      "category": "productivity",
+      "url": "https://firma-cli.vercel.app/"
+    },
+    {
+      "name": "Tolaria",
+      "category": "productivity",
+      "url": "https://github.com/refactoringhq/tolaria"
+    },
+    {
+      "name": "Clarc",
+      "category": "코드",
+      "url": "https://github.com/ttnear/Clarc"
+    },
+    {
+      "name": "mini-swe-agent",
+      "category": "코드",
+      "url": "https://github.com/SWE-agent/mini-swe-agent"
     }
   ]
 }
