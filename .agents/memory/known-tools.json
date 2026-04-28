@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27",
+  "lastUpdated": "2026-04-29",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1050,6 +1050,41 @@
       "name": "mini-swe-agent",
       "category": "코드",
       "url": "https://github.com/SWE-agent/mini-swe-agent"
+    },
+    {
+      "name": "ManyPerson",
+      "category": "연구/리서치",
+      "url": "https://manyperson.com"
+    },
+    {
+      "name": "Obscura",
+      "category": "coding",
+      "url": "https://github.com/h4ckf0r0day/obscura"
+    },
+    {
+      "name": "Agentic Inbox",
+      "category": "productivity",
+      "url": "https://github.com/cloudflare/agentic-inbox"
+    },
+    {
+      "name": "VibeVoice",
+      "category": "음성",
+      "url": "https://github.com/microsoft/VibeVoice"
+    },
+    {
+      "name": "HyperFrames",
+      "category": "코드",
+      "url": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "name": "NeoSQL",
+      "category": "코드",
+      "url": "https://neosql.unvus.com"
+    },
+    {
+      "name": "mirollama",
+      "category": "연구/리서치",
+      "url": "https://github.com/oswarld/mirollama"
     }
   ]
 }

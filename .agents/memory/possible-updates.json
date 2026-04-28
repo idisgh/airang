@@ -1,29 +1,40 @@
 {
-  "lastRun": "2026-04-27",
+  "lastRun": "2026-04-29",
   "candidates": [
     {
       "slug": "qwen",
       "name": "Qwen",
       "source": "https://news.hada.io/topic?id=28797",
-      "signal": "Qwen3.6-27B 공개, dense 27B에서 플래그십급 코딩 성능과 긴 컨텍스트 효율 강화 신호",
+      "signal": "Qwen3.6-27B 공개, dense 27B 단일 체크포인트에서 thinking/non-thinking 전환과 이미지·비디오 처리 및 agentic coding 성능 강화",
       "importance": "high",
       "notes": [
         "GeekNews source",
-        "2026-04-23 포스트",
-        "최근 tool_updates에는 Qwen 3.6 계열 반영 내역 없음",
-        "공식 qwen.ai 블로그는 JS-heavy라 본문 확인이 어려워 GeekNews 요약을 우선 후보로 유지"
+        "최근 tool_updates에 Qwen 관련 동일 반영 내역 없음",
+        "OpenClaw·Claude Code·Qwen Code 통합 지원 언급"
       ]
     },
     {
       "slug": "deepseek",
       "name": "DeepSeek",
       "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
-      "signal": "DeepSeek-V4-Pro/Flash preview 공개, 1M context와 agentic coding 성능 강화",
+      "signal": "DeepSeek-V4-Pro/Flash preview 공개, 1M context와 reasoning modes 및 agentic coding 벤치마크 강화",
       "importance": "high",
       "notes": [
         "Hugging Face model card source",
-        "1M token context와 Think High/Max reasoning mode 언급",
+        "1M token context 지원",
         "최근 tool_updates에 동일 반영 내역 없음"
+      ]
+    },
+    {
+      "slug": "github-copilot",
+      "name": "GitHub Copilot",
+      "source": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+      "signal": "2026-06-01부터 premium requests 대신 GitHub AI Credits 기반 usage-based billing으로 전환, 조직 pooled usage와 budget control 추가",
+      "importance": "high",
+      "notes": [
+        "official GitHub blog source",
+        "pricing structure change without base seat price increase",
+        "최근 tool_updates에는 2026-04-17 업데이트만 존재, 이번 공지는 신규 billing 정책 변경"
       ]
     }
   ],
@@ -37,16 +48,6 @@
       "slug": null,
       "source": "https://www.producthunt.com/topics/artificial-intelligence",
       "reason": "403 / bot protection"
-    },
-    {
-      "slug": "chatgpt",
-      "source": "https://developers.openai.com/api/docs/changelog",
-      "reason": "2026-04-24 tool_updates에 GPT-5.5 반영 내역 이미 존재"
-    },
-    {
-      "slug": "codex",
-      "source": "https://x.com/jameszmsun/status/2047522852854026378",
-      "reason": "등록된 도구 slug 아님, x.com 본문 검증 제한"
     }
   ]
 }

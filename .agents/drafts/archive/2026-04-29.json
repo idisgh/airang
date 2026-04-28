@@ -1,0 +1,126 @@
+[
+  {
+    "id": "103",
+    "name": "VibeVoice",
+    "slug": "vibevoice",
+    "tagline": "장문 TTS·ASR 오픈소스 음성 AI",
+    "description": "VibeVoice는 Microsoft가 공개한 오픈소스 음성 AI 모델 패밀리다. 최대 90분 장문 음성 생성과 60분 단일 패스 ASR을 지원해 팟캐스트, 대화형 오디오, 회의 기록 처리에 강점을 둔다. 실시간 TTS 모델과 Hugging Face 배포, Playground도 함께 제공돼 연구와 프로토타이핑에 쓰기 좋다.",
+    "url": "https://github.com/microsoft/VibeVoice",
+    "logoUrl": "/logos/vibevoice.svg",
+    "categories": [
+      "voice"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스 / GitHub·Hugging Face 배포",
+    "koreanSupport": "partial",
+    "features": [
+      "장문 TTS",
+      "60분 단일 패스 ASR",
+      "실시간 TTS",
+      "멀티스피커 지원",
+      "50개+ 언어 지원"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-01-21"
+  },
+  {
+    "id": "104",
+    "name": "HyperFrames",
+    "slug": "hyperframes",
+    "tagline": "에이전트용 HTML 비디오 프레임워크",
+    "description": "HyperFrames는 HeyGen이 공개한 오픈소스 HTML 기반 비디오 렌더링 프레임워크다. AI 에이전트가 HTML, CSS, GSAP로 영상을 만들고 preview와 MP4 render까지 이어서 처리할 수 있게 설계됐다. Codex, Claude Code, Cursor용 skills와 plugin manifest를 함께 제공해 agentic video workflow에 잘 맞는다.",
+    "url": "https://github.com/heygen-com/hyperframes",
+    "logoUrl": "/logos/hyperframes.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스 (Apache 2.0)",
+    "koreanSupport": "none",
+    "features": [
+      "HTML 기반 영상 제작",
+      "MP4 렌더링 CLI",
+      "GSAP 애니메이션",
+      "AI agent skills",
+      "웹 기반 studio"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-29"
+  },
+  {
+    "id": "105",
+    "name": "NeoSQL",
+    "slug": "neosql",
+    "tagline": "ERD·SQL·코드 생성을 묶은 DB 플랫폼",
+    "description": "NeoSQL은 ERD 설계, SQL 편집, schema diff, 코드 생성을 한 번에 제공하는 데이터베이스 개발 플랫폼이다. MCP 연동 시 DB 자격증명을 직접 노출하지 않는 구조와 Manual Commit 기반 안전 장치를 내세운다. web, desktop, offline, air-gapped 환경까지 지원해 내부망 개발 환경에도 어울린다.",
+    "url": "https://neosql.unvus.com",
+    "logoUrl": "/logos/neosql.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "현재 Beta 무료, 정식 출시 후 유·무료 플랜 예정",
+    "koreanSupport": "none",
+    "features": [
+      "ERD 설계",
+      "SQL editor",
+      "MCP 연동",
+      "코드 자동 생성",
+      "offline·air-gapped 지원"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-29"
+  },
+  {
+    "id": "106",
+    "name": "mirollama",
+    "slug": "mirollama",
+    "tagline": "문서 기반 멀티에이전트 시뮬레이터",
+    "description": "mirollama는 문서를 넣고 시나리오를 설명하면 이해관계자 반응을 로컬 LLM 멀티에이전트로 시뮬레이션하는 scenario lab이다. ontology 생성, persona 구성, 상호작용 시뮬레이션, 리포트 생성까지 한 흐름으로 제공한다. Ollama 기반 local-first 구조라 민감한 내부 문서로도 실험하기 좋다.",
+    "url": "https://github.com/oswarld/mirollama",
+    "logoUrl": "/logos/mirollama.svg",
+    "categories": [
+      "productivity"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스",
+    "koreanSupport": "partial",
+    "features": [
+      "문서 업로드 기반 시뮬레이션",
+      "persona 생성",
+      "멀티에이전트 상호작용",
+      "리포트 생성",
+      "Ollama local-first"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-29"
+  }
+]
