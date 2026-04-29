@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-04-28",
+  "lastRun": "2026-04-29",
   "updated": [
+    {
+      "slug": "github-copilot",
+      "date": "2026-04-29",
+      "changes": [
+        "description: 2026-06-01 GitHub AI Credits 기반 usage-based billing 전환, pooled usage·budget controls 반영",
+        "pricingDetail: Business $19/사용자/월, Enterprise $39/사용자/월 및 GitHub AI Credits 과금 구조 반영",
+        "features: GitHub AI Credits billing, 조직 pooled usage, budget controls 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-04-24",
@@ -1266,6 +1275,16 @@
     {
       "slug": "deepseek",
       "date": "2026-04-28",
+      "reason": "registered tool 아님 (DeepSeek-V4-Pro preview verified via official Hugging Face model card, data/tools.ts 등록 없음)"
+    },
+    {
+      "slug": "qwen",
+      "date": "2026-04-29",
+      "reason": "registered tool 아님 (Qwen3.6-27B official release signal verified, data/tools.ts 등록 없음)"
+    },
+    {
+      "slug": "deepseek",
+      "date": "2026-04-29",
       "reason": "registered tool 아님 (DeepSeek-V4-Pro preview verified via official Hugging Face model card, data/tools.ts 등록 없음)"
     }
   ]
