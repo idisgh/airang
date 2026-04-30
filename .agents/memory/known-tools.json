@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29",
+  "lastUpdated": "2026-05-01",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1085,6 +1085,26 @@
       "name": "mirollama",
       "category": "연구/리서치",
       "url": "https://github.com/oswarld/mirollama"
+    },
+    {
+      "name": "ThreadLens",
+      "category": "자동화",
+      "url": "https://github.com/hanityx/threadlens"
+    },
+    {
+      "name": "Warp",
+      "category": "coding",
+      "url": "https://github.com/warpdotdev/warp"
+    },
+    {
+      "name": "spawn-agent",
+      "category": "coding",
+      "url": "https://github.com/millionco/spawn-agent"
+    },
+    {
+      "name": "GoModel",
+      "category": "coding",
+      "url": "https://github.com/ENTERPILOT/GoModel"
     }
   ]
 }

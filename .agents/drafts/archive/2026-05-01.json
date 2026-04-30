@@ -1,0 +1,68 @@
+[
+  {
+    "id": "103",
+    "name": "spawn-agent",
+    "slug": "spawn-agent",
+    "tagline": "로컬 AI agents를 ACP로 연결",
+    "description": "spawn-agent는 Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI 같은 로컬 coding agent를 Agent Client Protocol 기반으로 호출하게 해주는 TypeScript 어댑터다. Vercel AI SDK provider 형태로 연결할 수 있어 기존 AI app 코드에서 로컬 agent를 모델처럼 다룰 수 있다. MCP servers, multi-turn session, permission mode, additional directories 같은 실행 제어 옵션도 함께 제공한다.",
+    "url": "https://github.com/millionco/spawn-agent",
+    "logoUrl": "/logos/spawn-agent.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료 (MIT)",
+    "koreanSupport": "none",
+    "features": [
+      "로컬 agent 통합",
+      "ACP 지원",
+      "Vercel AI SDK provider",
+      "Claude Code·Codex·Cursor·Copilot·Gemini 지원",
+      "MCP server 연결",
+      "멀티턴 세션",
+      "permission mode 설정"
+    ],
+    "platforms": [
+      "desktop",
+      "api"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-01"
+  },
+  {
+    "id": "104",
+    "name": "GoModel",
+    "slug": "gomodel",
+    "tagline": "Go 기반 AI gateway",
+    "description": "GoModel은 OpenAI 호환 API 하나로 OpenAI, Anthropic, Gemini, Groq, DeepSeek, Ollama 등 여러 모델 provider를 묶어주는 경량 AI gateway다. chat completions, responses, embeddings, files, batches를 공통 인터페이스로 노출하고 usage tracking, audit log, admin dashboard, guardrails를 함께 제공한다. LiteLLM 대안으로 self-hosted 운영과 observability를 중시하는 팀에 잘 맞는다.",
+    "url": "https://github.com/ENTERPILOT/GoModel",
+    "logoUrl": "/logos/gomodel.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료",
+    "koreanSupport": "none",
+    "features": [
+      "OpenAI 호환 API",
+      "멀티 provider gateway",
+      "chat·responses·embeddings 지원",
+      "files·batches 지원",
+      "usage tracking",
+      "audit log",
+      "admin dashboard",
+      "guardrails"
+    ],
+    "platforms": [
+      "api"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-01"
+  }
+]
