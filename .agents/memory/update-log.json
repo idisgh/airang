@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-04-29",
+  "lastRun": "2026-04-30",
   "updated": [
+    {
+      "slug": "github-copilot",
+      "date": "2026-04-30",
+      "changes": [
+        "description: 2026-06-01부터 private repo Copilot code review가 AI Credits와 함께 GitHub Actions minutes도 소모하도록 과금 구조 확장 반영",
+        "pricingDetail: private repo code review의 GitHub Actions minutes 소모 조건 추가",
+        "features: private repo code review GitHub Actions minutes 추가"
+      ]
+    },
     {
       "slug": "github-copilot",
       "date": "2026-04-29",
