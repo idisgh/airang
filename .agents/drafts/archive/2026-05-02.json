@@ -1,0 +1,65 @@
+[
+  {
+    "id": "103",
+    "name": "AI Universal Translator",
+    "slug": "ai-universal-translator",
+    "tagline": "로컬 LLM 기반 번역·요약 앱",
+    "description": "AI Universal Translator는 Tauri 기반 데스크톱 번역·요약 앱이다. LM Studio의 로컬 모델 서버와 Gemini OpenAI-compatible endpoint를 함께 지원해, 로컬 추론과 클라우드 API를 상황에 맞게 전환할 수 있다. 긴 텍스트와 UTF-8 파일을 자동 청크 분할해 스트리밍으로 번역·요약하며, 결과 저장과 output 폴더 관리까지 한 번에 처리한다.",
+    "url": "https://github.com/kirinonakar/AItranslator",
+    "logoUrl": "/logos/ai-universal-translator.svg",
+    "categories": [
+      "translation",
+      "productivity"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료 (로컬 LM Studio 또는 별도 Gemini API 키 필요)",
+    "koreanSupport": "partial",
+    "features": [
+      "텍스트 번역",
+      "문서 요약",
+      "스트리밍 출력",
+      "자동 청크 분할",
+      "LM Studio 연동",
+      "Gemini OpenAI-compatible endpoint 지원"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-02"
+  },
+  {
+    "id": "104",
+    "name": "도다리 AI번역기",
+    "slug": "dodari-ai-translator",
+    "tagline": "Gemma 4 기반 로컬 문서 번역기",
+    "description": "도다리 AI번역기는 Apple Silicon Mac에서 EPUB, PDF, TXT 문서를 로컬로 번역하는 다국어 번역 도구다. Gemma 4 모델을 활용해 문맥과 장르를 반영한 번역을 수행하고, 원문/번역문 병기 출력과 용어집 및 문체 선택 기능을 제공한다. 대용량 문서도 별도 과금 없이 처리할 수 있어 전자책이나 기술 문서 번역 워크플로우에 잘 맞는다.",
+    "url": "https://github.com/vEduardovich/dodari",
+    "logoUrl": "/logos/dodari-ai-translator.svg",
+    "categories": [
+      "translation"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료 (Apple Silicon Mac과 로컬 모델 다운로드 필요)",
+    "koreanSupport": "full",
+    "features": [
+      "EPUB·PDF·TXT 번역",
+      "언어 자동 감지",
+      "용어집 적용",
+      "번역 문체 선택",
+      "원문·번역문 병기 출력",
+      "Gemma 4 로컬 실행"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-02"
+  }
+]

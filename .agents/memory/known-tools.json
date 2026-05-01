@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01",
+  "lastUpdated": "2026-05-02",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1105,6 +1105,16 @@
       "name": "GoModel",
       "category": "coding",
       "url": "https://github.com/ENTERPILOT/GoModel"
+    },
+    {
+      "name": "AI Universal Translator",
+      "category": "번역",
+      "url": "https://github.com/kirinonakar/AItranslator"
+    },
+    {
+      "name": "도다리 AI번역기",
+      "category": "번역",
+      "url": "https://github.com/vEduardovich/dodari"
     }
   ]
 }

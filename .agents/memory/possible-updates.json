@@ -1,43 +1,6 @@
 {
-  "lastRun": "2026-05-01",
-  "candidates": [
-    {
-      "slug": "cursor",
-      "name": "Cursor",
-      "source": "https://cursor.com/changelog/sdk-release",
-      "signal": "Cursor SDK public beta로 Cursor runtime·harness·models를 TypeScript에서 직접 호출해 programmatic agents를 만들 수 있게 됨",
-      "importance": "high",
-      "notes": [
-        "official changelog source",
-        "public beta",
-        "standard token-based pricing"
-      ]
-    },
-    {
-      "slug": "notion-ai",
-      "name": "Notion AI",
-      "source": "https://www.notion.com/releases",
-      "signal": "Notion 3.4 후속 업데이트로 Custom Agents가 35~50% 저렴해지고 private Slack channels, AI Autofill, Agent Skills, Salesforce·Box connectors를 지원",
-      "importance": "high",
-      "notes": [
-        "official releases source",
-        "pricing efficiency improvement",
-        "new integrations and workflow capabilities"
-      ]
-    },
-    {
-      "slug": "mistral",
-      "name": "Mistral",
-      "source": "https://mistral.ai/news",
-      "signal": "Mistral Medium 3.5 공개와 함께 Le Chat에 복합 작업용 Work mode, Vibe에 remote coding agents가 추가됨",
-      "importance": "high",
-      "notes": [
-        "official news source",
-        "Le Chat capability expansion",
-        "new model and remote agents launch dated 2026-04-29"
-      ]
-    }
-  ],
+  "lastRun": "2026-05-02",
+  "candidates": [],
   "skipped": [
     {
       "slug": null,
@@ -50,9 +13,29 @@
       "reason": "403 / bot protection"
     },
     {
-      "slug": null,
-      "source": "https://github.com/AgriciDaniel/claude-ads",
-      "reason": "Claude Code skill pack 성격이 강해 standalone service-like tool 기준에서 제외"
+      "slug": "cursor",
+      "source": "https://cursor.com/changelog",
+      "reason": "2026-05-01 run에서 Cursor SDK 반영 완료로 중복 후보 제외"
+    },
+    {
+      "slug": "notion-ai",
+      "source": "https://www.notion.com/releases",
+      "reason": "2026-05-01 run에서 Custom Agents 후속 업데이트 반영 완료로 중복 후보 제외"
+    },
+    {
+      "slug": "mistral",
+      "source": "https://mistral.ai/news",
+      "reason": "2026-05-01 run에서 Medium 3.5 / Le Chat / Vibe 업데이트 반영 완료로 중복 후보 제외"
+    },
+    {
+      "slug": "claude",
+      "source": "https://www.anthropic.com/news",
+      "reason": "Claude Design은 tools.ts에 이미 반영되어 신규 후보에서 제외"
+    },
+    {
+      "slug": "chatgpt",
+      "source": "https://openai.com/news/",
+      "reason": "최근 게시물은 계정 보안 및 AWS 배포 중심으로 airang 반영 가치가 낮아 후보에서 제외"
     }
   ]
 }
