@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02",
+  "lastUpdated": "2026-05-03",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1115,6 +1115,16 @@
       "name": "도다리 AI번역기",
       "category": "번역",
       "url": "https://github.com/vEduardovich/dodari"
+    },
+    {
+      "name": "Vibe-Trading",
+      "category": "자동화",
+      "url": "https://github.com/HKUDS/Vibe-Trading"
+    },
+    {
+      "name": "Ouroboros",
+      "category": "코드",
+      "url": "https://github.com/Q00/ouroboros"
     }
   ]
 }

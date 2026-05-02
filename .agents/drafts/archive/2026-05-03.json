@@ -1,0 +1,65 @@
+[
+  {
+    "id": "103",
+    "name": "Vibe-Trading",
+    "slug": "vibe-trading",
+    "tagline": "AI trading agent로 전략과 분석을 자동화.",
+    "description": "Vibe-Trading은 자연어 요청을 실행 가능한 트레이딩 전략과 리서치 워크플로우로 바꿔주는 AI 멀티에이전트 금융 워크스페이스다. 백테스트, 포트폴리오 분석, 상관관계 heatmap, 문서 업로드 기반 리서치, 멀티마켓 데이터 소스 연동을 한 제품 안에서 처리한다. Web UI와 CLI, MCP 플러그인을 함께 제공해 로컬 agent 환경에도 붙이기 쉽다.",
+    "url": "https://github.com/HKUDS/Vibe-Trading",
+    "logoUrl": "/logos/vibe-trading.svg",
+    "categories": [
+      "data-analysis",
+      "productivity"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료 (PyPI 설치 및 로컬 실행)",
+    "koreanSupport": "partial",
+    "features": [
+      "자연어 기반 전략 생성",
+      "멀티마켓 백테스트",
+      "포트폴리오·상관관계 분석",
+      "Web UI·CLI·MCP 지원",
+      "다양한 데이터 소스 자동 fallback"
+    ],
+    "platforms": [
+      "web",
+      "desktop",
+      "api"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-03"
+  },
+  {
+    "id": "104",
+    "name": "Ouroboros",
+    "slug": "ouroboros",
+    "tagline": "spec-first AI coding workflow를 강제하는 Agent OS.",
+    "description": "Ouroboros는 Claude Code, Codex, OpenCode, Hermes 같은 AI coding agent 위에서 돌아가는 local-first Agent OS다. 모호한 프롬프트를 바로 실행하지 않고 인터뷰, immutable spec, 실행, 3단계 평가, 진화 루프로 바꿔 재현 가능한 개발 흐름을 만든다. MCP 등록, TUI, session resume, multi-model consensus 평가까지 포함해 장시간 코딩 작업을 체계화한다.",
+    "url": "https://github.com/Q00/ouroboros",
+    "logoUrl": "/logos/ouroboros.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료 (pip/uv/pipx 설치)",
+    "koreanSupport": "partial",
+    "features": [
+      "Socratic interview 기반 요구사항 정리",
+      "immutable seed spec 생성",
+      "3단계 자동 평가 게이트",
+      "Claude Code·Codex·OpenCode·Hermes 지원",
+      "MCP·TUI·세션 resume"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-03"
+  }
+]

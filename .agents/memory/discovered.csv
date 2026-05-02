@@ -76,3 +76,5 @@ discovered_at,name,category,url,description,source,processed,posted
 2026-05-01,GoModel,AI 모델,https://github.com/ENTERPILOT/GoModel,OpenAI 호환 API 하나로 OpenAI·Anthropic·Gemini·Groq·Ollama 등을 연결하는 Go 기반 AI gateway. usage tracking·guardrails·admin dashboard를 제공한다.,https://news.hada.io/topic?id=29021,2026-05-01,
 2026-05-02,AI Universal Translator,번역,https://github.com/kirinonakar/AItranslator,로컬 LLM(LM Studio)과 Gemini API를 함께 지원하는 데스크톱 번역·요약 앱. 긴 텍스트 자동 청크 분할과 파일 번역 및 스트리밍 출력을 지원한다.,https://news.hada.io/topic?id=29072,2026-05-02,
 2026-05-02,도다리 AI번역기,번역,https://github.com/vEduardovich/dodari,"Gemma 4 기반 로컬 문서 번역기로 EPUB·PDF·TXT를 무제한 번역할 수 있다. 언어 자동 감지, 용어집, 문체 선택, 원문/번역문 동시 출력 기능을 제공한다.",https://news.hada.io/topic?id=29070,2026-05-02,
+2026-05-03,Vibe-Trading,자동화,https://github.com/HKUDS/Vibe-Trading,"자연어로 트레이딩 전략을 생성하고 백테스트·리서치·포트폴리오 분석까지 이어주는 AI trading agent. MCP와 Web UI, 다양한 데이터 소스를 함께 지원한다.",https://news.hada.io/topic?id=29055,2026-05-03,
+2026-05-03,Ouroboros,코드,https://github.com/Q00/ouroboros,Claude Code·Codex·OpenCode 위에서 specification-first workflow를 강제하는 Agent OS. 인터뷰→spec→실행→평가 루프를 로컬 우선으로 운영한다.,https://news.hada.io/topic?id=29076,2026-05-03,
