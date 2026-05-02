@@ -1,6 +1,22 @@
 {
-  "lastRun": "2026-05-01",
+  "lastRun": "2026-05-02",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-05-02",
+      "changes": [
+        "description: creative work용 공식 connectors와 Adobe Creative Cloud·Affinity by Canva·Autodesk Fusion·Blender·SketchUp·Splice·Ableton·Resolume 연동 반영",
+        "features: creative work connectors, Adobe Creative Cloud 50+ 툴 연동, 주요 creative app 연동 추가"
+      ]
+    },
+    {
+      "slug": "midjourney",
+      "date": "2026-05-02",
+      "changes": [
+        "description: V8.1 Alpha의 기본 HD 3배 빠름·3배 저렴, 표준 해상도 50% 빠름·25% 저렴, Prompt Shortener·개선된 Describe 반영",
+        "features: V8.1 Alpha, 이미지 프롬프트·image weights, Prompt Shortener, 개선된 Describe 추가"
+      ]
+    },
     {
       "slug": "le-chat",
       "date": "2026-05-01",
@@ -1159,6 +1175,21 @@
     "deepseek"
   ],
   "skipped": [
+    {
+      "slug": "perplexity",
+      "date": "2026-05-02",
+      "reason": "대표 소스 web_fetch 403 / Cloudflare, 정상 스킵"
+    },
+    {
+      "slug": "runway",
+      "date": "2026-05-02",
+      "reason": "Runway Characters 공식 발표 재검증, 기존 data/tools.ts에 핵심 내용이 이미 반영되어 추가 수정 없음"
+    },
+    {
+      "slug": "suno",
+      "date": "2026-05-02",
+      "reason": "Suno Studio 1.2 신호 확인했지만 fetch 본문 확보가 불안정하고 tools.ts 반영 가치가 높은 핵심 변경으로 보기 어려워 스킵"
+    },
     "deepl",
     "runway",
     "midjourney",
