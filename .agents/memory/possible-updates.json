@@ -1,28 +1,16 @@
 {
-  "lastRun": "2026-05-03",
+  "lastRun": "2026-05-04",
   "candidates": [
     {
-      "slug": "gemini",
-      "name": "Gemini",
-      "source": "https://blog.google/innovation-and-ai/products/gemini-app/generate-files-in-gemini/",
-      "signal": "Gemini 앱에서 PDF, DOCX, XLSX, Google Docs/Sheets/Slides 등 다양한 파일 포맷을 채팅에서 직접 생성·내보내기 지원 시작",
+      "slug": "claude",
+      "name": "Claude",
+      "source": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "signal": "Claude Sonnet 4.6 출시, 1M token context beta와 향상된 coding·computer use·agent planning 성능 공개",
       "importance": "high",
       "notes": [
-        "official Google blog",
-        "global rollout",
-        "file creation/export capability expansion"
-      ]
-    },
-    {
-      "slug": "cursor",
-      "name": "Cursor",
-      "source": "https://cursor.com/changelog/04-30-26",
-      "signal": "Teams/Enterprise 대상 Cursor Security Review beta 공개, 항상 켜진 Security Reviewer와 Vulnerability Scanner 추가",
-      "importance": "medium",
-      "notes": [
-        "official changelog",
-        "new managed security agents",
-        "usage pool billing noted"
+        "official Anthropic announcement",
+        "Free·Pro 기본 모델 교체",
+        "API pricing remains same as Sonnet 4.5"
       ]
     }
   ],
@@ -38,9 +26,14 @@
       "reason": "403 / bot protection"
     },
     {
-      "slug": "grok",
-      "source": "https://docs.x.ai/developers/models/grok-4.3",
-      "reason": "404 from docs path, official source not confirmed in this run"
+      "slug": "gemini",
+      "source": "https://blog.google/innovation-and-ai/products/gemini-app/generate-files-in-gemini/",
+      "reason": "same update already reflected in recent tool_updates on 2026-05-03"
+    },
+    {
+      "slug": "cursor",
+      "source": "https://cursor.com/changelog/04-30-26",
+      "reason": "same update already reflected in recent tool_updates on 2026-05-03"
     }
   ]
 }

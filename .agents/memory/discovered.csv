@@ -78,3 +78,5 @@ discovered_at,name,category,url,description,source,processed,posted
 2026-05-02,도다리 AI번역기,번역,https://github.com/vEduardovich/dodari,"Gemma 4 기반 로컬 문서 번역기로 EPUB·PDF·TXT를 무제한 번역할 수 있다. 언어 자동 감지, 용어집, 문체 선택, 원문/번역문 동시 출력 기능을 제공한다.",https://news.hada.io/topic?id=29070,2026-05-02,
 2026-05-03,Vibe-Trading,자동화,https://github.com/HKUDS/Vibe-Trading,"자연어로 트레이딩 전략을 생성하고 백테스트·리서치·포트폴리오 분석까지 이어주는 AI trading agent. MCP와 Web UI, 다양한 데이터 소스를 함께 지원한다.",https://news.hada.io/topic?id=29055,2026-05-03,
 2026-05-03,Ouroboros,코드,https://github.com/Q00/ouroboros,Claude Code·Codex·OpenCode 위에서 specification-first workflow를 강제하는 Agent OS. 인터뷰→spec→실행→평가 루프를 로컬 우선으로 운영한다.,https://news.hada.io/topic?id=29076,2026-05-03,
+2026-05-04,Context Mode,코드,https://github.com/mksglu/context-mode,AI coding agent의 컨텍스트 낭비를 줄이는 MCP 서버. tool 출력 샌드박싱과 SQLite 기반 세션 연속성으로 긴 작업 세션을 안정화한다.,https://news.hada.io/topic?id=29106,2026-05-04,
+2026-05-04,VibeFrame,동영상 생성,https://github.com/vericontext/vibeframe,STORYBOARD.md와 DESIGN.md를 기반으로 영상 자산 생성부터 렌더까지 이어주는 AI-native video CLI. 코딩 에이전트가 터미널에서 바로 다루기 좋다.,https://news.hada.io/topic?id=29127,2026-05-04,

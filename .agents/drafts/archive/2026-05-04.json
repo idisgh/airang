@@ -1,0 +1,63 @@
+[
+  {
+    "id": "103",
+    "name": "Context Mode",
+    "slug": "context-mode",
+    "tagline": "AI coding 세션 맥락을 98% 절약.",
+    "description": "Context Mode는 AI coding agent의 컨텍스트 윈도우 낭비를 줄이기 위한 MCP 서버입니다. tool 출력 샌드박싱, SQLite 기반 세션 연속성, BM25 검색을 결합해 긴 코딩 세션에서도 필요한 맥락만 다시 불러오게 돕습니다. Claude Code, Cursor, Gemini CLI 등 여러 에이전트 환경에 훅과 라우팅 규칙을 붙여 더 오래 안정적으로 작업할 수 있게 해줍니다.",
+    "url": "https://github.com/mksglu/context-mode",
+    "logoUrl": "/logos/context-mode.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료",
+    "koreanSupport": "none",
+    "features": [
+      "MCP 서버",
+      "툴 출력 샌드박싱",
+      "SQLite 세션 메모리",
+      "BM25 컨텍스트 검색",
+      "14개 에이전트 플랫폼 지원"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-04"
+  },
+  {
+    "id": "104",
+    "name": "VibeFrame",
+    "slug": "vibeframe",
+    "tagline": "스토리보드로 만드는 AI 영상 CLI.",
+    "description": "VibeFrame은 STORYBOARD.md와 DESIGN.md를 소스 오브 트루스로 삼아 영상 생성, 편집, 렌더링까지 이어주는 AI-native video CLI입니다. 코딩 에이전트가 shell 명령과 JSON 리포트만으로 스토리보드 검증, 자산 생성, 품질 점검, 최종 MP4 렌더를 반복할 수 있게 설계됐습니다. 이미지, 영상, 내레이션, 음악 생성과 기존 영상 편집 흐름을 한 워크플로우 안에서 다룰 수 있습니다.",
+    "url": "https://github.com/vericontext/vibeframe",
+    "logoUrl": "/logos/vibeframe.svg",
+    "categories": [
+      "video",
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료, 일부 생성 기능은 외부 AI provider 비용 별도",
+    "koreanSupport": "none",
+    "features": [
+      "스토리보드 기반 영상 빌드",
+      "CLI·JSON 워크플로우",
+      "이미지·영상·음성·음악 생성",
+      "FFmpeg 스타일 편집",
+      "선택형 MCP 서버"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-04"
+  }
+]

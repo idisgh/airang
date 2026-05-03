@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-03",
+  "lastUpdated": "2026-05-04",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1125,6 +1125,16 @@
       "name": "Ouroboros",
       "category": "코드",
       "url": "https://github.com/Q00/ouroboros"
+    },
+    {
+      "name": "Context Mode",
+      "category": "coding",
+      "url": "https://github.com/mksglu/context-mode"
+    },
+    {
+      "name": "VibeFrame",
+      "category": "video",
+      "url": "https://github.com/vericontext/vibeframe"
     }
   ]
 }
