@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-05-03",
+  "lastRun": "2026-05-04",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-05-04",
+      "changes": [
+        "description: Claude Sonnet 4.6 기본 모델 적용, 1M token context beta, coding·computer use·agent planning 성능 향상 반영",
+        "features: Claude Sonnet 4.6 추가"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-05-02",
