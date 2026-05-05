@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-05-04",
+  "lastRun": "2026-05-05",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-05-05",
+      "changes": [
+        "description: Codex CLI 0.128.0의 persisted /goal 워크플로우, app-server APIs, runtime continuation, create·pause·resume·clear TUI 제어 반영",
+        "features: persisted /goal 워크플로우 추가"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-05-04",
