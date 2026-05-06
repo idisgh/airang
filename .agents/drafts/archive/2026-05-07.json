@@ -1,0 +1,29 @@
+[
+  {
+    "id": "103",
+    "name": "oh-my-free-models",
+    "slug": "oh-my-free-models",
+    "tagline": "무료 LLM을 실시간 라우팅하는 로컬 프록시",
+    "description": "oh-my-free-models(omfm)는 coding agent를 현재 가장 빠른 무료 LLM으로 자동 라우팅해주는 local-first 프록시입니다. OpenAI 호환 /v1과 Anthropic 호환 /anthropic 엔드포인트를 모두 제공해 OpenClaw, Claude Code, OpenCode 같은 도구를 localhost로 바로 연결할 수 있습니다. 모델별 latency 측정, 429·402 발생 시 cooldown, provider failover를 처리해 무료 tier 운영의 불안정성을 줄여줍니다. OpenRouter와 NVIDIA의 무료 모델 풀을 조합해 쓸 수 있고, CLI로 model picker, daemon, usage 확인도 지원합니다.",
+    "url": "https://github.com/hakilee/oh-my-free-models",
+    "logoUrl": "/logos/oh-my-free-models.svg",
+    "categories": ["coding"],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료, OpenRouter 또는 NVIDIA API 키 필요",
+    "koreanSupport": "partial",
+    "features": [
+      "무료 LLM 실시간 라우팅",
+      "OpenAI·Anthropic 호환 로컬 프록시",
+      "latency 기반 best route 선택",
+      "429·402 cooldown 및 failover",
+      "CLI model picker와 daemon 관리",
+      "usage 추적"
+    ],
+    "platforms": ["desktop", "api"],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-07"
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-04",
+  "lastUpdated": "2026-05-07",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1135,6 +1135,26 @@
       "name": "VibeFrame",
       "category": "video",
       "url": "https://github.com/vericontext/vibeframe"
+    },
+    {
+      "name": "gc-tree",
+      "category": "coding",
+      "url": "https://github.com/handsupmin/gc-tree"
+    },
+    {
+      "name": "Understand-Anything",
+      "category": "coding",
+      "url": "https://understand-anything.com"
+    },
+    {
+      "name": "memex",
+      "category": "productivity",
+      "url": "https://memex-cli.vercel.app"
+    },
+    {
+      "name": "oh-my-free-models",
+      "category": "coding",
+      "url": "https://github.com/hakilee/oh-my-free-models"
     }
   ]
 }

@@ -80,3 +80,7 @@ discovered_at,name,category,url,description,source,processed,posted
 2026-05-03,Ouroboros,코드,https://github.com/Q00/ouroboros,Claude Code·Codex·OpenCode 위에서 specification-first workflow를 강제하는 Agent OS. 인터뷰→spec→실행→평가 루프를 로컬 우선으로 운영한다.,https://news.hada.io/topic?id=29076,2026-05-03,
 2026-05-04,Context Mode,코드,https://github.com/mksglu/context-mode,AI coding agent의 컨텍스트 낭비를 줄이는 MCP 서버. tool 출력 샌드박싱과 SQLite 기반 세션 연속성으로 긴 작업 세션을 안정화한다.,https://news.hada.io/topic?id=29106,2026-05-04,
 2026-05-04,VibeFrame,동영상 생성,https://github.com/vericontext/vibeframe,STORYBOARD.md와 DESIGN.md를 기반으로 영상 자산 생성부터 렌더까지 이어주는 AI-native video CLI. 코딩 에이전트가 터미널에서 바로 다루기 좋다.,https://news.hada.io/topic?id=29127,2026-05-04,
+2026-05-05,gc-tree,코드,https://github.com/handsupmin/gc-tree,여러 repo를 넘나드는 AI coding workflow용 글로벌 컨텍스트 관리 CLI. Codex·Claude Code에 branch-aware 공용 문맥을 붙여 반복 설명을 줄여준다.,https://news.hada.io,2026-05-05,
+2026-05-06,Understand-Anything,코드,https://understand-anything.com,코드베이스나 문서를 인터랙티브 knowledge graph로 바꿔 탐색·질의할 수 있게 해주는 AI 플러그인. Claude Code·Codex·Cursor 등 여러 coding agent와 연동된다.,https://news.hada.io,2026-05-06,
+2026-05-06,memex,자동화,https://memex-cli.vercel.app,Claude용 local-first second brain 도구. Markdown 노트를 오프라인 semantic search와 MCP로 연결해 대화 간 장기 기억을 붙여준다.,https://news.hada.io,2026-05-06,
+2026-05-07,oh-my-free-models,코드,https://github.com/hakilee/oh-my-free-models,여러 무료 LLM provider 중 현재 가장 빠른 모델로 coding agent를 실시간 라우팅해주는 로컬 프록시. OpenAI·Anthropic 호환 엔드포인트와 rate limit failover를 지원한다.,https://news.hada.io,2026-05-07,

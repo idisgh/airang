@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-05-04",
+  "lastRun": "2026-05-07",
   "candidates": [],
   "skipped": [
     {
@@ -13,19 +13,9 @@
       "reason": "403 / bot protection"
     },
     {
-      "slug": "gemini",
-      "source": "https://blog.google/innovation-and-ai/products/gemini-app/generate-files-in-gemini/",
-      "reason": "same update already reflected in recent tool_updates on 2026-05-03"
-    },
-    {
-      "slug": "cursor",
-      "source": "https://cursor.com/changelog/04-30-26",
-      "reason": "same update already reflected in recent tool_updates on 2026-05-03"
-    },
-    {
-      "slug": "claude",
-      "source": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "reason": "verified and reflected in data/tools.ts on 2026-05-04"
+      "slug": null,
+      "source": "https://news.hada.io",
+      "reason": "등록 도구 반영 가치가 분명한 신규 업데이트 신호를 추가로 확인하지 못함"
     }
   ]
 }
