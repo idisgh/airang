@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-05-05",
+  "lastRun": "2026-05-06",
   "updated": [
+    {
+      "slug": "github-copilot",
+      "date": "2026-05-06",
+      "changes": [
+        "description: Copilot CLI 원격 제어 퍼블릭 프리뷰, 모든 workspace semantic indexing 확대, VS Code 1.118의 Git AI co-author 기본 활성화 반영",
+        "features: Copilot CLI 원격 제어 (웹·모바일), semantic indexing (all workspaces), Git AI co-author 기본 활성화 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-05-05",
