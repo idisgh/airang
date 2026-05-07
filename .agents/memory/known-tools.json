@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07",
+  "lastUpdated": "2026-05-08",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1155,6 +1155,21 @@
       "name": "oh-my-free-models",
       "category": "coding",
       "url": "https://github.com/hakilee/oh-my-free-models"
+    },
+    {
+      "name": "Toprank",
+      "category": "marketing",
+      "url": "https://github.com/nowork-studio/toprank"
+    },
+    {
+      "name": "Open Generative AI",
+      "category": "image-generation/video",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI"
+    },
+    {
+      "name": "HermesKanban",
+      "category": "productivity/coding",
+      "url": "https://github.com/PriuS2/HermesKanban"
     }
   ]
 }

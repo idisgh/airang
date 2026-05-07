@@ -1,6 +1,19 @@
 {
-  "lastRun": "2026-05-07",
-  "candidates": [],
+  "lastRun": "2026-05-08",
+  "candidates": [
+    {
+      "slug": "cursor",
+      "name": "Cursor",
+      "source": "https://cursor.com/changelog/05-01-26",
+      "signal": "Team marketplace를 repo 연결 없이 생성하고 plugins를 Default Off/On/Required 정책으로 강제 배포 가능",
+      "importance": "medium",
+      "notes": [
+        "official changelog",
+        "team-admin/plugin distribution update",
+        "기존 Marketplace Plugins 반영 이력은 있지만 team marketplace 배포 정책 세부 내용은 별도 후보"
+      ]
+    }
+  ],
   "skipped": [
     {
       "slug": null,
@@ -11,11 +24,6 @@
       "slug": null,
       "source": "https://www.producthunt.com/topics/artificial-intelligence",
       "reason": "403 / bot protection"
-    },
-    {
-      "slug": null,
-      "source": "https://news.hada.io",
-      "reason": "등록 도구 반영 가치가 분명한 신규 업데이트 신호를 추가로 확인하지 못함"
     }
   ]
 }

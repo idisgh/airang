@@ -84,3 +84,6 @@ discovered_at,name,category,url,description,source,processed,posted
 2026-05-06,Understand-Anything,코드,https://understand-anything.com,코드베이스나 문서를 인터랙티브 knowledge graph로 바꿔 탐색·질의할 수 있게 해주는 AI 플러그인. Claude Code·Codex·Cursor 등 여러 coding agent와 연동된다.,https://news.hada.io,2026-05-06,
 2026-05-06,memex,자동화,https://memex-cli.vercel.app,Claude용 local-first second brain 도구. Markdown 노트를 오프라인 semantic search와 MCP로 연결해 대화 간 장기 기억을 붙여준다.,https://news.hada.io,2026-05-06,
 2026-05-07,oh-my-free-models,코드,https://github.com/hakilee/oh-my-free-models,여러 무료 LLM provider 중 현재 가장 빠른 모델로 coding agent를 실시간 라우팅해주는 로컬 프록시. OpenAI·Anthropic 호환 엔드포인트와 rate limit failover를 지원한다.,https://news.hada.io,2026-05-07,
+2026-05-08,Toprank,마케팅,https://github.com/nowork-studio/toprank,Claude Code 안에서 Google Ads·Meta Ads·SEO 분석과 최적화를 수행하는 오픈소스 마케팅 플러그인. 실제 광고 계정과 검색 콘솔 데이터를 기반으로 액션을 제안하고 일부 수정까지 처리한다.,https://news.hada.io,2026-05-08,
+2026-05-08,Open Generative AI,이미지 생성/동영상 생성,https://github.com/Anil-matcha/Open-Generative-AI,200개 이상의 이미지·영상 모델을 한 UI에서 다루는 오픈소스 생성 스튜디오. self-hosted와 데스크톱 앱을 지원하며 텍스트·이미지·립싱크 워크플로우를 함께 제공한다.,https://news.hada.io,2026-05-08,
+2026-05-08,HermesKanban,자동화,https://github.com/PriuS2/HermesKanban,Hermes Agent의 SQLite Kanban DB를 그대로 읽고 쓰는 Trello 스타일 WebUI. AI Workflow Designer로 목표를 task DAG 초안으로 쪼개고 브라우저에서 실행 흐름을 관리할 수 있다.,https://news.hada.io,2026-05-08,

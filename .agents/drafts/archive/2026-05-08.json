@@ -1,0 +1,83 @@
+[
+  {
+    "id": "103",
+    "name": "Toprank",
+    "slug": "toprank",
+    "tagline": "Claude Code용 SEO·광고 플러그인",
+    "description": "Toprank는 Claude Code 안에서 Google Search Console, Google Ads, Meta Ads 데이터를 직접 읽고 분석할 수 있게 해주는 오픈소스 플러그인이다. SEO 진단, 광고비 낭비 탐지, 키워드 및 메타태그 최적화, 구조화 데이터 추가 같은 마케팅 작업을 AI 에이전트 워크플로우로 묶어준다. 웹 앱 NotFair와 같은 엔진을 공유해 브라우저 감사와 CLI 자동화를 함께 운영할 수 있다.",
+    "url": "https://github.com/nowork-studio/toprank",
+    "logoUrl": "/logos/toprank.svg",
+    "categories": ["marketing"],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스",
+    "koreanSupport": "none",
+    "features": [
+      "Google Ads 감사 및 최적화",
+      "Meta Ads 감사 및 운영 보조",
+      "SEO 분석 및 30일 액션 플랜",
+      "메타태그·스키마 자동 생성",
+      "Claude Code 플러그인 및 MCP 연동",
+      "반복 SEO 작업 자동화"
+    ],
+    "platforms": ["web", "api"],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-08"
+  },
+  {
+    "id": "104",
+    "name": "Open Generative AI",
+    "slug": "open-generative-ai",
+    "tagline": "200+ 모델 생성 스튜디오",
+    "description": "Open Generative AI는 이미지, 영상, 립싱크 생성까지 한 UI에서 다루는 오픈소스 생성형 미디어 스튜디오다. 200개 이상의 모델을 연결해 text-to-image, image-to-image, text-to-video, image-to-video 워크플로우를 제공하고 self-hosted 배포도 지원한다. 데스크톱 앱과 hosted web 버전을 함께 제공해 개인 창작자나 실험용 파이프라인 구축에 적합하다.",
+    "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+    "logoUrl": "/logos/open-generative-ai.svg",
+    "categories": ["image-generation", "video"],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스 / hosted web 무료 계정 제공",
+    "koreanSupport": "none",
+    "features": [
+      "200개+ 이미지·영상 모델 지원",
+      "text-to-image 및 image-to-image",
+      "text-to-video 및 image-to-video",
+      "립싱크 스튜디오",
+      "self-hosted 배포",
+      "데스크톱 앱 제공"
+    ],
+    "platforms": ["web", "desktop"],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-08"
+  },
+  {
+    "id": "105",
+    "name": "HermesKanban",
+    "slug": "hermeskanban",
+    "tagline": "Hermes Agent용 칸반 WebUI",
+    "description": "HermesKanban은 Hermes Agent가 사용하는 SQLite 기반 Kanban DB를 그대로 읽고 쓰는 브라우저용 WebUI다. task 생성, 상태 변경, dependency 시각화, 실행 로그 모니터링을 Trello 스타일 보드로 제공한다. AI Workflow Designer를 통해 목표를 여러 task와 DAG 초안으로 분해한 뒤 검토 후 바로 Kanban에 반영할 수 있다.",
+    "url": "https://github.com/PriuS2/HermesKanban",
+    "logoUrl": "/logos/hermeskanban.svg",
+    "categories": ["productivity"],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스",
+    "koreanSupport": "full",
+    "features": [
+      "Trello 스타일 Kanban 보드",
+      "Hermes Agent DB 연동",
+      "task dependency 시각화",
+      "실행 로그·이벤트 모니터링",
+      "AI Workflow Designer",
+      "한국어 UI"
+    ],
+    "platforms": ["web"],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-08"
+  }
+]
