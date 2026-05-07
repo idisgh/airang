@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-05-06",
+  "lastRun": "2026-05-07",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-05-07",
+      "changes": [
+        "description: Claude Code 5시간 rate limit 2배 확대와 Pro·Max peak hours limit reduction 제거 반영",
+        "pricingDetail: Claude Code 사용 한도 확대 반영",
+        "features: Claude Code 사용 한도 확대 추가"
+      ]
+    },
     {
       "slug": "github-copilot",
       "date": "2026-05-06",
@@ -1215,6 +1224,16 @@
     "deepseek"
   ],
   "skipped": [
+    {
+      "slug": "perplexity",
+      "date": "2026-05-07",
+      "reason": "대표 소스 web_fetch 403 / Cloudflare, 정상 스킵"
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-05-07",
+      "reason": "공식 changelog 재검증 결과 Enterprise admin용 세부 제어 업데이트 위주로 확인되어 high/medium value 반영 항목 없음"
+    },
     {
       "slug": "perplexity",
       "date": "2026-05-02",
