@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-08",
+  "lastUpdated": "2026-05-09",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1170,6 +1170,16 @@
       "name": "HermesKanban",
       "category": "productivity/coding",
       "url": "https://github.com/PriuS2/HermesKanban"
+    },
+    {
+      "name": "Memradar",
+      "category": "productivity",
+      "url": "https://github.com/on1659/memradar"
+    },
+    {
+      "name": "Hunk",
+      "category": "coding",
+      "url": "https://github.com/modem-dev/hunk"
     }
   ]
 }

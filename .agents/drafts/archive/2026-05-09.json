@@ -1,0 +1,66 @@
+[
+  {
+    "id": "103",
+    "name": "Memradar",
+    "slug": "memradar",
+    "tagline": "AI 코딩 로그를 시각화하는 회고 도구",
+    "description": "Memradar는 Claude Code와 Codex 세션 로그를 로컬에서 분석해 대시보드로 보여주는 회고 도구다. 활동 히트맵, 토큰·비용 통계, 세션 브라우저, 워드 클라우드, Spotify Wrapped 스타일 Code Report를 제공한다. 분석은 브라우저나 localhost 환경에서만 이뤄져 세션 데이터가 외부 서버로 전송되지 않는다.",
+    "url": "https://github.com/on1659/memradar",
+    "logoUrl": "/logos/memradar.svg",
+    "categories": [
+      "coding",
+      "productivity"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료",
+    "koreanSupport": "full",
+    "features": [
+      "세션 로그 시각화",
+      "Code Report 생성",
+      "토큰·비용 통계",
+      "활동 히트맵",
+      "세션 브라우저",
+      "로컬 전용 분석"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-04-17"
+  },
+  {
+    "id": "104",
+    "name": "Hunk",
+    "slug": "hunk",
+    "tagline": "에이전트 코드 변경 검토용 터미널 뷰어",
+    "description": "Hunk는 AI 에이전트가 만든 코드 변경사항을 review-first 방식으로 검토하게 해주는 터미널 diff viewer다. 멀티파일 sidebar 탐색, inline agent annotation, split·stack 레이아웃, watch mode를 지원해 긴 changeset 검토에 적합하다. Git과 Jujutsu 워크플로우에 붙여 pager나 difftool처럼 사용할 수 있다.",
+    "url": "https://github.com/modem-dev/hunk",
+    "logoUrl": "/logos/hunk.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료",
+    "koreanSupport": "none",
+    "features": [
+      "review-first diff UI",
+      "멀티파일 sidebar 탐색",
+      "inline agent annotations",
+      "watch mode",
+      "Git·Jujutsu diff 지원",
+      "pager·difftool 연동"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-08"
+  }
+]
