@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-05-07",
+  "lastRun": "2026-05-08",
   "updated": [
+    {
+      "slug": "cursor",
+      "date": "2026-05-08",
+      "changes": [
+        "description: Team Marketplace의 repo-less 생성·plugin 배포 정책(Default Off·Default On·Required), Cursor 3 PR review·Build in Parallel·Split changes into PRs·pinned skills quick actions 반영",
+        "features: Team Marketplace policies, PR review, Build in Parallel, Split changes into PRs, Pinned skills quick actions 추가"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-05-07",
