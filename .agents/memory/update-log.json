@@ -1,6 +1,22 @@
 {
-  "lastRun": "2026-05-08",
+  "lastRun": "2026-05-09",
   "updated": [
+    {
+      "slug": "notion-ai",
+      "date": "2026-05-09",
+      "changes": [
+        "description: Plan Mode, Custom Agent Directory, admin용 Custom Agent controls·credit limits·usage dashboard 반영",
+        "features: Plan Mode, Custom Agent Directory, Custom Agent admin controls, Notion Credits 한도·usage dashboard 추가"
+      ]
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-05-09",
+      "changes": [
+        "description: /multitask 기반 병렬 작업, 개선된 worktrees, multi-root workspaces, Cursor 3.1 Canvases 반영",
+        "features: Multitask in Agents Window, 개선된 Worktrees, Multi-root workspaces, Canvases 추가"
+      ]
+    },
     {
       "slug": "cursor",
       "date": "2026-05-08",
@@ -1232,6 +1248,21 @@
     "deepseek"
   ],
   "skipped": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-05-09",
+      "reason": "OpenAI GPT-5.1 공지 재검증 결과 현재 data/tools.ts의 GPT-5.5·Codex 최신 반영보다 오래된 정보라 추가 수정 없음"
+    },
+    {
+      "slug": "claude",
+      "date": "2026-05-09",
+      "reason": "Anthropic news 재검증 결과 2026-04-17 Claude Design 이후 high/medium value 신규 반영 항목 확인 없음"
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-05-09",
+      "reason": "Workspace Updates 재검증 결과 Skills in Chrome은 이미 반영돼 있고 이번 주 항목은 Gmail/Docs 개인화 중심이라 core tool 업데이트 가치가 낮아 스킵"
+    },
     {
       "slug": "perplexity",
       "date": "2026-05-07",
