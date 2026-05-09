@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-09",
+  "lastUpdated": "2026-05-10",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1180,6 +1180,21 @@
       "name": "Hunk",
       "category": "coding",
       "url": "https://github.com/modem-dev/hunk"
+    },
+    {
+      "name": "Camofox Browser",
+      "category": "coding",
+      "url": "https://github.com/jo-inc/camofox-browser"
+    },
+    {
+      "name": "ccinv",
+      "category": "coding",
+      "url": "https://github.com/Sianmin/ccinv"
+    },
+    {
+      "name": "LociTerm",
+      "category": "coding",
+      "url": "https://github.com/Younkyum/Loci-Terminal"
     }
   ]
 }

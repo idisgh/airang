@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-05-09",
+  "lastRun": "2026-05-10",
   "candidates": [],
   "skipped": [
     {
@@ -11,6 +11,11 @@
       "slug": null,
       "source": "https://www.producthunt.com/topics/artificial-intelligence",
       "reason": "403 / bot protection"
+    },
+    {
+      "slug": null,
+      "source": "https://news.hada.io",
+      "reason": "front-page signal scan only, no high/medium update candidate confirmed for registered tools"
     }
   ]
 }
