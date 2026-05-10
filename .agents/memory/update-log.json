@@ -1,6 +1,30 @@
 {
-  "lastRun": "2026-05-09",
+  "lastRun": "2026-05-10",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-05-10",
+      "changes": [
+        "description: GPT-5.5 Instant 기본 모델 전환, past chats·files·connected Gmail personalization, memory sources controls 반영",
+        "features: GPT-5.5 Instant, memory sources controls 추가"
+      ]
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-05-10",
+      "changes": [
+        "description: Workspace Intelligence 기반 실시간 Workspace grounding 반영",
+        "features: Workspace Intelligence 추가"
+      ]
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-05-10",
+      "changes": [
+        "description: Claude Opus 4.7 in Notion, Mail & Calendar 전용 settings 탭 반영",
+        "features: Claude Opus 4.7 추가"
+      ]
+    },
     {
       "slug": "notion-ai",
       "date": "2026-05-09",
@@ -1144,15 +1168,17 @@
     }
   ],
   "checked": [
+    "chatgpt",
+    "claude",
+    "gemini",
+    "cursor",
+    "notion-ai",
+    "figma",
     "deepl",
     "runway",
     "midjourney",
     "perplexity",
     "suno",
-    "claude",
-    "cursor",
-    "gemini",
-    "chatgpt",
     "adobe-firefly",
     "adobe-photoshop",
     "arc",
@@ -1223,8 +1249,6 @@
     "together-ai",
     "bolt-new",
     "musicfx",
-    "notion-ai",
-    "figma",
     "dall-e",
     "framer",
     "groq",
@@ -1248,6 +1272,21 @@
     "deepseek"
   ],
   "skipped": [
+    {
+      "slug": "claude",
+      "date": "2026-05-10",
+      "reason": "Anthropic news 재검증 결과 2026-04-17 Claude Design 이후 high/medium value 신규 반영 항목 확인 없음"
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-05-10",
+      "reason": "Cursor changelog 재검증 결과 2026-05-09 data/tools.ts 반영 이후 high/medium value 신규 항목 확인 없음"
+    },
+    {
+      "slug": "figma",
+      "date": "2026-05-10",
+      "reason": "Figma 공식 블로그 확인 결과 2026-04-09 Design with Agents 이후 core tool 기준 high/medium value 신규 반영 항목 확인 없음"
+    },
     {
       "slug": "chatgpt",
       "date": "2026-05-09",
