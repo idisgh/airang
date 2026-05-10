@@ -1,6 +1,43 @@
 {
-  "lastRun": "2026-05-10",
-  "candidates": [],
+  "lastRun": "2026-05-11",
+  "candidates": [
+    {
+      "slug": "chatgpt",
+      "name": "ChatGPT",
+      "source": "https://openai.com/index/testing-ads-in-chatgpt/",
+      "signal": "Ads pilot expands to the United Kingdom, Mexico, Brazil, Japan, and South Korea for Free and Go tiers, signaling a notable monetization/positioning shift.",
+      "importance": "high",
+      "notes": [
+        "official OpenAI news",
+        "Plus/Pro/Business/Enterprise/Education remain ad-free",
+        "May 7, 2026 regional expansion update"
+      ]
+    },
+    {
+      "slug": "gemini",
+      "name": "Gemini",
+      "source": "https://workspaceupdates.googleblog.com/2026/05/turn-your-ai-prompts-into-one-click-tools-using-skills-in-Chrome.html",
+      "signal": "Gemini in Chrome now lets eligible Workspace users save prompts as reusable one-click skills across the web.",
+      "importance": "medium",
+      "notes": [
+        "official Workspace Updates blog",
+        "Gemini in Chrome capability expansion",
+        "May 6, 2026 post"
+      ]
+    },
+    {
+      "slug": "notion-ai",
+      "name": "Notion AI",
+      "source": "https://www.notion.com/releases/2026-05-07",
+      "signal": "Plan Mode adds a clarification-and-plan review step before Notion Agent performs large page rewrites or bulk database updates.",
+      "importance": "medium",
+      "notes": [
+        "official Notion releases",
+        "agent workflow reliability feature",
+        "May 7, 2026 release"
+      ]
+    }
+  ],
   "skipped": [
     {
       "slug": null,
@@ -11,11 +48,6 @@
       "slug": null,
       "source": "https://www.producthunt.com/topics/artificial-intelligence",
       "reason": "403 / bot protection"
-    },
-    {
-      "slug": null,
-      "source": "https://news.hada.io",
-      "reason": "front-page signal scan only, no high/medium update candidate confirmed for registered tools"
     }
   ]
 }

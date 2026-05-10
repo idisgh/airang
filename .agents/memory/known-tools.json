@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10",
+  "lastUpdated": "2026-05-11",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1195,6 +1195,16 @@
       "name": "LociTerm",
       "category": "coding",
       "url": "https://github.com/Younkyum/Loci-Terminal"
+    },
+    {
+      "name": "CodeBurn",
+      "category": "coding",
+      "url": "https://github.com/getagentseal/codeburn"
+    },
+    {
+      "name": "VerbalCoding",
+      "category": "voice/coding",
+      "url": "https://github.com/ca1773130n/VerbalCoding"
     }
   ]
 }
