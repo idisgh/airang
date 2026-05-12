@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-11",
+  "lastUpdated": "2026-05-13",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1205,6 +1205,26 @@
       "name": "VerbalCoding",
       "category": "voice/coding",
       "url": "https://github.com/ca1773130n/VerbalCoding"
+    },
+    {
+      "name": "Open Design",
+      "category": "PPT/디자인",
+      "url": "https://github.com/nexu-io/open-design"
+    },
+    {
+      "name": "Bifrost",
+      "category": "AI 모델",
+      "url": "https://github.com/maximhq/bifrost"
+    },
+    {
+      "name": "Kuku",
+      "category": "자동화",
+      "url": "https://github.com/kuku-mom/kuku"
+    },
+    {
+      "name": "Rapid-MLX",
+      "category": "coding",
+      "url": "https://github.com/raullenchai/rapid-mlx"
     }
   ]
 }
