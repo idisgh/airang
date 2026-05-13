@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-05-12",
+  "lastRun": "2026-05-13",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-05-13",
+      "changes": [
+        "description: Claude Code desktop app의 multiple parallel tasks·visual diffs·preview servers·PR status 모니터링과 Routines 기반 scheduled/API/event workflows 반영",
+        "features: Claude Code on desktop, Routines 추가",
+        "platforms: desktop 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-05-11",
@@ -1287,6 +1296,21 @@
     "deepseek"
   ],
   "skipped": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-05-13",
+      "reason": "OpenAI ads pilot 공식 공지 재검증 결과 영국·멕시코·브라질·일본·한국 확대와 Free·Go / 상위 플랜 ad-free 구분이 이미 data/tools.ts description·pricingDetail에 반영돼 있어 추가 수정 없음"
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-05-13",
+      "reason": "Workspace Updates 공식 공지 재검증 결과 Gemini in Chrome용 reusable one-click Skills 기능과 대상 Workspace 에디션 정보가 이미 data/tools.ts에 핵심 반영돼 있어 추가 수정 없음"
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-05-13",
+      "reason": "Notion releases 공식 공지 재검증 결과 Plan Mode의 clarifying questions 및 reviewable execution plan 흐름이 이미 data/tools.ts description에 반영돼 있어 추가 수정 없음"
+    },
     {
       "slug": "notion-ai",
       "date": "2026-05-12",
