@@ -1,0 +1,64 @@
+[
+  {
+    "id": "103",
+    "name": "Ruflo",
+    "slug": "ruflo",
+    "tagline": "Claude용 멀티 에이전트 오케스트레이션",
+    "description": "Ruflo는 Claude Code에 멀티 에이전트 orchestration, memory, plugin, security 레이어를 더해주는 오픈소스 플랫폼이다. 여러 specialist agent를 팀처럼 조율하고 background workflow, RAG, cross-machine federation까지 연결할 수 있다. full install 시 MCP server와 hooks를 붙여 Claude Code 안에서 swarm 기반 작업 흐름을 바로 확장할 수 있다.",
+    "url": "https://github.com/ruvnet/ruflo",
+    "logoUrl": "/logos/ruflo.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료, self-hosted 가능",
+    "koreanSupport": "none",
+    "features": [
+      "멀티 에이전트 orchestration",
+      "Claude Code plugin·MCP 연동",
+      "persistent memory·RAG",
+      "federation 기반 cross-machine 협업",
+      "security audit·cost tracking 플러그인"
+    ],
+    "platforms": [
+      "desktop",
+      "web"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2025-06-02"
+  },
+  {
+    "id": "104",
+    "name": "DeepSeek TUI",
+    "slug": "deepseek-tui",
+    "tagline": "DeepSeek 기반 터미널 coding agent",
+    "description": "DeepSeek TUI는 DeepSeek V4 계열 모델을 터미널에서 다루게 해주는 오픈소스 coding agent다. 파일 편집, shell 실행, git 작업, web search, sub-agent orchestration을 keyboard 중심 TUI 안에서 처리할 수 있다. auto mode로 model과 thinking level을 턴마다 자동 선택하고 1M context, MCP, durable task queue까지 지원한다.",
+    "url": "https://github.com/Hmbown/DeepSeek-TUI",
+    "logoUrl": "/logos/deepseek-tui.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료, DeepSeek API 사용 시 별도 과금 가능",
+    "koreanSupport": "none",
+    "features": [
+      "terminal-first coding agent",
+      "auto model·thinking selection",
+      "file edit·shell·git·web tool suite",
+      "sub-agent orchestration",
+      "1M context·MCP 지원"
+    ],
+    "platforms": [
+      "desktop",
+      "api"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-01-19"
+  }
+]

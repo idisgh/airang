@@ -1,52 +1,16 @@
 {
-  "lastRun": "2026-05-13",
+  "lastRun": "2026-05-15",
   "candidates": [
-    {
-      "slug": "chatgpt",
-      "name": "ChatGPT",
-      "source": "https://openai.com/index/testing-ads-in-chatgpt/",
-      "signal": "Ads pilot expands to South Korea, Japan, Brazil, Mexico, and the UK for Free and Go tiers.",
-      "importance": "high",
-      "notes": [
-        "official OpenAI post",
-        "May 7, 2026 regional expansion update",
-        "paid business tiers remain ad-free"
-      ]
-    },
     {
       "slug": "claude",
       "name": "Claude",
-      "source": "https://code.claude.com/changelog",
-      "signal": "Claude Code product page now surfaces desktop multi-task management and scheduled Routines, suggesting a broader workflow expansion around Claude Code.",
+      "source": "https://claude.com/product/claude-code",
+      "signal": "Claude Code product page now highlights Routines scheduling plus a desktop experience for parallel tasks, visual diffs, server previews, and PR monitoring.",
       "importance": "medium",
       "notes": [
-        "official Claude Code page resolves from changelog URL",
-        "desktop app + routines surfaced",
-        "needs Updater verification before copy change"
-      ]
-    },
-    {
-      "slug": "gemini",
-      "name": "Gemini",
-      "source": "https://workspaceupdates.googleblog.com/2026/05/turn-your-ai-prompts-into-one-click-tools-using-skills-in-Chrome.html",
-      "signal": "Gemini in Chrome adds reusable one-click skills for eligible Workspace users across the web.",
-      "importance": "medium",
-      "notes": [
-        "official Workspace Updates blog",
-        "posted May 6, 2026",
-        "capability expansion for Gemini in Chrome"
-      ]
-    },
-    {
-      "slug": "notion-ai",
-      "name": "Notion AI",
-      "source": "https://www.notion.com/releases/2026-05-07",
-      "signal": "Plan Mode now asks clarifying questions and builds a reviewable execution plan before major page rewrites or bulk database updates.",
-      "importance": "medium",
-      "notes": [
-        "official Notion releases",
-        "posted May 7, 2026",
-        "agent reliability / workflow safety improvement"
+        "official Claude Code product page",
+        "matches fresh GeekNews discussion around recent Code w/ Claude announcements",
+        "appears to reflect workflow/platform expansion rather than pricing change"
       ]
     }
   ],

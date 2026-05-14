@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13",
+  "lastUpdated": "2026-05-15",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1225,6 +1225,16 @@
       "name": "Rapid-MLX",
       "category": "coding",
       "url": "https://github.com/raullenchai/rapid-mlx"
+    },
+    {
+      "name": "Ruflo",
+      "category": "coding",
+      "url": "https://github.com/ruvnet/ruflo"
+    },
+    {
+      "name": "DeepSeek TUI",
+      "category": "coding",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI"
     }
   ]
 }

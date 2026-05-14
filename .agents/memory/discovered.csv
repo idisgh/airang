@@ -98,3 +98,5 @@ discovered_at,name,category,url,description,source,processed,posted
 2026-05-12,Bifrost,AI 모델,https://github.com/maximhq/bifrost,"여러 AI provider를 단일 OpenAI 호환 API로 묶는 고성능 AI gateway. failover, load balancing, semantic caching, MCP gateway를 지원한다.",https://news.hada.io,2026-05-12,
 2026-05-12,Kuku,자동화,https://github.com/kuku-mom/kuku,"로컬 Markdown vault를 AI 친화적인 second brain으로 바꿔주는 오픈소스 앱. 위키링크, 그래프 탐색, AI 편집, 암호화 sync를 제공한다.",https://news.hada.io,2026-05-12,
 2026-05-13,Rapid-MLX,코드,https://github.com/raullenchai/rapid-mlx,Apple Silicon Mac에서 로컬 AI 모델을 초고속으로 실행하는 오픈소스 엔진. OpenAI 호환 API와 tool calling을 지원해 Cursor·Claude Code 같은 coding agent와 바로 연결할 수 있다.,https://news.hada.io/new,2026-05-13,2026-05-13
+2026-05-15,Ruflo,코드,https://github.com/ruvnet/ruflo,"Claude Code에 멀티 에이전트 오케스트레이션과 메모리, 플러그인, 보안 기능을 붙여주는 오픈소스 플랫폼. 여러 에이전트를 팀처럼 조율하는 데 초점이 맞춰져 있다.",https://news.hada.io/new,2026-05-15,2026-05-15
+2026-05-15,DeepSeek TUI,코드,https://github.com/Hmbown/DeepSeek-TUI,"DeepSeek V4 기반으로 터미널에서 파일 편집, 셸 실행, 웹 검색, 서브에이전트 호출까지 처리하는 오픈소스 coding agent. auto model 선택과 1M context 지원이 특징이다.",https://news.hada.io/new,2026-05-15,2026-05-15
