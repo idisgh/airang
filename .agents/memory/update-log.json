@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-05-13",
+  "lastRun": "2026-05-15",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-05-15",
+      "changes": [
+        "description: Claude Code의 native VS Code extension(beta), refreshed terminal UX, checkpoints, subagents·hooks·background tasks, Claude Agent SDK 확장 반영",
+        "features: VS Code extension (beta), Checkpoints, Subagents·Hooks·Background tasks, Claude Agent SDK 추가"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-05-13",
@@ -1549,6 +1557,11 @@
       "slug": "deepseek",
       "date": "2026-04-29",
       "reason": "registered tool 아님 (DeepSeek-V4-Pro preview verified via official Hugging Face model card, data/tools.ts 등록 없음)"
+    },
+    {
+      "slug": "claude",
+      "date": "2026-05-14",
+      "reason": "Anthropic engineering post 검증 결과 recent Claude Code quality reports는 reasoning effort·thinking history bug·verbosity prompt regression에 대한 postmortem과 usage limits reset 안내 중심이며, data/tools.ts에 반영할 high/medium value의 지속적 product info 변경으로 보긴 어려워 추가 수정 없음"
     }
   ]
 }
