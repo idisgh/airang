@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-05-15",
+  "lastRun": "2026-05-16",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-05-16",
+      "changes": [
+        "description: ChatGPT 모바일 앱(iOS·Android preview)에서 Codex remote connections로 host/SSH 작업 thread·approvals·plugins·project context를 이어받아 diff·test result·terminal output·screenshots를 확인하며 steering하는 흐름 반영",
+        "features: Codex mobile app 원격 제어, Remote SSH 추가"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-05-15",
@@ -1202,6 +1210,8 @@
   "checked": [
     "chatgpt",
     "claude",
+    "chatgpt",
+    "claude",
     "gemini",
     "cursor",
     "notion-ai",
@@ -1304,6 +1314,11 @@
     "deepseek"
   ],
   "skipped": [
+    {
+      "slug": "claude",
+      "date": "2026-05-16",
+      "reason": "Anthropic Claude Code product page 재검증 결과 desktop app의 multiple parallel tasks·visual diffs·preview servers·PR status monitoring과 Routines, native IDE extensions 신호가 이미 data/tools.ts description·features에 핵심 반영돼 있어 추가 수정 없음"
+    },
     {
       "slug": "chatgpt",
       "date": "2026-05-13",
