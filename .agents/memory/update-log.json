@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-05-16",
+  "lastRun": "2026-05-17",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-05-17",
+      "changes": [
+        "description: Claude Code Agent View research preview로 여러 background coding session을 한 화면에서 dispatch·monitor·peek·reply·attach하는 workflow 반영",
+        "features: Agent View (research preview) 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-05-16",
