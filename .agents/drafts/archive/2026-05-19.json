@@ -1,0 +1,95 @@
+[
+  {
+    "id": "103",
+    "name": "whichllm",
+    "slug": "whichllm",
+    "tagline": "내 하드웨어용 로컬 LLM 추천 CLI",
+    "description": "whichllm은 GPU, CPU, RAM을 자동 감지해 내 장비에서 실제로 잘 돌아가는 로컬 LLM을 추천하는 오픈소스 CLI다. Hugging Face 모델과 실측 벤치마크를 함께 반영해 단순히 “들어가는 모델”이 아니라 성능 대비 최적 모델을 골라준다. GPU 시뮬레이션, 즉시 실행(run), Python snippet 출력까지 지원해 로컬 AI 실험과 개발 워크플로우를 빠르게 붙일 수 있다.",
+    "url": "https://github.com/Andyyyy64/whichllm",
+    "logoUrl": "/logos/whichllm.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료",
+    "koreanSupport": "none",
+    "features": [
+      "하드웨어 자동 감지",
+      "로컬 LLM 추천",
+      "실측 벤치마크 기반 랭킹",
+      "GPU 시뮬레이션",
+      "즉시 모델 실행(run)",
+      "Python snippet 생성"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-19"
+  },
+  {
+    "id": "104",
+    "name": "dev3000",
+    "slug": "dev3000",
+    "tagline": "AI 디버깅용 개발 타임라인 수집기",
+    "description": "dev3000은 웹앱 개발 중 발생하는 서버 로그, 브라우저 콘솔, 네트워크 요청, 사용자 인터랙션, 자동 스크린샷을 한 타임라인으로 모아주는 오픈소스 디버깅 도구다. d3k CLI로 dev server를 띄우고 Claude, Codex 같은 AI 에이전트와 split-screen으로 붙여 문제를 더 빠르게 재현하고 수정할 수 있다. React, Vue, Next.js, Django 등 다양한 웹 프레임워크에서 사용할 수 있다.",
+    "url": "https://github.com/vercel-labs/dev3000",
+    "logoUrl": "/logos/dev3000.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료",
+    "koreanSupport": "none",
+    "features": [
+      "통합 개발 타임라인",
+      "서버 로그 수집",
+      "브라우저 콘솔·네트워크 추적",
+      "자동 스크린샷 저장",
+      "AI 에이전트 split-screen 디버깅",
+      "다양한 웹 프레임워크 지원"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-19"
+  },
+  {
+    "id": "105",
+    "name": "Stripe Link CLI",
+    "slug": "stripe-link-cli",
+    "tagline": "에이전트 결제를 위한 승인형 CLI",
+    "description": "Stripe Link CLI는 AI 에이전트가 사용자 대신 결제를 진행할 때 일회용 결제 자격증명을 안전하게 발급해주는 Stripe의 오픈소스 CLI다. 실제 카드 정보를 에이전트에 넘기지 않고, 사용자가 Link 앱에서 승인한 뒤 virtual card 또는 shared payment token으로 구매를 진행할 수 있다. MCP 서버 모드와 Machine Payments Protocol을 지원해 agentic commerce 워크플로우에 바로 붙이기 좋다.",
+    "url": "https://github.com/stripe/link-cli",
+    "logoUrl": "/logos/stripe-link-cli.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "오픈소스 무료 (미국 Link 계정 필요)",
+    "koreanSupport": "none",
+    "features": [
+      "승인형 에이전트 결제",
+      "일회용 virtual card 발급",
+      "Shared Payment Token 지원",
+      "MCP 서버 모드",
+      "Machine Payments Protocol 지원",
+      "지출 요청·승인 워크플로우"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-19"
+  }
+]

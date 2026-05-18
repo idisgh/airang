@@ -1,16 +1,15 @@
 {
-  "lastRun": "2026-05-15",
+  "lastRun": "2026-05-19",
   "candidates": [
     {
-      "slug": "claude",
-      "name": "Claude",
-      "source": "https://claude.com/product/claude-code",
-      "signal": "Claude Code product page now highlights Routines scheduling plus a desktop experience for parallel tasks, visual diffs, server previews, and PR monitoring.",
-      "importance": "medium",
+      "slug": "cursor",
+      "name": "Cursor",
+      "source": "https://cursor.com/changelog",
+      "signal": "Cursor changelog added development environments for cloud agents, Microsoft Teams integration, PR review UX, and Build in Parallel with async subagents.",
+      "importance": "high",
       "notes": [
-        "official Claude Code product page",
-        "matches fresh GeekNews discussion around recent Code w/ Claude announcements",
-        "appears to reflect workflow/platform expansion rather than pricing change"
+        "official changelog",
+        "parallel agent execution and environment governance are high-value workflow updates"
       ]
     }
   ],

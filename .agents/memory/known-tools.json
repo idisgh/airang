@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15",
+  "lastUpdated": "2026-05-19",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1235,6 +1235,51 @@
       "name": "DeepSeek TUI",
       "category": "coding",
       "url": "https://github.com/Hmbown/DeepSeek-TUI"
+    },
+    {
+      "name": "Codex",
+      "category": "coding",
+      "url": "https://openai.com/codex/"
+    },
+    {
+      "name": "DeerFlow",
+      "category": "coding",
+      "url": "https://github.com/bytedance/deer-flow"
+    },
+    {
+      "name": "Supertonic",
+      "category": "voice",
+      "url": "https://github.com/supertone-inc/supertonic"
+    },
+    {
+      "name": "SpecGuard",
+      "category": "coding",
+      "url": "https://github.com/KoreaNirsa/spec-guard"
+    },
+    {
+      "name": "Sherlock",
+      "category": "productivity",
+      "url": "https://getsherlock.xyz"
+    },
+    {
+      "name": "MailToDock",
+      "category": "productivity",
+      "url": "https://mailtodock.vercel.app"
+    },
+    {
+      "name": "whichllm",
+      "category": "coding",
+      "url": "https://github.com/Andyyyy64/whichllm"
+    },
+    {
+      "name": "dev3000",
+      "category": "coding",
+      "url": "https://github.com/vercel-labs/dev3000"
+    },
+    {
+      "name": "Stripe Link CLI",
+      "category": "productivity",
+      "url": "https://github.com/stripe/link-cli"
     }
   ]
 }
