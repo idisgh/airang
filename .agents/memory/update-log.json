@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-05-17",
+  "lastRun": "2026-05-18",
   "updated": [
+    {
+      "slug": "cursor",
+      "date": "2026-05-18",
+      "changes": [
+        "description: development environments, multi-repo environments, environment governance controls, Microsoft Teams 연동 반영",
+        "features: Development environments, Multi-repo environments, Environment version history, Environment audit log, Microsoft Teams integration 추가"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-05-17",
