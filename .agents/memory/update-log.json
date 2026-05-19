@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-05-18",
+  "lastRun": "2026-05-19",
   "updated": [
     {
       "slug": "cursor",
@@ -1330,6 +1330,11 @@
     "deepseek"
   ],
   "skipped": [
+    {
+      "slug": "cursor",
+      "date": "2026-05-19",
+      "reason": "Cursor changelog(Development environments for cloud agents, Cursor in Microsoft Teams, PR Review/Build in Parallel) 재검증 결과 development environments·multi-repo environments·environment governance·Microsoft Teams integration·PR review·Build in Parallel이 이미 data/tools.ts description·features에 반영돼 있어 추가 수정 없음"
+    },
     {
       "slug": "claude",
       "date": "2026-05-16",
