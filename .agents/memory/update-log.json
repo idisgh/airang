@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-05-19",
+  "lastRun": "2026-05-20",
   "updated": [
     {
       "slug": "cursor",
@@ -1327,7 +1327,9 @@
     "surfer-seo",
     "v0-dev",
     "qwen",
-    "deepseek"
+    "deepseek",
+    "codex",
+    "claude"
   ],
   "skipped": [
     {
@@ -1598,6 +1600,16 @@
       "slug": "claude",
       "date": "2026-05-14",
       "reason": "Anthropic engineering post 검증 결과 recent Claude Code quality reports는 reasoning effort·thinking history bug·verbosity prompt regression에 대한 postmortem과 usage limits reset 안내 중심이며, data/tools.ts에 반영할 high/medium value의 지속적 product info 변경으로 보긴 어려워 추가 수정 없음"
+    },
+    {
+      "slug": "codex",
+      "date": "2026-05-20",
+      "reason": "registered tool 아님 (OpenAI Codex Goals 0.128.0 official cookbook signal verified, but data/tools.ts has no standalone codex entry and the persisted /goal workflow is already reflected under chatgpt)"
+    },
+    {
+      "slug": "claude",
+      "date": "2026-05-20",
+      "reason": "Anthropic acquires Stainless 공식 발표를 검증했지만, 현재 data/tools.ts에는 Claude Agent SDK 확장과 MCP 연동이 이미 반영돼 있고 이번 공지는 SDK·CLI·MCP server connectivity 방향성 강화 신호 중심이라 추가 반영할 high/medium value의 확정 product info 변경으로 보기 어려워 스킵"
     }
   ]
 }
