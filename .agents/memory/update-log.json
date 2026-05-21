@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-05-20",
+  "lastRun": "2026-05-21",
   "updated": [
     {
       "slug": "cursor",
@@ -1226,8 +1226,6 @@
   "checked": [
     "chatgpt",
     "claude",
-    "chatgpt",
-    "claude",
     "gemini",
     "cursor",
     "notion-ai",
@@ -1328,8 +1326,7 @@
     "v0-dev",
     "qwen",
     "deepseek",
-    "codex",
-    "claude"
+    "codex"
   ],
   "skipped": [
     {
@@ -1610,6 +1607,16 @@
       "slug": "claude",
       "date": "2026-05-20",
       "reason": "Anthropic acquires Stainless 공식 발표를 검증했지만, 현재 data/tools.ts에는 Claude Agent SDK 확장과 MCP 연동이 이미 반영돼 있고 이번 공지는 SDK·CLI·MCP server connectivity 방향성 강화 신호 중심이라 추가 반영할 high/medium value의 확정 product info 변경으로 보기 어려워 스킵"
+    },
+    {
+      "slug": "codex",
+      "date": "2026-05-21",
+      "reason": "OpenAI Codex Goals cookbook를 재검증한 결과 Goals는 Codex 0.128.0의 persisted /goal, pause, resume, clear lifecycle과 completion contract를 설명하지만, data/tools.ts의 ChatGPT 항목 description·features에 해당 persisted /goal 워크플로우와 TUI 제어가 이미 반영돼 있고 standalone codex 항목도 없어 추가 수정 없음"
+    },
+    {
+      "slug": "claude",
+      "date": "2026-05-21",
+      "reason": "Anthropic acquires Stainless 공식 발표를 재검증한 결과 SDKs·CLIs·MCP servers와 agent connectivity 강화 방향은 확인됐지만, data/tools.ts의 Claude 항목에는 Claude Agent SDK 확장과 MCP 연동이 이미 반영돼 있어 추가 반영할 확정 product info 변경이 없어 스킵"
     }
   ]
 }
