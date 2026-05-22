@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-05-21",
+  "lastRun": "2026-05-22",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-05-22",
+      "changes": [
+        "description: Xcode 26.3의 Claude Agent SDK 네이티브 통합, Xcode Previews 시각 검증, Apple docs 참조 기반 자율 코딩 흐름 반영",
+        "features: Xcode 26.3 native integration, Xcode Previews capture 추가"
+      ]
+    },
     {
       "slug": "cursor",
       "date": "2026-05-18",
@@ -1329,6 +1337,11 @@
     "codex"
   ],
   "skipped": [
+    {
+      "slug": "codex",
+      "date": "2026-05-22",
+      "reason": "OpenAI Codex Goals cookbook를 재검증한 결과 Goals 0.128.0의 persisted /goal, pause, resume, clear lifecycle은 ChatGPT 항목 description·features에 이미 반영돼 있고 standalone codex 항목도 없어 추가 수정 없음"
+    },
     {
       "slug": "cursor",
       "date": "2026-05-19",
