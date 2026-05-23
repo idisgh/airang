@@ -1,0 +1,123 @@
+[
+  {
+    "id": "103",
+    "name": "Zero",
+    "slug": "zero",
+    "tagline": "AI 에이전트를 위한 새 언어",
+    "description": "Zero는 Vercel Labs가 공개한 agent-first 프로그래밍 언어다. AI coding agent가 즉석에서 배우고 고치기 쉽도록 작은 문법 표면적, 표준 라이브러리 우선 설계, 구조화된 diagnostics와 repair plan CLI를 제공한다. 아직 pre-1 실험 단계라 production 용도보다는 agent workflow 탐색과 실험에 맞춰져 있다.",
+    "url": "https://zerolang.ai/",
+    "logoUrl": "/logos/zero.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스 실험 프로젝트",
+    "koreanSupport": "none",
+    "features": [
+      "agent-first 프로그래밍 언어",
+      "구조화된 diagnostics",
+      "typed repair plan",
+      "표준 라이브러리 우선",
+      "CLI inspection commands"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-24"
+  },
+  {
+    "id": "104",
+    "name": "idea2planning",
+    "slug": "idea2planning",
+    "tagline": "아이디어를 PRD·와이어프레임으로",
+    "description": "idea2planning은 Claude Code에서 아이디어를 1-pager, PRD, ASCII 와이어프레임으로 순차 변환해주는 스킬이다. PM과 PD가 막연한 아이디어를 구조화된 기획 문서로 빠르게 바꾸도록 돕고, references 폴더에 예시 문서를 추가해 팀 스타일에 맞춘 결과를 만들 수 있다. 설치 후 slash command처럼 바로 호출하는 경량 워크플로우가 강점이다.",
+    "url": "https://github.com/pentaxzs/skill-idea2planning",
+    "logoUrl": "/logos/idea2planning.svg",
+    "categories": [
+      "productivity"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스 Claude Code 스킬",
+    "koreanSupport": "full",
+    "features": [
+      "1-pager 생성",
+      "PRD 생성",
+      "ASCII 와이어프레임 생성",
+      "예시 문서 기반 품질 반영",
+      "Claude Code slash-style workflow"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-24"
+  },
+  {
+    "id": "105",
+    "name": "pi-web",
+    "slug": "pi-web",
+    "tagline": "pi coding agent용 브라우저 UI",
+    "description": "pi-web은 로컬 pi coding agent를 브라우저에서 보고 조작하게 해주는 오픈소스 웹 UI다. Astro 프론트엔드와 Go 백엔드를 단일 실행 파일로 묶어 세션 스트리밍, 파일 브라우징과 편집, 로컬 명령 실행을 한 화면에서 제공한다. 모바일과 태블릿에서도 다루기 쉽게 설계돼 원격 vibe coding 보조 도구로 쓰기 좋다.",
+    "url": "https://github.com/Epsilondelta-ai/pi-web",
+    "logoUrl": "/logos/pi-web.svg",
+    "categories": [
+      "coding"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스",
+    "koreanSupport": "none",
+    "features": [
+      "세션 스트리밍 UI",
+      "워크스페이스 관리",
+      "파일 브라우징·편집",
+      "로컬 쉘 실행",
+      "모바일 최적화"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-24"
+  },
+  {
+    "id": "106",
+    "name": "WhisperSubTranslate",
+    "slug": "whisper-sub-translate",
+    "tagline": "로컬 자막 생성·번역 앱",
+    "description": "WhisperSubTranslate는 영상 음성에서 SRT 자막을 생성하고 원하는 언어로 번역해주는 로컬 우선 데스크톱 앱이다. whisper.cpp로 음성을 로컬에서 처리하고, HY-MT 오프라인 번역이나 DeepL, OpenAI, Gemini 같은 외부 엔진을 선택적으로 연결할 수 있다. 영상 업로드 없이 자막 추출과 번역을 한 번에 처리하고 싶은 사용자에게 잘 맞는다.",
+    "url": "https://github.com/Blue-B/WhisperSubTranslate",
+    "logoUrl": "/logos/whisper-sub-translate.svg",
+    "categories": [
+      "translation"
+    ],
+    "pricingModel": "free",
+    "pricingDetail": "무료 오픈소스, 일부 번역 엔진은 별도 API 비용 가능",
+    "koreanSupport": "full",
+    "features": [
+      "로컬 SRT 생성",
+      "whisper.cpp 기반 STT",
+      "오프라인 번역",
+      "DeepL·OpenAI·Gemini 연동",
+      "다국어 UI"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "alternatives": [],
+    "isFeatured": false,
+    "launchedAt": "2026-05-24"
+  }
+]

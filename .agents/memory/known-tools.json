@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19",
+  "lastUpdated": "2026-05-24",
   "tools": [
     {
       "name": "ElevenLabs",
@@ -1280,6 +1280,71 @@
       "name": "Stripe Link CLI",
       "category": "productivity",
       "url": "https://github.com/stripe/link-cli"
+    },
+    {
+      "name": "Gitwink",
+      "category": "코드",
+      "url": "https://github.com/var-gg/gitwink"
+    },
+    {
+      "name": "Semble",
+      "category": "코드",
+      "url": "https://github.com/MinishLab/semble"
+    },
+    {
+      "name": "kmux",
+      "category": "코드",
+      "url": "https://github.com/kkd927/kmux"
+    },
+    {
+      "name": "JAMES",
+      "category": "연구/리서치",
+      "url": "https://github.com/Hashevolution/James-RAG-Evol"
+    },
+    {
+      "name": "SideQuick",
+      "category": "productivity",
+      "url": "https://sidequick.co"
+    },
+    {
+      "name": "Mirage",
+      "category": "coding",
+      "url": "https://github.com/strukto-ai/mirage"
+    },
+    {
+      "name": "OpenShorts",
+      "category": "video",
+      "url": "https://www.openshorts.app/"
+    },
+    {
+      "name": "Herdr",
+      "category": "coding",
+      "url": "https://herdr.dev/"
+    },
+    {
+      "name": "agentmemory",
+      "category": "coding",
+      "url": "https://github.com/rohitg00/agentmemory"
+    },
+    {
+      "name": "Zero",
+      "category": "코드",
+      "url": "https://zerolang.ai/"
+    },
+    {
+      "name": "idea2planning",
+      "category": "productivity",
+      "url": "https://github.com/pentaxzs/skill-idea2planning"
+    },
+    {
+      "name": "pi-web",
+      "category": "코드",
+      "url": "https://github.com/Epsilondelta-ai/pi-web"
+    },
+    {
+      "name": "WhisperSubTranslate",
+      "category": "번역",
+      "url": "https://github.com/Blue-B/WhisperSubTranslate"
     }
   ]
 }

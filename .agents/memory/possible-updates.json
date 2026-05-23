@@ -1,18 +1,6 @@
 {
-  "lastRun": "2026-05-19",
-  "candidates": [
-    {
-      "slug": "cursor",
-      "name": "Cursor",
-      "source": "https://cursor.com/changelog",
-      "signal": "Cursor changelog added development environments for cloud agents, Microsoft Teams integration, PR review UX, and Build in Parallel with async subagents.",
-      "importance": "high",
-      "notes": [
-        "official changelog",
-        "parallel agent execution and environment governance are high-value workflow updates"
-      ]
-    }
-  ],
+  "lastRun": "2026-05-24",
+  "candidates": [],
   "skipped": [
     {
       "slug": null,
@@ -23,6 +11,11 @@
       "slug": null,
       "source": "https://www.producthunt.com/topics/artificial-intelligence",
       "reason": "403 / bot protection"
+    },
+    {
+      "slug": null,
+      "source": "registered tool update scan",
+      "reason": "news.hada와 대표 소스 기준 최근 72시간 내 반영 가치가 큰 신규 신호 없음"
     }
   ]
 }
