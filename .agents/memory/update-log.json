@@ -1,6 +1,25 @@
 {
-  "lastRun": "2026-05-22",
+  "lastRun": "2026-05-23",
   "updated": [
+    {
+      "slug": "perplexity",
+      "date": "2026-05-23",
+      "changes": [
+        "tagline: AI 검색 엔진 중심 설명에서 search·research·execution을 잇는 answer engine 포지셔닝으로 갱신",
+        "description: Labs 모드와 Perplexity Computer의 sub-agent·장시간 비동기 워크플로우, model-agnostic orchestration 반영",
+        "pricingDetail: Max 플랜 및 Perplexity Computer·Model Council 고한도 제공 반영",
+        "features: Research, Labs, Perplexity Computer, Perplexity Model Council 추가"
+      ]
+    },
+    {
+      "slug": "canva-ai",
+      "date": "2026-05-23",
+      "changes": [
+        "tagline: 대화형·agentic 디자인 플랫폼 포지셔닝으로 갱신",
+        "description: Canva AI 2.0 research preview, Canva Design Model, conversational design, layered editable output, persistent memory, connectors·scheduling·web research·Brand Intelligence·Sheets AI·Canva Code 2.0 반영",
+        "features: Canva AI 2.0, Conversational design, Layered editable output, Persistent memory, Connectors, Scheduling, Web research, Brand Intelligence, Sheets AI, Canva Code 2.0, HTML import 추가"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-05-22",
@@ -1337,6 +1356,11 @@
     "codex"
   ],
   "skipped": [
+    {
+      "slug": "figma",
+      "date": "2026-05-23",
+      "reason": "Figma 공식 블로그(Agents, meet the Figma canvas) 재검증 결과 Design with Agents, use_figma tool, skills, beta 중 무료 제공 및 추후 usage-based 유료화 방향까지 현재 data/tools.ts 핵심 설명에 이미 반영돼 있어 추가 수정 없음"
+    },
     {
       "slug": "codex",
       "date": "2026-05-22",
