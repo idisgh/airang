@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-05-23",
+  "lastRun": "2026-05-24",
   "updated": [
+    {
+      "slug": "deepl",
+      "date": "2026-05-24",
+      "changes": [
+        "tagline: 기업용 multilingual platform과 end-to-end translation workflow 중심 포지셔닝으로 갱신",
+        "description: DeepL Translator의 language operating layer, CMS·Google Drive·Microsoft OneDrive Translation Flow, Customization Hub, quality assessments, layout-preserving file translation, 실시간 voice-to-voice translation 반영",
+        "features: DeepL Translator, Translation Flow, Customization Hub, Quality assessments, 실시간 voice-to-voice translation 추가"
+      ]
+    },
     {
       "slug": "perplexity",
       "date": "2026-05-23",
@@ -1251,17 +1260,17 @@
     }
   ],
   "checked": [
+    "suno",
+    "runway",
+    "midjourney",
+    "gemini",
+    "deepl",
     "chatgpt",
     "claude",
-    "gemini",
     "cursor",
     "notion-ai",
     "figma",
-    "deepl",
-    "runway",
-    "midjourney",
     "perplexity",
-    "suno",
     "adobe-firefly",
     "adobe-photoshop",
     "arc",
@@ -1356,6 +1365,26 @@
     "codex"
   ],
   "skipped": [
+    {
+      "slug": "gemini",
+      "date": "2026-05-24",
+      "reason": "Workspace Updates 공식 공지 재검증 결과 Skills in Chrome one-click 저장·재사용 흐름은 이미 data/tools.ts description·features에 반영돼 있고, 최근 Gemini in Google Chat 언어 확장은 core tool 기준 high/medium value 업데이트로 보기 어려워 스킵"
+    },
+    {
+      "slug": "midjourney",
+      "date": "2026-05-24",
+      "reason": "Midjourney 공식 updates 재검증 결과 V8.1 Discord 확대, sharpness 개선, 일시적 SD default 전환은 현재 data/tools.ts의 핵심 V8.1 설명을 뒤집는 high/medium value 변경으로 보기 어려워 추가 수정 없음"
+    },
+    {
+      "slug": "runway",
+      "date": "2026-05-24",
+      "reason": "대표 소스 runwayml.com/blog/gen4-announced fetch가 500 server error를 반환해 정상 스킵"
+    },
+    {
+      "slug": "suno",
+      "date": "2026-05-24",
+      "reason": "Suno 공식 blog·about 페이지 fetch 본문이 거의 추출되지 않아 Studio 1.2를 안정적으로 검증하기 어려웠고, 현재 확인 가능한 정보만으로는 data/tools.ts를 바꿀 high/medium value 확정 변경으로 보기 어려워 스킵"
+    },
     {
       "slug": "figma",
       "date": "2026-05-23",
