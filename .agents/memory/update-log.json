@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-05-24",
+  "lastRun": "2026-05-25",
   "updated": [
+    {
+      "slug": "cursor",
+      "date": "2026-05-25",
+      "changes": [
+        "description: Automations in Agents Window, multi-repo automations, no-repo automations, Composer 2.5의 sustained long-running task 및 instruction following 강화 반영",
+        "pricingDetail: Composer 2.5 Standard $0.50/M input·$2.50/M output, Fast $3/M input·$15/M output token pricing 반영",
+        "features: Composer 2.5, Automations in Agents Window, Multi-repo automations, No-repo automations 추가"
+      ]
+    },
     {
       "slug": "deepl",
       "date": "2026-05-24",
