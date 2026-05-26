@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-05-25",
+  "lastRun": "2026-05-26",
   "updated": [
     {
       "slug": "cursor",
@@ -1374,6 +1374,11 @@
     "codex"
   ],
   "skipped": [
+    {
+      "slug": "cursor",
+      "date": "2026-05-26",
+      "reason": "Cursor 공식 changelog(05-20-26, Composer 2.5) 재검증 결과 Automations in Agents Window, multi-repo·no-repo automations, automation agent runs 50% 할인 프로모션, Composer 2.5의 장기 작업 성능 향상과 token pricing이 이미 data/tools.ts description·pricingDetail·features에 반영돼 있어 추가 수정 없음"
+    },
     {
       "slug": "gemini",
       "date": "2026-05-24",
