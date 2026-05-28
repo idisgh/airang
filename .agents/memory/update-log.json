@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-05-27",
+  "lastRun": "2026-05-28",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-05-28",
+      "changes": [
+        "description: 2026-05-21 ChatGPT release notes 기준 Codex의 Appshots, goal mode GA, in-app browser annotations, locked computer use 및 browser reliability 개선 반영",
+        "features: Goal mode GA, Appshots, Locked computer use, In-app browser annotations 추가"
+      ]
+    },
     {
       "slug": "runway",
       "date": "2026-05-27",
@@ -1402,6 +1410,11 @@
     "codex"
   ],
   "skipped": [
+    {
+      "slug": "le-chat",
+      "date": "2026-05-28",
+      "reason": "Mistral 3 / Mistral Large 3 공식 발표와 최근 Le Chat docs를 재검증했지만, 현재 후보 신호는 오픈 모델 라인업·배포 범위 중심이고 data/tools.ts의 Le Chat 항목에는 Mistral Medium 3.5 기본 모델, Work mode preview, 원격 코딩 에이전트가 이미 반영돼 있어 추가 반영할 확정 high/medium value 변경이 없어 스킵"
+    },
     {
       "slug": "suno",
       "date": "2026-05-27",
