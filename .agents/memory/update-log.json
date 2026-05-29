@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-05-28",
+  "lastRun": "2026-05-29",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-05-29",
+      "changes": [
+        "description: 2026-05-28 Anthropic 공식 발표 기준 Claude Opus 4.8의 agentic coding·computer use·reasoning·knowledge work·financial analysis 개선, 자기 오류 감지·불확실성 표시 개선, dynamic workflows, effort control, Messages API system entries 반영",
+        "pricingDetail: Opus 4.8 API regular $5/$25 per MTok 유지 및 fast mode $10/$50 per MTok 반영",
+        "features: Claude Opus 4.8, Dynamic workflows, Effort control, Messages API system entries 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-05-28",
