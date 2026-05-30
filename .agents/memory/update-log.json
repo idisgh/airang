@@ -1,6 +1,22 @@
 {
-  "lastRun": "2026-05-29",
+  "lastRun": "2026-05-30",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-05-30",
+      "changes": [
+        "description: 2026-05-28~29 ChatGPT release notes 기준 GPT-5.5 Instant 응답 품질 개선, GPT-5.5 Instant·Thinking canvas 지원 종료, OpenAI o3·GPT-4.5 ChatGPT sunset 일정, Codex Windows Computer Use·Codex Profiles·remote control 개선 반영",
+        "features: Computer Use on Windows, Codex Profiles 추가"
+      ]
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-05-30",
+      "changes": [
+        "description: Cursor 3.5 Shared Canvases·/loop skill 및 Cursor 3.6 Auto-review Run Mode 반영",
+        "features: Shared Canvases, /loop skill, Auto-review Run Mode 추가"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-05-29",
