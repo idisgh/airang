@@ -1143,6 +1143,17 @@ export const tools: Tool[] = [
     platforms: ['web'], rating: 0, reviewCount: 0,
     alternatives: [], isFeatured: false, launchedAt: '2026-03-14',
   },
+  {
+    id: '105', name: 'DeepSeek', slug: 'deepseek',
+    tagline: '중국발 오픈소스 AI. 긴 컨텍스트와 저렴한 API가 강점.',
+    description: 'DeepSeek은 중국 AI 스타트업 DeepSeek이 개발한 대형언어모델 기반 AI 챗봇·API입니다. DeepSeek-V4-Pro와 DeepSeek-V4-Flash는 1M 컨텍스트, thinking/non-thinking dual modes, OpenAI ChatCompletions·Anthropic 호환 API를 지원하며, V4-Pro는 agentic coding, 수학·STEM·코딩·장문 reasoning에서 강한 성능을 목표로 합니다. 기존 deepseek-chat·deepseek-reasoner API 모델명은 2026년 7월 24일 이후 중단 예정이며 현재는 V4-Flash의 non-thinking/thinking 모드로 라우팅됩니다. 2026년 5월 31일 15:59 UTC 이후 V4-Pro 75% 할인 가격이 정식 가격으로 조정되어, cache miss 입력 $0.435/M tokens, 출력 $0.87/M tokens로 제공됩니다.',
+    url: 'https://chat.deepseek.com', logoUrl: '/logos/deepseek.png',
+    categories: ['chatbot', 'coding'],
+    pricingModel: 'freemium', pricingDetail: '무료 웹 채팅 / API V4-Flash $0.14 입력·$0.28 출력 per 1M tokens / V4-Pro $0.435 입력·$0.87 출력 per 1M tokens (cache hit 별도)',
+    koreanSupport: 'partial', features: ['DeepSeek-V4-Pro', 'DeepSeek-V4-Flash', '1M 컨텍스트', 'thinking/non-thinking dual modes', 'OpenAI ChatCompletions 호환 API', 'Anthropic 호환 API', 'Agentic coding', '수학·STEM·코딩 추론', '오픈 웨이트', '저렴한 API 비용'],
+    platforms: ['web', 'mobile', 'api'], rating: 4.7, reviewCount: 730,
+    alternatives: ['chatgpt', 'claude', 'gemini', 'mistral'], isFeatured: true, launchedAt: '2023-11-02',
+  }, // updated 2026-06-01
 ]
 
 // Helper functions

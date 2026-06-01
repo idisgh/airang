@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-05-30",
+  "lastRun": "2026-06-01",
   "updated": [
+    {
+      "slug": "deepseek",
+      "date": "2026-06-01",
+      "changes": [
+        "description: DeepSeek 공식 API docs 기준 DeepSeek-V4-Pro·V4-Flash, 1M context, thinking/non-thinking dual modes, OpenAI ChatCompletions·Anthropic 호환 API, legacy deepseek-chat·deepseek-reasoner 2026-07-24 중단 예정 반영",
+        "pricingDetail: V4-Pro 75% 할인 가격의 정식 조정 후 API 가격(cache miss 입력 $0.435/M tokens, 출력 $0.87/M tokens)과 V4-Flash 가격 반영",
+        "features: DeepSeek-V4-Pro, DeepSeek-V4-Flash, 1M 컨텍스트, Anthropic 호환 API 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-05-30",
