@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-06-05",
+  "lastRun": "2026-06-06",
   "updated": [
+    {
+      "slug": "cursor",
+      "date": "2026-06-06",
+      "changes": [
+        "description: Cursor 3.7 Design Mode Improvements 공식 changelog 기준 multi-select elements와 실행 중 voice input 큐잉 반영",
+        "features: Design Mode multi-select, Design Mode voice input 추가"
+      ]
+    },
     {
       "slug": "codex",
       "date": "2026-06-05",
@@ -1458,7 +1466,8 @@
     "v0-dev",
     "qwen",
     "deepseek",
-    "codex"
+    "codex",
+    "cursor"
   ],
   "skipped": [
     {
