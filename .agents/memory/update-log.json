@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-06-07",
+  "lastRun": "2026-06-08",
   "updated": [
     {
       "slug": "cursor",
@@ -1818,6 +1818,11 @@
       "slug": "deepseek",
       "date": "2026-06-03",
       "reason": "possible-updates.json의 DeepSeek V4-Pro 75% 가격 조정 후보를 공식 API docs Models & Pricing로 재검증했지만, 공식 가격표의 V4-Flash $0.14 입력·$0.28 출력 및 V4-Pro $0.435 입력·$0.87 출력 per 1M tokens, 1M context, Anthropic 호환 API, 2026-07-24 legacy model 중단 정보가 data/tools.ts에 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-06-08",
+      "reason": "possible-updates.json의 Cursor 3.7 Design Mode Improvements 후보를 공식 changelog로 재검증했지만, data/tools.ts에는 2026-06-06에 Design Mode multi-select와 실행 중 voice input 큐잉이 이미 description·features에 반영돼 추가 수정 없음"
     }
   ]
 }
