@@ -45,26 +45,26 @@ export const tools: Tool[] = [
   }, // updated 2026-05-29
   {
     id: '3', name: 'Gemini', slug: 'gemini',
-    tagline: 'Google의 멀티모달 AI. 구글 서비스와 완벽 통합.',
-    description: 'Gemini는 Google DeepMind가 개발한 멀티모달 AI입니다. Gemini 3(2025년 11월 출시)은 향상된 추론, 멀티모달 이해, 비주얼 레이아웃·다이나믹 뷰 등 생성형 인터페이스를 제공합니다. Gemini Agent(멀티스텝 태스크 자율 처리, Ultra 구독자용), Personal Intelligence(Gmail·Photos·YouTube 연동), Lyria 3 Pro(최대 3분 음악 생성) 기능이 포함됩니다. 2026년 4월에는 Workspace Intelligence가 공개되어 Gemini가 Gmail·Chat·Calendar·Drive(Docs·Sheets·Slides 포함) 전반의 데이터를 실시간으로 이해하고, 프로젝트·협업자·조직 지식까지 반영해 더 agentic한 작업을 수행할 수 있게 됐습니다. 같은 시기 Google Slides에서 기존 덱 스타일을 분석해 brand-matched editable slides를 동적 레이아웃으로 생성하는 기능과 함께, macOS 15+용 네이티브 Gemini app for Mac도 공개됐습니다. 이어 한국을 포함한 아시아 태평양 지역에 Gemini in Chrome이 순차 출시되며, Chrome 사이드 패널에서 웹페이지 요약·질문·멀티탭 비교를 하고 Gmail·Calendar·Maps·YouTube와 연결된 작업을 페이지 이탈 없이 처리할 수 있게 됐습니다. 여기에 저장·재사용 가능한 Skills in Chrome과 ready-made Skills library가 추가되어, slash(/)나 + 버튼으로 현재 페이지와 선택한 탭에 one-click workflow를 다시 실행할 수 있습니다. 2026년 5월부터는 Gemini 앱 안에서 PDF, DOCX, XLSX, CSV, Markdown, LaTeX와 Google Docs·Sheets·Slides 파일을 채팅으로 직접 생성해 다운로드하거나 Drive로 내보낼 수도 있습니다. Nano Banana 2 기반 웹 이미지 변환도 같은 흐름에서 지원합니다. Gmail·Docs·Drive 등 Google 생태계와 깊이 통합됩니다.',
+    tagline: 'Google의 agentic 멀티모달 AI. 구글 서비스와 완벽 통합.',
+    description: 'Gemini는 Google DeepMind가 개발한 멀티모달 AI입니다. Gemini 3(2025년 11월 출시)은 향상된 추론, 멀티모달 이해, 비주얼 레이아웃·다이나믹 뷰 등 생성형 인터페이스를 제공합니다. Gemini Agent(멀티스텝 태스크 자율 처리, Ultra 구독자용), Personal Intelligence(Gmail·Photos·YouTube 연동), Lyria 3 Pro(최대 3분 음악 생성) 기능이 포함됩니다. 2026년 4월에는 Workspace Intelligence가 공개되어 Gemini가 Gmail·Chat·Calendar·Drive(Docs·Sheets·Slides 포함) 전반의 데이터를 실시간으로 이해하고, 프로젝트·협업자·조직 지식까지 반영해 더 agentic한 작업을 수행할 수 있게 됐습니다. 같은 시기 Google Slides에서 기존 덱 스타일을 분석해 brand-matched editable slides를 동적 레이아웃으로 생성하는 기능과 함께, macOS 15+용 네이티브 Gemini app for Mac도 공개됐습니다. 이어 한국을 포함한 아시아 태평양 지역에 Gemini in Chrome이 순차 출시되며, Chrome 사이드 패널에서 웹페이지 요약·질문·멀티탭 비교를 하고 Gmail·Calendar·Maps·YouTube와 연결된 작업을 페이지 이탈 없이 처리할 수 있게 됐습니다. 여기에 저장·재사용 가능한 Skills in Chrome과 ready-made Skills library가 추가되어, slash(/)나 + 버튼으로 현재 페이지와 선택한 탭에 one-click workflow를 다시 실행할 수 있습니다. 2026년 5월 Google I/O에서는 Gemini 3.5 Flash, Gemini Omni, Neural Expressive UI, Daily Brief, Gemini Spark가 공개되며 Gemini 앱이 개인화·proactive agent 중심으로 확장됐습니다. Daily Brief는 연결된 Gmail·Calendar 등을 바탕으로 아침 브리핑과 다음 액션을 정리하고, Gemini Spark는 Gemini 3.5와 Antigravity harness 기반의 24/7 개인 AI agent로 Workspace와 MCP 연결을 활용해 장시간 작업을 백그라운드에서 처리합니다. Gemini Omni는 텍스트·이미지·비디오 입력을 cinematic video output으로 변환하고, macOS 앱은 여름부터 Spark와 로컬 파일·데스크톱 workflow 자동화를 통합할 예정입니다. Gemini 앱 안에서는 PDF, DOCX, XLSX, CSV, Markdown, LaTeX와 Google Docs·Sheets·Slides 파일을 채팅으로 직접 생성해 다운로드하거나 Drive로 내보낼 수도 있습니다. Nano Banana 2 기반 웹 이미지 변환도 같은 흐름에서 지원합니다. Gmail·Docs·Drive 등 Google 생태계와 깊이 통합됩니다.',
     url: 'https://gemini.google.com', logoUrl: '/logos/gemini.png',
     categories: ['chatbot', 'writing', 'image-generation'],
     pricingModel: 'freemium', pricingDetail: '무료 / AI Pro $20/월 / AI Ultra $249.99/월 (Google One 포함)',
-    koreanSupport: 'full', features: ['멀티모달', 'Google 연동', '이미지 생성', '코드 실행', 'Deep Research', 'Gemini Live', 'Gemini Agent (멀티스텝 자율 처리)', 'Workspace Intelligence', 'Generative Interfaces (Visual Layout·Dynamic View)', 'Google Slides brand-matched editable slides', 'Gemini app for Mac', 'Option+Space 글로벌 단축키', 'window sharing', 'Gemini in Chrome', 'Skills in Chrome', 'ready-made Skills library', 'Chrome 사이드 패널 요약·질문', '멀티탭 비교·요약', 'Gmail·Calendar·Maps·YouTube 연동', 'PDF·DOCX·XLSX·Docs·Sheets·Slides 파일 생성·내보내기', 'Nano Banana 2 웹 이미지 변환', 'Personal Intelligence', 'Lyria 3 Pro (3분 음악)', 'AI 히스토리 이전', 'Gems', 'Canvas'],
+    koreanSupport: 'full', features: ['멀티모달', 'Google 연동', '이미지 생성', '코드 실행', 'Deep Research', 'Gemini Live', 'Gemini 3.5 Flash', 'Gemini Omni', 'Gemini Spark', 'Daily Brief', 'Neural Expressive UI', 'Gemini Agent (멀티스텝 자율 처리)', 'Workspace Intelligence', 'Generative Interfaces (Visual Layout·Dynamic View)', 'Google Slides brand-matched editable slides', 'Gemini app for Mac', 'Option+Space 글로벌 단축키', 'window sharing', 'Gemini in Chrome', 'Skills in Chrome', 'ready-made Skills library', 'Chrome 사이드 패널 요약·질문', '멀티탭 비교·요약', 'Gmail·Calendar·Maps·YouTube 연동', 'Workspace·MCP 연결', 'PDF·DOCX·XLSX·Docs·Sheets·Slides 파일 생성·내보내기', 'Nano Banana 2 웹 이미지 변환', 'Personal Intelligence', 'Lyria 3 Pro (3분 음악)', 'AI 히스토리 이전', 'Gems', 'Canvas'],
     platforms: ['web', 'ios', 'android', 'desktop', 'api'], rating: 4.5, reviewCount: 670,
     alternatives: ['chatgpt', 'claude', 'perplexity'], isFeatured: true, launchedAt: '2023-12-06',
-  },
+  }, // updated 2026-06-09
   {
     id: '4', name: 'Midjourney', slug: 'midjourney',
     tagline: '최고 품질의 AI 이미지 생성. 아티스트의 선택.',
-    description: 'Midjourney는 텍스트 프롬프트로 고품질 이미지를 생성하는 AI 도구입니다. 2026년 4월 V8.1 Alpha로 업데이트되며 V7에 가까운 안정적인 미감, 기본 HD 3배 빠름·3배 저렴, 표준 해상도 50% 빠름·25% 저렴한 생성 흐름을 제공합니다. 이미지 프롬프트와 image weights가 복귀했고, Prompt Shortener와 개선된 Describe도 추가됐습니다. 예술적 스타일, 사실적 이미지, 일러스트 등 다양한 스타일을 지원하며, Style Reference와 무드보드로 일관된 스타일 유지가 가능합니다.',
+    description: 'Midjourney는 텍스트 프롬프트로 고품질 이미지를 생성하는 AI 도구입니다. 2026년 4월 V8.1이 midjourney.com과 Discord에 제공되며 가장 빠른 모델로 자리 잡았고, 표준 작업은 이전 버전보다 약 4~5배 빠르게 렌더링됩니다. V8.1은 프롬프트 이해와 작은 디테일 유지가 개선됐으며 Raw 모드로 기본 스타일링을 줄여 프롬프트 준수도를 높일 수 있습니다. HD 이미지는 업스케일 없이 2K 해상도 생성을 지원하고, SD 결과를 seedlocked 상태로 HD 재실행하는 Run as HD 흐름도 제공합니다. 이미지 프롬프트와 image weights가 복귀했고, Prompt Shortener와 개선된 Describe도 추가됐습니다. 예술적 스타일, 사실적 이미지, 일러스트 등 다양한 스타일을 지원하며, Style Reference와 무드보드로 일관된 스타일 유지가 가능합니다.',
     url: 'https://midjourney.com', logoUrl: '/logos/midjourney.png',
     categories: ['image-generation', 'design'],
     pricingModel: 'paid', pricingDetail: 'Basic $10/월 / Standard $30/월 / Pro $60/월 / Mega $120/월',
-    koreanSupport: 'none', features: ['텍스트→이미지', 'V8.1 Alpha', '기본 HD 3배 빠름·3배 저렴', '표준 해상도 50% 빠름·25% 저렴', '이미지 프롬프트·image weights', 'Prompt Shortener', '개선된 Describe', 'Raw 모드', 'Style Reference', '무드보드', '업스케일', 'Niji 7'],
-    platforms: ['web'], rating: 4.7, reviewCount: 980,
+    koreanSupport: 'none', features: ['텍스트→이미지', 'V8.1', 'midjourney.com·Discord 지원', '표준 작업 4~5배 빠른 렌더링', 'HD 2K 이미지', 'Run as HD', '이미지 프롬프트·image weights', 'Prompt Shortener', '개선된 Describe', 'Raw 모드', 'Style Reference', '무드보드', '업스케일', 'Niji 7'],
+    platforms: ['web', 'discord'], rating: 4.7, reviewCount: 980,
     alternatives: ['dall-e', 'stable-diffusion', 'leonardo-ai', 'ideogram'], isFeatured: true, launchedAt: '2022-07-12',
-  },
+  }, // updated 2026-06-09
   {
     id: '5', name: 'Perplexity', slug: 'perplexity',
     tagline: 'AI answer engine. 검색, 리서치, 실행을 하나로.',
