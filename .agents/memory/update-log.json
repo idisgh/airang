@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-06-09",
+  "lastRun": "2026-06-10",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-06-10",
+      "changes": [
+        "description: 2026-06-09 Anthropic 공식 발표와 Claude API docs 기준 Claude Fable 5·Claude Mythos 5, Mythos-class 모델 라인, 1M 기본 컨텍스트, 최대 128k output tokens, Fable 5 safety classifier·Opus 4.8 fallback, Mythos 5 Project Glasswing 제한 공개 반영",
+        "pricingDetail: Claude Fable 5·Mythos 5 API 가격 $10 입력·$50 출력 per MTok 반영",
+        "features: Claude Fable 5, Claude Mythos 5, Project Glasswing, Safety classifier fallback, 128k output tokens 추가"
+      ]
+    },
     {
       "slug": "midjourney",
       "date": "2026-06-09",
