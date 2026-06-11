@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-06-10",
+  "lastRun": "2026-06-11",
   "updated": [
+    {
+      "slug": "gemini",
+      "date": "2026-06-11",
+      "changes": [
+        "description: Google Blog·Gemini API docs·DeepMind model card 기준 Gemini 3.5 Live Translate의 70개+ 언어 저지연 speech-to-speech 번역, Google AI Studio·Gemini Live API public preview, Google Meet private preview, Android·iOS Google Translate 앱 제공 반영",
+        "features: Gemini 3.5 Live Translate, 70+ 언어 speech-to-speech 번역, Gemini Live API public preview, Google Meet private preview 추가"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-06-10",
@@ -1497,6 +1505,16 @@
     "cursor"
   ],
   "skipped": [
+    {
+      "slug": "claude",
+      "date": "2026-06-11",
+      "reason": "Anthropic 공식 blog/docs로 Claude Fable 5·Mythos 5 후보를 재검증했지만 data/tools.ts에는 2026-06-10에 description·pricingDetail·features가 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "github-copilot",
+      "date": "2026-06-11",
+      "reason": "GitHub Changelog로 2026-06-01 AI Credits usage-based billing 후보를 재검증했지만 data/tools.ts에는 GitHub AI Credits billing, private repo code review Actions minutes, pooled usage, budget controls가 이미 반영돼 추가 수정 없음"
+    },
     {
       "slug": "le-chat",
       "date": "2026-05-28",
