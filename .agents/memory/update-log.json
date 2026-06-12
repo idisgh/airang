@@ -1,6 +1,25 @@
 {
-  "lastRun": "2026-06-11",
+  "lastRun": "2026-06-12",
   "updated": [
+    {
+      "slug": "make",
+      "date": "2026-06-12",
+      "changes": [
+        "tagline: Make 공식 블로그·가격 페이지 기준 visual-first AI automation 포지셔닝 반영",
+        "description: Maia by Make conversational workflow builder, Make AI Agents(beta), Make MCP Server, AI Web Search(beta), AI Content Extractor, Make AI Toolkit, 3,000+ 앱 반영",
+        "pricingDetail: 10k credits 기준 Free 1,000 credits/월, Core $12/월, Pro $21/월, Teams $38/월 반영",
+        "features: Maia by Make, Make AI Agents(beta), Make MCP Server, AI Web Search(beta), AI Content Extractor, Make AI Toolkit, 3000+ 앱 연동 추가"
+      ]
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-06-12",
+      "changes": [
+        "description: Google One·Gemini 공식 가격 페이지 기준 Google AI Plus $4.99/월, 400GB 스토리지, 2x Gemini usage, Gemini Omni, Daily Brief, Google Flow, NotebookLM, Gemini in Chrome early access 반영",
+        "pricingDetail: 무료 / AI Plus $4.99(400GB) / AI Pro $19.99(5TB) / AI Ultra $99.99 또는 $199.99로 갱신",
+        "features: Google AI Plus, 400GB 스토리지 추가"
+      ]
+    },
     {
       "slug": "gemini",
       "date": "2026-06-11",

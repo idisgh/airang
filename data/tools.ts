@@ -46,14 +46,14 @@ export const tools: Tool[] = [
   {
     id: '3', name: 'Gemini', slug: 'gemini',
     tagline: 'Google의 agentic 멀티모달 AI. 구글 서비스와 완벽 통합.',
-    description: 'Gemini는 Google DeepMind가 개발한 멀티모달 AI입니다. Gemini 3(2025년 11월 출시)은 향상된 추론, 멀티모달 이해, 비주얼 레이아웃·다이나믹 뷰 등 생성형 인터페이스를 제공합니다. Gemini Agent(멀티스텝 태스크 자율 처리, Ultra 구독자용), Personal Intelligence(Gmail·Photos·YouTube 연동), Lyria 3 Pro(최대 3분 음악 생성) 기능이 포함됩니다. 2026년 4월에는 Workspace Intelligence가 공개되어 Gemini가 Gmail·Chat·Calendar·Drive(Docs·Sheets·Slides 포함) 전반의 데이터를 실시간으로 이해하고, 프로젝트·협업자·조직 지식까지 반영해 더 agentic한 작업을 수행할 수 있게 됐습니다. 같은 시기 Google Slides에서 기존 덱 스타일을 분석해 brand-matched editable slides를 동적 레이아웃으로 생성하는 기능과 함께, macOS 15+용 네이티브 Gemini app for Mac도 공개됐습니다. 이어 한국을 포함한 아시아 태평양 지역에 Gemini in Chrome이 순차 출시되며, Chrome 사이드 패널에서 웹페이지 요약·질문·멀티탭 비교를 하고 Gmail·Calendar·Maps·YouTube와 연결된 작업을 페이지 이탈 없이 처리할 수 있게 됐습니다. 여기에 저장·재사용 가능한 Skills in Chrome과 ready-made Skills library가 추가되어, slash(/)나 + 버튼으로 현재 페이지와 선택한 탭에 one-click workflow를 다시 실행할 수 있습니다. 2026년 5월 Google I/O에서는 Gemini 3.5 Flash, Gemini Omni, Neural Expressive UI, Daily Brief, Gemini Spark가 공개되며 Gemini 앱이 개인화·proactive agent 중심으로 확장됐습니다. Daily Brief는 연결된 Gmail·Calendar 등을 바탕으로 아침 브리핑과 다음 액션을 정리하고, Gemini Spark는 Gemini 3.5와 Antigravity harness 기반의 24/7 개인 AI agent로 Workspace와 MCP 연결을 활용해 장시간 작업을 백그라운드에서 처리합니다. Gemini Omni는 텍스트·이미지·비디오 입력을 cinematic video output으로 변환하고, macOS 앱은 여름부터 Spark와 로컬 파일·데스크톱 workflow 자동화를 통합할 예정입니다. Gemini 앱 안에서는 PDF, DOCX, XLSX, CSV, Markdown, LaTeX와 Google Docs·Sheets·Slides 파일을 채팅으로 직접 생성해 다운로드하거나 Drive로 내보낼 수도 있습니다. Nano Banana 2 기반 웹 이미지 변환도 같은 흐름에서 지원합니다. 2026년 6월에는 Gemini 3.5 Live Translate가 공개되어 70개+ 언어의 저지연 speech-to-speech 번역을 Google AI Studio·Gemini Live API 퍼블릭 프리뷰, Google Meet 엔터프라이즈 프라이빗 프리뷰, Android·iOS Google Translate 앱에 순차 제공하며, 화자의 억양·속도·피치를 보존하고 연속 스트리밍 번역을 지원합니다. Gmail·Docs·Drive 등 Google 생태계와 깊이 통합됩니다.',
+    description: 'Gemini는 Google DeepMind가 개발한 멀티모달 AI입니다. Gemini 3(2025년 11월 출시)은 향상된 추론, 멀티모달 이해, 비주얼 레이아웃·다이나믹 뷰 등 생성형 인터페이스를 제공합니다. Gemini Agent(멀티스텝 태스크 자율 처리, Ultra 구독자용), Personal Intelligence(Gmail·Photos·YouTube 연동), Lyria 3 Pro(최대 3분 음악 생성) 기능이 포함됩니다. 2026년 4월에는 Workspace Intelligence가 공개되어 Gemini가 Gmail·Chat·Calendar·Drive(Docs·Sheets·Slides 포함) 전반의 데이터를 실시간으로 이해하고, 프로젝트·협업자·조직 지식까지 반영해 더 agentic한 작업을 수행할 수 있게 됐습니다. 같은 시기 Google Slides에서 기존 덱 스타일을 분석해 brand-matched editable slides를 동적 레이아웃으로 생성하는 기능과 함께, macOS 15+용 네이티브 Gemini app for Mac도 공개됐습니다. 이어 한국을 포함한 아시아 태평양 지역에 Gemini in Chrome이 순차 출시되며, Chrome 사이드 패널에서 웹페이지 요약·질문·멀티탭 비교를 하고 Gmail·Calendar·Maps·YouTube와 연결된 작업을 페이지 이탈 없이 처리할 수 있게 됐습니다. 여기에 저장·재사용 가능한 Skills in Chrome과 ready-made Skills library가 추가되어, slash(/)나 + 버튼으로 현재 페이지와 선택한 탭에 one-click workflow를 다시 실행할 수 있습니다. 2026년 5월 Google I/O에서는 Gemini 3.5 Flash, Gemini Omni, Neural Expressive UI, Daily Brief, Gemini Spark가 공개되며 Gemini 앱이 개인화·proactive agent 중심으로 확장됐습니다. Daily Brief는 연결된 Gmail·Calendar 등을 바탕으로 아침 브리핑과 다음 액션을 정리하고, Gemini Spark는 Gemini 3.5와 Antigravity harness 기반의 24/7 개인 AI agent로 Workspace와 MCP 연결을 활용해 장시간 작업을 백그라운드에서 처리합니다. Gemini Omni는 텍스트·이미지·비디오 입력을 cinematic video output으로 변환하고, macOS 앱은 여름부터 Spark와 로컬 파일·데스크톱 workflow 자동화를 통합할 예정입니다. Gemini 앱 안에서는 PDF, DOCX, XLSX, CSV, Markdown, LaTeX와 Google Docs·Sheets·Slides 파일을 채팅으로 직접 생성해 다운로드하거나 Drive로 내보낼 수도 있습니다. Nano Banana 2 기반 웹 이미지 변환도 같은 흐름에서 지원합니다. 2026년 6월에는 Gemini 3.5 Live Translate가 공개되어 70개+ 언어의 저지연 speech-to-speech 번역을 Google AI Studio·Gemini Live API 퍼블릭 프리뷰, Google Meet 엔터프라이즈 프라이빗 프리뷰, Android·iOS Google Translate 앱에 순차 제공하며, 화자의 억양·속도·피치를 보존하고 연속 스트리밍 번역을 지원합니다. Google AI Plus는 $4.99/월과 400GB 스토리지로 조정되어 Gemini 사용 한도 2배, Gemini Omni, Daily Brief, Google Flow, NotebookLM, Gemini in Chrome early access를 묶은 개인용 엔트리 플랜 역할을 맡습니다. Gmail·Docs·Drive 등 Google 생태계와 깊이 통합됩니다.',
     url: 'https://gemini.google.com', logoUrl: '/logos/gemini.png',
     categories: ['chatbot', 'writing', 'image-generation'],
-    pricingModel: 'freemium', pricingDetail: '무료 / AI Pro $20/월 / AI Ultra $249.99/월 (Google One 포함)',
-    koreanSupport: 'full', features: ['멀티모달', 'Google 연동', '이미지 생성', '코드 실행', 'Deep Research', 'Gemini Live', 'Gemini 3.5 Live Translate', '70+ 언어 speech-to-speech 번역', 'Gemini Live API public preview', 'Google Meet private preview', 'Gemini 3.5 Flash', 'Gemini Omni', 'Gemini Spark', 'Daily Brief', 'Neural Expressive UI', 'Gemini Agent (멀티스텝 자율 처리)', 'Workspace Intelligence', 'Generative Interfaces (Visual Layout·Dynamic View)', 'Google Slides brand-matched editable slides', 'Gemini app for Mac', 'Option+Space 글로벌 단축키', 'window sharing', 'Gemini in Chrome', 'Skills in Chrome', 'ready-made Skills library', 'Chrome 사이드 패널 요약·질문', '멀티탭 비교·요약', 'Gmail·Calendar·Maps·YouTube 연동', 'Workspace·MCP 연결', 'PDF·DOCX·XLSX·Docs·Sheets·Slides 파일 생성·내보내기', 'Nano Banana 2 웹 이미지 변환', 'Personal Intelligence', 'Lyria 3 Pro (3분 음악)', 'AI 히스토리 이전', 'Gems', 'Canvas'],
+    pricingModel: 'freemium', pricingDetail: '무료 / AI Plus $4.99/월 (400GB) / AI Pro $19.99/월 (5TB) / AI Ultra $99.99 또는 $199.99/월',
+    koreanSupport: 'full', features: ['멀티모달', 'Google 연동', '이미지 생성', '코드 실행', 'Google AI Plus', '400GB 스토리지', 'Deep Research', 'Gemini Live', 'Gemini 3.5 Live Translate', '70+ 언어 speech-to-speech 번역', 'Gemini Live API public preview', 'Google Meet private preview', 'Gemini 3.5 Flash', 'Gemini Omni', 'Gemini Spark', 'Daily Brief', 'Neural Expressive UI', 'Gemini Agent (멀티스텝 자율 처리)', 'Workspace Intelligence', 'Generative Interfaces (Visual Layout·Dynamic View)', 'Google Slides brand-matched editable slides', 'Gemini app for Mac', 'Option+Space 글로벌 단축키', 'window sharing', 'Gemini in Chrome', 'Skills in Chrome', 'ready-made Skills library', 'Chrome 사이드 패널 요약·질문', '멀티탭 비교·요약', 'Gmail·Calendar·Maps·YouTube 연동', 'Workspace·MCP 연결', 'PDF·DOCX·XLSX·Docs·Sheets·Slides 파일 생성·내보내기', 'Nano Banana 2 웹 이미지 변환', 'Personal Intelligence', 'Lyria 3 Pro (3분 음악)', 'AI 히스토리 이전', 'Gems', 'Canvas'],
     platforms: ['web', 'ios', 'android', 'desktop', 'api'], rating: 4.5, reviewCount: 670,
     alternatives: ['chatgpt', 'claude', 'perplexity'], isFeatured: true, launchedAt: '2023-12-06',
-  }, // updated 2026-06-11
+  }, // updated 2026-06-12
   {
     id: '4', name: 'Midjourney', slug: 'midjourney',
     tagline: '최고 품질의 AI 이미지 생성. 아티스트의 선택.',
@@ -804,15 +804,15 @@ export const tools: Tool[] = [
   },
   {
     id: '72', name: 'Make', slug: 'make',
-    tagline: '노코드 자동화 플랫폼. 앱을 연결하고 자동화.',
-    description: 'Make(구 Integromat)는 드래그앤드롭으로 앱과 서비스를 연결해 자동화 워크플로우를 만드는 노코드 플랫폼입니다. 1,500개 이상의 앱을 지원하며, AI 도구와의 연동으로 복잡한 자동화도 시각적으로 구성할 수 있습니다.',
+    tagline: 'AI와 자동화를 시각적으로 연결하는 노코드 플랫폼.',
+    description: 'Make(구 Integromat)는 드래그앤드롭으로 앱과 서비스를 연결해 자동화 워크플로우를 만드는 노코드 플랫폼입니다. 3,000개 이상의 앱을 지원하며, Make AI Agents(beta), Make MCP Server, AI Web Search(beta), AI Content Extractor, Make AI Toolkit으로 복잡한 AI 자동화도 시각적으로 구성할 수 있습니다. Maia by Make는 자연어 대화로 자동화와 AI 솔루션을 end-to-end로 만들고, 생성되는 로직을 시각적으로 확인하는 conversational workflow builder로 early access를 준비 중입니다.',
     url: 'https://make.com', logoUrl: '/logos/make.png',
     categories: ['productivity', 'marketing'],
-    pricingModel: 'freemium', pricingDetail: '무료 (1,000 ops/월) / Core $9/월 / Pro $16/월',
-    koreanSupport: 'none', features: ['1500+ 앱 연동', '시각적 워크플로우', 'AI 연동', '예약 자동화', '데이터 변환'],
+    pricingModel: 'freemium', pricingDetail: '무료 (1,000 credits/월) / Core $12/월 / Pro $21/월 / Teams $38/월 / Enterprise 문의 (10k credits 기준)',
+    koreanSupport: 'none', features: ['3000+ 앱 연동', '시각적 워크플로우', 'Make AI Agents (beta)', 'Maia by Make', 'Make MCP Server', 'AI Web Search (beta)', 'AI Content Extractor', 'Make AI Toolkit', '예약 자동화', '데이터 변환'],
     platforms: ['web'], rating: 0, reviewCount: 0,
     alternatives: ['dify'], isFeatured: false, launchedAt: '2012-01-01',
-  },
+  }, // updated 2026-06-12
   {
     id: '73', name: 'Replit', slug: 'replit',
     tagline: '브라우저에서 바로 코딩하는 AI 개발 환경.',
