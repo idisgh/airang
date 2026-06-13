@@ -68,14 +68,14 @@ export const tools: Tool[] = [
   {
     id: '5', name: 'Perplexity', slug: 'perplexity',
     tagline: 'AI answer engine. 검색, 리서치, 실행을 하나로.',
-    description: 'Perplexity는 AI 기반 answer engine으로, 질문에 대해 실시간 웹 검색 결과를 바탕으로 출처가 명확한 답변을 제공합니다. GPT-5, Claude 4, Grok 4, Gemini 3 같은 최신 모델 선택에 더해, Search와 Research 사이를 잇는 Labs 모드로 리포트·스프레드시트·대시보드·간단한 웹앱을 만들 수 있습니다. 이어 공개된 Perplexity Computer는 실제 파일시스템·브라우저·연동 도구를 쓰는 general-purpose digital worker로, 결과를 목표로 주면 태스크를 쪼개 sub-agent를 만들고 비동기적으로 장시간 실행할 수 있습니다. Perplexity는 model-agnostic orchestration을 기반으로 Comet AI 브라우저(iOS 지원), Perplexity Assistant, Enterprise Memory·Governance까지 포함한 종합 AI 작업 플랫폼으로 확장되고 있습니다.',
+    description: 'Perplexity는 AI 기반 answer engine으로, 질문에 대해 실시간 웹 검색 결과를 바탕으로 출처가 명확한 답변을 제공합니다. GPT-5, Claude 4, Grok 4, Gemini 3 같은 최신 모델 선택에 더해, Search와 Research 사이를 잇는 Labs 모드로 리포트·스프레드시트·대시보드·간단한 웹앱을 만들 수 있습니다. 이어 공개된 Perplexity Computer는 실제 파일시스템·브라우저·연동 도구를 쓰는 general-purpose digital worker로, 결과를 목표로 주면 태스크를 쪼개 sub-agent를 만들고 비동기적으로 장시간 실행할 수 있습니다. 2026년 5월에는 Computer가 Pro 사용자의 Web·iOS에 전면 제공되고 Personal Computer on Mac도 전체 공개되어 로컬 파일·앱·Comet 브라우저 문맥을 연결할 수 있게 됐습니다. Computer Enterprise는 Microsoft Teams 앱, Snowflake·Databricks 직접 연결, 반복 가능한 Workflows, Space skills로 확장됐고, 5월 말에는 Word·Excel·PowerPoint·Outlook·Teams 안에서 바로 Computer를 쓰는 Microsoft 365 통합, context panel, 개인·조직 사용량 analytics dashboard가 추가됐습니다. Perplexity는 model-agnostic orchestration을 기반으로 Comet AI 브라우저(iOS 지원), Perplexity Assistant, Enterprise Memory·Governance까지 포함한 종합 AI 작업 플랫폼으로 확장되고 있습니다.',
     url: 'https://perplexity.ai', logoUrl: '/logos/perplexity.png',
     categories: ['chatbot', 'productivity'],
     pricingModel: 'freemium', pricingDetail: '무료 / Pro $20/월 / Max (연간 결제 기준 $167/월, Perplexity Computer·Model Council 고한도 제공)',
-    koreanSupport: 'partial', features: ['AI 검색', '출처 표시', 'Comet AI 브라우저', 'Perplexity Assistant', 'Perplexity Pages', 'Shopping Hub', 'Focus 모드', 'Research', 'Labs', 'Perplexity Computer', 'Perplexity Model Council', 'Enterprise Memory·Governance', 'API'],
-    platforms: ['web', 'ios', 'android', 'api'], rating: 4.6, reviewCount: 540,
+    koreanSupport: 'partial', features: ['AI 검색', '출처 표시', 'Comet AI 브라우저', 'Perplexity Assistant', 'Perplexity Pages', 'Shopping Hub', 'Focus 모드', 'Research', 'Labs', 'Perplexity Computer', 'Personal Computer on Mac', 'Computer in Microsoft 365', 'Computer in Microsoft Teams', 'Computer analytics dashboard', 'Context panel', 'Snowflake·Databricks 연결', 'Computer Workflows', 'Space skills', 'Perplexity Model Council', 'Enterprise Memory·Governance', 'API'],
+    platforms: ['web', 'ios', 'android', 'desktop', 'api'], rating: 4.6, reviewCount: 540,
     alternatives: ['chatgpt', 'gemini', 'you-com'], isFeatured: true, launchedAt: '2022-12-07',
-  },
+  }, // updated 2026-06-13
   {
     id: '6', name: 'DALL-E 3', slug: 'dall-e',
     tagline: 'OpenAI의 이미지 생성 AI. ChatGPT에 내장.',

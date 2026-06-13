@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-06-12",
+  "lastRun": "2026-06-13",
   "updated": [
+    {
+      "slug": "perplexity",
+      "date": "2026-06-13",
+      "changes": [
+        "description: Perplexity 공식 changelog 기준 Computer의 Web·iOS Pro 제공, Personal Computer on Mac 전체 공개, Microsoft 365 통합, context panel, analytics dashboard, Teams·Snowflake·Databricks·Workflows·Space skills 반영",
+        "features: Personal Computer on Mac, Computer in Microsoft 365, Computer in Microsoft Teams, Computer analytics dashboard, Context panel, Snowflake·Databricks 연결, Computer Workflows, Space skills 추가",
+        "platforms: desktop 추가"
+      ]
+    },
     {
       "slug": "make",
       "date": "2026-06-12",
@@ -1524,6 +1533,16 @@
     "cursor"
   ],
   "skipped": [
+    {
+      "slug": "basedash",
+      "date": "2026-06-13",
+      "reason": "possible-updates.json 후보의 Basedash for Slack 출시는 공식 블로그와 docs에서 검증했지만 data/tools.ts에 등록된 도구가 아니라 기존 도구 업데이트 대상으로는 스킵"
+    },
+    {
+      "slug": "qursor",
+      "date": "2026-06-13",
+      "reason": "possible-updates.json 후보는 신규 도구 신호이며 data/tools.ts에 등록된 도구가 아니라 기존 도구 업데이트 대상으로는 스킵"
+    },
     {
       "slug": "claude",
       "date": "2026-06-11",
