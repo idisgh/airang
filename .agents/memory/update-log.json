@@ -1,6 +1,22 @@
 {
-  "lastRun": "2026-06-13",
+  "lastRun": "2026-06-14",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-06-14",
+      "changes": [
+        "description: OpenAI Help Center·ChatGPT release notes 기준 Codex rate-limit reset banking, 앱 내 referral invitations, eligible recipient 첫 Codex message 후 양쪽 30일 사용 가능 banked reset 반영",
+        "features: Codex rate-limit reset banking, Codex referral invitations 추가"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "date": "2026-06-14",
+      "changes": [
+        "description: ElevenLabs 공식 블로그 기준 ElevenCreative Avatars의 script·voice·persistent avatar·lip-sync talking-head video 단일 workflow와 Flows Avatar node batch production 반영",
+        "features: Avatars in ElevenCreative, persistent avatars, lip-sync talking-head video, Flows Avatar node 추가"
+      ]
+    },
     {
       "slug": "perplexity",
       "date": "2026-06-13",
@@ -1530,7 +1546,8 @@
     "qwen",
     "deepseek",
     "codex",
-    "cursor"
+    "cursor",
+    "kimi-work"
   ],
   "skipped": [
     {
@@ -1921,6 +1938,11 @@
       "slug": "deepl",
       "date": "2026-06-09",
       "reason": "DeepL 공식 blog 기준 Spring Launch·AI-first multilingual platform·voice-to-voice translation 정보가 data/tools.ts에 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "kimi-work",
+      "date": "2026-06-14",
+      "reason": "Kimi K2.7 Code는 공식 Kimi API docs에서 256K context, multi-step tool invocation, multimodal input을 검증했지만 data/tools.ts에 등록된 도구가 아니라 반영 스킵"
     }
   ]
 }
