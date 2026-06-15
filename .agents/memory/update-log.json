@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-06-14",
+  "lastRun": "2026-06-15",
   "updated": [
+    {
+      "slug": "kimi-work",
+      "date": "2026-06-15",
+      "changes": [
+        "description: Kimi API 공식 docs·Hugging Face model card 기준 Kimi K2.7 Code의 256K context, text·image·video 입력, long thinking, multi-step ToolCalls, OpenAI 호환 API, open weights 반영",
+        "features: Kimi K2.7 Code, 256K 컨텍스트, 멀티모달 입력, multi-step ToolCalls, JSON Mode, OpenAI 호환 API, open weights 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-06-14",
