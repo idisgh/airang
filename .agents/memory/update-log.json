@@ -1,6 +1,39 @@
 {
-  "lastRun": "2026-06-15",
+  "lastRun": "2026-06-16",
   "updated": [
+    {
+      "slug": "stable-diffusion",
+      "date": "2026-06-16",
+      "changes": [
+        "description: Stability AI 공식 news 기준 SD3.5 NVIDIA NIM microservice의 1.8x H100 성능 개선, Depth·Canny ControlNets 단일 컨테이너, Stability AI Solutions의 기업용 custom model/workflow 및 on-premise·secure API·web app 배포 옵션 반영",
+        "features: Stable Diffusion 3.5, NVIDIA NIM microservice, Depth·Canny ControlNets, Stability AI Solutions, Product Photography workflow, Brand Style workflow, Digital Twins 추가"
+      ]
+    },
+    {
+      "slug": "suno",
+      "date": "2026-06-16",
+      "changes": [
+        "description: Suno 공식 blog 기준 Voices가 Web paid users에게 제공되고 1분 이상 voice reference로 일관된 보컬을 만드는 공식 가이드 및 $400M Series D / $5.4B valuation 발표 반영",
+        "features: Voices (Web 유료 사용자)로 갱신"
+      ]
+    },
+    {
+      "slug": "lovable",
+      "date": "2026-06-16",
+      "changes": [
+        "description: Lovable 공식 blog 기준 Claude Opus 4.7, Google Workspace·Gemini Enterprise·Google Maps Platform·BigQuery connectors, read-only subagents, 자동 basic security scan, opt-in auto-fix, security memory, Enterprise scheduled deep scan 반영",
+        "features: Claude Opus 4.7, read-only subagents, Google Workspace connectors, Gemini Enterprise connector, Google Maps Platform connector, BigQuery connector, 자동 basic security scan, Security auto-fix, Security memory, scheduled deep security scan 추가"
+      ]
+    },
+    {
+      "slug": "pika",
+      "date": "2026-06-16",
+      "changes": [
+        "description: Pika 공식 pricing/API/login 페이지 기준 Pika 2.5, Pikaframes·Pikascenes·Pikadditions·Pikaswaps·Pikatwists·Pikaffects, Pikaformance web availability, Fal.ai Pika API 반영",
+        "pricingDetail: Basic $8/월, Standard $28/월, Pro $76/월, Fancy 요금제로 갱신",
+        "features: Pika 2.5, Pikaframes, Pikascenes, Pikadditions, Pikaswaps, Pikatwists, Pikaffects, Fal.ai Pika API 추가"
+      ]
+    },
     {
       "slug": "kimi-work",
       "date": "2026-06-15",

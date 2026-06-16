@@ -134,14 +134,14 @@ export const tools: Tool[] = [
   {
     id: '11', name: 'Stable Diffusion', slug: 'stable-diffusion',
     tagline: '오픈소스 이미지 생성 AI. 로컬에서 무료 사용.',
-    description: 'Stable Diffusion은 Stability AI가 개발한 오픈소스 이미지 생성 모델입니다. 로컬 PC에서 무료로 사용 가능하며, ComfyUI, Automatic1111 등 다양한 인터페이스를 지원합니다. Stable Diffusion 3.5가 현재 최신 모델로, SDXL·SD3를 뛰어넘는 이미지 품질과 프롬프트 반응성을 제공합니다. EA·Warner Music Group·Universal Music Group 등과 전략적 파트너십을 맺고 있으며, Amazon Bedrock에서도 이미지 서비스를 제공합니다.',
+    description: 'Stable Diffusion은 Stability AI가 개발한 오픈소스 이미지 생성 모델입니다. 로컬 PC에서 무료로 사용 가능하며, ComfyUI, Automatic1111 등 다양한 인터페이스를 지원합니다. Stable Diffusion 3.5가 현재 최신 모델로, SDXL·SD3를 뛰어넘는 이미지 품질과 프롬프트 반응성을 제공합니다. 2026년에는 NVIDIA NIM microservice로 SD3.5 Large를 H100 기준 PyTorch 대비 1.8배 빠르게 배포할 수 있게 됐고, Depth·Canny ControlNets를 단일 컨테이너에 묶어 엔터프라이즈 배포를 단순화했습니다. Stability AI Solutions는 Product Photography, Brand Style, Product Concepting & Design, Digital Twins 같은 기업용 커스텀 모델·워크플로우와 on-premise·secure API·웹앱 배포 옵션을 제공합니다. EA·Warner Music Group·Universal Music Group 등과 전략적 파트너십을 맺고 있으며, Amazon Bedrock에서도 이미지 서비스를 제공합니다.',
     url: 'https://stability.ai', logoUrl: '/logos/stable-diffusion.png',
     categories: ['image-generation', 'design'],
     pricingModel: 'free', pricingDetail: '오픈소스 무료 / API 사용량 기반',
-    koreanSupport: 'none', features: ['오픈소스', '로컬 실행', '커스텀 모델', 'LoRA', 'ControlNet', 'API', 'Amazon Bedrock 지원'],
+    koreanSupport: 'none', features: ['오픈소스', '로컬 실행', 'Stable Diffusion 3.5', 'NVIDIA NIM microservice', 'Depth·Canny ControlNets', 'Stability AI Solutions', 'Product Photography workflow', 'Brand Style workflow', 'Digital Twins', '커스텀 모델', 'LoRA', 'ControlNet', 'API', 'Amazon Bedrock 지원'],
     platforms: ['desktop', 'api'], rating: 4.5, reviewCount: 720,
     alternatives: ['midjourney', 'dall-e', 'leonardo-ai'], isFeatured: false, launchedAt: '2022-08-22',
-  },
+  }, // updated 2026-06-16
   {
     id: '12', name: 'Runway', slug: 'runway',
     tagline: 'AI 영상 생성·편집 플랫폼. Gen-4.5와 Agent로 제작 자동화.',
@@ -156,14 +156,14 @@ export const tools: Tool[] = [
   {
     id: '13', name: 'Suno', slug: 'suno',
     tagline: 'AI로 노래를 만들어보세요. 가사, 멜로디, 보컬까지.',
-    description: 'Suno는 텍스트 프롬프트로 완성된 노래를 생성하는 AI 음악 플랫폼입니다. v5.5(2026년 3월 26일)로 퍼스널라이제이션 레이어를 강화해 Voices(자신의 목소리 클론), Custom Models(내 음악으로 학습), My Taste(자동 취향 학습) 기능을 추가했습니다. Warner Music Group 파트너십으로 완전 라이선스 모델로 전환 중입니다.',
+    description: 'Suno는 텍스트 프롬프트로 완성된 노래를 생성하는 AI 음악 플랫폼입니다. v5.5(2026년 3월 26일)로 퍼스널라이제이션 레이어를 강화해 Voices(자신의 목소리 클론), Custom Models(내 음악으로 학습), My Taste(자동 취향 학습) 기능을 추가했습니다. 2026년 6월에는 Voices가 Web 유료 사용자에게 제공되며 최소 1분 이상의 깨끗한 voice reference를 바탕으로 더 일관된 보컬 퍼포먼스를 만들 수 있다는 공식 가이드가 추가됐습니다. Warner Music Group 파트너십으로 완전 라이선스 모델로 전환 중이며, 같은 달 $400M 규모 Series D로 $5.4B 밸류에이션을 발표했습니다.',
     url: 'https://suno.com', logoUrl: '/logos/suno.png',
     categories: ['music'],
     pricingModel: 'freemium', pricingDetail: '무료 (10곡/일) / Pro $10/월 / Premier $30/월',
-    koreanSupport: 'partial', features: ['AI 작곡', 'v5.5 모델', 'Voices (목소리 클론)', 'Custom Models (내 음악 학습)', 'My Taste (취향 자동 학습)', 'Suno Studio', '가사 생성', '보컬 합성', '다양한 장르', '상업적 사용권'],
+    koreanSupport: 'partial', features: ['AI 작곡', 'v5.5 모델', 'Voices (Web 유료 사용자)', '목소리 클론', 'Custom Models (내 음악 학습)', 'My Taste (취향 자동 학습)', 'Suno Studio', '가사 생성', '보컬 합성', '다양한 장르', '상업적 사용권'],
     platforms: ['web', 'ios', 'android'], rating: 4.6, reviewCount: 510,
     alternatives: ['udio', 'soundraw', 'mubert'], isFeatured: true, launchedAt: '2023-09-01',
-  },
+  }, // updated 2026-06-16
   {
     id: '14', name: 'Canva AI', slug: 'canva-ai',
     tagline: '대화형·agentic 디자인 플랫폼. 아이디어에서 결과물까지 한번에.',
@@ -178,14 +178,14 @@ export const tools: Tool[] = [
   {
     id: '15', name: 'Lovable', slug: 'lovable',
     tagline: '프롬프트만으로 풀스택 웹앱을 만드세요.',
-    description: 'Lovable(구 GPT Engineer)은 자연어 프롬프트로 풀스택 웹 애플리케이션을 생성하는 AI 도구입니다. React + Supabase + Tailwind 기반으로 실제 배포 가능한 앱을 만들며, Stripe 결제 연동까지 지원합니다. 2025년 12월 $330M 시리즈 B를 유치했으며, 데이터 분석·비즈니스 문서 생성·Workspace Knowledge 등 기능이 크게 확장됐습니다. Claude Opus 4.6 등 최신 모델을 활용해 복잡한 빌드도 자율적으로 처리합니다.',
+    description: 'Lovable(구 GPT Engineer)은 자연어 프롬프트로 풀스택 웹 애플리케이션을 생성하는 AI 도구입니다. React + Supabase + Tailwind 기반으로 실제 배포 가능한 앱을 만들며, Stripe 결제 연동까지 지원합니다. 2026년 4월 Claude Opus 4.7을 도입해 Opus 4.6 대비 더 적은 턴과 토큰으로 복잡한 빌드를 처리하도록 개선됐습니다. 5월에는 Google Workspace·Gemini Enterprise·Google Maps Platform·BigQuery connectors가 추가되어 Gmail, Calendar, Drive, Sheets, Slides와 기업 데이터 위에 앱을 만들 수 있게 됐고, read-only subagents가 프로젝트 탐색·웹 리서치를 병렬 수행해 큰 코드베이스 작업을 더 빠르게 준비합니다. 6월에는 publish 전 자동 basic security scan, opt-in auto-fix, security memory, Enterprise용 scheduled deep security scan이 추가됐습니다. 2025년 12월 $330M 시리즈 B를 유치했으며, Workspace Knowledge와 데이터 분석·비즈니스 문서 생성도 지원합니다.',
     url: 'https://lovable.dev', logoUrl: '/logos/lovable.png',
     categories: ['coding'],
     pricingModel: 'freemium', pricingDetail: '무료 (5 메시지/일) / Starter $20/월 / Launch $50/월',
-    koreanSupport: 'none', features: ['프롬프트→웹앱', 'React 생성', 'Supabase 연동', 'Stripe 결제', '실시간 미리보기', 'GitHub 연동', 'Workspace Knowledge', '데이터 분석', '비즈니스 문서 생성'],
+    koreanSupport: 'none', features: ['프롬프트→웹앱', 'React 생성', 'Supabase 연동', 'Stripe 결제', 'Claude Opus 4.7', 'read-only subagents', 'Google Workspace connectors', 'Gemini Enterprise connector', 'Google Maps Platform connector', 'BigQuery connector', '자동 basic security scan', 'Security auto-fix', 'Security memory', 'scheduled deep security scan', '실시간 미리보기', 'GitHub 연동', 'Workspace Knowledge', '데이터 분석', '비즈니스 문서 생성'],
     platforms: ['web'], rating: 4.5, reviewCount: 340,
     alternatives: ['bolt-new', 'cursor', 'v0-dev'], isFeatured: false, launchedAt: '2024-01-01',
-  },
+  }, // updated 2026-06-16
   {
     id: '16', name: 'Bolt.new', slug: 'bolt-new',
     tagline: 'StackBlitz의 AI 풀스택 빌더. 브라우저에서 바로 개발.',
@@ -244,14 +244,14 @@ export const tools: Tool[] = [
   {
     id: '21', name: 'Pika', slug: 'pika',
     tagline: 'AI 영상 생성. 아이디어를 영상으로 바꾸세요.',
-    description: 'Pika는 텍스트나 이미지에서 짧은 영상을 생성하는 AI 도구입니다. Pikaformance 최신 모델로 자연스러운 모션과 효과를 적용한 영상을 만들 수 있으며, 립싱크, 사운드 이펙트 등도 지원합니다.',
+    description: 'Pika는 텍스트나 이미지에서 짧은 영상을 생성하는 AI 도구입니다. Pika 2.5 기반으로 텍스트→영상, 이미지→영상, Pikaframes, Pikascenes, Pikadditions, Pikaswaps, Pikatwists, Pikaffects를 제공하며 480p부터 1080p까지 플랜별 해상도를 지원합니다. Pikaformance는 웹에서 사용할 수 있는 퍼포먼스 모델로 이미지가 노래하고 말하고 랩하는 듯한 hyper-real expressions와 오디오 싱크를 제공합니다. Fal.ai를 통한 Pika API도 제공되어 자체 제품 안에서 Pika 영상 모델을 호출할 수 있습니다.',
     url: 'https://pika.art', logoUrl: '/logos/pika.png',
     categories: ['video'],
-    pricingModel: 'freemium', pricingDetail: '무료 (제한) / Standard $8/월 / Pro $28/월',
-    koreanSupport: 'none', features: ['텍스트→영상', '이미지→영상', '립싱크', 'SFX', '영상 확장', 'Scene 편집', 'Pikaformance 모델'],
+    pricingModel: 'freemium', pricingDetail: '무료 (제한) / Basic $8/월 / Standard $28/월 / Pro $76/월 / Fancy 요금제',
+    koreanSupport: 'none', features: ['텍스트→영상', '이미지→영상', 'Pika 2.5', 'Pikaframes', 'Pikascenes', 'Pikadditions', 'Pikaswaps', 'Pikatwists', 'Pikaffects', 'Pikaformance 모델', 'Fal.ai Pika API', '립싱크', 'SFX', '영상 확장', 'Scene 편집'],
     platforms: ['web', 'ios'], rating: 4.3, reviewCount: 280,
     alternatives: ['runway', 'kling', 'sora'], isFeatured: false, launchedAt: '2023-06-01',
-  },
+  }, // updated 2026-06-16
   {
     id: '22', name: 'Leonardo AI', slug: 'leonardo-ai',
     tagline: '게임·디자인 특화 AI 이미지 생성. 일관된 캐릭터.',
