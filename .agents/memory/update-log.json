@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-06-16",
+  "lastRun": "2026-06-19",
   "updated": [
+    {
+      "slug": "dall-e",
+      "date": "2026-06-19",
+      "changes": [
+        "tagline: OpenAI 공식 ChatGPT Images 2.0 및 API docs 기준 DALL-E 3 단독 포지셔닝에서 ChatGPT Images·GPT Image 모델 라인 중심으로 갱신",
+        "description: ChatGPT Images 2.0의 텍스트 렌더링·다국어 지원·정밀 편집·다양한 비율 생성과 API 최신 gpt-image-2 지원 반영",
+        "pricingDetail/features: API 사용량 기반 GPT Image 모델, ChatGPT Images 2.0, gpt-image-2 API, 정밀 편집, 다국어 텍스트 렌더링 추가"
+      ]
+    },
     {
       "slug": "stable-diffusion",
       "date": "2026-06-16",

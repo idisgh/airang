@@ -78,15 +78,15 @@ export const tools: Tool[] = [
   }, // updated 2026-06-13
   {
     id: '6', name: 'DALL-E 3', slug: 'dall-e',
-    tagline: 'OpenAI의 이미지 생성 AI. ChatGPT에 내장.',
-    description: 'DALL-E 3는 OpenAI의 최신 이미지 생성 모델로, 텍스트 프롬프트를 정확히 이해하고 고품질 이미지를 생성합니다. ChatGPT Plus에 내장되어 대화형으로 이미지를 생성하고 수정할 수 있습니다.',
+    tagline: 'OpenAI의 이미지 생성 AI. ChatGPT Images와 API로 제공.',
+    description: 'DALL-E 3는 OpenAI의 이미지 생성 모델로, 텍스트 프롬프트를 정확히 이해하고 고품질 이미지를 생성합니다. 현재 OpenAI 이미지 생성 흐름은 ChatGPT Images 2.0과 API의 GPT Image 모델 라인으로 확장되어, DALL-E 3 기반 대화형 생성에 더해 더 나은 텍스트 렌더링, 다국어 지원, 정밀 편집, 다양한 비율의 이미지 생성을 지원합니다. API에서는 최신 gpt-image-2를 포함한 GPT Image 모델로 이미지 생성과 편집을 처리할 수 있습니다.',
     url: 'https://openai.com/index/dall-e-3/', logoUrl: '/logos/dall-e.png',
     categories: ['image-generation'],
-    pricingModel: 'freemium', pricingDetail: 'ChatGPT 무료 (제한) / Plus $20/월 / API 사용량 기반',
-    koreanSupport: 'full', features: ['텍스트→이미지', 'ChatGPT 통합', '인페인팅', '아웃페인팅', 'API'],
+    pricingModel: 'freemium', pricingDetail: 'ChatGPT 무료 (제한) / Plus $20/월 / API는 GPT Image 모델 사용량 기반',
+    koreanSupport: 'full', features: ['텍스트→이미지', 'ChatGPT Images', 'ChatGPT Images 2.0', 'GPT Image 모델', 'gpt-image-2 API', '정밀 편집', '다국어 텍스트 렌더링', '다양한 비율', '인페인팅', '아웃페인팅', 'API'],
     platforms: ['web', 'api'], rating: 4.4, reviewCount: 450,
     alternatives: ['midjourney', 'stable-diffusion', 'leonardo-ai'], isFeatured: false, launchedAt: '2023-10-03',
-  },
+  }, // updated 2026-06-19
   {
     id: '7', name: 'Cursor', slug: 'cursor',
     tagline: 'AI 코드 에디터. 코딩의 미래를 체험하세요.',
