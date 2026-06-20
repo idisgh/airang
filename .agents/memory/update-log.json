@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-06-19",
+  "lastRun": "2026-06-20",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-06-20",
+      "changes": [
+        "description: OpenAI 공식 Codex Record & Replay 문서 기준 macOS에서 반복 workflow를 녹화해 reusable skill 초안으로 만들고 Computer Use·browser actions·plugins와 함께 재실행하는 기능 반영",
+        "features: Codex Record & Replay 추가"
+      ]
+    },
     {
       "slug": "dall-e",
       "date": "2026-06-19",
