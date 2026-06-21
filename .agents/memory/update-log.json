@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-06-20",
+  "lastRun": "2026-06-21",
   "updated": [
+    {
+      "slug": "cursor",
+      "date": "2026-06-21",
+      "changes": [
+        "description: Cursor 공식 Origin 랜딩 기준 waitlist 단계의 agentic era용 Git forge 포지셔닝과 코드 저장·호스팅·리뷰 협업 확장 방향 반영",
+        "features: Cursor Origin 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-06-20",
@@ -2001,6 +2009,11 @@
       "slug": "kimi-work",
       "date": "2026-06-14",
       "reason": "Kimi K2.7 Code는 공식 Kimi API docs에서 256K context, multi-step tool invocation, multimodal input을 검증했지만 data/tools.ts에 등록된 도구가 아니라 반영 스킵"
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-06-21",
+      "reason": "possible-updates.json의 Codex Record & Replay 후보를 OpenAI 공식 Codex docs로 재검증했지만 data/tools.ts에는 2026-06-20에 이미 description·features에 반영돼 추가 수정 없음"
     }
   ]
 }
