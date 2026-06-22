@@ -1,6 +1,22 @@
 {
-  "lastRun": "2026-06-21",
+  "lastRun": "2026-06-22",
   "updated": [
+    {
+      "slug": "cursor",
+      "date": "2026-06-22",
+      "changes": [
+        "description: Cursor 3.8 공식 changelog 기준 /automate skill, Slack emoji trigger, 5종 GitHub trigger, automations용 computer use, GitHub Actions triage·PR review auto-fix 템플릿 반영",
+        "features: /automate skill, Slack emoji trigger, GitHub automation triggers, Automations computer use, GitHub Actions triage template, PR review auto-fix template 추가"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "date": "2026-06-22",
+      "changes": [
+        "description: ElevenLabs 공식 ElevenAgents docs 기준 multimodal agent 설계·배포·monitoring/evals 운영 범위 반영",
+        "features: Multimodal agents, Visual workflow builder, Telephony·SIP·Twilio deploy, Batch outbound calls, Agent testing·evals, Conversation analysis, Real-time monitoring, OpenTelemetry traces 추가"
+      ]
+    },
     {
       "slug": "cursor",
       "date": "2026-06-21",
