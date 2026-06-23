@@ -1,6 +1,22 @@
 {
-  "lastRun": "2026-06-22",
+  "lastRun": "2026-06-23",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-06-23",
+      "changes": [
+        "description: OpenAI 공식 ChatGPT release notes 기준 Scheduled page·connected apps/web monitoring tasks, Pulse sunset, 60개+ 언어 발음 가이드, World Cup updates, connected apps permission controls, 10k+ long paste attachment 처리 반영",
+        "features: Scheduled page, connected apps monitoring tasks, 60+ 언어 발음 가이드, World Cup conversational updates, connected apps permission controls, 10k+ long paste attachments 추가"
+      ]
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-06-23",
+      "changes": [
+        "description: Gemini API 공식 changelog 기준 gemini-3.1-flash-tts-preview의 streamGenerateContent 및 Interactions API stream=true speech generation streaming 지원 반영",
+        "features: Gemini 3.1 Flash TTS streaming, streamGenerateContent speech generation 추가"
+      ]
+    },
     {
       "slug": "cursor",
       "date": "2026-06-22",
