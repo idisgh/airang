@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-06-23",
+  "lastRun": "2026-06-24",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-06-24",
+      "changes": [
+        "description: Anthropic 공식 Claude Tag 발표 기준 Team·Enterprise용 Slack beta, @Claude team delegation, 채널별 memory·권한·spend limit·작업 로그, ambient follow-up, 기존 Claude in Slack app 대체 반영",
+        "features: Claude Tag (Slack beta), @Claude team delegation, Slack channel memory, Ambient follow-up 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-06-23",
