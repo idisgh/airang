@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-06-24",
+  "lastRun": "2026-06-25",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-06-25",
+      "changes": [
+        "description: OpenAI Help Center ChatGPT release notes 2026-06-24 기준 GPT-5.5 Instant의 의사결정·조언·계획·리서치·쇼핑 질문 품질, 숨은 목표 파악, 다중 제약 준수, multi-turn context carryover, 위치 기반 local business·상품 추천 개선 반영",
+        "features: GPT-5.5 Instant quality update 추가"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-06-24",
@@ -2054,6 +2062,11 @@
       "slug": "chatgpt",
       "date": "2026-06-21",
       "reason": "possible-updates.json의 Codex Record & Replay 후보를 OpenAI 공식 Codex docs로 재검증했지만 data/tools.ts에는 2026-06-20에 이미 description·features에 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "claude",
+      "date": "2026-06-25",
+      "reason": "possible-updates.json의 Claude Tag 후보를 Anthropic 공식 Product post로 재검증했지만 data/tools.ts에는 2026-06-24에 Slack beta, @Claude team delegation, channel memory, ambient follow-up, 기존 Slack app 대체 정보가 이미 반영돼 추가 수정 없음"
     }
   ]
 }
