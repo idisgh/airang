@@ -1,6 +1,30 @@
 {
-  "lastRun": "2026-06-25",
+  "lastRun": "2026-06-26",
   "updated": [
+    {
+      "slug": "github-copilot",
+      "date": "2026-06-26",
+      "changes": [
+        "description: GitHub 공식 changelog 기준 Copilot desktop app macOS·Windows·Linux GA, Copilot Chat auto model selection GA 및 Free·Student plan 기본/단일 선택 적용, Copilot app BYOK provider keys 지원 반영",
+        "features: GitHub Copilot app (desktop GA), Copilot auto model selection, BYOK provider keys 추가"
+      ]
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-06-26",
+      "changes": [
+        "description: Notion 공식 release 기준 Notion 3.5 Developer Platform, Notion Workers hosted runtime, database sync·agent tools·webhook triggers, Markdown API, Notion MCP Meeting Notes·block comments 및 database 작업 token efficiency 개선, workspace-scoped OAuth, Developer Portal 반영",
+        "pricingDetail/features: Workers beta 무료 후 2026-08-11부터 Notion Credits 과금, Notion Developer Platform, Notion Workers, Agent tools, Webhook triggers, Database sync, Workspace-scoped OAuth, Developer Portal 추가"
+      ]
+    },
+    {
+      "slug": "deepl",
+      "date": "2026-06-26",
+      "changes": [
+        "description: DeepL 공식 blog 기준 DeepL API의 Voice API, style rules CRUD, translation memories 접근, languages endpoint, API usage dashboard와 Mixhalo ultra-low latency audio streaming 기술 편입 반영",
+        "features: DeepL Voice API, Style rules API, Translation memories API, Languages endpoint, API usage dashboard, Mixhalo ultra-low latency audio 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-06-25",
