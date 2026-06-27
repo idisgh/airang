@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-06-26",
+  "lastRun": "2026-06-27",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-06-27",
+      "changes": [
+        "description: OpenAI 공식 GPT-5.6 Sol preview 발표와 GPT-5.6 Preview System Card 기준 Sol·Terra·Luna limited preview, select trusted partners 대상 API·Codex 초기 제공, max reasoning effort, subagents 기반 ultra mode, explicit cache breakpoints·30분 minimum cache life 및 broader availability 예정 반영",
+        "pricingDetail/features: GPT-5.6 API preview 가격(Sol $5/$30, Terra $2.50/$15, Luna $1/$6 per 1M tokens), GPT-5.6 limited preview, GPT-5.6 Sol·Terra·Luna, max reasoning effort, Ultra mode, explicit cache breakpoints 추가"
+      ]
+    },
     {
       "slug": "github-copilot",
       "date": "2026-06-26",
