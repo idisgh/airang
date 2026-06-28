@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-06-27",
+  "lastRun": "2026-06-28",
   "updated": [
     {
       "slug": "chatgpt",
@@ -2094,6 +2094,11 @@
       "slug": "chatgpt",
       "date": "2026-06-21",
       "reason": "possible-updates.json의 Codex Record & Replay 후보를 OpenAI 공식 Codex docs로 재검증했지만 data/tools.ts에는 2026-06-20에 이미 description·features에 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-06-28",
+      "reason": "possible-updates.json의 GPT-5.6 Preview System Card 후보를 OpenAI Deployment Safety Hub 공식 페이지와 Supabase 현재 데이터로 재검증했지만 data/tools.ts·tools 테이블에는 2026-06-27에 GPT-5.6 Sol·Terra·Luna limited preview, max reasoning effort, Ultra mode, explicit cache breakpoints 및 preview API 가격이 이미 반영돼 추가 수정 없음"
     },
     {
       "slug": "claude",
