@@ -948,14 +948,14 @@ export const tools: Tool[] = [
   {
     id: '85', name: 'Figma', slug: 'figma',
     tagline: 'AI를 더한 세계 최고의 UI/UX 디자인 툴.',
-    description: 'Figma는 협업 기반의 UI/UX 디자인 툴로, AI 기능이 크게 강화됐습니다. Figma Make에 Make Kits(디자인 시스템 npm 패키지 연동)와 Attachments(PRD·이미지·코드 파일 첨부) 기능이 추가됐고, 2026년 5월에는 Figma AI가 left rail과 canvas 안으로 더 깊게 들어와 디자인 에이전트가 컴포넌트·토큰·레이아웃 문맥을 이해한 채 화면을 직접 만들고 수정할 수 있게 됐습니다. 레이어나 프레임에서 바로 프롬프트를 시작하고 병렬 프롬프트로 여러 방향을 동시에 시도할 수 있으며, 디자인 표준·brand voice·에이전트용 skills를 함께 연결할 수 있습니다. FigJam의 Microsoft 365 Copilot 연동(플로우차트·간트·시퀀스 다이어그램 자동 생성), AI 이미지 도구의 FigJam·Slides·Buzz 확장, Buzz 승인 워크플로우와 함께 Figma는 에이전틱 디자인 작업 공간으로 포지셔닝을 넓히고 있습니다.',
+    description: 'Figma는 협업 기반의 UI/UX 디자인 툴로, AI 기능이 크게 강화됐습니다. Figma Make에 Make Kits(디자인 시스템 npm 패키지 연동)와 Attachments(PRD·이미지·코드 파일 첨부) 기능이 추가됐고, 2026년 5월에는 Figma AI가 left rail과 canvas 안으로 더 깊게 들어와 디자인 에이전트가 컴포넌트·토큰·레이아웃 문맥을 이해한 채 화면을 직접 만들고 수정할 수 있게 됐습니다. 레이어나 프레임에서 바로 프롬프트를 시작하고 병렬 프롬프트로 여러 방향을 동시에 시도할 수 있으며, 디자인 표준·brand voice·에이전트용 skills를 함께 연결할 수 있습니다. 2026년 6월 Config 발표에서는 Figma Motion open beta가 추가되어 캔버스 안에서 timeline·keyframes·preset animation styles·time-based comments를 다루고, animated components와 motion variables로 모션 시스템을 디자인 시스템처럼 재사용할 수 있게 됐습니다. Figma agent는 자연어 프롬프트로 실제 keyframes를 timeline에 만들고 easing·timing·property 조정을 돕습니다. FigJam의 Microsoft 365 Copilot 연동(플로우차트·간트·시퀀스 다이어그램 자동 생성), AI 이미지 도구의 FigJam·Slides·Buzz 확장, Buzz 승인 워크플로우와 함께 Figma는 에이전틱 디자인 작업 공간으로 포지셔닝을 넓히고 있습니다.',
     url: 'https://figma.com', logoUrl: '/logos/figma.png',
     categories: ['design'],
     pricingModel: 'freemium', pricingDetail: '무료 / Professional Full seat $16/월 / Organization Full seat $55/월 / Enterprise Full seat $90/월 (AI 크레딧 포함, 추가 AI add-on 별도)',
-    koreanSupport: 'partial', features: ['협업 디자인', 'Figma Make (AI 코드 생성)', 'Make Kits (디자인 시스템 연동)', 'Make Attachments', 'Figma design agent', '레이어·프레임에서 바로 프롬프트', '병렬 프롬프트', 'Skills (markdown 기반 에이전트 가이드)', 'Figma Buzz (온브랜드 템플릿·승인 워크플로우)', 'FigJam + Microsoft 365 Copilot', 'AI Image Tools (FigJam·Slides·Buzz)', 'Dev Mode', '프로토타이핑', '디자인 시스템', '개발 핸드오프'],
+    koreanSupport: 'partial', features: ['협업 디자인', 'Figma Motion open beta', 'Motion timeline·keyframes', 'Animated components', 'Motion variables', 'Figma agent keyframe generation', 'Figma Make (AI 코드 생성)', 'Make Kits (디자인 시스템 연동)', 'Make Attachments', 'Figma design agent', '레이어·프레임에서 바로 프롬프트', '병렬 프롬프트', 'Skills (markdown 기반 에이전트 가이드)', 'Figma Buzz (온브랜드 템플릿·승인 워크플로우)', 'FigJam + Microsoft 365 Copilot', 'AI Image Tools (FigJam·Slides·Buzz)', 'Dev Mode', '프로토타이핑', '디자인 시스템', '개발 핸드오프'],
     platforms: ['web', 'desktop'], rating: 0, reviewCount: 0,
     alternatives: ['canva-ai', 'uizard', 'creatie'], isFeatured: false, launchedAt: '2016-09-27',
-  },
+  }, // updated 2026-06-29
   {
     id: '86', name: 'Ugic', slug: 'ugic',
     tagline: '이미지를 UI 컴포넌트로 변환하는 AI 도구.',
@@ -1047,14 +1047,14 @@ export const tools: Tool[] = [
   {
     id: '94', name: 'Framer', slug: 'framer',
     tagline: '디자이너를 위한 AI 웹사이트 빌더.',
-    description: 'Framer는 디자이너를 위한 AI 기반 웹사이트 빌더로, AI가 사이트 레이아웃과 고급 컴포넌트를 빠르게 생성해 빈 캔버스부터 시작할 필요를 줄여줍니다. 고품질 애니메이션·인터랙션을 코딩 없이 구현할 수 있으며, 통합 CMS·analytics·localization·SEO 기능을 한곳에서 제공해 디자인부터 운영까지 이어서 처리할 수 있습니다.',
+    description: 'Framer는 디자이너를 위한 AI 기반 웹사이트 빌더로, AI가 사이트 레이아웃과 고급 컴포넌트를 빠르게 생성해 빈 캔버스부터 시작할 필요를 줄여줍니다. 2026년 6월 Framer 3.0에서는 Agents가 캔버스 안에서 페이지 생성, screenshot 기반 디자인, responsive breakpoints, layout·section 생성, color·text style 정리, effects·interactions, custom code components, content 작성, CMS 관리, SEO metadata, broken link·accessibility·style audit까지 웹사이트 제작 전 과정을 직접 돕도록 확장됐습니다. Branching은 Agent나 팀원의 변경을 production과 분리된 branch에서 실험하고 review·compare·merge한 뒤 publish할 수 있게 합니다. External Agents는 Claude Code, Cursor, Codex 같은 기존 AI workflow를 Framer 사이트 제작·관리로 연결합니다. 고품질 애니메이션·인터랙션을 코딩 없이 구현할 수 있으며, 통합 CMS·analytics·localization·SEO 기능을 한곳에서 제공해 디자인부터 운영까지 이어서 처리할 수 있습니다.',
     url: 'https://framer.com', logoUrl: '/logos/framer.png',
     categories: ['design', 'coding'],
-    pricingModel: 'freemium', pricingDetail: '무료 / Mini $5/월 / Basic $15/월',
-    koreanSupport: 'none', features: ['AI 웹사이트 생성', 'AI 레이아웃·고급 컴포넌트 생성', '애니메이션', '인터랙션', '통합 CMS', 'Analytics', 'Localization', 'SEO'],
+    pricingModel: 'freemium', pricingDetail: '무료(500 AI credits/day) / Basic $15/월(1,000 credits/month) / Pro(3,000 credits/month) / Editor seat $20/월 / Content Editor $10/월',
+    koreanSupport: 'none', features: ['AI 웹사이트 생성', 'Framer Agents', 'Branching', 'External Agents', 'AI credits', 'AI 레이아웃·고급 컴포넌트 생성', 'screenshot 기반 디자인 생성', 'responsive breakpoints', 'custom code components', 'CMS 관리', 'SEO metadata 생성', 'broken link·accessibility audit', 'Claude Code·Cursor·Codex 연동', '애니메이션', '인터랙션', '통합 CMS', 'Analytics', 'Localization', 'SEO'],
     platforms: ['web', 'desktop'], rating: 0, reviewCount: 0,
     alternatives: ['figma', 'webflow', 'dora'], isFeatured: false, launchedAt: '2014-01-01',
-  },
+  }, // updated 2026-06-29
   {
     id: '95', name: 'Dora', slug: 'dora',
     tagline: '3D 애니메이션 웹사이트를 코딩 없이 만드는 AI.',

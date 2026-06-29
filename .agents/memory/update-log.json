@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-06-28",
+  "lastRun": "2026-06-29",
   "updated": [
     {
       "slug": "chatgpt",
@@ -1586,6 +1586,21 @@
         "description: Teams·Enterprise용 Cursor Security Review(beta), always-on Security Reviewer·Vulnerability Scanner, Slack·MCP 보안 도구 연동 반영",
         "features: Cursor Security Review (beta), Security Reviewer, Vulnerability Scanner 추가"
       ]
+    },
+    {
+      "slug": "figma",
+      "date": "2026-06-29",
+      "changes": [
+        "description/features: Figma 공식 blog 기준 Figma Motion open beta, timeline·keyframes, animated components, motion variables, time-based comments, preset animation styles 및 Figma agent keyframe generation 반영"
+      ]
+    },
+    {
+      "slug": "framer",
+      "date": "2026-06-29",
+      "changes": [
+        "description/features: Framer 공식 blog 기준 Framer 3.0 Agents, Branching, External Agents, AI credits, site workflow audits 및 Claude Code·Cursor·Codex 연결 반영",
+        "pricingDetail: AI credits 포함 Free 500/day, Basic 1,000/month, Pro 3,000/month, Editor seat $20/month, Content Editor $10/month 반영"
+      ]
     }
   ],
   "checked": [
@@ -2104,6 +2119,11 @@
       "slug": "claude",
       "date": "2026-06-25",
       "reason": "possible-updates.json의 Claude Tag 후보를 Anthropic 공식 Product post로 재검증했지만 data/tools.ts에는 2026-06-24에 Slack beta, @Claude team delegation, channel memory, ambient follow-up, 기존 Slack app 대체 정보가 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-06-29",
+      "reason": "possible-updates.json의 GPT-5.6 Preview System Card 후보를 OpenAI Deployment Safety Hub 공식 페이지로 재검증했지만 data/tools.ts에는 2026-06-27에 GPT-5.6 Sol·Terra·Luna limited preview, max reasoning effort, Ultra mode, explicit cache breakpoints 및 preview API 가격이 이미 반영돼 추가 수정 없음"
     }
   ]
 }
