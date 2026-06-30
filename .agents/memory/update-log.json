@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-06-29",
+  "lastRun": "2026-06-30",
   "updated": [
+    {
+      "slug": "cursor",
+      "date": "2026-06-30",
+      "changes": [
+        "description: Cursor 공식 changelog 기준 Cursor 3.9 Customize page와 2026-06-29 Cursor for iOS public beta, 유료 플랜 전체 제공, iPhone cloud agent 실행·관리, Remote Control, Live Activities·push notifications, 모바일 artifacts/SCM 리뷰 반영",
+        "features/platforms: Cursor for iOS public beta, Cloud agents on mobile, Remote Control, Live Activities·push notifications, Mobile artifacts/SCM review, Customize page, Plugin canvases, Team Marketplace imports 추가 및 ios 플랫폼 추가"
+      ]
+    },
     {
       "slug": "chatgpt",
       "date": "2026-06-27",
@@ -1711,6 +1719,16 @@
     "kimi-work"
   ],
   "skipped": [
+    {
+      "slug": "figma",
+      "date": "2026-06-30",
+      "reason": "possible-updates.json의 Config 2026 후보를 Figma 공식 release notes로 재검증했지만 data/tools.ts에는 2026-06-29에 Motion, Figma agent keyframe generation, FigJam·Slides·Buzz AI 확장 등 핵심 내용이 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "framer",
+      "date": "2026-06-30",
+      "reason": "possible-updates.json의 Framer 3.0 후보를 Framer 공식 blog로 재검증했지만 data/tools.ts에는 2026-06-29에 Agents, Branching, External Agents, AI credits 및 주요 workflow 기능이 이미 반영돼 추가 수정 없음"
+    },
     {
       "slug": "basedash",
       "date": "2026-06-13",
