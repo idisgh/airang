@@ -277,14 +277,14 @@ export const tools: Tool[] = [
   {
     id: '24', name: 'v0', slug: 'v0-dev',
     tagline: 'Vercel의 AI UI 생성기. 프롬프트로 React 컴포넌트를.',
-    description: 'v0는 Vercel이 만든 AI 앱·웹사이트 빌더입니다. 프롬프트로 React UI와 페이지를 생성하는 것을 넘어, 에이전트처럼 계획을 세우고 DB·API를 연결해 working application을 빠르게 만들 수 있습니다. Design Mode, GitHub 저장소 동기화, 템플릿·디자인 시스템 활용, Vercel 원클릭 배포를 지원합니다.',
+    description: 'v0는 Vercel이 만든 AI 앱·웹사이트 빌더입니다. 프롬프트로 React UI와 페이지를 생성하는 것을 넘어, 에이전트처럼 계획을 세우고 DB·API를 연결해 working application을 빠르게 만들 수 있습니다. Design Mode, GitHub 저장소 동기화, 템플릿·디자인 시스템 활용, Vercel 원클릭 배포를 지원합니다. Design Systems 2.0은 GitHub 저장소, public/private npm package, Storybook·docs, Figma frames, screenshots, ZIPs, 실제 앱을 가져와 팀의 real components, tokens, providers, global styles, usage patterns를 학습하고, 검증된 starter app을 만든 뒤 reusable design system skill로 저장해 이후 채팅에서 같은 컴포넌트와 규칙을 재사용할 수 있게 합니다.',
     url: 'https://v0.app/', logoUrl: '/logos/v0-dev.png',
     categories: ['coding', 'design'],
-    pricingModel: 'freemium', pricingDetail: '무료 / Team $30/월/인 / Business $100/월/인',
-    koreanSupport: 'none', features: ['UI 생성', 'React 코드', 'shadcn/ui', 'Tailwind', '실시간 미리보기', 'Vercel 배포', 'Design Mode', 'GitHub 저장소 동기화', 'DB·API 연동', '디자인 시스템', '에이전트 기반 앱 생성'],
+    pricingModel: 'freemium', pricingDetail: '무료 / Premium $20/월(신규 가입 sunset 진행 중) / Team $30/월/인 / Business $100/월/인 / Enterprise 문의',
+    koreanSupport: 'none', features: ['UI 생성', 'React 코드', 'shadcn/ui', 'Tailwind', '실시간 미리보기', 'Vercel 배포', 'Design Mode', 'GitHub 저장소 동기화', 'DB·API 연동', 'Design Systems 2.0', 'real components·tokens 학습', 'GitHub·npm·Storybook·docs·Figma import', 'design system skill', '에이전트 기반 앱 생성'],
     platforms: ['web'], rating: 4.4, reviewCount: 320,
     alternatives: ['lovable', 'bolt-new', 'cursor'], isFeatured: false, launchedAt: '2023-10-01',
-  },
+  }, // updated 2026-07-01
   {
     id: '25', name: 'Kling AI', slug: 'kling',
     tagline: '쾌영의 AI 영상 생성. 중국산 Sora 대항마.',

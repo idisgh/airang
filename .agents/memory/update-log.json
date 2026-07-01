@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-06-30",
+  "lastRun": "2026-07-01",
   "updated": [
+    {
+      "slug": "v0-dev",
+      "date": "2026-07-01",
+      "changes": [
+        "description/features: v0 공식 Design Systems 2.0 docs와 v0 공식 LinkedIn 발표 기준 GitHub·npm·Storybook·docs·Figma·screenshots·ZIP·real apps import, real components·tokens·providers·global styles·usage patterns 학습, starter app 검증 및 reusable design system skill 저장 반영",
+        "pricingDetail: v0 공식 pricing docs 기준 Free, Premium $20/month sunset 진행 중, Team $30/user/month, Business $100/user/month, Enterprise 문의 구조 반영"
+      ]
+    },
     {
       "slug": "cursor",
       "date": "2026-06-30",
@@ -1719,6 +1727,21 @@
     "kimi-work"
   ],
   "skipped": [
+    {
+      "slug": "cursor",
+      "date": "2026-07-01",
+      "reason": "possible-updates.json의 Cursor for iOS 후보를 Cursor 공식 forum/changelog 링크로 재검증했지만 data/tools.ts에는 2026-06-30에 iOS public beta, paid plans 제공, cloud agents, Remote Control, Live Activities·push notifications, mobile artifacts/SCM review가 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "framer",
+      "date": "2026-07-01",
+      "reason": "possible-updates.json의 Framer 3.0 후보를 Framer 공식 blog로 재검증했지만 data/tools.ts에는 2026-06-29에 Agents, Branching, External Agents, AI credits, workflow audits 및 Claude Code·Cursor·Codex 연결이 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "elevenlabs",
+      "date": "2026-07-01",
+      "reason": "possible-updates.json의 ElevenAgents 후보를 ElevenLabs 공식 docs로 재검증했지만 data/tools.ts에는 2026-06-22에 multimodal agents, visual workflow builder, telephony·SIP·Twilio deploy, batch outbound calls, testing·evals, monitoring, OpenTelemetry traces가 이미 반영돼 추가 수정 없음"
+    },
     {
       "slug": "figma",
       "date": "2026-06-30",
