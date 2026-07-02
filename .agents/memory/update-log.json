@@ -1,6 +1,16 @@
 {
-  "lastRun": "2026-07-01",
+  "lastRun": "2026-07-02",
   "updated": [
+    {
+      "slug": "claude",
+      "date": "2026-07-02",
+      "changes": [
+        "description: Anthropic 공식 Claude Sonnet 5 발표 기준 Free·Pro 기본 모델, Max·Team·Enterprise·Claude Code·Platform 제공, agentic coding·tool use·knowledge work·effort levels 및 introductory API pricing 반영",
+        "description/features: Claude Science 공식 발표 기준 Pro·Max·Team·Enterprise beta, macOS·Linux·SSH/HPC workbench, 60개+ science skills/connectors, auditable artifacts, reviewer agent 반영",
+        "description/features: Anthropic 공식 Fable 5 redeploy 발표 기준 2026-07-01 글로벌 재배포와 Mythos 5 승인 미국 조직 접근 복구 반영",
+        "pricingDetail: Sonnet 5 API $2 입력·$10 출력 per MTok introductory(~2026-08-31), 이후 $3·$15 표준 가격 반영"
+      ]
+    },
     {
       "slug": "v0-dev",
       "date": "2026-07-01",
