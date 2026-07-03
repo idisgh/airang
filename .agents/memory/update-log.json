@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-07-02",
+  "lastRun": "2026-07-03",
   "updated": [
     {
       "slug": "claude",
@@ -2175,6 +2175,16 @@
       "slug": "chatgpt",
       "date": "2026-06-29",
       "reason": "possible-updates.json의 GPT-5.6 Preview System Card 후보를 OpenAI Deployment Safety Hub 공식 페이지로 재검증했지만 data/tools.ts에는 2026-06-27에 GPT-5.6 Sol·Terra·Luna limited preview, max reasoning effort, Ultra mode, explicit cache breakpoints 및 preview API 가격이 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "claude",
+      "date": "2026-07-03",
+      "reason": "possible-updates.json의 Claude Sonnet 5, Claude Science, Fable 5 재배포 후보를 Anthropic 공식 news 3건으로 재검증했지만 data/tools.ts에는 2026-07-02에 description·pricingDetail·features가 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-07-03",
+      "reason": "possible-updates.json의 Codex Micro 후보는 보도/소셜 티저 신호는 확인했지만 OpenAI 공식 제품 페이지·출시 상세가 아직 없어 high/medium value의 확정 product info로 반영하지 않음 (2026-07-15 공개 예정 신호로 추후 재확인)"
     }
   ]
 }
