@@ -1,6 +1,13 @@
 {
-  "lastRun": "2026-07-03",
+  "lastRun": "2026-07-04",
   "updated": [
+    {
+      "slug": "cursor",
+      "date": "2026-07-04",
+      "changes": [
+        "description/features: Cursor 공식 changelog 2026-06-30 기준 Team Marketplace의 Team MCP 배포, cloud agents·Agents Window·IDE·CLI 전반 MCP 서버 제공, organization group 기반 marketplace 접근 제어 반영"
+      ]
+    },
     {
       "slug": "claude",
       "date": "2026-07-02",
@@ -1737,6 +1744,16 @@
     "kimi-work"
   ],
   "skipped": [
+    {
+      "slug": "claude",
+      "date": "2026-07-04",
+      "reason": "possible-updates.json의 Claude Sonnet 5, Claude Science, Fable 5 재배포 후보를 Anthropic 공식 news 3건으로 재검증했지만 data/tools.ts에는 2026-07-02에 description·pricingDetail·features가 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-07-04",
+      "reason": "possible-updates.json의 Codex Micro 후보는 보도/소셜 티저 신호만 있고 OpenAI 공식 제품 페이지·출시 상세를 검증하지 못해 high/medium value의 확정 product info로 반영하지 않음"
+    },
     {
       "slug": "cursor",
       "date": "2026-07-01",
