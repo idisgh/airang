@@ -1,6 +1,14 @@
 {
-  "lastRun": "2026-07-04",
+  "lastRun": "2026-07-05",
   "updated": [
+    {
+      "slug": "github-copilot",
+      "date": "2026-07-05",
+      "changes": [
+        "description/features: GitHub 공식 changelog 2026-07-01 기준 Kimi K2.7 Code의 첫 open-weight selectable model 제공, Copilot vision GA의 이미지·PDF reasoning, Copilot CLI·SDK AI credit session limits public preview 반영",
+        "pricingDetail: Kimi K2.7 Code provider list pricing under usage-based billing 반영"
+      ]
+    },
     {
       "slug": "cursor",
       "date": "2026-07-04",
