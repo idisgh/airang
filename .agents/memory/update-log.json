@@ -1,6 +1,13 @@
 {
-  "lastRun": "2026-07-05",
+  "lastRun": "2026-07-06",
   "updated": [
+    {
+      "slug": "copilot",
+      "date": "2026-07-06",
+      "changes": [
+        "tagline/description/features: Microsoft 공식 Frontier Company 발표와 공식 페이지 기준 $2.5B 투자, 6,000명 산업·엔지니어링 전문가 embedded deployment, outcome-driven enterprise AI systems, model-diverse platform, 데이터·IP 보호 기반 Frontier Transformation 반영"
+      ]
+    },
     {
       "slug": "github-copilot",
       "date": "2026-07-05",
@@ -1752,6 +1759,26 @@
     "kimi-work"
   ],
   "skipped": [
+    {
+      "slug": "claude",
+      "date": "2026-07-06",
+      "reason": "possible-updates.json의 Claude Sonnet 5와 Claude Science 후보를 Anthropic 공식 news로 재검증했지만 data/tools.ts에는 2026-07-02에 이미 description·pricingDetail·features가 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "cursor",
+      "date": "2026-07-06",
+      "reason": "possible-updates.json의 Cursor Automations 후보를 Cursor 공식 changelog로 재검증했지만 data/tools.ts에는 2026-06-22와 2026-07-04 업데이트로 /automate skill, Slack/GitHub triggers, computer use, Team MCP, organization group marketplace access가 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "github-copilot",
+      "date": "2026-07-06",
+      "reason": "possible-updates.json의 Kimi K2.7 Code 후보를 GitHub 공식 changelog 검색 결과로 재검증했지만 data/tools.ts에는 2026-07-05에 Kimi K2.7 Code, open-weight model picker, Copilot vision GA, AI credit session limits가 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "chatgpt",
+      "date": "2026-07-06",
+      "reason": "possible-updates.json의 Codex Micro 후보는 web_search가 bot-detection으로 차단됐고 공식 OpenAI 제품 페이지·출시 상세를 검증하지 못해 high/medium value의 확정 product info로 반영하지 않음"
+    },
     {
       "slug": "claude",
       "date": "2026-07-04",

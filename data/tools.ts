@@ -320,15 +320,15 @@ export const tools: Tool[] = [
   },
   {
     id: '28', name: 'Microsoft Copilot', slug: 'copilot',
-    tagline: 'Windows에 내장된 AI. Office 365와 완벽 통합.',
-    description: 'Microsoft Copilot은 Windows, Edge, Office 365에 내장된 AI 어시스턴트입니다. Word에서 문서 작성, Excel에서 데이터 분석, PowerPoint에서 프레젠테이션 생성 등을 AI가 도와줍니다.',
+    tagline: 'Windows와 Microsoft 365에 내장된 AI 업무 어시스턴트.',
+    description: 'Microsoft Copilot은 Windows, Edge, Microsoft 365에 내장된 AI 어시스턴트입니다. Word에서 문서 작성, Excel에서 데이터 분석, PowerPoint에서 프레젠테이션 생성 등을 AI가 도와주고, Microsoft 365 Copilot은 조직 데이터와 워크플로우를 연결해 업무 전반의 생산성을 높입니다. 2026년 7월 Microsoft는 Frontier Company를 공개하며 25억 달러를 투자해 6,000명의 산업·엔지니어링 전문가를 고객 환경에 배치하고, 기업의 데이터·IP를 보호하면서 OpenAI, Anthropic, Microsoft AI, 오픈소스 모델을 선택적으로 활용하는 엔터프라이즈 AI 시스템을 공동 설계·배포·개선하는 Frontier Transformation 전략을 강화했습니다.',
     url: 'https://copilot.microsoft.com', logoUrl: '/logos/copilot.png',
     categories: ['chatbot', 'productivity'],
     pricingModel: 'freemium', pricingDetail: '무료 / Copilot Pro $20/월 / M365 Copilot $30/월',
-    koreanSupport: 'full', features: ['대화형 AI', 'Office 통합', 'Windows 통합', '이미지 생성', '웹 검색', 'Plugins'],
+    koreanSupport: 'full', features: ['대화형 AI', 'Microsoft 365 통합', 'Windows 통합', '이미지 생성', '웹 검색', 'Plugins', 'Frontier Company', 'Forward Deployed Engineering', '엔터프라이즈 AI 시스템 공동 배포', '모델 선택형 AI 플랫폼', '데이터·IP 보호'],
     platforms: ['web', 'desktop', 'ios', 'android'], rating: 4.2, reviewCount: 380,
     alternatives: ['chatgpt', 'gemini', 'claude'], isFeatured: false, launchedAt: '2023-02-07',
-  },
+  }, // updated 2026-07-06
   {
     id: '29', name: 'Surfer SEO', slug: 'surfer-seo',
     tagline: 'AI SEO 최적화 도구. 검색 1위를 위한 콘텐츠.',
