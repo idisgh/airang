@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-07-07",
+  "lastRun": "2026-07-08",
   "updated": [
     {
       "slug": "copilot",
@@ -2262,6 +2262,16 @@
       "slug": "chatgpt",
       "date": "2026-07-03",
       "reason": "possible-updates.json의 Codex Micro 후보는 보도/소셜 티저 신호는 확인했지만 OpenAI 공식 제품 페이지·출시 상세가 아직 없어 high/medium value의 확정 product info로 반영하지 않음 (2026-07-15 공개 예정 신호로 추후 재확인)"
+    },
+    {
+      "slug": "openai-blog",
+      "reason": "Cloudflare challenge; normal skip",
+      "date": "2026-07-08"
+    },
+    {
+      "slug": "microsoft-blog",
+      "reason": "Official Microsoft blog /blog URL returned 404; used Microsoft 365 blog as alternate context",
+      "date": "2026-07-08"
     }
   ]
 }
