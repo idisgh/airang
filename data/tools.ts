@@ -68,14 +68,14 @@ export const tools: Tool[] = [
   {
     id: '5', name: 'Perplexity', slug: 'perplexity',
     tagline: 'AI answer engine. 검색, 리서치, 실행을 하나로.',
-    description: 'Perplexity는 AI 기반 answer engine으로, 질문에 대해 실시간 웹 검색 결과를 바탕으로 출처가 명확한 답변을 제공합니다. GPT-5, Claude 4, Grok 4, Gemini 3 같은 최신 모델 선택에 더해, Search와 Research 사이를 잇는 Labs 모드로 리포트·스프레드시트·대시보드·간단한 웹앱을 만들 수 있습니다. 이어 공개된 Perplexity Computer는 실제 파일시스템·브라우저·연동 도구를 쓰는 general-purpose digital worker로, 결과를 목표로 주면 태스크를 쪼개 sub-agent를 만들고 비동기적으로 장시간 실행할 수 있습니다. 2026년 5월에는 Computer가 Pro 사용자의 Web·iOS에 전면 제공되고 Personal Computer on Mac도 전체 공개되어 로컬 파일·앱·Comet 브라우저 문맥을 연결할 수 있게 됐습니다. Computer Enterprise는 Microsoft Teams 앱, Snowflake·Databricks 직접 연결, 반복 가능한 Workflows, Space skills로 확장됐고, 5월 말에는 Word·Excel·PowerPoint·Outlook·Teams 안에서 바로 Computer를 쓰는 Microsoft 365 통합, context panel, 개인·조직 사용량 analytics dashboard가 추가됐습니다. Perplexity는 model-agnostic orchestration을 기반으로 Comet AI 브라우저(iOS 지원), Perplexity Assistant, Enterprise Memory·Governance까지 포함한 종합 AI 작업 플랫폼으로 확장되고 있습니다.',
+    description: 'Perplexity는 AI 기반 answer engine으로, 질문에 대해 실시간 웹 검색 결과를 바탕으로 출처가 명확한 답변을 제공합니다. GPT-5, Claude 4, Grok 4, Gemini 3 같은 최신 모델 선택에 더해, Search와 Research 사이를 잇는 Labs 모드로 리포트·스프레드시트·대시보드·간단한 웹앱을 만들 수 있습니다. 이어 공개된 Perplexity Computer는 실제 파일시스템·브라우저·연동 도구를 쓰는 general-purpose digital worker로, 결과를 목표로 주면 태스크를 쪼개 sub-agent를 만들고 비동기적으로 장시간 실행할 수 있습니다. 2026년 5월에는 Computer가 Pro 사용자의 Web·iOS에 전면 제공되고 Personal Computer on Mac도 전체 공개되어 로컬 파일·앱·Comet 브라우저 문맥을 연결할 수 있게 됐습니다. Computer Enterprise는 Microsoft Teams 앱, Snowflake·Databricks 직접 연결, 반복 가능한 Workflows, Space skills로 확장됐고, 5월 말에는 Word·Excel·PowerPoint·Outlook·Teams 안에서 바로 Computer를 쓰는 Microsoft 365 통합, context panel, 개인·조직 사용량 analytics dashboard가 추가됐습니다. 2026년 6월에는 Deep Research가 Computer 안으로 들어와 Search as Code 기반으로 수백~수천 단계의 검색 프로그램을 병렬 실행하고, 내부 파일·앱과 premium sources를 함께 써서 PDF·deck·dashboard·website 같은 산출물까지 한 흐름에서 만들 수 있게 됐습니다. Brain은 Computer 작업 이력과 connector 결과, 수정사항을 밤사이 context graph로 학습하는 self-improving memory system으로 Max·Enterprise Max research preview에 제공됩니다. Computer for Counsel은 Enterprise·Max 사용자를 대상으로 Midpage, Deel, LegalZoom, Box, Docusign, NetDocuments 등 법무 소스와 도구를 연결해 리서치, 문서 수집, 계약 triage를 처리합니다. Perplexity는 model-agnostic orchestration을 기반으로 Comet AI 브라우저(iOS 지원), Perplexity Assistant, Enterprise Memory·Governance까지 포함한 종합 AI 작업 플랫폼으로 확장되고 있습니다.',
     url: 'https://perplexity.ai', logoUrl: '/logos/perplexity.png',
     categories: ['chatbot', 'productivity'],
     pricingModel: 'freemium', pricingDetail: '무료 / Pro $20/월 / Max (연간 결제 기준 $167/월, Perplexity Computer·Model Council 고한도 제공)',
-    koreanSupport: 'partial', features: ['AI 검색', '출처 표시', 'Comet AI 브라우저', 'Perplexity Assistant', 'Perplexity Pages', 'Shopping Hub', 'Focus 모드', 'Research', 'Labs', 'Perplexity Computer', 'Personal Computer on Mac', 'Computer in Microsoft 365', 'Computer in Microsoft Teams', 'Computer analytics dashboard', 'Context panel', 'Snowflake·Databricks 연결', 'Computer Workflows', 'Space skills', 'Perplexity Model Council', 'Enterprise Memory·Governance', 'API'],
+    koreanSupport: 'partial', features: ['AI 검색', '출처 표시', 'Comet AI 브라우저', 'Perplexity Assistant', 'Perplexity Pages', 'Shopping Hub', 'Focus 모드', 'Research', 'Labs', 'Perplexity Computer', 'Deep Research in Computer', 'Search as Code', 'Brain self-improving memory', 'Computer for Counsel', 'Legal research connectors', 'Personal Computer on Mac', 'Computer in Microsoft 365', 'Computer in Microsoft Teams', 'Computer analytics dashboard', 'Context panel', 'Snowflake·Databricks 연결', 'Computer Workflows', 'Space skills', 'Perplexity Model Council', 'Enterprise Memory·Governance', 'API'],
     platforms: ['web', 'ios', 'android', 'desktop', 'api'], rating: 4.6, reviewCount: 540,
     alternatives: ['chatgpt', 'gemini', 'you-com'], isFeatured: true, launchedAt: '2022-12-07',
-  }, // updated 2026-06-13
+  }, // updated 2026-07-09
   {
     id: '6', name: 'DALL-E 3', slug: 'dall-e',
     tagline: 'OpenAI의 이미지 생성 AI. ChatGPT Images와 API로 제공.',
@@ -156,14 +156,14 @@ export const tools: Tool[] = [
   {
     id: '13', name: 'Suno', slug: 'suno',
     tagline: 'AI로 노래를 만들어보세요. 가사, 멜로디, 보컬까지.',
-    description: 'Suno는 텍스트 프롬프트로 완성된 노래를 생성하는 AI 음악 플랫폼입니다. v5.5(2026년 3월 26일)로 퍼스널라이제이션 레이어를 강화해 Voices(자신의 목소리 클론), Custom Models(내 음악으로 학습), My Taste(자동 취향 학습) 기능을 추가했습니다. 2026년 6월에는 Voices가 Web 유료 사용자에게 제공되며 최소 1분 이상의 깨끗한 voice reference를 바탕으로 더 일관된 보컬 퍼포먼스를 만들 수 있다는 공식 가이드가 추가됐습니다. Warner Music Group 파트너십으로 완전 라이선스 모델로 전환 중이며, 같은 달 $400M 규모 Series D로 $5.4B 밸류에이션을 발표했습니다.',
+    description: 'Suno는 텍스트 프롬프트로 완성된 노래를 생성하는 AI 음악 플랫폼입니다. v5.5(2026년 3월 26일)로 퍼스널라이제이션 레이어를 강화해 Voices(자신의 목소리 클론), Custom Models(내 음악으로 학습), My Taste(자동 취향 학습) 기능을 추가했습니다. 2026년 6월에는 Voices가 Web 유료 사용자에게 제공되며 최소 1분 이상의 깨끗한 voice reference를 바탕으로 더 일관된 보컬 퍼포먼스를 만들 수 있다는 공식 가이드가 추가됐습니다. 같은 달 stem separation도 개선되어 Pro·Premier용 Auto Split과 Split from Mix, Premier용 Advanced Split을 제공하며, 최대 12개 stem 또는 약 100개 instrument 목록에서 원하는 파트를 새로 생성된 깨끗한 stem으로 분리할 수 있습니다. Warner Music Group 파트너십으로 완전 라이선스 모델로 전환 중이며, 같은 달 $400M 규모 Series D로 $5.4B 밸류에이션을 발표했습니다.',
     url: 'https://suno.com', logoUrl: '/logos/suno.png',
     categories: ['music'],
     pricingModel: 'freemium', pricingDetail: '무료 (10곡/일) / Pro $10/월 / Premier $30/월',
-    koreanSupport: 'partial', features: ['AI 작곡', 'v5.5 모델', 'Voices (Web 유료 사용자)', '목소리 클론', 'Custom Models (내 음악 학습)', 'My Taste (취향 자동 학습)', 'Suno Studio', '가사 생성', '보컬 합성', '다양한 장르', '상업적 사용권'],
+    koreanSupport: 'partial', features: ['AI 작곡', 'v5.5 모델', 'Voices (Web 유료 사용자)', '목소리 클론', 'Custom Models (내 음악 학습)', 'My Taste (취향 자동 학습)', 'Suno Studio', 'Stem Separation', 'Auto Split', 'Split from Mix', 'Advanced Split', '가사 생성', '보컬 합성', '다양한 장르', '상업적 사용권'],
     platforms: ['web', 'ios', 'android'], rating: 4.6, reviewCount: 510,
     alternatives: ['udio', 'soundraw', 'mubert'], isFeatured: true, launchedAt: '2023-09-01',
-  }, // updated 2026-06-16
+  }, // updated 2026-07-09
   {
     id: '14', name: 'Canva AI', slug: 'canva-ai',
     tagline: '대화형·agentic 디자인 플랫폼. 아이디어에서 결과물까지 한번에.',

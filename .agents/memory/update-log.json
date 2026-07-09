@@ -1,6 +1,20 @@
 {
-  "lastRun": "2026-07-08",
+  "lastRun": "2026-07-09",
   "updated": [
+    {
+      "slug": "suno",
+      "date": "2026-07-09",
+      "changes": [
+        "description/features: Suno 공식 blog 기준 개선된 Stem Separation, Auto Split, Split from Mix, Advanced Split 및 최대 12 stems·약 100 instruments 분리 옵션 반영"
+      ]
+    },
+    {
+      "slug": "perplexity",
+      "date": "2026-07-09",
+      "changes": [
+        "description/features: Perplexity 공식 blog 기준 Deep Research in Computer, Search as Code, Brain self-improving memory research preview, Computer for Counsel 및 legal research connectors 반영"
+      ]
+    },
     {
       "slug": "copilot",
       "date": "2026-07-06",
@@ -2272,6 +2286,21 @@
       "slug": "microsoft-blog",
       "reason": "Official Microsoft blog /blog URL returned 404; used Microsoft 365 blog as alternate context",
       "date": "2026-07-08"
+    },
+    {
+      "slug": "deepl",
+      "date": "2026-07-09",
+      "reason": "DeepL 공식 blog 2026-07-07 Translation Flow 글을 확인했지만 data/tools.ts에는 Translation Flow·Customization Hub·voice/API 확장이 이미 반영돼 추가 수정 없음"
+    },
+    {
+      "slug": "gemini",
+      "date": "2026-07-09",
+      "reason": "Google Gemini blog index를 확인했지만 최신 공식 목록에서 data/tools.ts에 반영할 high/medium value의 확정 변경을 추가로 확인하지 못함"
+    },
+    {
+      "slug": "runway",
+      "date": "2026-07-09",
+      "reason": "Runway research 페이지는 cookie banner 중심으로 수집되어 제품 변경 검증에 부족해 정상 스킵"
     }
   ]
 }
