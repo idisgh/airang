@@ -1,6 +1,20 @@
 {
-  "lastRun": "2026-07-09",
+  "lastRun": "2026-07-12",
   "updated": [
+    {
+      "slug": "chatgpt",
+      "date": "2026-07-12",
+      "changes": [
+        "description/features/pricingDetail: OpenAI 공식 GPT-5.6 GA 발표 기준 Sol·Terra·Luna general availability, Programmatic Tool Calling, Responses API multi-agent beta, ChatGPT Work knowledge-work outputs, Daybreak Trusted Access for Cyber 반영"
+      ]
+    },
+    {
+      "slug": "notion-ai",
+      "date": "2026-07-12",
+      "changes": [
+        "tagline/description/features: Notion 공식 3.6·7월 releases 기준 External Agents(Claude·Cursor), HTML blocks, AI Meeting Notes speaker labels, Microsoft 파일 읽기·쓰기, Outlook actions, 신규 MCP connections, 모델 선택, Custom Agent audit log, Notion Agents iOS app, Workers team sharing 반영"
+      ]
+    },
     {
       "slug": "suno",
       "date": "2026-07-09",
@@ -1773,6 +1787,22 @@
     "kimi-work"
   ],
   "skipped": [
+    {
+      "slug": "notion-ai",
+      "reason": "Ship OS Product Hunt mirror signal only; Notion 공식 releases에서 확인 가능한 3.6/Agents/Workers 변경만 반영"
+    },
+    {
+      "slug": "chatgpt",
+      "reason": "ChatGPT Work Product Hunt mirror signal only; GPT-5.6 official page에서 확인 가능한 범위만 반영"
+    },
+    {
+      "slug": "chatgpt",
+      "reason": "curl to OpenAI official page returned Cloudflare challenge; OpenClaw web_fetch succeeded"
+    },
+    {
+      "slug": "chatgpt",
+      "reason": "web_search DuckDuckGo bot-detection; OpenAI 공식 web_fetch로 검증"
+    },
     {
       "slug": "claude",
       "date": "2026-07-07",
